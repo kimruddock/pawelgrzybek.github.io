@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<main class="main">
+  {% for post in site.posts %}
+
+    <!-- article -->
+    <article class="article">
+      <h2 class="article__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <p class="article__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <p class="article__excerpt">{{ post.excerpt }}</p>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
+    </article>
+    <!-- / article -->
+
+  {% endfor %}
+
+</main>
+
+<!-- page-nav -->
+<!-- <ul class="page-nav">
+  <li class="page-nav__prev"><a href="">« Previous page</a></li>
+  <li class="page-nav__next"><a href="">Next page »</a></li>
+</ul> -->
+<!-- / page-nav -->

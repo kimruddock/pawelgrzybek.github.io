@@ -1,0 +1,23 @@
+.article {
+}
+.article__title {
+  font-size: pxtorem(24px);
+  margin-bottom: pxtorem($lh/2);
+  a {
+    color: darken($colorText, 30%);
+    &:hover {
+      color: $color1;
+    }
+  }
+}
+.article__date {
+  margin-bottom: pxtorem($lh/2);
+  font-size: pxtorem(14px);
+}
+.article__excerpt {
+  margin-bottom: pxtorem($lh/2);
+}
+.article__more {
+  display: inline-block;
+  margin-bottom: pxtorem($lh*1.5);
+}

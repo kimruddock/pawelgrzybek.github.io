@@ -1,0 +1,25 @@
+<header class="header">
+
+  {% if page.title %}
+    <div class="header__title">
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+  {% else %}
+    <h1 class="header__title">
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </h1>
+  {% endif %}
+
+
+  <p>Hi there, I’m Pawel Grzybek, Front-end Developer from Poland. Nowadays I live in Northampton (UK). You can browse my code on <a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>, follow me on <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>, <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank">Facebook</a> or <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>. When I'm not coding, I’m spinning vinyl funky records.</p>
+  <nav class="header__nav">
+    <ul>
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      {% for page in site.pages %}
+        {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

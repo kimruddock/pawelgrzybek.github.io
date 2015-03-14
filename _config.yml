@@ -1,0 +1,40 @@
+# Site configuration
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://studiorgb.uk" # the base hostname & protocol for your site
+permalink: :title
+
+# Theme specific configuration
+title: studiorgb.uk
+description: >
+  Hi there, I’m Pawel Grzybek, Front-end Developer from Poland.
+  Nowadays I live in Northampton (UK). When I'm not coding,
+  I’m spinning funky vinyl records.
+# Contact and social media links
+email: mail@studiorgb.uk
+twitter_username: pawelgrzybek
+github_username:  studiorgb
+facebook_username:  grzybecki
+instagram_username:  pawelgrzybek
+
+# Build settings
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+markdown: redcarpet
+highlighter: pygments
+
+# defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

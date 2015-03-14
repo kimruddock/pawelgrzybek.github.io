@@ -1,0 +1,86 @@
+%mb {
+  margin-bottom: pxtorem($lh);
+}
+%bold {
+  font-weight: 700;
+}
+b, strong {
+  @extend %bold;
+}
+em, i {
+  font-style: italic;
+}
+a {
+  color: $color1;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  @include transition(color);
+  &:hover, &:focus, &:active {
+    color: darken($colorText, 30%);
+    outline: 0;
+    text-decoration: none;
+  }
+}
+p {
+  @extend %mb;
+}
+h1, .h1 {
+  font-size: pxtorem($h1);
+  font-weight: 500;
+  @extend %mb;
+  color: darken($colorText, 30%);
+}
+h2, .h2 {
+  font-size: pxtorem($h2);
+  font-weight: 500;
+  @extend %mb;
+  color: darken($colorText, 30%);
+}
+h3, .h3 {
+  font-size: pxtorem($h3);
+  font-weight: 500;
+  @extend %mb;
+  color: darken($colorText, 30%);
+}
+h4, .h4 {
+  font-size: pxtorem($h4);
+  font-weight: 500;
+  @extend %mb;
+  color: darken($colorText, 30%);
+}
+h5, .h5 {
+  font-size: pxtorem($h5);
+  font-weight: normal;
+  @extend %mb;
+  color: darken($colorText, 30%);
+}
+h6, .h6 {
+  font-size: pxtorem($h6);
+  font-weight: normal;
+  @extend %mb;
+  color: darken($colorText, 30%);
+}
+ul, ol {
+  @extend %mb;
+  ul, ol {
+    margin: 0 pxtorem($lh);;
+  }
+}
+blockquote {
+  background: #f7f7f7;
+  margin-bottom: pxtorem($lh);
+  padding: pxtorem($lh);
+  p {
+    margin: 0;
+    font-size: pxtorem(17px);
+  }
+}
+hr {
+  display: block;
+  height: 1px;
+  margin-bottom: pxtorem($lh - 1px);
+  border: none;
+  outline: none;
+  border-top: 1px solid lighten($colorText, 50%);
+}

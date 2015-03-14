@@ -1,0 +1,6 @@
+.main {
+  margin-top: pxtorem($lh);
+  @include mq(large) {
+    margin-top: pxtorem($lh*6);
+  }
+}
