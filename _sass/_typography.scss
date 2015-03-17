@@ -62,7 +62,7 @@ h6, .h6 {
   color: darken($colorText, 30%);
 }
 ul, ol {
-  @extend %mb;
+  margin: 0 0 pxtorem($lh) pxtorem($lh);
   ul, ol {
     margin: 0 pxtorem($lh);;
   }
