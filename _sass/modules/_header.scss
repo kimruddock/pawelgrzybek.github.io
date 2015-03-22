@@ -1,28 +1,15 @@
 .header {
-  background: #f7f7f7;
-  padding: pxtorem($lh) pxtorem($lh/2);
-  @include mq(large) {
-    height: 100vh;
-    position: relative;
-    padding: pxtorem($lh*6) pxtorem($lh*1.5) 0 pxtorem($lh*1.5);
-    &:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: pxtorem($lh*5);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: #f00;
-      background-image: linear-gradient(rgba(50,50,50,.15) 1px, transparent 1px);
-      background: linear-gradient(to bottom, #f7f7f7 0%,#fff 100%);
-    }
-  }
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: $lh*2;
+  padding: $lh 0 ($lh - 1px) 0;
 }
 .header__title {
+  float: left;
   font-size: pxtorem(24px);
   font-weight: 500;
-  margin-bottom: pxtorem($lh);
+  margin-bottom: 0;
   a {
     color: darken($colorText, 30%);
     &:hover {
@@ -30,13 +17,20 @@
     }
   }
 }
-.header__nav {
-  ul {
-    list-style: none;
-    margin: 0;
-  }
-  li {
-    display: inline-block;
-    margin-right: pxtorem($lh/2);
+.header__trigger {
+  display: block;
+  width: $lh;
+  height: $lh;
+  float: right;
+}
+.header__trigger__icon {
+  display: block;
+  width: $lh;
+  height: $lh;
+  padding: 6px;
+  @include transition(fill);
+  &:hover, &.header__trigger__icon--active {
+    fill: $color1;
+    cursor: pointer;
   }
 }

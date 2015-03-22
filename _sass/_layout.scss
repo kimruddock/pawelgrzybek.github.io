@@ -2,16 +2,6 @@
   @include row;
   // @include grid;
 }
-.sidebar {
-  @include col(12, false);
-  @include mq(large) {
-    @include col(4);
-  }
-}
-.content {
+.col {
   @include col;
-  @include mq(large) {
-    @include col(6);
-    @include push(1);
-  }
 }

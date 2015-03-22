@@ -2,13 +2,78 @@
 <html lang="en" class="no-js">
   {% include head.html %}
   <body>
-    <div class="wrapper">
-      <div class="sidebar">
-        {% include header.html %}
-      </div>
-      <div class="content">
-        {{ content }}
-      </div>
+
+  {% include header.html %}
+
+  <div class="wrapper">
+    <div class="col">
+      {{ content }}
     </div>
+  </div>
+
+  {% include footer.html %}
+
+  <script>
+    var jt = jt || {};
+
+    // same functions as above
+    jt.nav = (function() {
+        function mobileMenu() {
+
+            // querySelector returns the first element it finds with the correct selector
+            // addEventListener is roughly analogous to $.on()
+            document.querySelector('.header__trigger').addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // querySelectorAll returns all the nodes it finds with the selector
+                // however, you can't iterate over querySelectorAll results (!!)
+                // so this is a workaround - call Array.map and pass in the
+                // list of nodes along with a function
+                // technically querySelectorAll returns a NodeList not an Array so
+                /// doesn't have standard array functions
+                [].map.call(document.querySelectorAll('.about'), function(el) {
+
+                    // classList is the key here - contains functions to manipulate
+                    // classes on an element
+                    el.classList.toggle('about--active');
+                });
+
+                [].map.call(document.querySelectorAll('.header__trigger__icon'), function(el) {
+
+                    // classList is the key here - contains functions to manipulate
+                    // classes on an element
+                    el.classList.toggle('header__trigger__icon--active');
+                });
+
+            });
+        }
+
+        return {
+            mobileMenu: mobileMenu
+        };
+    })();
+
+
+    jt.helpers = (function() {
+        function jsCheck() {
+
+            // again, use classList to manipulate classes on elements
+            var bodyClass = document.querySelector('html').classList;
+            bodyClass.remove('no-js');
+            bodyClass.add('js');
+        }
+
+        return {
+            jsCheck: jsCheck
+        };
+    })();
+
+
+    // start everything
+    // this isn't in a doc.ready - loaded at the bottom of the page so the DOM is already ready
+    jt.helpers.jsCheck();
+    jt.nav.mobileMenu();
+  </script>
+
   </body>
 </html>
