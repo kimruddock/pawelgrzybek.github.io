@@ -28,9 +28,13 @@
   width: $lh;
   height: $lh;
   padding: 6px;
-  @include transition(fill);
-  &:hover, &.header__trigger__icon--active {
+  @include transition;
+  &:hover {
     fill: $color1;
     cursor: pointer;
+  }
+  &.header__trigger__icon--active {
+    fill: $color1;
+    transform: rotate(90deg);
   }
 }
