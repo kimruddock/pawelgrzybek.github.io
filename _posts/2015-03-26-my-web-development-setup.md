@@ -39,7 +39,7 @@ I’m Command Line heavy user. I don’t mind Terminal that Mac OS X comes with,
 
 My journey through code editors was long and difficult but I’m finally there. [Sublime Text](http://www.sublimetext.com/3) is my code editor of choice. Because it is my main tool that I use to pay my bills I did master it. It comes as a plain text editor but power of this app is in settings and available plugins. I would like to share with you my personal settings that I use and list of my plugins.
 
-‘’’
+{% highlight json %}
 {
   “bold_folder_labels”: true,
   “caret_extra_width”: 1,
@@ -82,7 +82,7 @@ My journey through code editors was long and difficult but I’m finally there. 
   “trim_trailing_white_space_on_save”: true,
   “word_wrap”: false
 }
-‘’’
+{% endhighlight %}
 
 #### Package Control
 
