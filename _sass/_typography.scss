@@ -82,5 +82,5 @@ hr {
   margin-bottom: pxtorem($lh - 1px);
   border: none;
   outline: none;
-  border-top: 1px solid lighten($colorText, 50%);
+  border-top: 1px solid #ddd;
 }
