@@ -39,48 +39,48 @@ I’m Command Line heavy user. I don’t mind Terminal that Mac OS X comes with,
 
 My journey through code editors was long and difficult but I’m finally there. [Sublime Text](http://www.sublimetext.com/3) is my code editor of choice. Because it is my main tool that I use to pay my bills I did master it. It comes as a plain text editor but power of this app is in settings and available plugins. I would like to share with you my personal settings that I use and list of my plugins.
 
-{% highlight json %}
+{% highlight javascript %}
 {
-  “bold_folder_labels”: true,
-  “caret_extra_width”: 1,
-  “caret_style”: “phase”,
-  “color_scheme”: “Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme”,
-  “detect_indentation”: false,
-  “draw_minimap_border”: true,
-  “folder_exclude_patterns”:
+  "bold_folder_labels": true,
+  "caret_extra_width": 1,
+  "caret_style": "phase",
+  "color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+  "detect_indentation": false,
+  "draw_minimap_border": true,
+  "folder_exclude_patterns":
   [
-    “.sass-cache”,
-    “.git”,
-    “node_modules”
+    ".sass-cache",
+    ".git",
+    "node_modules"
   ],
-  “font_face”: “Source Code Pro”,
-  “font_options”:
+  "font_face": "Source Code Pro",
+  "font_options":
   [
-    “no_round”
+    "no_round"
   ],
-  “font_size”: 16,
-  “highlight_line”: true,
-  “highlight_modified_tabs”: true,
-  “ignored_packages”:
+  "font_size": 16,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
   [
-    “Vintage”
+    "Vintage"
   ],
-  “indent_guide_options”:
+  "indent_guide_options":
   [
-    “draw_normal”,
-    “draw_active”
+    "draw_normal",
+    "draw_active"
   ],
-  “line_padding_bottom”: 1,
-  “line_padding_top”: 1,
-  “rulers”:
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "rulers":
   [
     80
   ],
-  “tab_size”: 2,
-  “theme”: “Spacegray.sublime-theme”,
-  “translate_tabs_to_spaces”: true,
-  “trim_trailing_white_space_on_save”: true,
-  “word_wrap”: false
+  "tab_size": 2,
+  "theme": "Spacegray.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": false
 }
 {% endhighlight %}
 
