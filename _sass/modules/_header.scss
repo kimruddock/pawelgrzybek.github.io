@@ -22,19 +22,41 @@
   width: $lh;
   height: $lh;
   float: right;
-}
-.header__trigger__icon {
-  display: block;
-  width: $lh;
-  height: $lh;
-  padding: 6px;
-  @include transition;
+  position: relative;
+  @include transition(transform);
   &:hover {
-    fill: $color1;
-    cursor: pointer;
+    .header__trigger__1, .header__trigger__2, .header__trigger__3 {
+      background: $color1;
+    }
   }
-  &.header__trigger__icon--active {
-    fill: $color1;
-    transform: rotate(90deg);
+  &.header__trigger--active {
+    transform: rotate(-90deg);
+    .header__trigger__1 {
+      background: $color1;
+      transform: translateY(0px) rotate(45deg);
+    }
+    .header__trigger__2 {
+      opacity: 0;
+    }
+    .header__trigger__3 {
+      background: $color1;
+      transform: translateY(0px) rotate(-45deg);
+    }
   }
+}
+.header__trigger__1, .header__trigger__2, .header__trigger__3 {
+  display: block;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  background: #000;
+  @include transition;
+}
+.header__trigger__1 {
+  transform: translateY(-5px);
+}
+.header__trigger__3 {
+  transform: translateY(5px);
 }
