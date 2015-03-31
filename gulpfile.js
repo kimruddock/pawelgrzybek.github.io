@@ -1,13 +1,13 @@
 var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer');
-
-var messages = {
+  autoprefixer = require('gulp-autoprefixer'),
+  messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
+  };
 
 
+// Build jekyll project
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
   require('child_process').spawn('jekyll', ['build'], {stdio: 'inherit'})
@@ -15,11 +15,13 @@ gulp.task('jekyll-build', function (done) {
 });
 
 
+// Rebuild and refresh jekyll project
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
   browserSync.reload();
 });
 
 
+// Start BrowserSync Server and serve _site directory
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
   browserSync({
     server: {
@@ -27,6 +29,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     }
   });
 });
+
 
 // Compile sass, minify css, autoprefix
 gulp.task('sass', function () {
@@ -43,6 +46,7 @@ gulp.task('sass', function () {
 });
 
 
+// Watch sass and all html posts
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass']);
     gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
