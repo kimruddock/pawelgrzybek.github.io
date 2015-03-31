@@ -1,6 +1,6 @@
 ---
 title: Top picks - 2015 March
-excerpt: Internet is full of interesting, useful or funny things. I would like to share with you my top picks from this month.
+excerpt: Staying up to date in web industry is a difficult and time consuming task. I would like to share with you my top finds from the past month.
 ---
 
 ## Frontend Guidelines
@@ -35,7 +35,7 @@ Why CSS is one of the most tricky languages in programming  world? Philip Walton
 
 - - -
 
-## http://whatdoesmysitecost.com/
+## What Does My Site Cost?
 
 [http://whatdoesmysitecost.com/](http://whatdoesmysitecost.com/)
 
