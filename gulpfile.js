@@ -42,7 +42,8 @@ gulp.task('sass', function () {
     .pipe(autoprefixer())
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('_includes'));
 });
 
 

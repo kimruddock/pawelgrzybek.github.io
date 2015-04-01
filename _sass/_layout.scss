@@ -1,6 +1,5 @@
-.wrapper {
+.row {
   @include row;
-  // @include grid;
 }
 .col {
   @include col;
