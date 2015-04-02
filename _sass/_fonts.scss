@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 300;
   src: local('Fira Sans Light'), local('FiraSans-Light'),
-       url('../fonts/fira-sans-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
-       url('../fonts/fira-sans-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fira-sans-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../assets/fira-sans-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* fira-sans-500 - latin */
 @font-face {
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 500;
   src: local('Fira Sans Medium'), local('FiraSans-Medium'),
-       url('../fonts/fira-sans-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
-       url('../fonts/fira-sans-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fira-sans-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../assets/fira-sans-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* source-code-pro-regular - latin */
 @font-face {
@@ -22,6 +22,6 @@
   font-style: normal;
   font-weight: 400;
   src: local('Source Code Pro'), local('SourceCodePro-Regular'),
-       url('../fonts/source-code-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
-       url('../fonts/source-code-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/source-code-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../assets/source-code-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

@@ -15,23 +15,21 @@
   <meta property="og:url" content="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}">
-  <meta property="og:image" content="{{ "/img/logo.png" | prepend: site.url }}">
+  <meta property="og:image" content="{{ "/assets/logo.png" | prepend: site.url }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@pawelgrzybek" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}" />
-  <meta name="twitter:image" content="{{ "/img/logo.png" | prepend: site.url }}" />
+  <meta name="twitter:image" content="{{ "/assets/logo.png" | prepend: site.url }}" />
 
   <link rel="canonical" href="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
-
-  <!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
 
   <style type="text/css">
     {% include main.css %}

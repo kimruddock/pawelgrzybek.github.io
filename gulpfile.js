@@ -2,6 +2,7 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
+  uglify = require('gulp-uglify'),
   messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
   };
@@ -40,17 +41,22 @@ gulp.task('sass', function () {
       onError: browserSync.notify
     }))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('_site/css'))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('_includes'));
+});
+
+// Minify js files
+gulp.task('uglify', function () {
+  gulp.src('_js/scripts.js')
+    .pipe(uglify())
     .pipe(gulp.dest('_includes'));
 });
 
 
 // Watch sass and all html posts
 gulp.task('watch', function () {
-    gulp.watch('_sass/*.scss', ['sass']);
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild']);
+  gulp.watch('_js/*.js', ['uglify', 'jekyll-rebuild']);
+  gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 
