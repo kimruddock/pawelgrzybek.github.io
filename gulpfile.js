@@ -44,6 +44,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('_includes'));
 });
 
+
 // Minify js files
 gulp.task('uglify', function () {
   gulp.src('_js/scripts.js')
@@ -56,7 +57,7 @@ gulp.task('uglify', function () {
 gulp.task('watch', function () {
   gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild']);
   gulp.watch('_js/*.js', ['uglify', 'jekyll-rebuild']);
-  gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 
