@@ -68,12 +68,13 @@ ul, ol {
   }
 }
 blockquote {
+  border-left: 4px solid $colorText;
   background: #f7f7f7;
   margin-bottom: pxtorem($lh);
   padding: pxtorem($lh);
   p {
     margin: 0;
-    font-size: pxtorem(17px);
+    font-size: pxtorem(18px);
   }
 }
 hr {
