@@ -1,14 +1,13 @@
 .highlight {
-  border: 1px solid darken(#f7f7f7, 5%);
+  border: 1px solid #ddd;
   background: #f7f7f7;
   margin-bottom: pxtorem($lh);
-
+  padding:  pxtorem($lh/2 - 1px) pxtorem($lh - 1px) ;
 
   pre, code {
     font-family: 'Source Code Pro', monospace;
     font-size: pxtorem(14px);
     overflow-x: auto;
-    padding:  pxtorem($lh/2 - 1px);
   }
 
   .c     { color: #998; /* font-style: italic */ } // Comment
