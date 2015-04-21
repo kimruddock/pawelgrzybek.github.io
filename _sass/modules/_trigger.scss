@@ -1,0 +1,43 @@
+.trigger {
+  display: block;
+  width: $lh;
+  height: $lh;
+  float: right;
+  position: relative;
+  @include transition(transform);
+  &:hover {
+    .trigger__1, .trigger__2, .trigger__3 {
+      background: $color1;
+    }
+  }
+  &.trigger--active {
+    transform: rotate(-90deg);
+    .trigger__1 {
+      background: $color1;
+      transform: translateY(0px) rotate(45deg);
+    }
+    .trigger__2 {
+      opacity: 0;
+    }
+    .trigger__3 {
+      background: $color1;
+      transform: translateY(0px) rotate(-45deg);
+    }
+  }
+}
+.trigger__1, .trigger__2, .trigger__3 {
+  display: block;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  background: #000;
+  @include transition;
+}
+.trigger__1 {
+  transform: translateY(-5px);
+}
+.trigger__3 {
+  transform: translateY(5px);
+}

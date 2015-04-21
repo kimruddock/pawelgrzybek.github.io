@@ -1,13 +1,13 @@
 var jt = jt || {};
 jt.nav = (function() {
   function mobileMenu() {
-    document.querySelector('.header__trigger').addEventListener('click', function(e) {
+    document.querySelector('.trigger').addEventListener('click', function(e) {
       e.preventDefault();
       [].map.call(document.querySelectorAll('.about'), function(el) {
         el.classList.toggle('about--active');
       });
-      [].map.call(document.querySelectorAll('.header__trigger'), function(el) {
-        el.classList.toggle('header__trigger--active');
+      [].map.call(document.querySelectorAll('.trigger'), function(el) {
+        el.classList.toggle('trigger--active');
       });
     });
   }
