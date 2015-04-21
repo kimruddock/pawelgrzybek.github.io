@@ -154,6 +154,15 @@
 //   }
 // }
 
+@keyframes about {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 // shake, tada, fadeIn, fadeInDown, fadeInLeft, fadeInRight, fadeInUp, flipInX, flipInY, zoomIn
 @mixin animate($effect: fadeIn, $duration: 500ms, $delay: 0ms) {
   animation-fill-mode: both;

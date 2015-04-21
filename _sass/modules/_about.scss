@@ -1,7 +1,12 @@
 .about {
-  display: none;
-  margin-bottom: $lh*2;
+  // display: none;
+  // margin-bottom: $lh*2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
 }
 .about--active {
-  display: block;
+  // display: block;
+  max-height: $lh*10;
+  @include animate(about, 600ms, 300ms);
 }
