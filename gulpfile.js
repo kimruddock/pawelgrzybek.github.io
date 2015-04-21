@@ -40,7 +40,9 @@ gulp.task('sass', function () {
       includePaths: ['scss'],
       onError: browserSync.notify
     }))
-    .pipe(autoprefixer())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions']
+    }))
     .pipe(gulp.dest('_includes'));
 });
 
@@ -55,7 +57,7 @@ gulp.task('uglify', function () {
 
 // Watch sass and all html posts
 gulp.task('watch', function () {
-  gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild']);
+  gulp.watch('_sass/**/*.scss', ['sass', 'jekyll-rebuild']);
   gulp.watch('_js/*.js', ['uglify', 'jekyll-rebuild']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
