@@ -18,7 +18,7 @@
   <meta property="og:image" content="{% if page.photo %}{{ site.url }}/photos/{{ page.photo }}{% else %}{{ "/assets/logo.png" | prepend: site.url }}{% endif %}">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@pawelgrzybek" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}" />
