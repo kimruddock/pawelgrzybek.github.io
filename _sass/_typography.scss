@@ -25,37 +25,37 @@ a {
 p {
   @extend %mb;
 }
-h1, .h1 {
+h1 {
   font-size: pxtorem($h1);
   font-weight: 500;
   @extend %mb;
   color: darken($colorText, 30%);
 }
-h2, .h2 {
+h2 {
   font-size: pxtorem($h2);
   font-weight: 500;
   @extend %mb;
   color: darken($colorText, 30%);
 }
-h3, .h3 {
+h3 {
   font-size: pxtorem($h3);
   font-weight: 500;
   @extend %mb;
   color: darken($colorText, 30%);
 }
-h4, .h4 {
+h4 {
   font-size: pxtorem($h4);
   font-weight: 500;
   @extend %mb;
   color: darken($colorText, 30%);
 }
-h5, .h5 {
+h5 {
   font-size: pxtorem($h5);
   font-weight: normal;
   @extend %mb;
   color: darken($colorText, 30%);
 }
-h6, .h6 {
+h6 {
   font-size: pxtorem($h6);
   font-weight: normal;
   @extend %mb;
