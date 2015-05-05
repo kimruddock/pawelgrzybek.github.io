@@ -6,13 +6,18 @@
     float: left;
   }
 }
+.social--post {
+  margin: $lh*2 0 $lh 0;
+}
   .social__item {
     display: block;
     height: $lh*1.5;
     border: 1px solid #ddd;
-    color: #ccc;
+    color: #bbb;
+    font-size: 14px;
     line-height: $lh*1.5 - 2px;
     margin: $lh/2 $lh/2 0 0;
+    padding-right: 11px;
     @include transition;
     &:hover {
       border: 1px solid $color1;
@@ -23,15 +28,14 @@
     }
   }
     .social__text {
-      font-size: pxtorem(14px);
-      padding-right: 11px;
+      margin-left: 12px;
     }
     .social__icon {
       display: inline-block;
-      width: $lh*1.5 - 2px;
-      height: $lh*1.5 - 2px;
+      width: 18px;
+      height: 18px;
       fill: #ccc;
       vertical-align: middle;
-      padding: 11px;
+      margin: 11px 0 11px 11px;
       @include transition(fill);
     }
