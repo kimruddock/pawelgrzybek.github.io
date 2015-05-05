@@ -14,10 +14,8 @@ $h6: 14px;
 $verticalRythm: false;
 
 // Grid
-$gridColumns: 1;
-$gridColumnWidth: 700px;
-$gridGutter: $lh;
-$gridMaxWidth: auto;
+$wrapper: 728px;
+$gutter: $lh;
 
 // Breakpoints
 $bpTablet: 480px;
