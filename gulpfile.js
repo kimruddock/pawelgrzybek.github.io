@@ -2,6 +2,7 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
+  parker = require('gulp-parker'),
   uglify = require('gulp-uglify'),
   messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -62,6 +63,12 @@ gulp.task('watch', function () {
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
+
+// CSS Analysis
+gulp.task('parker', function() {
+  return gulp.src('_includes/main.css')
+    .pipe(parker());
+});
 
 // default task
 gulp.task('default', ['browser-sync', 'watch']);
