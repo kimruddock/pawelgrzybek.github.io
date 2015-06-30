@@ -1,10 +1,12 @@
 ---
-title: Top picks - 2015 April
+title: Top picks — 2015 April
 excerpt: Staying up to date in web industry is a difficult and time consuming task. I would like to share with you my top finds from the past month.
 photo: top-picks.jpg
 ---
 
 Internet is full of interesting, useful or funny things. I would like to share with you my top picks from this month.
+
+- - -
 
 ## What is the WebP Image Format (And Why Does It Matter)?
 
