@@ -2,3 +2,5 @@ _site
 .sass-cache
 .DS_Store
 node_modules
+studiorgb.github.io.sublime-project
+studiorgb.github.io.sublime-workspace
