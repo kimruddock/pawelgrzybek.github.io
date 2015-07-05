@@ -158,17 +158,18 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 // shake, tada, fadeIn, fadeInDown, fadeInLeft, fadeInRight, fadeInUp, flipInX, flipInY, zoomIn
-@mixin animate($effect: fadeIn, $duration: 500ms, $delay: 0ms) {
+@mixin animate($effect: fadeIn, $duration: 500ms, $delay: 0) {
   animation-fill-mode: both;
-	animation-name: $effect;
-	animation-duration: $duration;
-	animation-delay: $delay;
+  animation-name: $effect;
+  animation-duration: $duration;
+  animation-delay: $delay;
 }
 
 // how to use:

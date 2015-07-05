@@ -1,8 +1,9 @@
 .about {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s;
+  transition: max-height .3s;
 }
+
 .about--active {
   max-height: $lh*10;
   @include animate(about, 600ms, 300ms);

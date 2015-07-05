@@ -1,14 +1,17 @@
 .social {
   @include clearfix;
   list-style: none;
-  margin: 0 0 $lh*2 0;
+  margin: 0 0 ($lh * 2);
+
   li {
     float: left;
   }
 }
-.social--post {
-  margin: $lh*2 0 $lh 0;
-}
+
+  .social--post {
+    margin: ($lh * 2) 0 $lh;
+  }
+
   .social__item {
     display: block;
     height: $lh*1.5;
@@ -22,14 +25,17 @@
     &:hover {
       border: 1px solid $color1;
       color: $color1;
+
       .social__icon {
         fill: $color1;
       }
     }
   }
+
     .social__text {
       margin-left: 12px;
     }
+
     .social__icon {
       display: inline-block;
       width: 18px;

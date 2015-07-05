@@ -1,15 +1,18 @@
 .header {
   border-bottom: 1px solid #ddd;
   margin-bottom: $lh*2;
-  padding: $lh 0 ($lh - 1px) 0;
+  padding: $lh 0 ($lh - 1);
 }
+
 .header__title {
   float: left;
   font-size: pxtorem(24px);
   font-weight: 500;
   margin-bottom: 0;
+
   a {
-    color: darken($colorText, 30%);
+    color: darken($color-text, 30%);
+
     &:hover {
       color: $color1;
     }

@@ -2,9 +2,10 @@
   border: 1px solid #ddd;
   background: #f7f7f7;
   margin-bottom: pxtorem($lh);
-  padding:  pxtorem($lh/2 - 1px) pxtorem($lh*0.75 - 1px) ;
+  padding: pxtorem($lh/2 - 1) pxtorem(($lh * .75) - 1);
 
-  pre, code {
+  pre,
+  code {
     font-family: 'Source Code Pro', monospace;
     font-size: pxtorem(14px);
     overflow-x: auto;

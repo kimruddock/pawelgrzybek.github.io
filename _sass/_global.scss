@@ -1,13 +1,17 @@
 ::selection {
   background: $color1;
-  color: white;
+  color: $color-bg;
   text-shadow: none;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 html {
   height: 100%;
   font-size: 100%;
@@ -15,19 +19,21 @@ html {
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
+
 body {
   height: 100%;
   font-family: $ff;
   font-size: pxtorem($fz);
   font-weight: 300;
   line-height: pxtorem($lh);
-  color: $colorText;
-  background: $colorBg;
-  @if $verticalRythm == true {
-    background-image: linear-gradient(rgba(50,50,50,.15) 1px, transparent 1px);
+  color: $color-text;
+  background: $color-bg;
+  @if $vertical-rythm == true {
+    background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
     background-size: 100% pxtorem($lh);
   }
 }
+
 img {
   display: block;
   vertical-align: middle;
@@ -36,6 +42,7 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+
 img[src$=".svg"] {
   max-width: auto;
   width: 100%;
