@@ -2,11 +2,11 @@
 // }
 
 .article__title {
-  font-size: pxtorem(24px);
+  font-size: $h1;
   margin-bottom: pxtorem($lh/2);
 
   a {
-    color: darken($color-text, 30%);
+    color: darken($color-text, 10%);
 
     &:hover {
       color: $color1;

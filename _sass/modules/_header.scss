@@ -6,12 +6,12 @@
 
 .header__title {
   float: left;
-  font-size: pxtorem(24px);
-  font-weight: 500;
+  font-size: pxtorem($h2);
+  font-weight: 700;
   margin-bottom: 0;
 
   a {
-    color: darken($color-text, 30%);
+    color: darken($color-text, 10%);
 
     &:hover {
       color: $color1;

@@ -5,6 +5,6 @@
 }
 
 .about--active {
-  max-height: $lh*10;
+  max-height: $lh*12;
   @include animate(about, 600ms, 300ms);
 }

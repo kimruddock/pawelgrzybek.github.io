@@ -18,7 +18,7 @@ a {
   &:hover,
   &:focus,
   &:active {
-    color: darken($color-text, 30%);
+    color: darken($color-text, 10%);
     outline: 0;
     text-decoration: none;
   }
@@ -30,44 +30,44 @@ p {
 
 h1 {
   font-size: pxtorem($h1);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: $lh;
-  color: darken($color-text, 30%);
+  color: darken($color-text, 10%);
 }
 
 h2 {
   font-size: pxtorem($h2);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: $lh;
-  color: darken($color-text, 30%);
+  color: darken($color-text, 10%);
 }
 
 h3 {
   font-size: pxtorem($h3);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: $lh;
-  color: darken($color-text, 30%);
+  color: darken($color-text, 10%);
 }
 
 h4 {
   font-size: pxtorem($h4);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: $lh;
-  color: darken($color-text, 30%);
+  color: darken($color-text, 10%);
 }
 
 h5 {
   font-size: pxtorem($h5);
   font-weight: normal;
   margin-bottom: $lh;
-  color: darken($color-text, 30%);
+  color: darken($color-text, 10%);
 }
 
 h6 {
   font-size: pxtorem($h6);
   font-weight: normal;
   margin-bottom: $lh;
-  color: darken($color-text, 30%);
+  color: darken($color-text, 10%);
 }
 
 ul,
@@ -81,14 +81,14 @@ ol {
 }
 
 blockquote {
-  border-left: 4px solid $color-text;
+  border-left: 4px solid darken(#f7f7f7, 10%);
   background: #f7f7f7;
   margin-bottom: pxtorem($lh);
   padding: pxtorem($lh);
 
   p {
-    margin: 0;
     font-size: pxtorem(18px);
+    margin: 0;
   }
 }
 
