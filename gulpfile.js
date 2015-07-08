@@ -60,7 +60,7 @@ gulp.task('uglify', function () {
 gulp.task('watch', function () {
   gulp.watch('_sass/**/*.scss', ['sass', 'jekyll-rebuild']);
   gulp.watch('_js/*.js', ['uglify', 'jekyll-rebuild']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*'], ['jekyll-rebuild']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['jekyll-rebuild']);
 });
 
 
