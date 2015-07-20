@@ -9,11 +9,11 @@ i {
 }
 
 a {
+  @include transition(color);
   color: $color1;
   text-decoration: none;
   background: transparent;
   cursor: pointer;
-  @include transition(color);
 
   &:hover,
   &:focus,
@@ -76,7 +76,7 @@ ol {
 
   ul,
   ol {
-    margin: 0 pxtorem($lh);;
+    margin: 0 pxtorem($lh);
   }
 }
 
@@ -87,7 +87,7 @@ blockquote {
   padding: pxtorem($lh);
 
   p {
-    font-size: pxtorem(18px);
+    // font-size: pxtorem(18px);
     margin: 0;
   }
 }
