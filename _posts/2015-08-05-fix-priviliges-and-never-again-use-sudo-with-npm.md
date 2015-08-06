@@ -26,7 +26,6 @@ We don't need troubles. We need to change privileges on few folders on our machi
 sudo chown -R $(whoami) /usr/local/lib/node_modules
 sudo chown -R $(whoami) /usr/local/bin
 sudo chown -R $(whoami) /usr/local/share
-sudo chown -R $(whoami) ~/.npm
 ```
 
 These few lines of code are very straight forward. It changes the owner of listed directories from root to your user name. Flag -R stands for 'recursively' which means it changes ownership on particular directory and all directories and files inside it.
