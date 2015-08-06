@@ -17,7 +17,7 @@ facebook_username:  grzybecki
 instagram_username:  pawelgrzybek
 linkedin_username:  pgrzybek
 
-exclude: ["node_modules", "gulpfile.js", "package.json"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "studiorgb.github.io.sublime-project", "studiorgb.github.io.sublime-workspace"]
 
 markdown: redcarpet
 highlighter: pygments
@@ -42,3 +42,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+
+# Pagination
+paginate: 10
+paginate_path: /page:num

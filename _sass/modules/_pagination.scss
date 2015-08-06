@@ -1,0 +1,30 @@
+.pagination {
+  line-height: $lh*1.5;
+  text-align: center;
+}
+
+  .pagination__button {
+    @include transition;
+    height: $lh*1.5;
+    border: 1px solid #ddd;
+    color: #bbb;
+    padding: 0 $lh;
+
+    &:hover {
+      border: 1px solid $color1;
+      color: $color1;
+    }
+
+    &--prev {
+      float: left;
+    }
+
+    &--next {
+      float: right;
+    }
+  }
+
+  .pagination__current {
+    display: inline;
+    color: #bbb;
+  }

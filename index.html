@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main class="main">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
 
     <!-- article -->
     <article class="article">
@@ -18,3 +18,15 @@ layout: default
   {% endfor %}
 
 </main>
+
+<!-- pagination -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="pagination__button pagination__button--prev">Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="pagination__button pagination__button--next">Next</a>
+  {% endif %}
+  <div class="pagination__current">Page: {{ paginator.page }} of {{ paginator.total_pages }}</div>
+</div>
+<!-- / pagination -->
