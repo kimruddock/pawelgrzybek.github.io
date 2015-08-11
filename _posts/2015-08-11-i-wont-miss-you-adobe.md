@@ -1,6 +1,6 @@
 ---
 title: I won't miss you Adobe
-excerpt: For years Adobe products were the obvious choice for web designers. Not because it's incredibly good but there was no choice. Finally things changed.
+excerpt: For years Adobe products were the obvious choice for web designers. Not because of it's incredibly good but there was no choice. Finally things changed.
 photo: 2015-08-11.jpg
 ---
 
