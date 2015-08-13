@@ -1,3 +1,26 @@
+@mixin mq($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+// how to use:
+// body {
+//   font-size: 16px;
+//   @include mq(large) {
+//     font-size: 18px;
+//   }
+// }
+
+
 @mixin transition($property: all) {
   transition: $property 150ms ease-out;
 }

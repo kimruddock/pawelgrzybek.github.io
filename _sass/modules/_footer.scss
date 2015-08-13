@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid #ddd;
+  box-shadow: inset 0 1px 0 $color-border;
   margin-top: $lh*2;
-  padding: ($lh - 1) 0 $lh;
+  padding: $lh 0;
 }

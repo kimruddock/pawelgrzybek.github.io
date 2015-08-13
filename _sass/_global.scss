@@ -1,39 +1,42 @@
 ::selection {
   background: $color1;
-  color: $color-bg;
+  color: #fff;
   text-shadow: none;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: $fz-mobile;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  // https://bocoup.com/weblog/text-rendering/
+  text-rendering: optimizeLegibility;
+
+  @include mq(large) {
+    font-size: $fz-desktop;
+  }
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
 
-html {
-  height: 100%;
-  font-size: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-}
-
 body {
   height: 100%;
-  font-family: $ff;
-  font-size: pxtorem($fz);
-  font-weight: 300;
-  line-height: pxtorem($lh);
   color: $color-text;
-  background: $color-bg;
+  font-family: $ff;
+  font-size: 1rem;
+  line-height: $lh;
   @if $vertical-rythm == true {
     background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-    background-size: 100% pxtorem($lh);
+    background-size: 100% $lh;
   }
 }
 
@@ -44,9 +47,4 @@ img {
   height: auto;
   border: 0;
   -ms-interpolation-mode: bicubic;
-}
-
-img[src$=".svg"] {
-  max-width: auto;
-  width: 100%;
 }

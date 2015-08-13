@@ -2,40 +2,33 @@
 layout: default
 ---
 
-<main class="main">
-  <h1 class="article__title">{{ page.title }}</h1>
+<!-- article -->
+<article class="article">
+  <h1 class="article__title article__title--single">{{ page.title }}</h1>
   <p class="article__date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   {{ content }}
-</main>
-
+</article>
+<!-- / article -->
 
 <!-- social -->
-<ul class="social social--post">
-  <li>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="social__item" target="_blank">
-      <svg class="social__icon">
-        <use xlink:href="/assets/icons.svg#facebook" />
-      </svg>
-      <span class="social__text">
-        Share on Facebook
-      </span>
-    </a>
-  </li>
-  <li>
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}" class="social__item" target="_blank">
-      <svg class="social__icon">
-        <use xlink:href="/assets/icons.svg#twitter" />
-      </svg>
-      <span class="social__text">
-        Share on Twitter
-      </span>
-    </a>
-  </li>
-</ul>
+<div class="social social--single">
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="social__icon" target="_blank">
+    <svg>
+      <use xlink:href="/assets/icons.svg#facebook"></use>
+    </svg>
+    <span>Share</span>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}" class="social__icon" target="_blank">
+    <svg>
+      <use xlink:href="/assets/icons.svg#twitter"></use>
+    </svg>
+    <span>Tweet</span>
+  </a>
+</div>
 <!-- / social -->
 
 
- <div id="disqus_thread"></div>
+<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'studiorgb'; // required: replace example with your forum shortname

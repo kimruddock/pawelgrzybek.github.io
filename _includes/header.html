@@ -1,77 +1,57 @@
 <!-- header -->
 <header class="header">
-  <div class="row">
-    <div class="col">
-      {% if page.title %}
-        <div class="header__title">
-          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
-      {% else %}
-        <h1 class="header__title">
-          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </h1>
-      {% endif %}
-
-      <!-- trigger -->
-      <div class="trigger">
-        <div class="trigger__1"></div>
-        <div class="trigger__2"></div>
-        <div class="trigger__3"></div>
+  <div class="col">
+    {% if page.title %}
+      <div class="header__logo">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
       </div>
-      <!-- / trigger -->
-
+    {% else %}
+      <h1 class="header__logo">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </h1>
+    {% endif %}
+    <div class="header__more">
+      +
     </div>
   </div>
 </header>
 <!-- / header -->
 
-<!-- about -->
-<aside class="about">
-  <div class="row">
-    <div class="col">
-      <p>{{ site.description }}</p>
+<!-- col -->
+<main class="col">
 
-      <!-- social -->
-      <ul class="social">
-        <li>
-          <a href="http://facebook.com/{{ site.facebook_username }}" class="social__item" target="_blank">
-            <svg class="social__icon">
-              <use xlink:href="/assets/icons.svg#facebook" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="http://twitter.com/{{ site.twitter_username }}" class="social__item" target="_blank">
-            <svg class="social__icon">
-              <use xlink:href="/assets/icons.svg#twitter" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="http://github.com/{{ site.github_username }}" class="social__item" target="_blank">
-            <svg class="social__icon">
-              <use xlink:href="/assets/icons.svg#github" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="http://linkedin.com/in/{{ site.linkedin_username }}" class="social__item" target="_blank">
-            <svg class="social__icon">
-              <use xlink:href="/assets/icons.svg#linkedin" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="http://instagram.com/{{ site.instagram_username }}" class="social__item" target="_blank">
-            <svg class="social__icon">
-              <use xlink:href="/assets/icons.svg#instagram" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <!-- / social -->
-
+  <!-- about -->
+  <div class="about">
+    <p>{{ site.description }}</p>
+    <!-- social -->
+    <div class="social">
+      <a href="http://facebook.com/{{ site.facebook_username }}" class="social__icon" target="_blank">
+        <svg>
+          <use xlink:href="/assets/icons.svg#facebook"></use>
+        </svg>
+        <!-- <span>Facebook</span> -->
+      </a>
+      <a href="http://twitter.com/{{ site.twitter_username }}" class="social__icon" target="_blank">
+        <svg>
+          <use xlink:href="/assets/icons.svg#twitter"></use>
+        </svg>
+      </a>
+      <a href="http://github.com/{{ site.github_username }}" class="social__icon" target="_blank">
+        <svg>
+          <use xlink:href="/assets/icons.svg#github"></use>
+        </svg>
+      </a>
+      <a href="http://linkedin.com/in/{{ site.linkedin_username }}" class="social__icon" target="_blank">
+        <svg>
+          <use xlink:href="/assets/icons.svg#linkedin"></use>
+        </svg>
+      </a>
+      <a href="http://instagram.com/{{ site.instagram_username }}" class="social__icon" target="_blank">
+        <svg>
+          <use xlink:href="/assets/icons.svg#instagram"></use>
+        </svg>
+      </a>
     </div>
+    <!-- / social -->
   </div>
-</aside>
-<!-- / about -->
+  <!-- / about -->

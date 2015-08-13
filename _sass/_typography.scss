@@ -9,7 +9,6 @@ i {
 }
 
 a {
-  @include transition(color);
   color: $color1;
   text-decoration: none;
   background: transparent;
@@ -18,61 +17,60 @@ a {
   &:hover,
   &:focus,
   &:active {
-    color: darken($color-text, 10%);
     outline: 0;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: $lh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  // color: ;
+  vertical-align: middle;
 }
 
 h1 {
-  font-size: pxtorem($h1);
-  font-weight: 700;
-  margin-bottom: $lh;
-  color: darken($color-text, 10%);
+  font-size: $h1;
+  line-height: $lh*1.5;
 }
 
 h2 {
-  font-size: pxtorem($h2);
-  font-weight: 700;
-  margin-bottom: $lh;
-  color: darken($color-text, 10%);
+  font-size: $h2;
 }
 
 h3 {
-  font-size: pxtorem($h3);
-  font-weight: 700;
-  margin-bottom: $lh;
-  color: darken($color-text, 10%);
+  font-size: $h3;
 }
 
 h4 {
-  font-size: pxtorem($h4);
-  font-weight: 700;
-  margin-bottom: $lh;
-  color: darken($color-text, 10%);
+  font-size: $h4;
 }
 
 h5 {
-  font-size: pxtorem($h5);
-  font-weight: normal;
-  margin-bottom: $lh;
-  color: darken($color-text, 10%);
+  font-size: $h5;
 }
 
 h6 {
-  font-size: pxtorem($h6);
-  font-weight: normal;
-  margin-bottom: $lh;
-  color: darken($color-text, 10%);
+  font-size: $h6;
 }
 
 ul,
 ol {
-  margin: 0 0 pxtorem($lh) pxtorem($lh);
+  margin: 0 0 $lh $lh;
 
   ul,
   ol {
@@ -80,23 +78,20 @@ ol {
   }
 }
 
+hr {
+  display: block;
+  height: $lh;
+  border: 0;
+  box-shadow: inset 0 1px 0 $color-border;
+}
+
 blockquote {
   border-left: 4px solid #e6e6e6;
   background: #f7f7f7;
-  margin-bottom: pxtorem($lh);
-  padding: pxtorem($lh);
+  margin-bottom: $lh;
+  padding: $lh;
 
   p {
-    // font-size: pxtorem(18px);
     margin: 0;
   }
-}
-
-hr {
-  display: block;
-  height: 1px;
-  margin-bottom: pxtorem($lh - 1px);
-  border: 0;
-  outline: none;
-  border-top: 1px solid #ddd;
 }

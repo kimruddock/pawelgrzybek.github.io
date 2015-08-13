@@ -1,23 +1,28 @@
 // Base typography settings
-$fz: 20px;
-$lh: 32px;
+
+// desirable line-height / font-size multiplier / default font-size
+$fz-mobile: percentage(28/1.6/16); // 17.5px
+$fz-desktop: percentage(32/1.6/16); // 20px
+
+$lh: 1.6rem;
 $ff: 'Source Sans Pro', sans-serif;
 
-$h1: 30px;
-$h2: 24px;
-$h3: 20px;
-$h4: 18px;
-$h5: 16px;
-$h6: 14px;
+$h1: 2rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1rem;
+$h5: .875rem;
+$h6: .75rem;
 
 // Show vertical rythm
 $vertical-rythm: false;
 
-// Grid
-$wrapper: 732px;
-$gutter: $lh;
+// Breakpoints
+$breakpoints: (
+  'large': (min-width: 1024px)
+);
 
 // Colors
-$color-text: #444;
-$color-bg: #fff;
+$color-text: #333;
+$color-border: #ddd;
 $color1: #e46764;

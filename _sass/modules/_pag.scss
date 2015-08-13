@@ -1,0 +1,35 @@
+.pag {
+  text-align: center;
+  padding-top: $lh/2;
+}
+
+  .pag__btn {
+    height: $lh*1.5;
+    color: shade($color-border, 20%);
+    box-shadow: inset 0 0 0 1px $color-border;
+    line-height: $lh*1.5;
+    padding: 0 $lh;
+
+
+    &--prev {
+      float: left;
+    }
+
+    &--next {
+      float: right;
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 0 1px $color1;
+      color: $color1;
+      text-decoration: none;
+    }
+  }
+
+  .pag__now {
+    display: inline;
+    color: shade($color-border, 20%);
+    font-size: $h5;
+    line-height: $lh*1.5;
+    vertical-align: top;
+  }

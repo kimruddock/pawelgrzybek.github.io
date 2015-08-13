@@ -1,18 +1,7 @@
-var jt = jt || {};
-jt.nav = (function() {
-  function mobileMenu() {
-    document.querySelector('.trigger').addEventListener('click', function(e) {
-      e.preventDefault();
-      [].map.call(document.querySelectorAll('.about'), function(el) {
-        el.classList.toggle('about--active');
-      });
-      [].map.call(document.querySelectorAll('.trigger'), function(el) {
-        el.classList.toggle('trigger--active');
-      });
-    });
-  }
-  return {
-      mobileMenu: mobileMenu
-  };
-})();
-jt.nav.mobileMenu();
+var more = document.querySelector('.header__more');
+var about = document.querySelector('.about');
+
+more.addEventListener('click', function() {
+  about.classList.toggle('about--active');
+  more.classList.toggle('header__more--active');
+}, false);

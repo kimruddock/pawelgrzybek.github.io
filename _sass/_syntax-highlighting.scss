@@ -1,17 +1,17 @@
 pre,
 code {
   font-family: 'Source Code Pro', monospace;
-  font-size: pxtorem(16px);
+  font-size: $h5;
   overflow-x: auto;
   vertical-align: top;
   background: #f7f7f7;
 }
 
 .highlight {
-  border: 1px solid #e6e6e6;
   background: #f7f7f7;
-  margin-bottom: pxtorem($lh);
-  padding: pxtorem($lh/2 - 1) pxtorem(($lh * .75) - 1);
+  margin-bottom: $lh;
+  padding: $lh/2 $lh*0.75;
+  box-shadow: inset 0 0 0 1px $color-border;
 
 
 
