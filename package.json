@@ -1,6 +1,6 @@
 {
   "name": "studiorgb.uk",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "description": "My Jekyll based website studiorgb.uk",
   "author": "Pawel Grzybek",
   "keywords": [
@@ -9,7 +9,8 @@
     "scss",
     "sass",
     "mobile-first",
-    "responsive"
+    "responsive",
+    "jekyll"
   ],
   "repository": {
     "type": "git",
