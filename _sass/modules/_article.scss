@@ -2,6 +2,10 @@
   box-shadow: inset 0 -1px 0 $color-border;
   margin-bottom: $lh;
   padding-bottom: $lh;
+
+  &--single {
+    box-shadow: none;
+  }
 }
 
   .article__title {
