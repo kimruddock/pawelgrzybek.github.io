@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var nano = require('gulp-cssnano');
 var parker = require('gulp-parker');
 var uglify = require('gulp-uglify');
 var messages = {
@@ -35,13 +36,13 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function() {
   gulp.src('_sass/main.scss')
     .pipe(sass({
-      outputStyle: 'compressed',
       includePaths: ['scss'],
       onError: browserSync.notify
     }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
     }))
+    .pipe(nano())
     .pipe(gulp.dest('_includes'));
 });
 
