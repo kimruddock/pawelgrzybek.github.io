@@ -1,7 +1,7 @@
 .article {
-  box-shadow: inset 0 -1px 0 $color-border;
   margin-bottom: $lh;
   padding-bottom: $lh;
+  box-shadow: inset 0 -1px 0 $color-border;
 
   &--single {
     box-shadow: none;
@@ -9,8 +9,8 @@
 }
 
   .article__title {
-    font-size: $h2;
     margin-bottom: $lh/2;
+    font-size: $h2;
 
     &--single {
       font-size: $h1;
@@ -27,6 +27,6 @@
   }
 
   .article__date {
-    font-size: $h6;
     margin-bottom: $lh/2;
+    font-size: $h6;
   }

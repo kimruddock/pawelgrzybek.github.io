@@ -1,16 +1,16 @@
 .header {
   @include clearfix;
-  box-shadow: inset 0 -1px 0 $color-border;
   margin-bottom: $lh*2;
   padding: $lh 0;
+  box-shadow: inset 0 -1px 0 $color-border;
 }
 
   .header__logo {
+    margin: 0;
     float: left;
     font-size: $h3;
     font-weight: 700;
     line-height: $lh;
-    margin: 0;
 
     a {
       color: $color-text;
@@ -30,8 +30,8 @@
     text-align: center;
 
     &--active {
-      color: $color1;
       transform: rotate(45deg) scale(1.28);
+      color: $color1;
     }
 
     &:hover {

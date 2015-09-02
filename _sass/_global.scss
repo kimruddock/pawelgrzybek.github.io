@@ -5,15 +5,15 @@
 }
 
 html {
-  box-sizing: border-box;
   height: 100%;
   font-size: $fz-mobile;
-  text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   // https://bocoup.com/weblog/text-rendering/
   text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
 
   @include mq(large) {
     font-size: $fz-desktop;
@@ -23,9 +23,9 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
@@ -42,9 +42,9 @@ body {
 
 img {
   display: block;
-  vertical-align: middle;
   max-width: 100%;
   height: auto;
   border: 0;
+  vertical-align: middle;
   -ms-interpolation-mode: bicubic;
 }

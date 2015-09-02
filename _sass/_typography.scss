@@ -7,9 +7,9 @@ em {
 }
 
 a {
+  background: transparent;
   color: $color1;
   text-decoration: none;
-  background: transparent;
   cursor: pointer;
 
   &:hover,
@@ -84,10 +84,10 @@ hr {
 }
 
 blockquote {
-  border-left: 4px solid #e6e6e6;
-  background: #f7f7f7;
   margin-bottom: $lh;
   padding: $lh;
+  border-left: 4px solid #e6e6e6;
+  background: #f7f7f7;
 
   p {
     margin: 0;
