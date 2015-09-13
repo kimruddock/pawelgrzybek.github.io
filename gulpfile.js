@@ -14,7 +14,7 @@ var messages = {
 // Build jekyll project
 gulp.task('jekyll-build', function(done) {
   browserSync.notify(messages.jekyllBuild);
-  require('child_process').spawn('jekyll', ['build', '--drafts'], {stdio: 'inherit'})
+  require('child_process').spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' })
     .on('close', done);
 });
 
