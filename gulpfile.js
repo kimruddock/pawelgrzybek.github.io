@@ -18,7 +18,7 @@ gulp.task('jekyll-build', function(done) {
 });
 
 // Rebuild and refresh jekyll project
-gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
+gulp.task('jekyll-reload', ['jekyll-build'], function() {
   browserSync.reload();
 });
 
@@ -54,9 +54,9 @@ gulp.task('uglify', function() {
 
 // Watch sass and all html posts
 gulp.task('watch', function() {
-  gulp.watch('_sass/**/*.scss', ['sass', 'jekyll-rebuild']);
-  gulp.watch('_js/*.js', ['uglify', 'jekyll-rebuild']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['jekyll-rebuild']);
+  gulp.watch('_sass/**/*.scss', ['sass', 'jekyll-reload']);
+  gulp.watch('_js/*.js', ['uglify', 'jekyll-reload']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['jekyll-reload']);
 });
 
 // default task
