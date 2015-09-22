@@ -10,6 +10,4 @@ It was a day like any other. Morning coffee and a little bit or reading, got rea
 
 This book is absolutely beautiful, well designed and most interestingly, created entirely in CSS! Gorgeous typography, tons of colourful images and cute kitties! Each of 47 secrets is well explained, easy to follow and understand. Sometimes very technical, sometimes reminds me a math class, but all way through it’s full of Lea’s sense of humour. This book will revive your passion to CSS, no doubt.
 
-![CSS Secrets by Lea Verou](/photos/2015-09-22-2.jpg)
-
 If you like CSS, buy it. If you don’t like CSS, buy it anyway and you will like CSS. Buy it even if you don’t know what CSS is and give it to someone who knows — best gift ever guaranteed! I’m looking forward to next Lea’s book.
