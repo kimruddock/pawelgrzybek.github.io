@@ -25,6 +25,14 @@ gulp.task('jekyll-reload', ['jekyll-build'], function() {
 // Start BrowserSync Server and serve _site directory
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
   browserSync({
+    ui: false,
+    ghostMode: {
+      clicks: true,
+      forms: false,
+      scroll: true
+    },
+    logPrefix: 'studiorgb.uk',
+    notify: false,
     server: {
       baseDir: '_site'
     }
