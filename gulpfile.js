@@ -5,7 +5,6 @@ var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var nano = require('gulp-cssnano');
-var parker = require('gulp-parker');
 var uglify = require('gulp-uglify');
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -58,12 +57,6 @@ gulp.task('watch', function() {
   gulp.watch('_sass/**/*.scss', ['sass', 'jekyll-rebuild']);
   gulp.watch('_js/*.js', ['uglify', 'jekyll-rebuild']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['jekyll-rebuild']);
-});
-
-// CSS Analysis
-gulp.task('parker', function() {
-  return gulp.src('_includes/main.css')
-    .pipe(parker());
 });
 
 // default task
