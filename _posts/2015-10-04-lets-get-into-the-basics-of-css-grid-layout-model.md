@@ -1,5 +1,5 @@
 ---
-title: Lets get into basics of CSS Grid Layout Model
+title: Lets get into the basics of CSS Grid Layout Model
 excerpt: The majority of websites are built based on some sort of grid and we use many techniques to achieve that. CSS Grid Layout Model is just around the corner!
 photo: 2015-10-04.jpg
 ---
