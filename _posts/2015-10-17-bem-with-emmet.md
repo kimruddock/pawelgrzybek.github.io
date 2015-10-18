@@ -44,8 +44,10 @@ Love it! Massive time saver! If you use Sublime Text you may need to apply your 
 
 {% highlight json %}
 {
-  "html": {
-    "filters": "html, bem",
+  "syntaxProfiles": {
+    "html" : {
+      "filters" : "html, bem"
+    }
   },
   "preferences": {
     "bem.elementSeparator":"__",
@@ -55,6 +57,4 @@ Love it! Massive time saver! If you use Sublime Text you may need to apply your 
 }
 {% endhighlight %}
 
-As you can see I applied the `html` and `bem` filter as the default one for all `.html` files. In theory it allows even more simplification of the process by omitting the filter in the abbreviation. In practice it this doesn’t work, so I’ve opened an [issue #403](https://github.com/emmetio/emmet/issues/403) on Github about this. Would be cool to see that issue fixed with the next Emmet update.
-
-Hopefully this article helped you to speed up your BEM workflow. Please share your thoughts, favourite Emmet features or methodologies that you use.
+As you can see I applied the `html` and `bem` filter as the default one for all `.html` files. It allows even more simplification of the process by omitting the filter in the abbreviation. Hopefully this article helped you to speed up your BEM workflow. Please share your thoughts, favourite Emmet features or methodologies that you use.
