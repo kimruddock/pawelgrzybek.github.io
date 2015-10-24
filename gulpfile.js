@@ -41,7 +41,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 // Compile sass, minify css, autoprefix
 gulp.task('sass', function() {
-  gulp.src('_sass/main.scss')
+  gulp.src('src/sass/main.scss')
     .pipe(sass({
       includePaths: ['scss'],
       onError: browserSync.notify
@@ -62,8 +62,8 @@ gulp.task('uglify', function() {
 
 // Watch sass and all html posts
 gulp.task('watch', function() {
-  gulp.watch('_sass/**/*.scss', ['sass', 'jekyll-reload']);
-  gulp.watch('_js/*.js', ['uglify', 'jekyll-reload']);
+  gulp.watch('src/sass/**/*.scss', ['sass', 'jekyll-reload']);
+  gulp.watch('src/js/*.js', ['uglify', 'jekyll-reload']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['jekyll-reload']);
 });
 
