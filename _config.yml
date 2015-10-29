@@ -43,6 +43,8 @@ defaults:
     values:
       layout: "page"
 
+gems: [jekyll-paginate]
+
 # Pagination
 paginate: 10
 paginate_path: /page:num
