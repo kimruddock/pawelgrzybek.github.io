@@ -1,7 +1,7 @@
 # Site configuration
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://studiorgb.uk" # the base hostname & protocol for your site
-permalink: :title
+permalink: /:title/
 
 # Theme specific configuration
 title: studiorgb.uk
@@ -12,10 +12,10 @@ description: >
 # Contact and social media links
 email: mail@studiorgb.uk
 twitter_username: pawelgrzybek
-github_username:  studiorgb
-facebook_username:  grzybecki
-instagram_username:  pawelgrzybek
-linkedin_username:  pgrzybek
+github_username: studiorgb
+facebook_username: grzybecki
+instagram_username: pawelgrzybek
+linkedin_username: pgrzybek
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "studiorgb.github.io.sublime-project", "studiorgb.github.io.sublime-workspace"]
 
