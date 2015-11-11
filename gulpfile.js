@@ -11,19 +11,19 @@ var messages = {
 };
 
 // Build jekyll project
-gulp.task('jekyll-build', function(done) {
+gulp.task('jekyll', function(done) {
   browserSync.notify(messages.jekyllBuild);
   require('child_process').spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' })
     .on('close', done);
 });
 
 // Rebuild and refresh jekyll project
-gulp.task('jekyll-reload', ['jekyll-build'], function() {
+gulp.task('jekyll-reload', ['jekyll'], function() {
   browserSync.reload();
 });
 
 // Start BrowserSync Server and serve _site directory
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'jekyll'], function() {
   browserSync({
     ui: false,
     ghostMode: {
