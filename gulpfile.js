@@ -22,7 +22,7 @@ gulp.task('reload', ['jekyll'], function() {
 
 
 // Start BrowserSync server and serve _site directory
-gulp.task('browser-sync', ['sass', 'jekyll'], function() {
+gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], function() {
   bs({
     ui: false,
     ghostMode: {
@@ -40,7 +40,7 @@ gulp.task('browser-sync', ['sass', 'jekyll'], function() {
 
 
 // Compile sass, minify css, autoprefix
-gulp.task('sass', function() {
+gulp.task('styles', function() {
   gulp.src('_src/sass/main.scss')
     .pipe(sass({
       includePaths: ['scss'],
@@ -55,7 +55,7 @@ gulp.task('sass', function() {
 
 
 // Minify js files
-gulp.task('uglify', function() {
+gulp.task('scripts', function() {
   gulp.src('_js/scripts.js')
     .pipe(uglify())
     .pipe(gulp.dest('_includes'));
@@ -64,8 +64,8 @@ gulp.task('uglify', function() {
 
 // Watch sass and all html posts
 gulp.task('watch', function() {
-  gulp.watch('_src/sass/**/*.scss', ['sass', 'reload']);
-  gulp.watch('_src/js/*.js', ['uglify', 'reload']);
+  gulp.watch('_src/sass/**/*.scss', ['styles', 'reload']);
+  gulp.watch('_src/js/*.js', ['scripts', 'reload']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['reload']);
 });
 
