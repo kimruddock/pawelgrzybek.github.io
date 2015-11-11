@@ -8,18 +8,21 @@ var autoprefixer = require('gulp-autoprefixer');
 var nano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 
+
 // Build jekyll project
 gulp.task('jekyll', function(done) {
   bs.notify('Compiling Jekyll');
   cp.spawn('jekyll', ['build', '--drafts', '--quiet'], { stdio: 'inherit' }).on('close', done);
 });
 
-// Rebuild and refresh jekyll project
+
+// Rebuild and refresh project
 gulp.task('reload', ['jekyll'], function() {
   bs.reload();
 });
 
-// Start bs Server and serve _site directory
+
+// Start BrowserSync server and serve _site directory
 gulp.task('browser-sync', ['sass', 'jekyll'], function() {
   bs({
     ui: false,
@@ -28,13 +31,14 @@ gulp.task('browser-sync', ['sass', 'jekyll'], function() {
       forms: false,
       scroll: true
     },
-    logPrefix: 'studiorgb.uk',
+    logPrefix: 'pawelgrzybek.com',
     notify: false,
     server: {
       baseDir: '_site'
     }
   });
 });
+
 
 // Compile sass, minify css, autoprefix
 gulp.task('sass', function() {
@@ -50,6 +54,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('_includes'));
 });
 
+
 // Minify js files
 gulp.task('uglify', function() {
   gulp.src('_js/scripts.js')
@@ -57,12 +62,14 @@ gulp.task('uglify', function() {
     .pipe(gulp.dest('_includes'));
 });
 
+
 // Watch sass and all html posts
 gulp.task('watch', function() {
   gulp.watch('_src/sass/**/*.scss', ['sass', 'reload']);
   gulp.watch('_src/js/*.js', ['uglify', 'reload']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['reload']);
 });
+
 
 // default task
 gulp.task('default', ['browser-sync', 'watch']);
