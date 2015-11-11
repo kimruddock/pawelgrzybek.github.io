@@ -2,19 +2,16 @@
 
 var gulp = require('gulp');
 var bs = require('browser-sync');
+var cp = require('child_process');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var nano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
-var messages = {
-  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
 
 // Build jekyll project
 gulp.task('jekyll', function(done) {
-  bs.notify(messages.jekyllBuild);
-  require('child_process').spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' })
-    .on('close', done);
+  bs.notify('Compiling Jekyll');
+  cp.spawn('jekyll', ['build', '--drafts', '--quiet'], { stdio: 'inherit' }).on('close', done);
 });
 
 // Rebuild and refresh jekyll project
