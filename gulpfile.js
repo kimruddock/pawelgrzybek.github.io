@@ -8,18 +8,15 @@ var autoprefixer = require('gulp-autoprefixer');
 var nano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 
-
 // Build jekyll project
 gulp.task('jekyll', function(done) {
   cp.spawn('jekyll', ['build', '--drafts', '--quiet'], { stdio: 'inherit' }).on('close', done);
 });
 
-
 // Rebuild and refresh project
 gulp.task('reload', ['jekyll'], function() {
   bs.reload();
 });
-
 
 // Start BrowserSync server and serve _site directory
 gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], function() {
@@ -38,7 +35,6 @@ gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], function() {
   });
 });
 
-
 // Compile sass, minify css, autoprefix
 gulp.task('styles', function() {
   gulp.src('_src/sass/main.scss')
@@ -53,7 +49,6 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('_includes'));
 });
 
-
 // Minify js files
 gulp.task('scripts', function() {
   gulp.src('_js/scripts.js')
@@ -61,14 +56,12 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('_includes'));
 });
 
-
 // Watch sass and all html posts
 gulp.task('watch', function() {
   gulp.watch('_src/sass/**/*.scss', ['styles', 'reload']);
   gulp.watch('_src/js/*.js', ['scripts', 'reload']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['reload']);
 });
-
 
 // default task
 gulp.task('default', ['browser-sync', 'watch']);
