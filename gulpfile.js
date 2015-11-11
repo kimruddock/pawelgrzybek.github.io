@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var browserSync = require('browser-sync');
+var bs = require('browser-sync');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var nano = require('gulp-cssnano');
@@ -12,19 +12,19 @@ var messages = {
 
 // Build jekyll project
 gulp.task('jekyll', function(done) {
-  browserSync.notify(messages.jekyllBuild);
+  bs.notify(messages.jekyllBuild);
   require('child_process').spawn('jekyll', ['build', '--drafts'], { stdio: 'inherit' })
     .on('close', done);
 });
 
 // Rebuild and refresh jekyll project
 gulp.task('jekyll-reload', ['jekyll'], function() {
-  browserSync.reload();
+  bs.reload();
 });
 
-// Start BrowserSync Server and serve _site directory
+// Start bs Server and serve _site directory
 gulp.task('browser-sync', ['sass', 'jekyll'], function() {
-  browserSync({
+  bs({
     ui: false,
     ghostMode: {
       clicks: true,
@@ -44,7 +44,7 @@ gulp.task('sass', function() {
   gulp.src('_src/sass/main.scss')
     .pipe(sass({
       includePaths: ['scss'],
-      onError: browserSync.notify
+      onError: bs.notify
     }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
