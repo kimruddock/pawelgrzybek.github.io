@@ -16,7 +16,7 @@ facebook_username: grzybecki
 instagram_username: pawelgrzybek
 linkedin_username: pgrzybek
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "studiorgb.github.io.sublime-project", "studiorgb.github.io.sublime-workspace"]
+exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 markdown: redcarpet
 highlighter: pygments
