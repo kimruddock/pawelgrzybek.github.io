@@ -1,2 +1,2 @@
-# studiorgb.github.io
-My Jekyll based website studiorgb.uk
+# pawelgrzybek.github.io
+My Jekyll based website pawelgrzybek.com
