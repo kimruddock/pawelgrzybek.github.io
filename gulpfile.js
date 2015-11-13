@@ -9,17 +9,17 @@ var nano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 
 // Build jekyll project
-gulp.task('jekyll', function(done) {
+gulp.task('jekyll', (done) => {
   cp.spawn('jekyll', ['build', '--drafts', '--quiet'], { stdio: 'inherit' }).on('close', done);
 });
 
 // Rebuild and refresh project
-gulp.task('reload', ['jekyll'], function() {
+gulp.task('reload', ['jekyll'], () => {
   bs.reload();
 });
 
 // Start BrowserSync server and serve _site directory
-gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], function() {
+gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], () => {
   bs({
     ui: false,
     ghostMode: {
@@ -36,7 +36,7 @@ gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], function() {
 });
 
 // Compile sass, minify css, autoprefix
-gulp.task('styles', function() {
+gulp.task('styles', () => {
   gulp.src('_src/sass/main.scss')
     .pipe(sass({
       includePaths: ['scss'],
@@ -50,14 +50,14 @@ gulp.task('styles', function() {
 });
 
 // Minify js files
-gulp.task('scripts', function() {
+gulp.task('scripts', () => {
   gulp.src('_js/scripts.js')
     .pipe(uglify())
     .pipe(gulp.dest('_includes'));
 });
 
 // Watch sass and all html posts
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch('_src/sass/**/*.scss', ['styles', 'reload']);
   gulp.watch('_src/js/*.js', ['scripts', 'reload']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['reload']);
