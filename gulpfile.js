@@ -37,7 +37,7 @@ gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], () => {
 
 // Compile sass, minify css, autoprefix
 gulp.task('styles', () => {
-  gulp.src('_src/sass/main.scss')
+  return gulp.src('_src/sass/main.scss')
     .pipe(sass({
       includePaths: ['scss'],
       onError: bs.notify
@@ -51,7 +51,7 @@ gulp.task('styles', () => {
 
 // Minify js files
 gulp.task('scripts', () => {
-  gulp.src('_js/scripts.js')
+  return gulp.src('_js/scripts.js')
     .pipe(uglify())
     .pipe(gulp.dest('_includes'));
 });
