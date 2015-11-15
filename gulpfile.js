@@ -1,12 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
-var bs = require('browser-sync');
 var cp = require('child_process');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var bs = require('browser-sync');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssImport = require('postcss-import');
+var nest = require('postcss-nested');
+var customProps = require('postcss-custom-properties');
+var calc = require('postcss-calc');
 var nano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
+
 
 // Build jekyll project
 gulp.task('jekyll', (done) => {
@@ -35,16 +40,19 @@ gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], () => {
   });
 });
 
-// Compile sass, minify css, autoprefix
+// Process css, autoprefix, minify
 gulp.task('styles', () => {
-  return gulp.src('_src/sass/main.scss')
-    .pipe(sass({
-      includePaths: ['scss'],
-      onError: bs.notify
-    }))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
-    }))
+  var processors = [
+    autoprefixer({
+      browsers: ['last 1 version']
+    }),
+    cssImport,
+    customProps,
+    calc,
+    nest
+  ];
+  return gulp.src('_src/css/main.css')
+    .pipe(postcss(processors))
     .pipe(nano())
     .pipe(gulp.dest('_includes'));
 });
@@ -58,7 +66,7 @@ gulp.task('scripts', () => {
 
 // Watch sass and all html posts
 gulp.task('watch', () => {
-  gulp.watch('_src/sass/**/*.scss', ['styles', 'reload']);
+  gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
   gulp.watch('_src/js/*.js', ['scripts', 'reload']);
   gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['reload']);
 });

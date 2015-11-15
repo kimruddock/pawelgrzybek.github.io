@@ -8,7 +8,7 @@ em {
 
 a {
   background: transparent;
-  color: $color1;
+  color: var(--color1);
   text-decoration: none;
   cursor: pointer;
   word-wrap: break-word;
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: $lh;
+  margin-bottom: var(--lh);
 }
 
 h1,
@@ -38,55 +38,54 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  // color: ;
   vertical-align: middle;
 }
 
 h1 {
-  font-size: $h1;
-  line-height: $lh*1.5;
+  font-size: var(--h1);
+  line-height: calc(var(--lh) * 1.5);
 }
 
 h2 {
-  font-size: $h2;
+  font-size: var(--h2);
 }
 
 h3 {
-  font-size: $h3;
+  font-size: var(--h3);
 }
 
 h4 {
-  font-size: $h4;
+  font-size: var(--h4);
 }
 
 h5 {
-  font-size: $h5;
+  font-size: var(--h5);
 }
 
 h6 {
-  font-size: $h6;
+  font-size: var(--h6);
 }
 
 ul,
 ol {
-  margin: 0 0 $lh $lh;
+  margin: 0 0 var(--lh) var(--lh);
 
   ul,
   ol {
-    margin: 0 $lh;
+    margin: 0 var(--lh);
   }
 }
 
 hr {
   display: block;
-  height: $lh;
+  height: var(--lh);
   border: 0;
-  box-shadow: inset 0 1px 0 $color-border;
+  box-shadow: inset 0 1px 0 var--color-border);
 }
 
 blockquote {
-  margin-bottom: $lh;
-  padding: $lh;
+  margin-bottom: var(--lh);
+  padding: var(--lh);
   border-left: 4px solid #e6e6e6;
   background: #f7f7f7;
 

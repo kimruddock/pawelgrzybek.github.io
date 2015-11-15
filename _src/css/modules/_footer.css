@@ -1,0 +1,5 @@
+.footer {
+  margin-top: calc(var(--lh) * 2);
+  padding: var(--lh) 0;
+  box-shadow: inset 0 1px 0 var(--color-border);
+}

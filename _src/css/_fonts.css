@@ -1,4 +1,4 @@
-// source-sans-pro-regular - latin
+/* source-sans-pro-regular - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -8,7 +8,7 @@
     url('../assets/source-sans-pro-v9-latin-regular.woff') format('woff');
 }
 
-// source-sans-pro-italic - latin
+/* source-sans-pro-italic - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: italic;
@@ -18,7 +18,7 @@
     url('../assets/source-sans-pro-v9-latin-italic.woff') format('woff');
 }
 
-// source-sans-pro-700 - latin
+/* source-sans-pro-700 - latin */
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -28,7 +28,7 @@
     url('../assets/source-sans-pro-v9-latin-700.woff') format('woff');
 }
 
-// source-code-pro-regular - latin
+/* source-code-pro-regular - latin */
 @font-face {
   font-family: 'Source Code Pro';
   font-style: normal;

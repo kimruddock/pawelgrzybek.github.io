@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+
+  &--single {
+    margin-bottom: var(--lh);
+  }
+}
+
+  .social__icon {
+    height: calc(var(--lh) * 1.5);
+
+    margin-right: calc(var(--lh) / 2);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+
+    svg {
+      width: calc(var(--lh) / 2);
+      height: calc(var(--lh) / 2);
+      margin: calc(var(--lh) / 2);
+      float: left;
+      fill: #b1b1b1;
+    }
+
+    span {
+      margin-right: calc(var(--lh) / 2);
+      color: #b1b1b1;
+      font-size: var(--h5);
+      line-height: calc(var(--lh) * 1.5);
+    }
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: inset 0 0 0 1px var(--color1);
+
+      svg {
+        fill: var(--color1);
+      }
+
+      span {
+        color: var(--color1);
+      }
+    }
+  }

@@ -1,22 +1,24 @@
 ::selection {
-  background: $color1;
+  background: var(--color1);
   color: #fff;
   text-shadow: none;
 }
 
 html {
   height: 100%;
-  font-size: $fz-mobile;
+  font-size: var(--fz-mobile);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  // https://bocoup.com/weblog/text-rendering/
+  /* https://bocoup.com/weblog/text-rendering/ */
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
+}
 
-  @include mq(large) {
-    font-size: $fz-desktop;
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: var(--fz-desktop);
   }
 }
 
@@ -30,14 +32,12 @@ html {
 
 body {
   height: 100%;
-  color: $color-text;
-  font-family: $ff;
+  color: var(--color-text);
+  font-family: var(--ff);
   font-size: 1rem;
-  line-height: $lh;
-  @if $vertical-rythm == true {
-    background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-    background-size: 100% $lh;
-  }
+  line-height: var(--lh);
+  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
+  background-size: 100% var(--lh);
 }
 
 img {
