@@ -140,7 +140,7 @@ To reorder columns, we need to add two very easy  and straight forward mixins. H
 }
 {% endhighlight %}
 
-<p data-height="216" data-theme-id="14885" data-slug-hash="YXwXPK" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/YXwXPK/'>2015.05.09 - 3</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="216" data-theme-id="14885" data-slug-hash="GogRQX" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/GogRQX/'>2015.05.09 - 3</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Do you really need another grid system?
