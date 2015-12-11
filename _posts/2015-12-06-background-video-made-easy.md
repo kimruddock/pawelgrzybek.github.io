@@ -12,7 +12,7 @@ HTML5 introduced the [video](https://developer.mozilla.org/en-US/docs/Web/HTML/E
 
 ## Let’s have a word about videos & performance
 
-It’s worth mentioning that if performance is something that you would like to improve, you should leave this article now. Companies like [PayPal](https://www.paypal.com) or [The Royal Albert Hall](http://www.royalalberthall.com/) prioritised speed over visual experiences and recently removed videos from their websites. You need to know what is the main aim of your project and bare in mind the cost that the video comes with.
+It’s worth mentioning that if performance is something that you would like to improve, you should leave this article now. Companies like [PayPal](https://www.paypal.com) or [The Royal Albert Hall](http://www.royalalberthall.com/) prioritised speed over visual experiences and recently removed videos from their websites. You need to know what the main aim of your project is and bare in mind the cost that the video comes with.
 
 ## Markup and CSS
 
