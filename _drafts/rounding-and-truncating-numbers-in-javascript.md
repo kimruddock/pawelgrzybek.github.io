@@ -6,7 +6,7 @@ photo: 2016-01-19.jpg
 
 Rounding and truncating is a bread and butter action for every single developer. It was covered during your first few math lessons in primary school. Hopefully you still remember how it works in the world of numbers. Let's use this knowledge and translate it to JavaScript using the built-in object called `Math`. As the name can suggests, it has a collection of properties and methods for mathematical operations on numbers. There is one small difference between `Math` and other built-in global objects. `Math` isn't a constructor which means that all properties and methods that belong to it are static (meaning that they need to be called by using Math as an object).
 
-!!! SCREENSHOT OF MATH METHODS IN CONSOLE !!!
+![Math Object in Google Chrome Console](/photos/2016-01-19-1.gif)
 
 ## Rounding vs Truncating
 
@@ -69,4 +69,4 @@ I know, I know - time is money. Lets sum it up.
 - `Math.ceil()` - rounds up towards positive infinity
 - `Math.trunc()` - rounds up or down towards zero
 
-!!! IMAGE WITH TIME AXIS HERE !!!
+![Math.floor() & Math.ceil() & Math.trunc() on timeline](/photos/2016-01-19-2.jpg)
