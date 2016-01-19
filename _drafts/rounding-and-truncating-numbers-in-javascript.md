@@ -20,11 +20,11 @@ Truncating
 3.14159 ≈ 3.1415
 ```
 
-Hopefully you get the difference. It makes truncating really useful in precise calculations (although JavaScript probably isn't a good choice at all if you need precise calculations) but you can come across a situation when it may be irreplaceable. Once example can be when needing to drop decimal places from a pixel value to avoid anti aliasing or weird pixel rounding which is completely different across browser engines.
+Hopefully you get the difference. It makes truncating rarely useful in precise calculations (although JavaScript probably isn't a good choice at all if you need precise calculations) but you can come across a situation when it may be irreplaceable. Once example can be when needing to drop decimal places from a pixel value to avoid anti aliasing or weird pixel rounding which is completely different across browser engines.
 
 ## Rounding numbers in Javascript
 
-Rounding is straight forward. We can round to nearest the integer, round down or round up. JavaScript uses three methods to achieve this:
+Rounding is straight forward. We can round to the nearest integer, round down or round up. JavaScript uses three methods to achieve this:
 
 - `Math.round()` - rounds to the nearest integer (if the fraction is 0.5 or greater - rounds up)
 - `Math.floor()` - rounds down
