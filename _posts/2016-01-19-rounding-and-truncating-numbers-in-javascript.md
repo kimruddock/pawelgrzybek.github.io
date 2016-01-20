@@ -42,10 +42,13 @@ Math.floor(3.8)      // 3
 Math.ceil(3.2)       // 4
 ```
 
-Rounding numbers with decimal precision requires using the `toFixed()` method that belongs to the `Number` prototype.
+Rounding numbers with decimal precision requires a little bit of calculation and `Math.round()`. Optionally we can use the `toFixed()` method that belongs to the `Number` prototype. The output type of `toFixed()` is a `String` which needs to be passed to a top-level function called `parseFloat()` to return a `Number`. Unfortunately this seems to be [really slow](http://jsperf.com/tofixed-parseint-vs-round-100).
 
 ```
-3.14159.toFixed(2);  // 3.14
+Math.round(3.14159 * 100) / 100  // 3.14
+
+3.14159.toFixed(2);              // 3.14 returns a String
+parseFloat(3.14159.toFixed(2));  // 3.14 returns a Number
 ```
 
 ## Truncating numbers in Javascript
@@ -57,13 +60,22 @@ Math.trunc(3.14159);   //  3
 Math.trunc(-3.14159);  // -3
 ```
 
-It's worth mentioning that the browser support for `Math.trunc()` isn't great. Fortunately some clever people came out with a [polyfill](https://www.npmjs.com/package/math-trunc).  Have a look at the browser support list:
+It's worth mentioning that the browser support for `Math.trunc()` isn't great. It is part of new [ES2015 (yeah, I prefer ES6 too) specification](http://www.ecma-international.org/ecma-262/6.0/#sec-math.trunc). Have a look at the browser support list:
 
 - Google Chrome >= 38
 - Firefox >= 25
 - Internet Explorer >= Nope :(
 - Opera >= 25
 - Safari >= 7.1
+
+Luckily there is a way to use this without ES6 support (thanks to Johny who suggested this solution in comments below). We can use [bitwise operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) to accomplish this task. Unfortunately there are some restriction as well. All bitwise operations work on signed 32-bit integers. Using them converts a float to an integer. In practice it means that we can safely work up to `2^31−1` (around 2 billion) which is much less than `Number.MAX_VALUE` (1.7976931348623157e+308). This isn't a great idea for monetary calculations either.
+
+```
+3.14159 | 0;   //  3
+-3.14159 | 0;  // -3
+
+3000000000.1 | 0  // -1294967296 Ups :(
+```
 
 ### TLTR (too long to read)
 
