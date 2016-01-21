@@ -47,8 +47,8 @@ Rounding numbers with decimal precision requires a little bit of calculation and
 ```
 Math.round(3.14159 * 100) / 100  // 3.14
 
-3.14159.toFixed(2);              // 3.14 returns a String
-parseFloat(3.14159.toFixed(2));  // 3.14 returns a Number
+3.14159.toFixed(2);              // 3.14 returns a string
+parseFloat(3.14159.toFixed(2));  // 3.14 returns a number
 ```
 
 ## Truncating numbers in Javascript
