@@ -68,7 +68,7 @@ It's worth mentioning that the browser support for `Math.trunc()` isn't great. I
 - Opera >= 25
 - Safari >= 7.1
 
-Luckily there is a way to use this without ES6 support (thanks to Johny who suggested this solution in comments below). We can use [bitwise operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) to accomplish this task. Unfortunately there are some restriction as well. All bitwise operations work on signed 32-bit integers. Using them converts a float to an integer. In practice it means that we can safely work up to `2^31−1` (around 2 billion) which is much less than `Number.MAX_VALUE` (1.7976931348623157e+308). This isn't a great idea for monetary calculations either.
+Luckily there is a way to use this without ES6 support (thanks to Johny who suggested this solution in comments below). We can use [bitwise operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) to accomplish this task. Unfortunately there are some restriction as well. All bitwise operations work on signed 32-bit integers. Using them converts a float to an integer. In practice it means that we can safely work up to `2^31−1` ([2 147 483 647](https://en.wikipedia.org/wiki/2147483647_(number))) which is much less than `Number.MAX_VALUE` (1.7976931348623157e+308). This isn't a great idea for monetary calculations either.
 
 ```
 3.14159 | 0;   //  3
