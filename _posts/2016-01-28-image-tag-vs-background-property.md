@@ -36,7 +36,28 @@ img {
 
 ### Polyfil for object-fit: cover
 
-Amazing things like this rarely come without any downsides. The only problem is Internet Explorer. I like it too much to not use it so I created a super easy JavaScript fix. If the feature isn't available in the browser, it grabs the source path of an image and applies it to parent element. Background-size and background-position is applied as well to imitate the same effect as `object-fit: cover`. Works fine on IE9, IE10, IE11 and Edge. If you need to support IE8, I'm sorry.
+Amazing things like this rarely come without any downsides. The only problem is Internet Explorer. I like this CSS property too much to not use it so I created a super easy JavaScript fix. If the feature isn't available in the browser, it grabs the source path of an image and applies it to parent element. Background-size and background-position is applied as well to imitate the same effect as `object-fit: cover`. Works fine on IE9, IE10, IE11 and Edge. If you need to support IE8, I'm sorry.
+
+{% highlight js %}
+// Detect objectFit support
+if('objectFit' in document.documentElement.style === false) {
+  // assign HTMLCollection with parents of images with objectFit to variable
+  var container = document.getElementsByClassName('js-box');
+  // Loop through HTMLCollection
+  for(var i = 0; i < container.length; i++) {
+    // Asign image source to variable
+    var imageSource = container[i].querySelector('img').src;
+    // Hide image
+    container[i].querySelector('img').style.display = 'none';
+    // Add background-size: cover
+    container[i].style.backgroundSize = 'cover';
+    // Add background-image: and put image source here
+    container[i].style.backgroundImage = 'url(' + imageSource + ')';
+    // Add background-position: center center
+    container[i].style.backgroundPosition = 'center center';
+  }
+}
+{% endhighlight %}
 
 <p data-height="248" data-theme-id="14885" data-slug-hash="Rrybqg" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/Rrybqg/'>objectFit fallback for IE and Edge</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
