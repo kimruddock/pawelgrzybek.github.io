@@ -12,41 +12,41 @@ The final list of features that we're going to see in ECMAScript 2016 is ready a
 
 Proposed by Domenic Denicola and Rick Waldron [feature](https://github.com/tc39/Array.prototype.includes/) checks if the array includes an element and returns boolean value. Syntax is super simple.
 
-```js
+{% highlight js %}
 ['a', 'b', 'c'].includes('a');  // true
 ['a', 'b', 'c'].includes('d');  // false
-```
+{% endhighlight %}
 
 Previously we did it like that. It is not as self explanatory.
 
-```js
+{% highlight js %}
 ['a', 'b', 'c'].indexOf('a') >= 0 ? true : false;  // true
 ['a', 'b', 'c'].indexOf('d') >= 0 ? true : false;  // false
-```
+{% endhighlight %}
 
 New feature solves one problem with checking for `NaN` in an array. Compare these two examples and results.
 
-```js
+{% highlight js %}
 ['a', 'b', 'c', NaN].includes(NaN);  // true
 ['a', 'b', 'c', NaN].indexOf(NaN) >= 0 ? true : false;  // false
-```
+{% endhighlight %}
 
 ## Exponentiation Operator
 
 Proposed by Rick Waldron, Claude Pache and Brendan Eich [feature](https://github.com/rwaldron/exponentiation-operator) brings much nicer notation of exponentiation. It uses [infix notation](https://en.wikipedia.org/wiki/Infix_notation) which is much nicer than function notation (`Math.pow()`). We can find the same notation in different programing languages like: Python, Ruby or Pearl. Have look at the examples.
 
-```js
+{% highlight js %}
 2 ** 4;  // 16
-```
+{% endhighlight %}
 
-```js
+{% highlight js %}
 let a = 2;
 a **= 4; // 16
-```
+{% endhighlight %}
 
 Previously...
 
-```js
+{% highlight js %}
 // 2 * 2 * 2 * 2
 Math.pow(2, 4);  // 16
-```
+{% endhighlight %}

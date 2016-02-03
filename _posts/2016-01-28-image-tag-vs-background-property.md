@@ -26,13 +26,13 @@ In the age of responsive web design we tend to create boxes that are always nice
 
 [The `object-fit` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) defines how the content fits to the box. It takes few values: `fill`, `contain`, `cover`, `none`, `scale-down`. Chris Coyier already published this snappy [article](https://css-tricks.com/almanac/properties/o/object-fit/) about all these options with an example on Codepen. Essentially, `fill` stretches object to the applied dimensions. It is probably not the most helpful value to use with RWD. `Contain` and `scale-down` behave in exactly the same way, proportionally sizing the image down to adjust to the boundaries of element without clipping it. `None` is none. `Cover` is the clear winner in terms of usability in the daily routine of designers and front end developers. As you may have guessed, it does for image exactly what `cover` does for `background-size`. The content is sized to fill the entire available space of an element. It respects the aspect ratio and clips the width or height (dependent on the proportion).
 
-```
+{% highlight css %}
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-```
+{% endhighlight %}
 
 ### Polyfil for object-fit: cover
 

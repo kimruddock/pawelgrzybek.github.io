@@ -16,7 +16,7 @@ Our mission is to add a new one for JavaScript. We are going to use [node.js](ht
 
 Every built system is described on JSON file with .sublime-build extension. To create new one go to Tools > Build System > New Build System... Copy and paste this bit of code:
 
-{% highlight javascript %}
+{% highlight json %}
 {
   "cmd": ["/usr/local/bin/node", "$file"],
   "selector": "source.js"

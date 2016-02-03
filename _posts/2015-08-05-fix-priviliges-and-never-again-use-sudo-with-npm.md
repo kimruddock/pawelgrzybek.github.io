@@ -8,9 +8,9 @@ We have a few options to install Node and npm. Using [Homebrew](http://brew.sh/)
 
 If you used installer, whenever you want to install a package globally you need to use a super user power to do it. For example:
 
-```
+{% highlight bash %}
 sudo npm install -g grunt-cli
-```
+{% endhighlight %}
 
 On a first glance it's nothing wrong with that code, yeah? Even on official Grunt documentation it says:
 
@@ -22,11 +22,11 @@ Actually it is a very dangerous thing. Correctly pointed out by my [friend](http
 
 We don't need troubles. We need to change privileges on few folders on our machine. The procedure is very simple and it's very clearly explained on [one of the videos](https://docs.npmjs.com/getting-started/fixing-npm-permissions) on the official npm documentation website. Open Terminal and type:
 
-```
+{% highlight bash %}
 sudo chown -R $(whoami) /usr/local/lib/node_modules
 sudo chown -R $(whoami) /usr/local/bin
 sudo chown -R $(whoami) /usr/local/share
-```
+{% endhighlight %}
 
 These few lines of code are very straight forward. It changes the owner of listed directories from root to your user name. Flag -R stands for 'recursively' which means it changes ownership on particular directory and all directories and files inside it.
 
