@@ -19,7 +19,6 @@ linkedin_username: pgrzybek
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 markdown: redcarpet
-highlighter: pygments
 
 # defaults
 defaults:
