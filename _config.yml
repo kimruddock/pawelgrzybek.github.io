@@ -18,8 +18,6 @@ linkedin_username: pgrzybek
 
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
-markdown: redcarpet
-
 # defaults
 defaults:
   -
