@@ -13,20 +13,20 @@ Every single day I come across new grid systems. They all do the same job. Some 
 
 One of the most important things for me is to use my own markup. I don’t want to use extra classes to describe my layout. It can be ugly and makes my markup so cluttered! Why do I have to use something like this:
 
-{% highlight scss %}
+```scss
 <div class="post column small-6 medium-4 large-3 x-large-2">
   post
 </div>
-{% endhighlight %}
+```
 
 
 If I need just:
 
-{% highlight scss %}
+```scss
 <div class="post">
   post
 </div>
-{% endhighlight %}
+```
 
 Sometimes we need to nest grids. Lets say we have a two columns and inside one of them we need well aligned gallery. Thats the case when grid nesting comes handy.
 
@@ -40,7 +40,7 @@ It is definitely not the best technique to place the most important content some
 
 Thats it! Every single grid system creates some rows and columns. Row wraps things together and column sets specific width to en element. With this information in mind lets have a look at bits of code below.
 
-{% highlight css %}
+```css
 .wrapper {
   width: 100%;
   max-width: 80rem;
@@ -54,18 +54,18 @@ Thats it! Every single grid system creates some rows and columns. Row wraps thin
 .wrapper:after {
   clear: both;
 }
-{% endhighlight %}
+```
 
 Thats the way how we create element that wraps columns together and keeps everything centered. We can adjust maximum width of that element and use any absolute or relative units to set maximum width up. Because we are going to use floating elements inside that div, [clearfix](https://css-tricks.com/snippets/css/clear-fix/) is necessary here. Lets have a look at second puzzle.
 
-{% highlight css %}
+```css
 .column {
   float: left;
   width: 50%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-{% endhighlight %}
+```
 
 Columns are straight forward. Floating of that element allows us to place columns next to each other. Padding on left and right hand side gives us a gutter between columns. Thing that we can customise here is width and gutter. Percentage based width value is best option to create fluid layouts. I like to have all my gutters equal, thats why I use paddings to create a gutters between columns.
 
@@ -73,7 +73,7 @@ Columns are straight forward. Floating of that element allows us to place column
 
 We know already the general idea behind every grid system. Lets convert our CSS snippets into SASS mixins.
 
-{% highlight scss %}
+```scss
 /* Variables */
 $wrapper: 80rem;
 $gutter: 1rem;
@@ -107,7 +107,7 @@ $gutter: 1rem;
     padding-right: $gutter/2;
   }
 }
-{% endhighlight %}
+```
 
 BOOM! Just two variables and two SASS mixins gives us a powerful tool to build grid based layouts. Instead of explaining how to use it, have a look at straight forward examples below. Have a look at the styles of each example to find helpfull descriptions.
 
@@ -129,7 +129,7 @@ First part of creating this layout is similar to example above. It's more intere
 
 To reorder columns, we need to add two very easy  and straight forward mixins. Have a look at the bit of code below. Easy like that!
 
-{% highlight scss %}
+```scss
 @mixin push($width: 0) {
   position: relative;
   left: percentage($width);
@@ -138,7 +138,7 @@ To reorder columns, we need to add two very easy  and straight forward mixins. H
   position: relative;
   right: percentage($width);
 }
-{% endhighlight %}
+```
 
 <p data-height="216" data-theme-id="14885" data-slug-hash="GogRQX" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/GogRQX/'>2015.05.09 - 3</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>

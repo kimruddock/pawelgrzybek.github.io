@@ -16,7 +16,7 @@ The biggest advantage of GitHub snippets is awesome community, power of version 
 
 Despite all this cool things that Gist brings on the table I choose to use [native snippets](http://docs.sublimetext.info/en/latest/extensibility/snippets.html) feature. If you have never worked with Sublime Text Snippets before, I recommend to read this easy to follow [article on Hongkiat blog](http://www.hongkiat.com/blog/sublime-code-snippets/). Simple XML files with .sublime-snippet extension live in ‘Packages’ folder. Clever idea is to create a separated directory inside ‘User’ folder for our reusable bits of code. Dropbox can help us to sync all snippets and settings across many devices. Very detailed instruction how to set syncing up is available on [Package Control website](https://packagecontrol.io/docs/syncing). Let’s have a look at some random snippet from my collection:
 
-{% highlight xml %}
+```xml
 <snippet>
   <content><![CDATA[
   http://lorempixel.com/${1:600}/${2:400}/abstract/
@@ -24,7 +24,7 @@ Despite all this cool things that Gist brings on the table I choose to use [nati
   <tabTrigger>lorempixel</tabTrigger>
   <description>other - lorem pixel</description>
 </snippet>
-{% endhighlight %}
+```
 
 
 The idea is to create reusable element of a code between `<![CDATA[` and `]]>`. Placeholders inside a snippets is the reason why I like it so much. After choosing a snippet we can easily navigate via Tab key through predefined placeholders. We can assign to them default values. On example above you can see two placeholders `${1:600}` and `${2:400}`. If you would like to get a literal $ (for example inside some jQuery snippet), you have to escape it like this: `\$`. `tabTrigger` and `description` makes your snippet accessible via keyboard shortcut or select option inside Command Palette (Cmd + Shift + P). I don't use `scope` at all because I want to have an access to my entire library regardless of file type that I'm working with.
@@ -33,18 +33,18 @@ The idea is to create reusable element of a code between `<![CDATA[` and `]]>`. 
 
 After a while of saving all useful lines of codes you can easily end up with hundreds of snippets. Thats why it’s important to have any strategy to categorise these files. I do it via description tag. Let’s have a look at this bit of code.
 
-{% highlight xml %}
+```xml
 <description>php - wp - acf - flexible content</description>
-{% endhighlight %}
+```
 
 This line of code tells me that this is a php code, wordpress specific. ACF stands for [Advanced Custom Fields](http://www.advancedcustomfields.com/) - one of my favourite Wordpress plugins. Keeping that simple naming convention helps me to filter my snippets so much! For example that's how looks like snippets structure for all my javaScript files.
 
-{% highlight xml %}
+```xml
 js
 - js - jquery
 - - js - jquery - ajax
 - js - ga
 - js - modernizr
-{% endhighlight %}
+```
 
 Please let me know in a comments how do you approach this subject and what tools do you use to manage your snippets.

@@ -30,10 +30,10 @@ This is another very easy process. Add to your repository CNAME file (without an
 
 Next step is to do changes on your domain name settings. Log in to your domain’s provider website and inside DNS settings you need to add two A records.
 
-{% highlight ruby %}
+```
 192.30.252.153
 192.30.252.154
-{% endhighlight %}
+```
 
 On Github Pages documentation you can find this [process described more in depth](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/#configuring-an-a-record-with-your-dns-provider) but let me show you a better option…
 

@@ -8,20 +8,20 @@ Feature detection is something that every front end developer faced at some poin
 
 There is one more method, not that widely used yet. One of the [CSS at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) is `@supports`. It gives us very intuitive way to check browser capabilities. It also comes with JavaScript `CSS.supports()` API. Let's have a look at some snippets:
 
-{% highlight scss %}
+```scss
 .foo {
   background: #f00;
   @supports (background: conic-gradient(#eee, #bbb)) {
     background: conic-gradient(#eee, #bbb)
   }
 }
-{% endhighlight %}
+```
 
-{% highlight js %}
+```js
 if (CSS.supports('background', 'conic-gradient(#eee, #bbb)')) {
   console.log('Your browser supports conic-gradient');
 }
-{% endhighlight %}
+```
 
 ## Poor support for @support
 

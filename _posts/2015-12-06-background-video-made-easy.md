@@ -18,20 +18,20 @@ It’s worth mentioning that if performance is something that you would like to 
 
 Less talk more action.
 
-{% highlight html %}
+```html
 <div class="banner">
   <video autoplay loop muted class="banner__video" poster="video.jpg">
     <source src="video.webm" type="video/webm">
     <source src="video.mp4" type="video/mp4">
   </video>
 </div>
-{% endhighlight %}
+```
 
 That’s all we need. As you can see I have added some attributes to `video` tag. Hopefully `autoplay`, `loop` and `muted` don’t need any explanation. `poster` includes a path to the image that will be displayed on the mobile devices. When the video isn’t ready or it’s paused, you browser will show this poster instead. It is a good practice to create a poster from the first frame of your video.
 
 Multiply `source` element is needed to provide a cross browser experience. If you need to support old Firefox browsers you need to add ogg format as well. You can generate all those formats with tools like [Miro Converter](http://www.mirovideoconverter.com/) or my favourite online [HTML5 Video Converter](https://html5backgroundvideos.com/converter/). Please control the size of your files. It is a difficult task to find a compromise between length, quality and file size. I always try to compress my videos to something between 500kb - 1000kb, and avoid videos longer than 10 - 15 seconds. [HandBrake](https://handbrake.fr/) is open source video transcoder that can halp you with compression.
 
-{% highlight css %}
+```css
 .banner {
   position: relative;
   overflow: hidden;
@@ -48,7 +48,7 @@ Multiply `source` element is needed to provide a cross browser experience. If yo
   transform: translateX(-50%) translateY(-50%);
   z-index: -1;
 }
-{% endhighlight %}
+```
 
 This is the trick. Position everything on centre, add minimum width and height to fill the space of the parent div, hide everything that is outside of the box, and place the video behind the content of the parent.
 
@@ -62,7 +62,7 @@ Mobile browsers are very clever and they ignore `autoplay` attribute to save val
 
 We definitely don’t want to keep it like that. A few lines of JavaScript comes in help here. Essentially we need to grab the value of the poster attribute and apply it as a background-image of the parent element. Additionally we need to add a correct background-size and background-position to this div and hide video tag. Done!
 
-{% highlight js %}
+```js
 var banner = document.querySelector('.banner');
 var bannerVideo = document.querySelector('.banner__video');
 
@@ -72,7 +72,7 @@ if (/iPad|iPhone|iPod/.test(navigator.platform)) {
   banner.style.backgroundPosition = 'center';
   bannerVideo.style.display = 'none';
 }
-{% endhighlight %}
+```
 
 ## A little bit of make up
 

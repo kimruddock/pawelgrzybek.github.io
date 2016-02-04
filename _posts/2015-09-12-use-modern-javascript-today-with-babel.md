@@ -8,15 +8,15 @@ In June 2015 new [version of ECMAScript](http://www.ecma-international.org/ecma-
 
 Practice is a best teacher, so let me show you Babel in action. I'm going to use one of my favourite features in new ES2015 specification - default parameter values.
 
-{% highlight js %}
+```js
 // You do:
 
 function sum(x = 5, y = 10) {
   return(x + y);
 }
-{% endhighlight %}
+```
 
-{% highlight js %}
+```js
 // Babel does:
 
 function sum() {
@@ -25,6 +25,6 @@ function sum() {
 
   return x + y;
 }
-{% endhighlight %}
+```
 
 Be ahead browsers adoption and start your journey with ECMAScript 2015 today. [Big companies](https://babeljs.io/users/) that are dictating development path of web technologies are using Babel already. You should as well! New specification brings us so many new features that are worth using. I'm planing to publish an article about my favourite parts of ES2015, but now I'm too busy with experimenting with Babel. Enjoy!

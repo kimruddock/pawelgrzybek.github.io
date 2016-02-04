@@ -26,13 +26,13 @@ Using filters is as easy as passing pipe (`|`) followed by shortcut of a filter 
 
 This article is not about how amazing or ugly this methodology is. It works for me on the majority of my projects and it helps me a lot to keep my project well organised. If you would like to learn more about it, I highly recommend you read [official documentation](https://en.bem.info/) or [Harry’s article](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/). Developer’s preference are different and some prefer to separate blocks and elements by a single underscore, some prefer double underscores. It’s the same with the modifier classes, some prefer a single hyphen, some prefer double hyphens. I prefer to follow the official notation with double separators. Let’s stick to the `article` example and have a look at how to BEMify this markup:
 
-{% highlight html %}
+```html
 <article class="post">
   <div class="post__title"></div>
   <div class="post__date"></div>
   <div class="post__content"></div>
 </article>
-{% endhighlight %}
+```
 
 ## Using BEM filter with Emmet
 
@@ -42,7 +42,7 @@ You know about filters, you know about BEM. Let’s have a look at how to apply 
 
 Love it! Massive time saver! If you use Sublime Text you may need to apply your own settings to customise the output for your needs. Just go to `Preferences -> Package settings -> Emmet -> Settings - User`. My configuration file looks like this:
 
-{% highlight json %}
+```json
 {
   "syntaxProfiles": {
     "html" : {
@@ -55,6 +55,6 @@ Love it! Massive time saver! If you use Sublime Text you may need to apply your 
     "bem.shortElementPrefix":"-"
   }
 }
-{% endhighlight %}
+```
 
 As you can see I applied the `html` and `bem` filter as the default one for all `.html` files. It allows even more simplification of the process by omitting the filter in the abbreviation. Hopefully this article helped you to speed up your BEM workflow. Please share your thoughts, favourite Emmet features or methodologies that you use.

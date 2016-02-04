@@ -16,11 +16,11 @@ First lets have a look at a definition from [Mozilla Developer Network](https://
 
 The definition is straight forward, so why can we experiencing issues? It starts when few selectors apply to the same element. Look!
 
-{% highlight html %}
+```html
 <p class="myclass" id="myid" style="color: yellow">Lorem ipsum dolor sit amet.</p>
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 p {
   color: green;
 }
@@ -32,7 +32,7 @@ p {
 #myid {
   color: blue;
 }
-{% endhighlight %}
+```
 
 What is the color of that paragraph? Hmmm? In this case our browser calculates a specificity value for each selector and prints the winner with highest score. This example is very trivial but in real life things are not that predictable.
 
@@ -41,7 +41,7 @@ What is the color of that paragraph? Hmmm? In this case our browser calculates a
 Before we go any further I need to make sure you know basic CSS terminology: selector, property, value, declaration, pseudo class and pseudo element. Have a look:
 
 
-{% highlight css %}
+```css
 .post:hover::before {
   color: red;
 }
@@ -51,7 +51,7 @@ Before we go any further I need to make sure you know basic CSS terminology: sel
   property: value;
 }
 */
-{% endhighlight %}
+```
 
 Example above shows that:
 
@@ -66,34 +66,34 @@ Let's come back to specificity. We can separate CSS rules to 4 main categories a
 
 ### Inline styles
 
-{% highlight html %}
+```html
 <p style="color: yellow">Lorem ipsum dolor sit amet.</p>
-{% endhighlight %}
+```
 
 Using an inline style attribute in HTML markup always takes precedence. It adds `1, 0, 0, 0` to the specificity score.
 
 ### IDs
 
 
-{% highlight css %}
+```css
 #myid {}
-{% endhighlight %}
+```
 
 Each ID adds `0, 1, 0, 0` to specificity score.
 
 ### Classes, pseudo-classes, attributes
 
-{% highlight css %}
+```css
 .myclass {}
-{% endhighlight %}
+```
 
 Each class, [pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Index_of_standard_pseudo-classes) and [attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#Summary) adds `0, 0, 1, 0` to the specificity score.
 
 ### Elements and pseudo-elements
 
-{% highlight css %}
+```css
 p {}
-{% endhighlight %}
+```
 
 Each element and [pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements#All_pseudo-elements) adds `0, 0, 0, 1` to the specificity score.
 
@@ -109,7 +109,7 @@ Each element and [pseudo-element](https://developer.mozilla.org/en-US/docs/Web/C
 
 Practice is a best teacher so let's have a look at a few examples.
 
-{% highlight css %}
+```css
 #toc li li {}
 
 /*
@@ -120,9 +120,9 @@ Elements:     2 (li, li)
 
 Specificity score: 0, 1, 0, 2
 */
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 #nav .selected > a:hover {}
 
 /*
@@ -133,9 +133,9 @@ Elements:     1 (a)
 
 Specificity score: 0, 1, 2, 1
 */
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 .header #nav li#list a[rel=nofollow]::after {}
 
 /*
@@ -146,9 +146,9 @@ Elements:     3 (li, a, ::after)
 
 Specificity score: 0, 2, 2, 3
 */
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 <div class="searchbar" style="display: none;">...</div>
 
 .searchbar {}
@@ -161,7 +161,7 @@ Elements:     0
 
 Specificity score: 1, 0, 1, 0
 */
-{% endhighlight %}
+```
 
 ### Exceptions
 

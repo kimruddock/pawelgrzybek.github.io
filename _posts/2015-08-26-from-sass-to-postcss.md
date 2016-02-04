@@ -28,17 +28,17 @@ As I said earlier I try to restrict my toolkit to a minimum but it does’t mean
 
 I can’t imagine to work with CSS without meaningful order of my partials files. Plugin that I use to make it work is [postcss-import](https://github.com/postcss/postcss-import). I kept the Sass naming convention with a single prefix underscore for partial files.
 
-{% highlight css %}
+```css
 /* Code looks like */
 
 @import '_typography.css';
-{% endhighlight %}
+```
 
 ### Variables
 
 Sass style variables you can add via [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars). Eventually I will replace it with [cssnext](https://github.com/cssnext/cssnext) that is using the syntax from latest CSS spec. It is cool to be familiar with upcoming standards, yeah?
 
-{% highlight scss %}
+```scss
 /* Code looks like */
 
 $color-brand: hotpink;
@@ -48,22 +48,22 @@ body {
   color: $color-brand;
   font-size: $font-size;
 }
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 /* Result */
 
 body {
   color: hotpink;
   font-size: 1em;
 }
-{% endhighlight %}
+```
 
 ### Nesting
 
 I almost don’t nest at all. As a big fan of BEM methodology the only things that I nest are pseudo-classes and pseudo-elements. I could live without nesting, but it is just an affter-effect of longterm habits. The plugin that I use to do it is [postcss-nested](https://github.com/postcss/postcss-nested).
 
-{% highlight scss %}
+```scss
 /* Code looks like */
 
 a {
@@ -73,9 +73,9 @@ a {
     color: plum;
   }
 }
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 /* Result */
 
 a {
@@ -84,13 +84,13 @@ a {
 a:hover {
   color: plum;
 }
-{% endhighlight %}
+```
 
 ### Mixins
 
 Sass mixins offers a huge power and I am worried that I won’t be able to replicate the same functionality in my new PostCSS workflow. Something that [postcss-mixins](https://github.com/postcss/postcss-mixins) brings to the table blew me away. Ability to define a mixin in CSS and function in JavaScript is awesome. I need to get my head around it a little bit more, but at first glance it’s superb!
 
-{% highlight scss %}
+```scss
 /* Code looks like */
 
 @define-mixin transition $property: all, $time: 150ms, $easing: ease-out {
@@ -100,21 +100,21 @@ Sass mixins offers a huge power and I am worried that I won’t be able to repli
 body {
   @mixin transition color, 2s, ease-in;
 }
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 /* Result */
 
 body {
   transition: color 2s ease-in;
 }
-{% endhighlight %}
+```
 
 ### Media-queries concatenation
 
 Small plugin [CSS MQPacker](https://github.com/hail2u/node-css-mqpacker) wraps the same media-queries rules into one. I know that few of the same media-queries decelerations doesn’t affect performance (as long as it is gzipped) but for peace of mind we can save few bits.
 
-{% highlight scss %}
+```scss
 /* Code looks like */
 
 .foo {
@@ -132,9 +132,9 @@ Small plugin [CSS MQPacker](https://github.com/hail2u/node-css-mqpacker) wraps t
     width: 50%;
   }
 }
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 /* Result */
 
 .foo {
@@ -155,21 +155,21 @@ Small plugin [CSS MQPacker](https://github.com/hail2u/node-css-mqpacker) wraps t
     width: 50%;
   }
 }
-{% endhighlight %}
+```
 
 ### Autoprefixer
 
 It is definitely the most popular add-on based on PostCSS. [Autoprefixer](https://github.com/postcss/autoprefixer) cares about adding necessary vendor prefixes. For example:
 
-{% highlight css %}
+```css
 /* Code looks like */
 
 .box {
   display: flex;
 }
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 /* Result */
 
 .box {
@@ -178,13 +178,13 @@ It is definitely the most popular add-on based on PostCSS. [Autoprefixer](https:
   display: -ms-flexbox;
   display: flex;
 }
-{% endhighlight %}
+```
 
 ### Smart minification with cssnano
 
 I used many CSS minification tools but [cssnano](http://cssnano.co) is much smarter than rest of them. This modular optimisation tool built on top of PostCSS generates as smaller production stylesheet as it can be. Have a look at the example from their website.
 
-{% highlight css %}
+```css
 /* Code looks like */
 
 h1::before,
@@ -199,13 +199,13 @@ h1:before {
 
 /* invalid placement */
 @charset "utf-8";
-{% endhighlight %}
+```
 
-{% highlight css %}
+```css
 /* Result */
 
 @charset 'utf-8';h1:before{margin:10px 20px;color:red;border-radius:1pc;font-weight:400}
-{% endhighlight %}
+```
 
 ## Will I move from Sass to PostCSS
 

@@ -60,30 +60,30 @@ Before we go any further it's necessary to mention a little bit of related termi
 
 Enough of boring theory now, lets get our hands dirty with some code. This is the markup of our super complex example.
 
-{% highlight html %}
+```html
 <div class="blog">
   <div class="header">Header</div>
   <div class="content">Content</div>
   <div class="sidebar">Sidebar</div>
   <div class="footer">Footer</div>
 </div>
-{% endhighlight %}
+```
 
 Finally the exciting part. To enable grid layout we need to apply `grid` value for `display` property. For additional settings I’m going to use absolute values (pixels) just for simplicity of my example, but in real life scenario it’s probably a better idea to use some relative values (percentage, ems, rems, vw or vh). New properties `grid-template-columns` and `grid-template-rows` will split grid container for few grid tracks. You can easily use `auto` instead of fixed values for these properties. Look at the code and compare applied values with the picture below.
 
-{% highlight css %}
+```css
 .blog {
   display: grid;
   grid-template-columns: 400px 20px 180px;
   grid-template-rows: 100px 20px 210px 20px 100px;
 }
-{% endhighlight %}
+```
 
 ![CSS grid template columns and rows](/photos/2015-10-04-8.jpg)
 
 Time to define how our grid looks. Examine carefully the code below. Hopefully the image below the snippet of code will make your life easier.
 
-{% highlight css %}
+```css
 .header {
   grid-row-start: 1;
   grid-row-end: 2;
@@ -108,13 +108,13 @@ Time to define how our grid looks. Examine carefully the code below. Hopefully t
   grid-column-start: 1;
   grid-column-end: 4;
 }
-{% endhighlight %}
+```
 
 ![CSS grids lines](/photos/2015-10-04-9.jpg)
 
 Hopefully that makes sense. To simplify our code, can can use a handy short notation.
 
-{% highlight css %}
+```css
 .header {
   grid-row: 1 /2;
   grid-column: 1 /4;
@@ -131,11 +131,11 @@ Hopefully that makes sense. To simplify our code, can can use a handy short nota
   grid-row: 5 / 6;
   grid-column: 1 / 4;
 }
-{% endhighlight %}
+```
 
 How about even shorter? `grid-area` follows this order: `grid-row-start`, `grid-column-start`, `grid-row-end`, `grid-column-end`.
 
-{% highlight css %}
+```css
 .header {
   grid-area: 1 / 1 / 2 / 4;
 }
@@ -148,11 +148,11 @@ How about even shorter? `grid-area` follows this order: `grid-row-start`, `grid-
 .footer {
   grid-area: 5 / 1 / 6 / 4;
 }
-{% endhighlight %}
+```
 
 And finally the result looks like this. Feel free to fork the [codpen](http://codepen.io/pawelgrzybek/pen/EVWKBd) example and play around with it.
 
-{% highlight css %}
+```css
 .wrapper {
   display: grid;
   grid-template-columns: 400px 20px 180px;
@@ -170,7 +170,7 @@ And finally the result looks like this. Feel free to fork the [codpen](http://co
 .footer {
   grid-area: 5 / 1 / 6 / 4;
 }
-{% endhighlight %}
+```
 
 <p data-height="496" data-theme-id="14885" data-slug-hash="EVWKBd" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/EVWKBd/'>2015-10-04 Lets get into basics of CSS Grid Layout Model</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
