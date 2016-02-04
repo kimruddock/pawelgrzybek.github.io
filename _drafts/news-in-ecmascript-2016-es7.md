@@ -47,6 +47,5 @@ a **= 4; // 16
 Previously...
 
 {% highlight js %}
-// 2 * 2 * 2 * 2
 Math.pow(2, 4);  // 16
 {% endhighlight %}
