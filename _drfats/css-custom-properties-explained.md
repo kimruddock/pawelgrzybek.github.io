@@ -149,5 +149,6 @@ document.documentElement.style.setProperty('--primary-color', 'green');
 document.documentElement.style.setProperty('--primary-color', 'var(--secondary-color)');
 ```
 
-- example: 100 CSS mode switcher night / day
+- example: Day / night mode switcher
+
 
