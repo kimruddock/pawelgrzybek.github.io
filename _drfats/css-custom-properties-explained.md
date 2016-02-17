@@ -1,90 +1,56 @@
-# CSS Custom Properties explained
+---
+title: CSS Custom Properties explained
+excerpt: Native CSS Custom Properties are around the corner. Let's embrace the differ between them and variables knows from preprocessors like Sass or LESS.
+photo: 2016-02-20.jpg
+---
 
-- widely knows as a [CSS variables](https://drafts.csswg.org/css-variables/)
-- CSSWG definition
+In programing languages term "variable" describes a storage location normally associated with an identifier that contains some value. Despite fact that CSS is a mark up language, spec creators were very generous recently and gave us a tiny, but very powerful bit of real programing language. Excitement about native [CSS Custom Properties](https://www.w3.org/TR/css-variables/) is generally ignored by incorrect comparison to variables known from preprocessors like Sass or LESS. Don't follow this misconception and bare with me for the rest of this article.
 
-  "This module introduces a family of custom author-defined properties known collectively as custom properties, which allow an author to assign arbitrary values to a property with an author-chosen name, and the var() function, which allow an author to then use those values in other properties elsewhere in the document. This makes it easier to read large files, as seemingly-arbitrary values now have informative names, and makes editing such files much easier and less error-prone, as one only has to change the value once, in the custom property, and the change will propagate to all uses of that variable automatically."
+## Syntax
 
-- available in chrome 49+, ff 31+, safari 9.1+, iOS 9.3+
-- its not the same as sass or less variables (these are static and can’t be changed at runtime)
-- doesnt require external dependencies and additional compilation rpocess, "compilation hapens in the browser"
-- basic syntax. To define: valid identifier that starts with two dashes. To reference via var() function.
+ When I saw the syntax for a first time I wasn't a big fan. To be honest not much changed since. One of the spec creators gave us a [fair explanation](http://www.xanthir.com/blog/b4KT0) of naming decisions.
+
+ Declaration can be made in any selector and it requires a valid identifier that starts with two dashes. Unlike other CSS properties, variable names are case-sensitive. They follow all inheritance and specificity rules as all other ordinary properties. If you need a reminder how specificity in CSS works, I encourage you to read ["CSS Specificity explained"](https://pawelgrzybek.com/css-specificity-explained/) first.
 
 ```css
 :root {
   --brand-color: #06c;
 }
+```
 
+To reference a variable value we have to use `var()` function.
+
+```css
 h1 {
   color: var(--brand-color);
 }
 ```
 
-- Unlike other CSS properties, custom property names are case-sensitive.
-- Community complains for ugly syntax, why not $brand-color instead, more about it post by spec author http://www.xanthir.com/blog/b4KT0
-
-  Mainly, I think there's more space to explore here. If we use $foo for variables, we'll be unable to use it for future "variable-like" things. For example, if we do define an alternate form that are more SASS-like (can be used anywhere, but are global; more "macros" than "variables") we'd have to use some other glyph for them. That's suboptimal.
-
-- CSS Variables follows all specificity rules that we already know from plain old CSS
-- part of spec quote
-
-  Custom properties are ordinary properties, so they can be declared on any element, are resolved with the normal inheritance and cascade rules, can be made conditional with @media and other conditional rules, can be used in HTML’s style attribute, can be read or set using the CSSOM, etc.
-
-```css
-:root { --color: blue; }
-div { --color: green; }
-#alert { --color: red; }
-* { color: var(--color); }
-```
-
-```html
-<p>I inherited blue from the root element!</p>
-<div>I got green set directly on me!</div>
-<div id="alert">
-  While I got red set directly on me!
-  <p>I’m red too, because of inheritance!</p>
-</div>
-```
-
-- specificyty allows us to use it easily with media queries
+Custom properties can share values between each other.
 
 ```css
 :root {
-  --gutter: 4px;
-}
-
-section {
-  margin: var(--gutter);
-}
-
-@media (min-width: 600px) {
-  :root {
-    --gutter: 16px;
-  }
+  --brand-color: #06c;
+  --logo-color: var(--brand-color);
 }
 ```
 
-- custom properies can share values from each other
+Brand new var function allows fallback value in case that propert wasn't declared beforehand.
 
 ```css
-:root {
-  --primary-color: red;
-  --logo-text: var(--primary-color);
+p {
+  font-family: var(--font-stack, Roboto, Helvetica);
 }
+
+// Yes, quotation marks are not needed,
+// More about it here:
+// https://mathiasbynens.be/notes/unquoted-font-family
 ```
 
-- var function allows fallback value
+Variables cannot be a property names or part of a values. Following examples are not valid.
 
 ```css
-var(--font-stack, Roboto, Helvetica)
-
-// Yes, quotation marks ar not needed, more about it here: https://mathiasbynens.be/notes/unquoted-font-family
-```
-
-- Variables cannot be property names
-
-```css
-// This one throws an error, not margin-top: 20px
+// This one throws an error
 
 .foo {
   --side: margin-top;
@@ -92,10 +58,9 @@ var(--font-stack, Roboto, Helvetica)
 }
 ```
 
-- you can’t use variables as a part of value
-
 ```css
-// This one throws an error, not margin-top: 20px
+// This one throws an error
+
 .foo {
   --gap: 20;
   margin-top: var(--gap)px;
@@ -108,46 +73,119 @@ var(--font-stack, Roboto, Helvetica)
 }
 ```
 
-- in javascript use getPropertyValue() and setProperty()
-- getPropertyValue()
+## Difference between native CSS variables and Sass variables
+
+Preprocessors like [Sass](http://sass-lang.com/) or [PostCSS](postcss.org) (yes, it is preprocessor, not post-processor) are fantastic! Variables known from these tools are not exactly the same as CSS Custom Properties tho. They apply a static value to declaration during the compilation process. New native CSS feature applies a value to a DOM element on runtime and browser allows us to reassign it. Dynamic nature of this feature comes with rest of the language advantages like media queries of cascading. Let's have a look at the classic case that is imposible with preprocessors, but works fine with native CSS.
+
+```scss
+$fz: 1rem;
+
+@media (min-width: 60rem) {
+  $fz: 1.5rem;
+}
+
+body {
+  font-size: $fz;
+}
+```
+
+Above example applies a static `font-size: 1rem` to `body` tag. Media query is completely ignored because media query is not something that works in C or Ruby compiler but it is something that works only in the browser. To make it work in Sass we have to create two separated variables and assign them dependable of the breakpoint. CSS Custom Properties don't require additional compilation process and browser applies the value on runtime as expected.
 
 ```css
 :root {
-  --primary-color: red;
+  --fz: 1rem;
 }
 
-p {
-  color: var(--primary-color);
+@media (min-width: 60rem) {
+  :root {
+    --fz: 1.5rem;
+  }
+}
+
+body {
+  font-size: var(--fz);
+}
+```
+
+In my opinion it is freaking awesome and it opens an array of new options that wasn't possible before. I have a much more examples like above one in back of my head, but hopefully this one clearly illustrates the subject.
+
+## Working with CSS Custom Properties and JavaScript
+
+The true power of CSS Custom Properties comes when we combine it together with JavaScript. Very few lines of code allows us to get and change the value of CSS custom property as any other properties. Let's go through few simple examples.
+
+### Get the value of CSS Custom Properties
+
+To get a value of property we have to use `getPropertyValue()`.
+
+```css
+:root {
+  --brand-color: salmon;
 }
 ```
 
 ```js
 var styles = getComputedStyle(document.documentElement);
-var value = String(styles.getPropertyValue('--primary-color')).trim(); // red
+var customProp = String(styles.getPropertyValue('--brand-color')).trim();
+
+console.log(customProp);
+// salmon
 ```
 
-- setProperty()
+### Reassign the value of CSS Custom Properties
 
-```
-/* CSS */
+To reassign value `setProperty()` comes handy.
+
+```css
 :root {
-  --primary-color: red;
+  --brand-color: salmon;
 }
 
 p {
-  color: var(--primary-color);
+  color: var(--brand-color);
 }
 ```
 
 ```js
-document.documentElement.style.setProperty('--primary-color', 'green');
+document.documentElement.style.setProperty('--brand-color', 'purple');
 ```
 
-- use setProperty() with different custom propoerty value
+```html
+<p>I’m a purple paragraph!</p>
+```
+
+## Browser support detection for CSS Custom Properties
+
+Browser support for [CSS Variables](http://caniuse.com/#search=css%20var) isn't great at the time of writing this article. Google Chrome 49+, Firefox 31+, Safari 9.1+ and iOS 9.3+ doesn't make it reliable enough to use it in production. Luckily we few methods to detect browser support for the hero of today's article. [Native feature detection with CSS.supports() API](https://pawelgrzybek.com/native-feature-detection-with-csssupports-api/) helps us with that. Lets have a look.
+
+```css
+body {
+  --bg-color: #98FB98;
+  background-color: khaki;
+}
+
+@supports (background-color: var(--bg-color)) {
+  body {
+    background-color: var(--bg-color);
+  }
+}
+
+@supports not(background-color: var(--bg-color)) {
+  body {
+    background-color: tomato;
+  }
+}
+```
+
 
 ```js
-document.documentElement.style.setProperty('--primary-color', 'var(--secondary-color)');
+CSS.supports('background-color', 'var(--bg-color)')
 ```
+
+It wasnt super reliable, and link Wes' method as well.
+
+
+
+
 
 - example: Day / night mode switcher
 
