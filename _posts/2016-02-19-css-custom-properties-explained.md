@@ -207,7 +207,7 @@ testCSSVariables();
 
 ## Day / night mode switch
 
-Codepen is already full of beautiful projects that use CSS Custom Properties. Mine is nothing near this level of creativity but I had good fun doing it. I'm super curious about how you use CSS Custom Properties. Don't be shy and post a link in the comments section :)
+Codepen is already full of beautiful projects that use CSS Custom Properties. Mine is nothing near this level of creativity but I had good fun doing it. Before checking example below, please make sure your browser [supports CSS Custom Properties](http://caniuse.com/#feat=css-variables) first. I'm super curious about how you use CSS Custom Properties. Don't be shy and post a link in the comments section :)
 
 <p data-height="391" data-theme-id="14885" data-slug-hash="KVLmXQ" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/KVLmXQ/'>2016-02-19-css-custom-properties-explained</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
