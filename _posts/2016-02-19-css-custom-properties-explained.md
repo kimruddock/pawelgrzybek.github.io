@@ -1,7 +1,7 @@
 ---
 title: CSS Custom Properties explained
 excerpt: CSS Custom Properties (colloquially known as a CSS Variables) are around the corner. Let's embrace the power of a feature that we've been waiting years for.
-photo: 2016-02-20.jpg
+photo: 2016-02-19.jpg
 ---
 
 In programming languages the term "variable" describes a storage location normally associated with an identifier that contains some value. Despite fact that CSS is a markup language, spec creators were very generous recently and gave us a tiny, but very powerful piece of real programming capability. Excitement about native [CSS Custom Properties](https://www.w3.org/TR/css-variables/) is generally tempered by the incorrect comparison to variables used in preprocessors like [Sass](http://sass-lang.com/) or [LESS](http://lesscss.org/). Don't be fooled by this misconception! Bare with me for the rest of this article and let's embrace the power of this new native feature together.
@@ -157,13 +157,13 @@ Browser support for [CSS Variables](http://caniuse.com/#search=css%20var) isn't 
 
 ```css
 body {
-  --brand-color: #98FB98;
-  background-color: khaki;
+  --bg-color: #e46764;
+  background-color: pink;
 }
 
-@supports (background-color: var(--brand-color)) {
+@supports (background-color: var(--bg-color)) {
   body {
-    background-color: var(--brand-color);
+    background-color: var(--bg-color);
   }
 }
 ```
@@ -171,11 +171,10 @@ body {
 
 ```js
 CSS.supports('background-color', 'var(--bg-color)');
-
 // returns a boolean value
 ```
 
-This method isn't bulletproof because support for `@support` isn't amazing at all. [Wes Bos posted](https://gist.github.com/wesbos/8b9a22adc1f60336a699) a much more reliable method the other day. Thanks man!
+This method isn't bulletproof because support for `@support` isn't amazing at all. [Wes Bos](https://twitter.com/wesbos) posted a much more [reliable method](https://gist.github.com/wesbos/8b9a22adc1f60336a699) the other day. Thanks man!
 
 ```js
 function testCSSVariables() {
@@ -203,10 +202,12 @@ function testCSSVariables() {
 }
 
 testCSSVariables();
+// returns a boolean value
 ```
 
 ## Day / night mode switch
 
 Codepen is already full of beautiful projects that use CSS Custom Properties. Mine is nothing near this level of creativity but I had good fun doing it. I'm super curious about how you use CSS Custom Properties. Don't be shy and post a link in the comments section :)
 
-!!! CODEPEN LINK HERE !!!
+<p data-height="391" data-theme-id="14885" data-slug-hash="KVLmXQ" data-default-tab="result" data-user="pawelgrzybek" class='codepen'>See the Pen <a href='http://codepen.io/pawelgrzybek/pen/KVLmXQ/'>2016-02-19-css-custom-properties-explained</a> by Pawel Grzybek (<a href='http://codepen.io/pawelgrzybek'>@pawelgrzybek</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
