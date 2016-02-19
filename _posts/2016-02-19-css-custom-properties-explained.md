@@ -170,7 +170,7 @@ body {
 
 
 ```js
-CSS.supports('background-color', 'var(--bg-color)');
+CSS.supports('--bg-color', '#e46764');
 // returns a boolean value
 ```
 
