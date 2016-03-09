@@ -1,10 +1,10 @@
 ---
-title: Review of my first year of blogging
-excerpt: Exactly year ago I published my first blog post. I'm not going to stop here - sure thing. Nothing went bad, so let me share with you what went well.
+title: My first year of blogging
+excerpt: Exactly one year ago I published my first blog post. I'm not going to stop here - sure thing. Nothing went bad, so let me share with you what went well.
 photo: 2016-03-11.jpg
 ---
 
-Web developer's learning curve is endless and the main source of information are blogs created by other developers. Vast majority of authors highlight the benefits of written content whenever they share some thoughts about their career path. I have never understood before I tried that by myself. Exactly one year ago I published [my first article](https://pawelgrzybek.com/hello-there/) on this website and I can't be happier that I started.
+Web developer's learning curve is endless and the main source of information are blogs created by other developers. Vast majority of good developers highlight the benefits of written content whenever they share some thoughts about their career path. I have never understood before I tried that by myself. Exactly one year ago I published [my first article](https://pawelgrzybek.com/hello-there/) on this website and I can't be happier that I started. I won't stop here - sure thing! Let me share with you my thoughts about my first year of blogging.
 
 TLTR: Create a blog, write one, publish one - now!
 
