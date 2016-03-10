@@ -15,7 +15,7 @@ var uglify = require('gulp-uglify');
 
 // Build jekyll project
 gulp.task('jekyll', (done) => {
-  cp.spawn('jekyll', ['build', '--drafts', '--quiet'], { stdio: 'inherit' }).on('close', done);
+  cp.spawn('jekyll', ['build', '--drafts', '--quiet', '--future'], { stdio: 'inherit' }).on('close', done);
 });
 
 // Rebuild and refresh project
