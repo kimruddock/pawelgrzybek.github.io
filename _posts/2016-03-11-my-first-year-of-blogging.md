@@ -10,7 +10,7 @@ A web developer's learning curve is endless and the main source of information a
 
 There is no place here for any boring stats, simply because I have no access to the numbers. During the early days I had a Google Analytics tracking script installed, but pretty soon after it was installed I got rid of it. I decided I would rather dedicate my time to writing content instead of investigating the numbers of visitors or bounce rates (I still barely know what that is). Even now I have no clue how many people read my articles.
 
-My domain costs me £6 annually and this is the only cost that I spent on the website. I earned on my website £0. I have never thought about it as a source of income and I'm going to be stick by this.
+My domain costs me £6 annually and this is the only cost that I spent on the website. As a hosting I use GitHub Pages - it is totally for free. I earned on my website £0. I have never thought about it as a source of income and I'm going to be stick by this.
 
 I managed to publish 37 articles in total which averages at a serving of fresh content every 10 days. Compared to some other popular bloggers this score isn't impressive at all. Regardless, I'm really proud of the work that I have done taking into consideration the fact that I have a full time job (which is not related with my personal projects), run a small online business with my good friend who lives 2000km away, care about my lovely cat and recently split with my girlfriend after a 4 year relationship. Although I'd wish to write more, I can't keep that promise right now.
 
