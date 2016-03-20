@@ -24,19 +24,6 @@
 /* line-height: 34px; */
 
 
-/* Min width 1440px */
-
-/* font-size: 140.625%; */
-/* font-size: my value * default browser font size * line height multiplier; */
-/* font-size: 140.625% * 16; */
-/* font-size: 22.5px; */
-
-/* line-height: 1.6rem; */
-/* line-height: font size * line height multiplier; */
-/* line-height: 22.5 * 1.6; */
-/* line-height: 36px; */
-
-
 ::selection {
   background: var(--color1);
   color: #fff;
@@ -55,15 +42,9 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 734px) {
   html {
     font-size: 132.8125%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  html {
-    font-size: 140.625%;
   }
 }
 
@@ -85,15 +66,9 @@ body {
   background-size: 100% 28px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 734px) {
   body {
     background-size: 100% 34px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  body {
-    background-size: 100% 36px;
   }
 }
 
