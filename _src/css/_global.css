@@ -33,7 +33,7 @@ html {
 body {
   height: 100%;
   color: var(--color-text);
-  font-family: var(--ff);
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: var(--lh);
 /*  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
