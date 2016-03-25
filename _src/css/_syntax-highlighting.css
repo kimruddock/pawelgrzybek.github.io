@@ -1,7 +1,7 @@
 pre,
 code {
   font-family: 'Source Code Pro', monospace;
-  font-size: var(--h5);
+  font-size: .8470rem;
   overflow-x: auto;
   vertical-align: top;
   background: #f7f7f7;
@@ -10,7 +10,7 @@ code {
 .highlight {
   background: #f7f7f7;
   margin-bottom: var(--lh);
-  padding: calc(1.6rem / 2) calc(1.6rem * 0.75);
+  padding: .8rem;
   box-shadow: inset 0 0 0 1px var(--color-border);
 
 

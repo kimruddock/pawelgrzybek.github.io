@@ -1,3 +1,29 @@
+/* Default values */
+
+/* font-size: 109.375%; */
+/* font-size: my value * default browser font size * line height multiplier; */
+/* font-size: 109.375% * 16; */
+/* font-size: 17.5px; */
+
+/* line-height: 1.6rem; */
+/* line-height: font size * line height multiplier; */
+/* line-height: 17.5 * 1.6; */
+/* line-height: 28px; */
+
+
+/* Min width 700px */
+
+/* font-size: 132.8125%; */
+/* font-size: my value * default browser font size * line height multiplier; */
+/* font-size: 132.8125% * 16; */
+/* font-size: 21.25px; */
+
+/* line-height: 1.6rem; */
+/* line-height: font size * line height multiplier; */
+/* line-height: 21.25 * 1.6; */
+/* line-height: 34px; */
+
+
 ::selection {
   background: var(--color1);
   color: #fff;
@@ -6,7 +32,7 @@
 
 html {
   height: 100%;
-  font-size: var(--fz-mobile);
+  font-size: 109.375%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -16,9 +42,9 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 734px) {
   html {
-    font-size: var(--fz-desktop);
+    font-size: 132.8125%;
   }
 }
 
@@ -33,11 +59,17 @@ html {
 body {
   height: 100%;
   color: var(--color-text);
-  font-family: var(--ff);
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: var(--lh);
 /*  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% var(--lh);*/
+  background-size: 100% 28px;*/
+}
+
+@media screen and (min-width: 734px) {
+  body {
+    background-size: 100% 34px;
+  }
 }
 
 img {

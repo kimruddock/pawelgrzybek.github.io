@@ -29,5 +29,5 @@
   .article__date {
     display: block;
     margin-bottom: calc(var(--lh) / 2);
-    font-size: var(--h6);
+    font-size: var(--h5);
   }

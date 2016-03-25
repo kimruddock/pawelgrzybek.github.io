@@ -1,26 +1,23 @@
 :root {
   /* Base typography settings */
 
-  /* 28  = desirable line-height */
-  /* 1.6 = font-size multiplier (same like unitless --$lh) */
-  /* 16  = default browser font-size */
-  /* 17.5px */
-   --fz-mobile: calc(28 / 1.6 / 16 * 100%);
-  /* 32  = desirable line-height */
-  /* 1.6 = font-size multiplier (same like unitless --lh) */
-  /* 16  = default browser font-size */
-  /* 20px */
-   --fz-desktop: calc(32 / 1.6 / 16 * 100%);
-
   --lh: 1.6rem;
-  --ff: 'Source Sans Pro', sans-serif;
 
-  --h1: 2rem;
-  --h2: 1.5rem;
-  --h3: 1.25rem;
+  /* Perfect fourth scale (1.333) */
+
+  /* h1 | 1rem * 1.333 * 1.333 * 1.333 = 2.3686rem; */
+  /* h2 | 1rem * 1.333 * 1.333 = 1.7769rem; */
+  /* h3 | 1rem * 1.333 = 1.333rem; */
+  /* h4 | 1rem = 1rem; */
+  /* h5 | 1rem / 1.333 = 0.7501rem; */
+  /* h6 | 1rem / 1.333 / 1.333 = 0.5626rem; */
+
+  --h1: 2.3686rem;
+  --h2: 1.7769rem;
+  --h3: 1.333rem;
   --h4: 1rem;
-  --h5: .875rem;
-  --h6: .75rem;
+  --h5: .7501rem;
+  --h6: .5626rem;
 
 /* Colors */
   --color-text: #333;
