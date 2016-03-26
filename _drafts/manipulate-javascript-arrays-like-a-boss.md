@@ -4,11 +4,11 @@ excerpt: JavaScript arrays comes with many useful methods. Mastering them can ma
 photo: 2016-03-26.jpg
 ---
 
-One of the most amazing things in programming is fact that one task can be achieved via number of different methods. My recent journey through world of [React](https://facebook.github.io/react/) became extremely fascinating not only because of amazingness of this library. Spending so much time in JavaScript environment taught me a lot of the language core features. I would like to spend few minutes and show you three easy methods that will make you an arrays hero. I will try to keep all the examples in this article bloody simple, just for clarity of discussed concepts.
+One of the most amazing things in programming is fact that the one task can be achieved via number of different methods. My recent journey through world of [React](https://facebook.github.io/react/) became extremely fascinating not only because of amazingness of this library. Spending so much time in JavaScript environment taught me a lot of the language core features. I would like to spend few minutes and show you three easy methods that will make you an arrays hero. I will try to keep all the examples in this article bloody simple, just for clarity of discussed concepts.
 
 ## Stop looping, start mapping
 
-[`Array.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) is an method that behaves like a loop that creates a new array and returns values transformed by callback function applied. It doesn't do anything more than standard `for` or `forEach` can do, just provides a much nicer notation. It always returns an array with the same length and every element corresponds to one on the same position in source array. Let's have a look at the example where we're increasing each number in collection by one. First one with `for` loop and next one with `.map()`.
+[`Array.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) is an method that behaves like a loop that creates a new array and returns values transformed by applied callback function. It doesn't do anything more than standard `for` or `forEach` can do, just provides a much nicer notation. It always returns an array with the same length and every element corresponds to one on the same position in source array. Let's have a look at the example where we're increasing each number in collection by one. First one with `for` loop and next one with `.map()`.
 
 ```js
 var numbers = [2, 5, 8];
