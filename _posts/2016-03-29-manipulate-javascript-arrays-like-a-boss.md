@@ -8,7 +8,7 @@ One of the most amazing things in programming is the fact that one task can be a
 
 ## Stop looping, start mapping
 
-[`Array.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) is a method that behaves like a loop. It creates a new array and returns values transformed by the applied callback function. It doesn't do anything more than the standard `for` or `forEach` loops can do, it just provides a much nicer notation. It always returns an array with the same length and every element corresponds to the same position in the source array. Let's have a look at these examples where we're increasing each number in a collection by one. The first one with a `for` loop and the next one using `.map()`.
+[`Array.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) is a method that behaves like a loop. It creates a new array and returns values transformed by the applied callback function. It doesn't do anything more than the standard `for` or `forEach` can do, it just provides a much nicer notation. It always returns an array with the same length and every element corresponds to the same position in the source array. Let's have a look at these examples where we're increasing each number in a collection by one. The first one with a `for` loop and the next one using `.map()`.
 
 ```js
 var numbers = [2, 5, 8];
@@ -44,7 +44,7 @@ console.log(numbersNew);
 
 ## Filter values in an array
 
-What if we would like to create a new array based on an already existing one, but simultaneously remove all the elements that are smaller than 5? Easy, right? Write a quick loop, an if statement, and push the result to a new collection. Yes, you are right, it does the job, but let me introduce you to the [`Array.prototype.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) method. It works in a very similar way to `map()`, but the callback function, instead of returning a modified element, returns a boolean value that dictates if the element should be added to the new array (`true`) or not (`false`). Compared to map, filter doesn't guarantee that the length of the new array is the same as the source array. Time for some examples. Again, the first one using a `for` loop and the second one using the `filter()` method.
+What if we would like to create a new array based on an already existing one, but simultaneously remove all the elements that are smaller than 5? Easy, right? Write a quick loop, an if statement, and push the result to a new collection. Yes, you are right, it does the job, but let me introduce you to the [`Array.prototype.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) method. It works in a very similar way to `map()`, but the callback function, instead of returning a modified element, returns a boolean value that dictates if the element should be added to the new array (`true`) or not (`false`). Compared to map, `filter` doesn't guarantee that the length of the new array is the same as the source array. Time for some examples. Again, the first one using a `for` loop and the second one using the `filter()` method.
 
 ```js
 var numbers = [2, 5, 8];
@@ -82,7 +82,7 @@ console.log(numbersNew);
 
 ## Reducing an array's values to a single value
 
-Lets say we would like to sum all of the values in an array. [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) comes in handy. This method is a bit more complicated, but at the same time much more powerful. Compared to `map()` and `filter()`, the callback function of `reduce()` can take one more argument - the initial value. The second argument is optional. Let's go back to our example and try to sum up all the values inside an array. Similarly to the previous examples, I will first show you a possible solution using a `for` loop, and then via the `reduce()` method.
+Lets say we would like to sum all of the values in an array. [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) comes in handy. This method is a bit more complicated, but at the same time much more powerful. Compared to `map()` and `filter()`, `reduce()` can take one more argument - the initial value - not only the callback function. The second argument is optional. Let's go back to our example and try to sum up all the values inside an array. Similarly to the previous examples, I will first show you a possible solution using a `for` loop, and then via the `reduce()` method.
 
 ```js
 var numbers = [2, 5, 8];
@@ -170,7 +170,7 @@ console.log(numbersNew);
 
 ## I hope this helped you out
 
-When I learned these three methods I had one of those 'WOW' moments and I wanted to use them everywhere. However you should be aware about the lack of support for these features in Internet Explorer 8 and older. I hope you don't need to support these browsers anymore, but if you have to [es5-shim](https://github.com/kriskowal/es5-shim/) covers you.
+When I learned these three methods I had one of those "WOW" moments and I wanted to use them everywhere. However you should be aware about the lack of support for these features in Internet Explorer 8 and older. I hope you don't need to support these browsers anymore, but if you have to [es5-shim](https://github.com/kriskowal/es5-shim/) covers you.
 
 Mattias Petter Johansson and his [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/feed) YouTube channel is a good place to visit if you would like a deeper explanation of [filter()](https://youtu.be/BMUiFMZr7vk) and [map()](https://youtu.be/bCqtb-Z5YGQ). Subscribe to it and wait for new episodes every Monday morning!
 
