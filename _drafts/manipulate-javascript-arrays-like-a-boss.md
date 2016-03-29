@@ -4,7 +4,7 @@ excerpt: JavaScript arrays comes with many useful methods. Mastering them can ma
 photo: 2016-03-26.jpg
 ---
 
-One of the most amazing things in programming is fact that the one task can be achieved via number of different methods. My recent journey through world of [React](https://facebook.github.io/react/) became extremely fascinating not only because of amazingness of this library. Spending so much time in JavaScript environment taught me a lot of the language core features. I would like to spend few minutes and show you three easy methods that will make you an arrays hero. I will try to keep all the examples in this article bloody simple, just for clarity of discussed concepts.
+One of the most amazing things in programming is fact that the one task can be achieved via number of different methods. My recent journey through world of [React.js](https://facebook.github.io/react/) became extremely fascinating not only because of amazingness of this library. Spending so much time in JavaScript environment taught me a lot of the language core features. I would like to spend few minutes and show you three easy methods that will make you an arrays hero and give you a great start to functional programming. I will try to keep all the examples in this article bloody simple, just for clarity of discussed concepts.
 
 ## Stop looping, start mapping
 
@@ -82,7 +82,7 @@ console.log(numbersNew);
 
 ## Reducing array's values to a single value
 
-Lets say we would like to sum up all the values in an array. [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) comes handy. This method is a bit more complicated, but at the same time much more powerful. Compared to `map()` and `filter()`, `reduce()` next to callback function can take one more argument - initial value. Second argument is optional. Let's go back to our example and try to sum up all the values inside an array. Similarly to previous exmaples, I will first show you a posible solution via `for` loop, and then via `reduce()` method.
+Lets say we would like to sum up all the values in an array. [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) comes handy. This method is a bit more complicated, but at the same time much more powerful. Compared to `map()` and `filter()`, `reduce()` next to callback function can take one more argument - initial value. Second argument is optional. Let's go back to our example and try to sum up all the values inside an array. Similarly to previous examples, I will first show you a possible solution via `for` loop, and then via `reduce()` method.
 
 ```js
 var numbers = [2, 5, 8];
@@ -144,7 +144,7 @@ Passing optional initial value as a second argument slightly changes previously 
 
 ## Chain it together
 
-The beautiful thing about `map()` and `filter()` is fact that the array goes in and arreys goes out as a result of a method. It means we can chain these methods together with ease.
+The beautiful thing about `map()` and `filter()` is fact that the array goes in and array goes out as a result of a method. It means we can chain these methods together with ease.
 
 ```js
 var numbers = [2, 5, 8];
