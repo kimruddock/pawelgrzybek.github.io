@@ -26,7 +26,7 @@ Wes Bos with next amazing mini series, this time about Markdown. Like a bread an
 
 [https://youtu.be/n1cKlKM3jYI](https://youtu.be/n1cKlKM3jYI)
 
-A great introduction about DOM, CSSOM, Layout and Paint - all that you need to understand to know what happens with a web page   from the browser perspective. Great one Umar!
+A great introduction about DOM, CSSOM, Layout and Paint - all that you need to understand to know what happens with a web page   from the browsers perspective. Great one Umar!
 
 - - -
 
@@ -34,7 +34,7 @@ A great introduction about DOM, CSSOM, Layout and Paint - all that you need to u
 
 [https://github.com/blog/2119-pull-request-and-issue-reactions](https://github.com/blog/2119-pull-request-and-issue-reactions)
 
-Another requested feature is landing on Github. No we can vote pull requests, issues and comments via Mark Zuckerberg style emoji things. I would say that old fashion ‘+’ and ‘-’ would do the better job, but this one is cool as well :)
+Another requested feature is landing on Github. Now we can vote pull requests, issues and comments with Facebook's style emoji things. I have to say that old fashion "+" and "-" would do the better job, but this one is cool as well :)
 
 - - -
 
@@ -42,7 +42,7 @@ Another requested feature is landing on Github. No we can vote pull requests, is
 
 [https://youtu.be/e8IwM3iqnL0](https://youtu.be/e8IwM3iqnL0)
 
-Paul Lewis from Google recorder fantastic 1 hour screencast. He goes through process of building small zoomer box that hovers over the picture. I learned so many amazing things by this vide. Thanks a lot Paul!
+Paul Lewis from Google recorded fantastic one hour screencast. He goes through process of building small zoomer box that hovers over the picture. I learned so many amazing things by this video. Thanks a lot Paul!
 
 - - -
 
@@ -82,7 +82,7 @@ A great live coding session with Sarah Drasner and Chris Coyier from CSS Tricks.
 
 [http://bitsofco.de/on-not-and-specificity/](http://bitsofco.de/on-not-and-specificity/)
 
-Specificity of very `:not` explained by Ire Aderinokun. Great snappy article that covers everything that you need to know about hyper useful CSS3 pseudo-class `:not`.
+Specificity of very `:not` explained by Ire Aderinokun. Great snappy article that covers everything that you need to know about CSS3 pseudo-class `:not`.
 
 - - -
 
