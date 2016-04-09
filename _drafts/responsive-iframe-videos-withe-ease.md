@@ -4,7 +4,7 @@ excerpt: Make your iframe videos from YouTube or Vimeo responsive with ease with
 photo: 2016-04-10.jpg
 ---
 
-I would like to share with you an easy script that I published recently. [Liquid video](https://github.com/pawelgrzybek/liquid-video) does exactly what the name suggest. It converts fixed sized iframe videos (from YouTube, Vimeo and other services like that) to responsive ones that adapt to width of the parent container. It does exactly the same job as popular [FitVids](http://fitvidsjs.com/) plugin but doesn't rely on additional jQuery dependency. It is extremely lightweight - only 417 Bytes minified and 998 Bytes unminified.
+I would like to share with you an easy script that I published recently. [Liquid video](https://github.com/pawelgrzybek/liquid-video) does exactly what the name suggest. It converts fixed sized iframe videos (from YouTube, Vimeo and other services like that) to responsive ones that adapt to width of the parent container. It does exactly the same job as popular [FitVids](http://fitvidsjs.com/) but doesn't rely on additional jQuery dependency. It is extremely lightweight - only 417 Bytes minified and 998 Bytes unminified.
 
 ## How to use Liquid video
 
@@ -12,7 +12,7 @@ You have two options to use [Liquid video](https://github.com/pawelgrzybek/liqui
 
 ### Manual method
 
-Simply inject a minified script in source code of your website and instantiate a new `LiqudVideo` with custom query as an only argument. Use it just before closing of `body` tag.
+Simply inject a minified script in source code of your website and instantiate a new `LiqudVideo` with custom element query as an only argument. Use it just before closing of `body` tag.
 
 ```html
 <script src="js/liquid-video.min.js"></script>
@@ -29,7 +29,7 @@ In age of module bundlers like [Browserify](http://browserify.org/) or [Webpack]
 npm install --save liquid-video
 ```
 
-And the same thing for lazy people like me...
+Personally I prefer to use shortcuts...
 
 ```
 npm i -S liquid-video
