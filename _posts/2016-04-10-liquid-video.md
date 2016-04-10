@@ -4,7 +4,7 @@ excerpt: Make your iframe videos from YouTube or Vimeo responsive with ease with
 photo: 2016-04-10.jpg
 ---
 
-I would like to share with you an easy script that I published the other day. [Liquid video](https://github.com/pawelgrzybek/liquid-video) does exactly what the name suggests. It converts fixed sized iframe videos (from YouTube, Vimeo and other services like that) to responsive ones that adapt to width of the parent container. It does exactly the same job as popular [FitVids](http://fitvidsjs.com/) but doesn't rely on additional jQuery dependency. It is extremely lightweight - only 417 Bytes minified and 998 Bytes unminified.
+I would like to share with you an easy script that I published the other day. [Liquid video](https://github.com/pawelgrzybek/liquid-video) does exactly what the name suggests. It converts fixed sized iframe videos (from YouTube, Vimeo and other services like that) to responsive ones that adapt to the width of the parent container. It does exactly the same job as popular [FitVids](http://fitvidsjs.com/) but doesn't rely on additional jQuery dependency. It is extremely lightweight - only 417 Bytes minified and 998 Bytes unminified.
 
 ## How to use Liquid video
 
