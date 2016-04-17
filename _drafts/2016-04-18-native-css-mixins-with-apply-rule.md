@@ -1,20 +1,20 @@
 ---
 title: Native CSS mixins with @apply rule
-excerpt: I am very excited about recently added features to CSS. We discussed custom properties and now it is a time to talk about native mixins with @apply rule.
+excerpt: I am very excited about a recently added CSS feature. Previously we discussed custom properties, now it's time to talk about native mixins using the @apply rule.
 photo: 2016-04-18.jpg
 ---
 
-I am very excited about recent evolution of CSS that makes this language more powerful. Flexbox was a buzz word some time ago, today it is well supported and widely adopted by developers and designers part of spec. Few months back I published an [intro to CSS grid layout module](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that is another approaching thing that will extremely change the way how we structure our projects. Enormous popularity of preprocessors like Sass or LESS definitely influenced spec authors to carry variables to the language as a CSS Custom Properties. I recently published a [post](https://pawelgrzybek.com/css-custom-properties-explained/) that explains everything that you need to know about this great feature. Another think that developers and designers love in preprocessors are mixins. Good news my friend - [CSS @apply Rule](https://tabatkins.github.io/specs/css-apply-rule/) is just behind the corner. Let's embrace a native CSS mixins together.
+I am very excited about the recent evolution of CSS that makes this language much more powerful. Flexbox was a buzzword some time ago, today it is a part of the spec that is well supported and widely adopted by developers. A few months back I published an [intro to the CSS grid layout module](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that is another approaching feature that will dramatically change the way  we structure our projects. The enormous popularity of preprocessors like Sass or LESS undoubtedly influenced the spec authors to bring variables to the language as CSS Custom Properties. I recently published a [post](https://pawelgrzybek.com/css-custom-properties-explained/) that explains everything that you need to know about this great feature. Another aspect of preprocessors that developers and designers love are mixins. Well the good news keeps coming my friend - [CSS @apply Rule](https://tabatkins.github.io/specs/css-apply-rule/) is just around the corner. Let's embrace native CSS mixins together.
 
 > This specification defines the @apply rule, which allows an author to store a set of properties in a named variable, then reference them in other style rules.
 
-Before we begin with some code snippets and examples I need to inform you that for the time of writing this article [the only implementation](https://www.chromestatus.com/feature/5753701012602880) is in Google Chrome Canary with "Experimental Web Platform features" flag enabled.
+Before we begin with some code snippets and examples I need to inform you that at the time of writing this article [the only implementation](https://www.chromestatus.com/feature/5753701012602880) is in Google Chrome Canary with "Experimental Web Platform features" flag enabled.
 
 ![Enable Experimental Web Platform Featured Flag in Google Chrome](/photos/2016-04-18-1.jpg)
 
 ## Syntax
 
-If you familiar with syntax of CSS custom properties you won't struggle to memorize this one. Just wrap set of properties with curly braces like that...
+If you are familiar with the syntax of CSS custom properties you won't struggle to memorize this one. Just wrap a set of properties with curly braces like this...
 
 ```scss
 :root {
@@ -25,7 +25,7 @@ If you familiar with syntax of CSS custom properties you won't struggle to memor
 }
 ```
 
-Use mixin via new `@apply` at-rule.
+Use the mixin via new `@apply` at-rule.
 
 ```scss
 h1 {
@@ -38,9 +38,9 @@ h1 {
 
 ## Local variables in CSS mixins
 
-Sass allows us to pass list of locally defined variables to mixin. Unfortunately it isn't possible with `@apply` rule.
+Sass allows us to pass a list of locally defined variables to a mixin. Unfortunately this isn't possible with the `@apply` rule.
 
-If you have some object oriented JavaScript experience, the first thing that you will try as a way around it is this...
+If you have some object oriented JavaScript experience, the first thing that you will try as a way around this is doing something like...
 
 ```scss
 :root {
@@ -60,20 +60,20 @@ h1 {
 }
 
 /*
-brand-color value pulled from root, not local block
+brand-color value pulled from the root, not the local block
 value is red, not green
 it is CSS, not JavScript
 */
 ```
 
-...but it is not JavaScript my friend. It takes a value of variable from the place where set or properties is defined, not from the block that is "invoked" in.
+...but this is not JavaScript my friend. It takes the value of the variable from the place where the property is defined, not from the block that "invoked" in.
 
 ## Use native CSS mixins today
 
-As I mentioned before, the browser support for this feature is nearly none. [Chrome Platform Status](https://www.chromestatus.com/feature/5753701012602880) informs us that the first implementation is planned for Google Chrome 51 (behind the flag) and Opera 38. Any details about other browsers aren't revealed at the time of writing this article.
+As I mentioned before, the browser support for this feature is practically zero right now. [Chrome Platform Status](https://www.chromestatus.com/feature/5753701012602880) informs us that the first implementation is planned for Google Chrome 51 (behind the flag) and Opera 38. Any details about other browsers haven't been revealed at the time of writing this article.
 
-As a web developers we want to use the glory of future improvements now! Thats why I like [PostCSS](http://postcss.org/) so much! If you have never used it yet I highly encourage you to check my [introduction](https://pawelgrzybek.com/from-sass-to-postcss/) to PostCSS for Sass users. [Pascal Duez](https://twitter.com/pascalduez) created a [postcss-apply](https://github.com/pascalduez/postcss-apply) that allows us to use it today.
+As web developers we want to use the benefits of future improvements right now! That's why I like [PostCSS](http://postcss.org/) so much! If you have never used it I highly encourage you to check my [introduction](https://pawelgrzybek.com/from-sass-to-postcss/) to PostCSS for Sass users. [Pascal Duez](https://twitter.com/pascalduez) created a [postcss-apply](https://github.com/pascalduez/postcss-apply) that allows us to use `@apply` today.
 
-The feature detection for `@apply` isn't [that straight forward](https://pawelgrzybek.com/css-custom-properties-explained/#detect-the-browser-support-for-css-custom-properties) as with CSS Custom Properties. I'm sure this is just a matter of time to standardize the way to use it with `@support` rule. If you really need to detect a support for `@apply` rule, look at the [script](https://gist.github.com/malyw/477cd45bd0ed501a1c3ce0870ae16dd1) created by [Serg Gospodarets](https://twitter.com/malyw). Serg also published [list f great use cases](https://blog.gospodarets.com/css_apply_rule) for CSS Mixins on his blog.
+The feature detection for `@apply` isn't [as straight forward](https://pawelgrzybek.com/css-custom-properties-explained/#detect-the-browser-support-for-css-custom-properties) as it is with CSS Custom Properties. I'm sure this is just a matter of time to standardize the way to use it with the `@support` rule. If you really need to detect support for the `@apply` rule, look at the [script](https://gist.github.com/malyw/477cd45bd0ed501a1c3ce0870ae16dd1) created by [Serg Gospodarets](https://twitter.com/malyw). Serg also published [a list of great use cases](https://blog.gospodarets.com/css_apply_rule) for CSS Mixins on his blog.
 
-Hopefully you liked it. See you next time :-*
+I hope you found this overview useful. See you next time :-*
