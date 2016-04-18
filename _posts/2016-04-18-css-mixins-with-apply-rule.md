@@ -1,6 +1,6 @@
 ---
-title: Native CSS mixins with @apply rule
-excerpt: I am very excited about a recently added CSS features. Previously we discussed custom properties, now it's a time to talk about native mixins using the @apply rule.
+title: CSS mixins with @apply rule
+excerpt: I'm excited about a recently added CSS features. Previously we discussed custom properties, now it's a time to talk about mixins using the @apply rule.
 photo: 2016-04-18.jpg
 ---
 
