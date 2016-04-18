@@ -14,7 +14,7 @@ Before we begin with some code snippets and examples I need to inform you that a
 
 ## Syntax
 
-If you are familiar with the syntax of CSS custom properties you won't struggle to memorize this one. Just wrap a set of properties with curly braces like that...
+If you are familiar with the syntax of CSS Custom Properties you won't struggle to memorize this one. Just wrap a set of properties with curly braces like that...
 
 ```scss
 :root {
@@ -40,7 +40,7 @@ h1 {
 
 Sass allows us to pass a list of locally defined variables to a mixin. Unfortunately this isn't possible with the `@apply` rule.
 
-If you have some object oriented JavaScript experience, the first thing that you will try as a way around it is this...
+If you have some object oriented JavaScript experience, the first thing that you will try as a way around this is doing something like...
 
 ```scss
 :root {
@@ -66,7 +66,7 @@ it is CSS, not JavScript
 */
 ```
 
-...but this is not JavaScript my friend. It takes the value of the variable from the place where the property is defined, not from the block that is "invoked" in. Hopefully we will get ability to pass a parameters to a mixin at some point in the future - fingers crossed.
+...but this is not JavaScript my friend. It takes the value of the variable from the place where the mixin is defined, not from the block that is "invoked" in. Hopefully we will get ability to pass a parameters to a mixin at some point in the future - fingers crossed.
 
 ## Use native CSS mixins today
 
