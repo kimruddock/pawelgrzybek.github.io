@@ -13,14 +13,14 @@ One of my recent clients wanted to use this popular kind of layout well known fo
 Whenever I create a project like this, I’m starting with blank JavaScript file that is full of commented out instructions needed to accomplish the task. My initial plan to create this plugin looked similar to list below and it’s pretty much all what this script is doing.
 
 1. Store all articles in array and remove them from the DOM.
-2. Create a flex wrapper inside an element defined in settings.
-3. Dependable of the screen resolution create a few columns inside previously created wrapper (breakpoints and columns are configurable).
+2. Create a flex wrapper inside of the element defined in settings.
+3. Dependable of the screen resolution create columns inside previously created wrapper (breakpoints and columns are configurable).
 4. Loop through the articles inside the array and append one by one to the column with least space taken.
-5. When screen is resized, clear the container and repeat process again. Because resize is very intense event, I used custom debounce function to better handle this heavy action.
+5. When screen is resized, clear the container and repeat process again. Debouncing intense event `resize` incredibly improve script's performance.
 
 ## How to use it
 
-I created it in very universal way. You can inject the script to your document markup manually or use one of the amazing module bundlers like [Browserify](http://browserify.org/) or [Webpack](https://webpack.github.io/) to use node-style `required('bricky')` way. Amount of configuration is minimum with only two required settings (parent & elements) and two optionally configurable (gutter & breakpoints).
+You can inject the script to your document markup manually or use one of the cool module bundlers like [Browserify](http://browserify.org/) or [Webpack](https://webpack.github.io/) to use node-style `required('bricky')` way. Configuration is dead simple - only two required settings (parent & elements) and two optionally configurable (gutter & breakpoints).
 
 ### Options
 
@@ -55,8 +55,10 @@ npm i -S bricky
 In script file...
 
 ```js
+// Assign 'bricky' module to Bricky variable
 var Bricky = require('bricky');
 
+// store object with setting in perf variable
 var pref = {
   parent: '.masonry',
   elements: 'article',
@@ -68,6 +70,7 @@ var pref = {
   ]
 };
 
+// Instantiate new Bricky & invoke it
 var test = new Bricky(pref);
 test.start();
 ```
@@ -79,6 +82,7 @@ In document markup...
 ```html
 <script src="../js/bricky.min.js"></script>
 <script>
+  // store object with setting in perf variable
   var pref = {
     parent: '.masonry',
     elements: 'article',
@@ -90,9 +94,10 @@ In document markup...
     ]
   };
 
+  // Instantiate new Bricky & invoke it
   var test = new Bricky(pref);
   test.start();
 </script>
 ```
 
-Hopefully you find it useful. If you decide to use it on your porject, please send me a link - I'll be ultra proud and happy. Please let me know if you have any suggestions about the script.
+Hopefully you find it useful. If you decide to use it on your porject, please send me a link - I'll be ultra proud and happy. Please report bugs and share your suggestions. Bye :*
