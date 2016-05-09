@@ -1,12 +1,13 @@
 ---
-title: Easy Pinterest style layout with Bricky
+title: Pinterest style layout with Bricky
 excerpt: Pinterest / Masonry style layout has always been tricky to create. Thats why I created a very lightweight and free of dependencies Bricky.
-photo: 2016-05-09.jpg
+photo: 2016-05-10.jpg
 ---
 
-One of my recent clients wanted to use this popular kind of layout well known for Tumblr or Pinterest users. I did a quick research and I haven’t found any plugin that will fit into my needs (responsive, lightweight and free of dependencies). All resources that I found are huge libraries, require jQuery dependency or don’t fit well into fluid layouts. Instead of going deeper with my research I decided to code it by myself. [Bricky](https://github.com/pawelgrzybek/bricky) (thanks to my good friend Kim for this name) is very lightweight (only 1.68KB minified) and dependency free small script withy minimum amount of options. It is open-sourced and you can download it from [Github](https://github.com/pawelgrzybek/bricky) or from [npm](https://www.npmjs.com/package/bricky). It did the job pretty well on my project so maybe you will find it useful as well. Have a look at the [CodePen demo](https://codepen.io/pawelgrzybek/pen/vGbzpW).
+One of my recent clients wanted to use this trendy kind of layout well known for Tumblr or Pinterest users. I did a quick research and I haven’t found any plugin that fits my needs (responsive, lightweight and free of dependencies). All resources that I found are huge libraries, require jQuery dependency or don’t fit well into fluid layouts. Instead of going deeper with my research I decided to code it by myself. [Bricky](https://github.com/pawelgrzybek/bricky) (thanks to my good friend Kim for this name) is very lightweight (only 1.68KB minified) and dependency free small script withy minimum amount of options. It is open-sourced and you can download it from [Github](https://github.com/pawelgrzybek/bricky) or from [npm](https://www.npmjs.com/package/bricky). It did the job on my project so maybe you will find it useful as well. Have a look at the [CodePen demo](https://codepen.io/pawelgrzybek/pen/vGbzpW).
 
-!!! GIF HERE !!!
+
+![Bricky - Masonry style layout without jQuery](/photos/2016-05-10-1.jpg)
 
 ## How does it work
 
@@ -27,8 +28,8 @@ You can inject the script to your document markup manually or use one of the coo
 All what I needed and nothing else...
 
 ```js
-{
-  parent: '.masonry',
+var pref = {
+  parent: '.bricky',
   elements: 'article',
   gutter: '12px',
   breakpoints: [
@@ -36,7 +37,7 @@ All what I needed and nothing else...
     [900, 3],
     [1200, 4]
   ]
-}
+};
 ```
 
 - `parent` - (required) string with query where bricky should be placed
@@ -60,7 +61,7 @@ var Bricky = require('bricky');
 
 // store object with setting in perf variable
 var pref = {
-  parent: '.masonry',
+  parent: '.bricky',
   elements: 'article',
   gutter: '12px',
   breakpoints: [
@@ -71,8 +72,8 @@ var pref = {
 };
 
 // Instantiate new Bricky & invoke it
-var test = new Bricky(pref);
-test.start();
+var mySuperLayout = new Bricky(pref);
+mySuperLayout.start();
 ```
 
 ### Browser oldschool style
@@ -84,7 +85,7 @@ In document markup...
 <script>
   // store object with setting in perf variable
   var pref = {
-    parent: '.masonry',
+    parent: '.bricky',
     elements: 'article',
     gutter: '12px',
     breakpoints: [
@@ -95,9 +96,9 @@ In document markup...
   };
 
   // Instantiate new Bricky & invoke it
-  var test = new Bricky(pref);
-  test.start();
+  var mySuperLayout = new Bricky(pref);
+  mySuperLayout.start();
 </script>
 ```
 
-Hopefully you find it useful. If you decide to use it on your porject, please send me a link - I'll be ultra proud and happy. Please report bugs and share your suggestions. Bye :*
+Hopefully you found it useful. If you decide to use it on your porject, please send me a link - I'll be ultra proud and happy. Please report bugs and share your suggestions. Bye :*
