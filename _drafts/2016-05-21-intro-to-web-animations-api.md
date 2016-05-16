@@ -141,13 +141,24 @@ This is the main advantage of WAAPI over the CSS animations. Having an access to
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-## Animator constructor!!!
+## Animator constructor
+
+- cross the border between current and future implementation, but comes from current level of spec
+- only ff nightly or polyfill tho
+- more powerful way to create animation via constructor
+- stored in memory but not played
+- why does it matter?
+- allow to pass other effects and possibly a timeline in the future
 
 ## KeyframeEffect & GroupEffects & SequenceEffects & Custom Effects
 
 As I mentioned before, for the time being the only natively implemented property that we can use as an animation effect is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated effect like `GroupEffects` and `SequenceEffects`. It's possible apply group of animations to CSS but chaining animations together always had been pain in the arse.
 
 ## The future of Web Animations API
+
+- natively supported groups and sequenced animations
+- possibly new timelines
+- performance optimalisation for other properties
 
 ## People worth to follow and useful resources
 
