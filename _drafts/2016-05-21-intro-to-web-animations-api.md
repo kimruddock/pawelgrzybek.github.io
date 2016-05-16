@@ -4,7 +4,7 @@ excerpt: We have many methods to move things around on the web. Let’s embrace 
 photo: 2016-05-21.jpg
 ---
 
-We have plenty of ways to animate things in the web. The answer which one to use isn’t always easy. Each of them comes with pros & cons. Should we use CSS, `canvas`, Web GL, JavaScript `requestAnimationFrame` or `setInterval`? Maybe SMIL? Oh no — this one is dead by now. Maybe some external libraries like jQuery, GreenSock or VelocityJS? These are just few of possible ways to go. If you are keen to get to know a little bit more about these methods, I encourage you to read a fantastic article [“A Comparison of Animation Technologies”](https://css-tricks.com/comparison-animation-technologies/) by [Sarah Drasner](https://twitter.com/sarah_edo) on CSS-Tricks.
+We have plenty ways to animate things in the web. The answer which one to use isn’t always easy. Each of them comes with pros & cons. Should we use CSS, `canvas`, Web GL, JavaScript `requestAnimationFrame` or `setInterval`? Maybe SMIL? Oh no — this one is dead by now. Maybe some external libraries like jQuery, GreenSock or VelocityJS? These are just few of possible ways to go. If you are keen to get to know a little bit more about these methods, I encourage you to read a fantastic article [“A Comparison of Animation Technologies”](https://css-tricks.com/comparison-animation-technologies/) by [Sarah Drasner](https://twitter.com/sarah_edo) on CSS-Tricks.
 
 
 “Lord of the twins” is a funny descriptor that [Dave Rupert](https://twitter.com/davatron5000) named the [Web Animations API](https://w3c.github.io/web-animations/) in ShopTalk Show [episode](http://shoptalkshow.com/episodes/203-with-rachel-nabors-and-dan-wilson/) with [Rachel Nabors](https://twitter.com/rachelnabors) and [Dan Wilson](https://twitter.com/dancwilson) exclusively dedicated to this piece of spec. It is a combination of hardware accelerated CSS animations and power of JavaScript. This high-performance API exposes powerful animation methods that allow us to control animations of HTML and SVG elements.
@@ -26,9 +26,9 @@ The heading above is the biggest lie of this article because something like “b
 elem.animate(effect, options);
 ```
 
-Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the effect of an animation. At this moment the only natively implemented option that we can use is an object full of keyframes. When function is invoked, new `KeyframeEffect` object is created. In Level 2 spec we will be able to use more fancy things like `GroupEffects` and `SequenceEffects`. If you would like to use them today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some upcoming parts of a new spec. You can think about this parameter as it was `@keyframes` in CSS.
+Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that we can use is an array full of keyframes. The future spec allows to pass here an object with array of values. When function is invoked, new `KeyframeEffect` object is created. In Level 2 spec we will be able to use more fancy things like `GroupEffects` and `SequenceEffects`. If you would like to use all these features of tomorrow today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some of them. You can think about this parameter as it was `@keyframes` in CSS.
 
-The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass a much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of it as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
+The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass a much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
 
 ## Just do it, do it, do it now
 
@@ -124,9 +124,9 @@ Have a look...
 </p>
 
 
-## The power of WAAPI
+## Animation methods & properties
 
-For now we haven't seen anything that we cannot do via CSS. Let's make it happen. WAAPI `animate()` function apart from starting an animation does one more thing, returns a new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface that is equipped with very powerful properties and methods. Assigning animation to a variable gives us a power of invoking these methods later on. Let's do it and print to console brand new toys.
+For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's make it happen. When `animate()` function is invoked [few things](https://w3c.github.io/web-animations/#dom-animatable-animate) happen and as a result new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned - formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties and methods. Let's do it and print to console brand new toys.
 
 ```js
 var move = document.querySelector('.box').animate(blah, blah);
@@ -134,14 +134,18 @@ console.log(move);
 ```
 ![Web Animations API Animation object returned](/photos/2016-05-21-2.jpg)
 
-This is the main advantage of WAAPI over the CSS animations. It is going to be even more powerful in the future. Having an access to these bad boys, allows us to create a things like this...
+This is the main advantage of WAAPI over the CSS animations. It is going to be even more powerful in the future. Having an access to these bad boys, allows us to create things like this...
 
 <p>
-<p data-height="609" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="616" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-## The future of WAAPI
+## Animator constructor!!!
+
+## KeyframeEffect & GroupEffects & SequenceEffects & Custom Effects
+
+As I mentioned before, for the time being the only natively implemented property that we can use as an animation effect is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated effect like `GroupEffects` and `SequenceEffects`. It's possible apply group of animations to CSS but chaining animations together always had been pain in the arse.
 
 ## People worth to follow and useful resources
 
