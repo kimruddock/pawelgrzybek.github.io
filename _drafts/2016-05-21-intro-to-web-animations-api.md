@@ -11,7 +11,7 @@ We have plenty ways to animate things in the web. The answer which one to use is
 
 ## Are we ready to use WAAPI?
 
-Web Animations API is relatively new with initial version of spec published in June 2012. At the moment of writing this article the [browser support]() isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with bleeding edge parts of this spec,  [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. The status of [Webkit](https://webkit.org/status/#specification-web-animations) is under consideration and roadmap priority for [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium.
+Web Animations API is relatively new with initial version of spec published in June 2012. At the moment of writing this article the [browser support]() isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with bleeding edge parts of this spec,  [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and roadmap priority for [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently met Android deices and we all are looking to have Web Animations API on iOS.
 
 [![Browser support for Web Animations API](/photos/2016-05-21-1.jpg)](http://caniuse.com/#feat=web-animation)
 
@@ -20,17 +20,17 @@ The good news is that there is a very reliable [polyfill](https://github.com/web
 
 ## Basic syntax
 
-The heading above is the biggest lie of this article because something like “basic syntax” doesn’t exist. Spec is huge and there is so many constructors associated with WAAPI. Let’s just cover bare minimum that allows us to create something.
+The heading above is the biggest lie of this article because something like “basic syntax” doesn’t exist. Spec is huge and there is so many constructors associated with WAAPI (more to come soon). Let’s just cover bare minimum that allows us to create something.
 
 ```js
 elem.animate(effect, options);
 ```
 
-Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that we can use is an array full of keyframes. The future spec allows to pass here an object with array of values. When function is invoked, new `KeyframeEffect` object is created. In Level 2 spec we will be able to use more fancy things like `GroupEffects` and `SequenceEffects`. If you would like to use all these features of tomorrow today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some of them. You can think about this parameter as it was `@keyframes` in CSS.
+Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that we can use is an array full of keyframes. The future spec allows to use an object with array of values. When function is invoked, new `KeyframeEffect` object is constructed. In Level 2 of spec we will be able to use more fancy things like `GroupEffects` and `SequenceEffects`. If you would like to use all these features of tomorrow today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some of them. You can think about this parameter as it was `@keyframes` in CSS.
 
 The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass a much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
 
-## Just do it, do it, do it now
+## Won't belie until you see?
 
 Enough of theoretical gibberish — time for a practical example. If you have some previous experience with CSS animations,  the piece of code below should look very familiar.
 
@@ -112,7 +112,7 @@ As I told you before, think about the first parameter as a CSS `@keyframes` and 
 }
 ```
 
-Hopefully this comparison to CSS helped you to understand the syntax. But does it really generate the same effect? Not really. The behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each movement between keyframes.
+Hopefully this comparison to CSS helped you to understand the syntax. But does it really generate the same effect? Not really — the behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each movement between keyframes.
 
 > For keyframed animations, the timing function applies between keyframes rather than over the entire animation. In other words, the timing function is applied at the start of the keyframe and at the end of the keyframe.
 
@@ -126,7 +126,7 @@ Have a look...
 
 ## Animation methods & properties
 
-For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's make it happen. When `animate()` function is invoked [few things](https://w3c.github.io/web-animations/#dom-animatable-animate) happen and as a result new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned - formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties and methods. Let's do it and print to console brand new toys.
+For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's reveal the difference between reactive JavaScript over declarative CSS. When `animate()` function is invoked [few things](https://w3c.github.io/web-animations/#dom-animatable-animate) happen and as a result new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned — formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties and methods. Let's do it and print to console brand new toys.
 
 ```js
 var move = document.querySelector('.box').animate(blah, blah);
@@ -134,7 +134,7 @@ console.log(move);
 ```
 ![Web Animations API Animation object returned](/photos/2016-05-21-2.jpg)
 
-This is the main advantage of WAAPI over the CSS animations. It is going to be even more powerful in the future. Having an access to these bad boys, allows us to create things like this...
+This is the main advantage of WAAPI over the CSS animations. Having an access to these bad boys, allows us to create things like this...
 
 <p>
 <p data-height="616" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -147,6 +147,8 @@ This is the main advantage of WAAPI over the CSS animations. It is going to be e
 
 As I mentioned before, for the time being the only natively implemented property that we can use as an animation effect is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated effect like `GroupEffects` and `SequenceEffects`. It's possible apply group of animations to CSS but chaining animations together always had been pain in the arse.
 
+## The future of Web Animations API
+
 ## People worth to follow and useful resources
 
 - https://twitter.com/brianskold - Working on Web Animations and Firefox at Mozilla Japan
@@ -157,3 +159,4 @@ As I mentioned before, for the time being the only natively implemented property
 
 - [“Are we animated yet?”](https://birtles.github.io/areweanimatedyet/) is a dedicated website that tracks implementation progress of all the tomorrow’s features.
 - Codepen to check browser support [http://codepen.io/danwilson/pen/XmWraY](http://codepen.io/danwilson/pen/XmWraY)
+- State of the Animation with Rachel Nabors @ SFHTML5, https://youtu.be/GxOq1bnlZXk
