@@ -118,8 +118,10 @@ Hopefully this comparison to CSS helped you to understand the syntax. But does i
 
 Have a look...
 
-<p><p data-height="368" data-theme-id="dark" data-slug-hash="oxOmGG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/oxOmGG/">oxOmGG</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script></p>
+<p>
+  <p data-height="368" data-theme-id="dark" data-slug-hash="oxOmGG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/oxOmGG/">oxOmGG</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
 
 
 ## The power of WAAPI
@@ -134,7 +136,10 @@ console.log(move);
 
 This is the main advantage of WAAPI over the CSS animations. It is going to be even more powerful in the future. Having an access to these bad boys, allows us to create a things like this...
 
-
+<p>
+<p data-height="609" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
 
 ## The future of WAAPI
 
