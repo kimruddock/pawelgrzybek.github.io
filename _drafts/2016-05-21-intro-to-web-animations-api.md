@@ -257,6 +257,7 @@ The only thing that confuses me on these two examples is that the animation is p
 
 ## The future of Web Animations API
 
+- IMplementation shiped with FF48 - https://groups.google.com/forum/?utm_content=bufferd0950&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#!topic/mozilla.dev.platform/2INRr96R3IU/discussion
 - natively supported groups and sequenced animations
 - possibly new timelines
 - performance optimalisation for other properties
@@ -269,9 +270,12 @@ The only thing that confuses me on these two examples is that the animation is p
 - https://twitter.com/vlh
 - https://twitter.com/sarah_edo
 
+- Silky smooth Web Animations - https://youtu.be/ep0_0W0qWsc - Old but very great explenation of WAAPI
+- Platform status - https://platform-status.mozilla.org/#web-animations
 - [“Are we animated yet?”](https://birtles.github.io/areweanimatedyet/) is a dedicated website that tracks implementation progress of all the tomorrow’s features.
 - Codepen to check browser support [http://codepen.io/danwilson/pen/XmWraY](http://codepen.io/danwilson/pen/XmWraY)
 - State of the Animation with Rachel Nabors @ SFHTML5, https://youtu.be/GxOq1bnlZXk
+- Front Porch Austin 2016 - July 19, 2016 at Alamo Drafthouse on Lamar - "Fun with the Web Animations API" by Dan Wilson
 
 ## Conclusions
 
