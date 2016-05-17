@@ -28,7 +28,7 @@ element.animate(effect, options);
 
 Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that can be used is an array full of keyframes. The future spec allows to use an object with array of values (as many values, that many keyframes). You can think about this parameter as it was `@keyframes` in CSS.
 
-The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
+The absolute minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
 
 ## Won't believe until you see?
 
@@ -71,7 +71,7 @@ document.querySelector('.box').animate(
 );
 ```
 
-As I told you before, think about the first parameter as a CSS `@keyframes` and second one as CSS `animation-*` properties inside declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show you how to control offset of an animation — it does the same job as percentage value in front of every CSS keyframe. It can be represented as a fraction (ie. `1/4`) or decimal number (ie. `.25`). I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
+As I told you before, think about the first parameter as a CSS `@keyframes` and second one as CSS `animation-*` properties inside declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show you how to control offset of an animation — it does the same job as percentage value in front of every CSS keyframe. It can be represented as a fraction (ie. `1/4`) or a decimal number (ie. `.25`). I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
 
 ```css
 @keyframes move {
@@ -149,10 +149,10 @@ Having an access to these goodness, allows us to create more complex effects. If
 
 ## Let's talk about some constructors
 
-Let's dig deeper. In previous example we assigned the result of `animate()` function to variable. When `animate()` is invoked [few steps perform](https://w3c.github.io/web-animations/#dom-animatable-animate) — new `KeyframeEffect` and `Animation` object is constructed, animation starts playing and then is returned. [Following the documentation](https://w3c.github.io/web-animations/#dom-animatable-animate) we can manually use `KeyframeEffect` and `Animation` global objects to instantiate new animation. The only browser that gives us an access to both of them is FirefoxNightly. Thanks again to all amazing [polyfill](https://github.com/web-animations/web-animations-js) creators! Have a quick look at the syntax.
+Let's dig deeper. In previous example we assigned the result of `animate()` function to variable. When `animate()` is invoked [few steps perform](https://w3c.github.io/web-animations/#dom-animatable-animate) — new `KeyframeEffect` and `Animation` object is constructed, animation starts playing and then is returned. [Following the documentation](https://w3c.github.io/web-animations/#dom-animatable-animate) we can manually use `KeyframeEffect` and `Animation` global objects to instantiate new animation. The only browser that gives us an access to both of them is Firefox Nightly. Thanks again to all amazing [polyfill](https://github.com/web-animations/web-animations-js) creators! Have a quick look at the syntax.
 
 ```js
-Animation(effect, timeline)
+new Animation(effect, timeline)
 ```
 
 In current implementation the only valid value of `effect` parameter is an instance of `KeyframeEffect` object. I will show you more fancy things that we can pass here in a moment.
@@ -161,7 +161,7 @@ Another parameter `timeline`, connects newly created animation with source of ti
 
 > ...in the future there my be timelines associated with gestures or scrolling for example.
 
-Let's quickly remind how we did it previous, and recreate the same animation by manually constructed object.
+Let's quickly remind how we did it previously, and recreate the same animation by manually constructed object.
 
 ```js
 // via function
@@ -192,7 +192,7 @@ You are probably thinking now "Yeah, cool, by why should I bothered about constr
 
 ## GroupEffects & SequenceEffects
 
-As I mentioned before, for the time being the only natively implemented property that we can use as an effect of animation is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated constructors like `GroupEffects` and `SequenceEffects`. It's possible to apply group of animations via CSS but chaining animations together always had been pain in the arse. Good news — polyfill allows us to use it today (although I think the implementation is buggy or I don't know how to correctly use it). Examples!
+As I mentioned before, for the time being the only natively implemented property that can be used as an effect of animation is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated constructors like `GroupEffect` and `SequenceEffect`. It's possible to apply group of animations via CSS but chaining animations together always has been pain in the arse. Good news — polyfill allows us to use it today. Examples!
 
 ```js
 var elem1 = document.querySelector('.box1');
@@ -237,20 +237,11 @@ var keyframes = {
   transform: ['none', 'translate(100px, 0)', 'translate(100px, 200px)', 'translate(0, 200px)', 'none']
 };
 
-var props = {
-  duration: 1000,
-  easing: 'cubic-bezier(1,0,1,1)',
-  iterations: 2,
-  direction: 'normal',
-  delay: 0,
-  fill: 'both'
-};
-
 var group = new SequenceEffect(
   [
-    new KeyframeEffect(elem1, keyframes, props),
-    new KeyframeEffect(elem2, keyframes, props),
-    new KeyframeEffect(elem3, keyframes, props)
+    new KeyframeEffect(elem1, keyframes, 3000),
+    new KeyframeEffect(elem2, keyframes, 2000),
+    new KeyframeEffect(elem3, keyframes, 1000)
   ]
 );
 
@@ -261,6 +252,8 @@ var move = new Animation(group, document.timeline);
 <p data-height="360" data-theme-id="dark" data-slug-hash="wGbpWg" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/wGbpWg/">2016-05-21-5</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
+
+The only thing that confuses me on these two examples is that the animation is playing without invoking `play()` method. If you can help me to understand it, I owe you a coffee / beer. I promise!
 
 ## The future of Web Animations API
 
