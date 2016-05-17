@@ -16,21 +16,21 @@ Web Animations API is relatively new with initial version of spec published in J
 [![Browser support for Web Animations API](/photos/2016-05-21-1.jpg)](http://caniuse.com/#feat=web-animation)
 
 
-The good news is that there is a very reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides a support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions - [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use new proposed features and [web-animations-next-lite](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is stripped down version of "next" without lesser used properties.
+The good news is that there is a very reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides a support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions — [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use new proposed features and [web-animations-next-lite](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is stripped down version of "next" without lesser used properties.
 
 ## Basic syntax
 
 The heading above is the biggest lie of this article because something like “basic syntax” doesn’t exist. Spec is huge and there is so many constructors associated with WAAPI (more to come soon). Let’s just cover bare minimum that allows us to create something.
 
 ```js
-elem.animate(effect, options);
+element.animate(effect, options);
 ```
 
-Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that we can use is an array full of keyframes. The future spec allows to use an object with array of values (as many values, that many keyframes). You can think about this parameter as it was `@keyframes` in CSS.
+Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that can be used is an array full of keyframes. The future spec allows to use an object with array of values (as many values, that many keyframes). You can think about this parameter as it was `@keyframes` in CSS.
 
 The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
 
-## Won't belie until you see?
+## Won't believe until you see?
 
 Enough of theoretical gibberish — time for a practical example. If you have some previous experience with CSS animations,  the piece of code below should look very familiar.
 
@@ -71,7 +71,7 @@ document.querySelector('.box').animate(
 );
 ```
 
-As I told you before, think about the first parameter as a CSS `@keyframes` and second one as an `animation-*` properties in CSS declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show you how to control offset of an animation — it does the same job as percentage value in front of every CSS keyframe. It can be represented as a fraction (ie. `1/4`) or decimal number (ie. `.25`). I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
+As I told you before, think about the first parameter as a CSS `@keyframes` and second one as CSS `animation-*` properties inside declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show you how to control offset of an animation — it does the same job as percentage value in front of every CSS keyframe. It can be represented as a fraction (ie. `1/4`) or decimal number (ie. `.25`). I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
 
 ```css
 @keyframes move {
@@ -114,7 +114,7 @@ As I told you before, think about the first parameter as a CSS `@keyframes` and 
 }
 ```
 
-Hopefully this comparison to CSS helped you to understand the syntax. Remember — you are dealing with JS so use camel-case values from `style` object, not the properties name from CSS. For instance — `margin-bottom` is `marginBottom`. It's just an example, but animation of `margin` probably isn't a best idea from performance reasons. [Paul Lewis](https://twitter.com/aerotwist) & [Surma](https://twitter.com/DasSurma) created  [CSS Triggers](https://csstriggers.com/) - a handy reference of triggered events associated with animation of particular CSS properties. There is no restriction - whatever you can animate with CSS you can via WAAPI (including fancy [motion-path](https://www.w3.org/TR/motion-1/)).
+Hopefully this comparison to CSS helped you to understand the syntax. Remember — you are dealing with JS so use camel-case values from `style` object, not the properties name from CSS. For instance — `margin-bottom` is `marginBottom`. It's just an example, but animation of `margin` probably isn't a best idea from performance reasons. [Paul Lewis](https://twitter.com/aerotwist) & [Surma](https://twitter.com/DasSurma) created  [CSS Triggers](https://csstriggers.com/) - a handy reference of triggered events associated with animation of particular CSS properties. There is no restriction - whatever you can animate with CSS you can animate via WAAPI (including fancy [motion-path](https://www.w3.org/TR/motion-1/)).
 
 ![DOM style object](/photos/2016-05-21-3.jpg)
 
@@ -161,7 +161,7 @@ Another parameter `timeline`, connects newly created animation with source of ti
 
 > ...in the future there my be timelines associated with gestures or scrolling for example.
 
-Let's quickly remind how we did it previous, and recreate the same effect by manually constructed objects.
+Let's quickly remind how we did it previous, and recreate the same animation by manually constructed object.
 
 ```js
 // via function
