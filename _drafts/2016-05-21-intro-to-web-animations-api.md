@@ -69,7 +69,7 @@ document.querySelector('.box').animate(
 );
 ```
 
-As I told you before, think about the first parameter as a CSS `@keyframes` and second one as an `animation-*` properties in CSS declaration block. On every single keyframe I passed `offset` although it could be skipped in this case. I did it intentionally to show how to control offset of an animation — it's a demical representation that does exactlly the same job as percentage value in front of every CSS keyframe. I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
+As I told you before, think about the first parameter as a CSS `@keyframes` and second one as an `animation-*` properties in CSS declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show how to control offset of an animation — it's a decimal representation that does exactly the same job as percentage value in front of every CSS keyframe. I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
 
 ```css
 @keyframes move {
@@ -112,7 +112,11 @@ As I told you before, think about the first parameter as a CSS `@keyframes` and 
 }
 ```
 
-Hopefully this comparison to CSS helped you to understand the syntax. But does it really generate the same effect? Not really — the behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each movement between keyframes.
+Hopefully this comparison to CSS helped you to understand the syntax. Remember — you are dealing with JS so use camel-case values from `style` object, not the properties name from CSS. For example instead of `margin-bottom` use `marginBottom`. It's just an example, but animation of `margin` probably isn't a best idea from performance reasons. [Paul](https://twitter.com/aerotwist) & [Surma](https://twitter.com/DasSurma) created handy reference of properties and associated triggered events it! Whatever you can animate with CSS you can do via WAAPI too (including fancy [motion-path](https://www.w3.org/TR/motion-1/)).
+
+!!! PHOTO OF A STYLE OBJECT !!!
+
+Cool, but does it really generate the same effect? Not really — the behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each movement between keyframes.
 
 > For keyframed animations, the timing function applies between keyframes rather than over the entire animation. In other words, the timing function is applied at the start of the keyframe and at the end of the keyframe.
 
@@ -140,6 +144,8 @@ This is the main advantage of WAAPI over the CSS animations. Having an access to
 <p data-height="616" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
+
+!!! Word about promises !!!
 
 ## Animator constructor
 
@@ -171,3 +177,10 @@ As I mentioned before, for the time being the only natively implemented property
 - [“Are we animated yet?”](https://birtles.github.io/areweanimatedyet/) is a dedicated website that tracks implementation progress of all the tomorrow’s features.
 - Codepen to check browser support [http://codepen.io/danwilson/pen/XmWraY](http://codepen.io/danwilson/pen/XmWraY)
 - State of the Animation with Rachel Nabors @ SFHTML5, https://youtu.be/GxOq1bnlZXk
+
+## Conclusions
+
+- sorry for not so creative examples
+- hopefully it helped
+- i will write more about waapi soon because im excited about this spec
+- keep it fun
