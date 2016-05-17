@@ -11,12 +11,12 @@ We have plenty ways to animate things in the web. The answer which one to use is
 
 ## Are we ready to use WAAPI?
 
-Web Animations API is relatively new with initial version of spec published in June 2012. At the moment of writing this article the [browser support]() isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with bleeding edge parts of this spec,  [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and roadmap priority for [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently met Android deices and we all are looking to have Web Animations API on iOS.
+Web Animations API is relatively new with initial version of spec published in June 2012. At the moment of writing this article the [browser support](http://caniuse.com/#feat=web-animation) isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with bleeding edge parts of this spec,  [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and roadmap priority for [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently met Android devices and we all are looking to have Web Animations API on iOS.
 
 [![Browser support for Web Animations API](/photos/2016-05-21-1.jpg)](http://caniuse.com/#feat=web-animation)
 
 
-The good news is that there is a very reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides a support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions - [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use new proposed features and [web-animations-next-light](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is stripped down version of "next" without lesser used properties.
+The good news is that there is a very reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides a support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions - [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use new proposed features and [web-animations-next-lite](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is stripped down version of "next" without lesser used properties.
 
 ## Basic syntax
 
@@ -26,9 +26,9 @@ The heading above is the biggest lie of this article because something like “b
 elem.animate(effect, options);
 ```
 
-Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that we can use is an array full of keyframes. The future spec allows to use an object with array of values. When function is invoked, new `KeyframeEffect` object is constructed. In Level 2 of spec we will be able to use more fancy things like `GroupEffects` and `SequenceEffects`. If you would like to use all these features of tomorrow today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some of them. You can think about this parameter as it was `@keyframes` in CSS.
+Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with jQuery [`animate()`](http://api.jquery.com/animate/) - these are not related whatsoever. First parameter `effect` describes the movement of an animation. At this moment the only natively implemented option that we can use is an array full of keyframes. The future spec allows to use an object with array of values (as many values, that many keyframes). You can think about this parameter as it was `@keyframes` in CSS.
 
-The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass a much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
+The bare minimum that needs to be passed as `options` parameter is duration in milliseconds. Luckily we can pass much more parameters to [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as CSS animation related properties (animation-duration, animation-timing-function, animation-delay etc.).
 
 ## Won't belie until you see?
 
@@ -59,17 +59,19 @@ document.querySelector('.box').animate(
     }
   ],
   {
-    duration: 1000,
-    easing: 'cubic-bezier(1,0,1,1)',
-    iterations: 50,
-    direction: 'normal',
     delay: 500,
-    fill: 'both'
+    endDelay: 0,
+    fill: 'both',
+    iterationStart: 0,
+    iterations: 50,
+    duration: 1000,
+    direction: 'normal',
+    easing: 'cubic-bezier(1,0,1,1)'
   }
 );
 ```
 
-As I told you before, think about the first parameter as a CSS `@keyframes` and second one as an `animation-*` properties in CSS declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show how to control offset of an animation — it's a decimal representation that does exactly the same job as percentage value in front of every CSS keyframe. I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
+As I told you before, think about the first parameter as a CSS `@keyframes` and second one as an `animation-*` properties in CSS declaration block. On every single keyframe I passed `offset` although it [could be skipped](http://w3c.github.io/web-animations/#spacing-keyframes) in this case. I did it intentionally to show you how to control offset of an animation — it does the same job as percentage value in front of every CSS keyframe. It can be represented as a fraction (ie. `1/4`) or decimal number (ie. `.25`). I used `endDelay` and `iterationStart` with value `0` (this value is a default when property is skipped) to give you an overview of [all possible options](https://w3c.github.io/web-animations/#dom-animationeffecttimingreadonly-delay). To have a clear comparison, have a look at the CSS animation with mirrored properties.
 
 ```css
 @keyframes move {
@@ -112,11 +114,11 @@ As I told you before, think about the first parameter as a CSS `@keyframes` and 
 }
 ```
 
-Hopefully this comparison to CSS helped you to understand the syntax. Remember — you are dealing with JS so use camel-case values from `style` object, not the properties name from CSS. For example instead of `margin-bottom` use `marginBottom`. It's just an example, but animation of `margin` probably isn't a best idea from performance reasons. [Paul](https://twitter.com/aerotwist) & [Surma](https://twitter.com/DasSurma) created handy reference of properties and associated triggered events it! Whatever you can animate with CSS you can do via WAAPI too (including fancy [motion-path](https://www.w3.org/TR/motion-1/)).
+Hopefully this comparison to CSS helped you to understand the syntax. Remember — you are dealing with JS so use camel-case values from `style` object, not the properties name from CSS. For instance — `margin-bottom` is `marginBottom`. It's just an example, but animation of `margin` probably isn't a best idea from performance reasons. [Paul Lewis](https://twitter.com/aerotwist) & [Surma](https://twitter.com/DasSurma) created  [CSS Triggers](https://csstriggers.com/) - a handy reference of triggered events associated with animation of particular CSS properties. There is no restriction - whatever you can animate with CSS you can via WAAPI (including fancy [motion-path](https://www.w3.org/TR/motion-1/)).
 
 ![DOM style object](/photos/2016-05-21-3.jpg)
 
-Cool, but does it really generate the same effect? Not really — the behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each movement between keyframes.
+Cool, but does it really generate the same effect? Not really — the behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each step between keyframes.
 
 > For keyframed animations, the timing function applies between keyframes rather than over the entire animation. In other words, the timing function is applied at the start of the keyframe and at the end of the keyframe.
 
@@ -130,31 +132,72 @@ Have a look...
 
 ## Animation methods & properties
 
-For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's reveal the difference between reactive JavaScript over declarative CSS. When `animate()` function is invoked [few things](https://w3c.github.io/web-animations/#dom-animatable-animate) happen and as a result new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned — formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties, methods and promises. Let's do it and print to console brand new toys.
+For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's reveal the difference between reactive JavaScript over declarative CSS. When `animate()` function is invoked a new instance of [`Animation`](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned — formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties, methods and promises. Let's do it and print to console brand new toys.
 
 ```js
-var move = document.querySelector('.box').animate(blah, blah);
+var move = document.querySelector('.box').animate([...], {...});
 console.log(move);
 ```
 ![Web Animations API Animation object returned](/photos/2016-05-21-2.jpg)
 
-This is the main advantage of WAAPI over the CSS animations. Having an access to these goodness, allows us to create more complex effects. If you didn't dive into world of ES2015 Promises yet, it's worth to have a look at ["Asynchronous programming (background)"](http://exploringjs.com/es6/ch_async.html) by Dr. Axel Rauschmayer or ["ES6 Promises in Depth"](https://ponyfoo.com/articles/es6-promises-in-depth) by Nicolás Bevacqua. Future spec includes more promises than current implementation (`finished` & `ready`). [Dan Wilson](https://twitter.com/dancwilson) wrote a helpful article about working with [Promises in Web Animations](http://danielcwilson.com/blog/2016/03/animations-and-promises/). Time for simple example...
+Having an access to these goodness, allows us to create more complex effects. If you didn't dive into world of ES2015 Promises yet, it's worth to have a look at ["Asynchronous programming (background)"](http://exploringjs.com/es6/ch_async.html) by Dr. Axel Rauschmayer or ["ES6 Promises in Depth"](https://ponyfoo.com/articles/es6-promises-in-depth) by Nicolás Bevacqua. [Dan Wilson](https://twitter.com/dancwilson) wrote a helpful article about working with [Promises in Web Animations](http://danielcwilson.com/blog/2016/03/animations-and-promises/). Time for simple example...
 
 <p>
 <p data-height="616" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-## Animator constructor
+## Let's talk about some constructors
 
-- cross the border between current and future implementation, but comes from current level of spec
-- only ff nightly or polyfill tho
-- more powerful way to create animation via constructor
-- stored in memory but not played
-- why does it matter?
-- allow to pass other effects and possibly a timeline in the future
+Let's dig deeper. In previous example we assigned the result of `animate()` function to variable. When `animate()` is invoked [few steps perform](https://w3c.github.io/web-animations/#dom-animatable-animate) — new `KeyframeEffect` and `Animation` object is constructed, animation starts playing and then is returned. [Following the documentation](https://w3c.github.io/web-animations/#dom-animatable-animate) we can manually use `KeyframeEffect` and `Animation` global objects to instantiate new animation. The only browser that gives us an access to both of them is FirefoxNightly. Thanks again to all amazing [polyfill](https://github.com/web-animations/web-animations-js) creators! Have a quick look at the syntax.
 
-## KeyframeEffect & GroupEffects & SequenceEffects & Custom Effects
+```js
+Animation(effect, timeline)
+```
+
+In current implementation the only valid value of `effect` parameter is an instance of `KeyframeEffect` object. I will show you more fancy things that we can pass here in a moment.
+
+Another parameter `timeline`, connects newly created animation with source of time for synchronization purpose. As far as I know the only valid value here is default document timeline accessed by `document.timeline`. [Rachel Nabors](https://twitter.com/rachelnabors) (main contributor to Web Animations API [documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API)) suggests that in the future we may get new cool options to use.
+
+> ...in the future there my be timelines associated with gestures or scrolling for example.
+
+Let's quickly remind how we did it previous, and recreate the same effect by manually constructed objects.
+
+```js
+// via function
+var element = document.querySelector('.anime-js');
+var effect = [...];
+var options = {...};
+
+var move = element.animate(effect, options);
+```
+
+```js
+// via constructors
+var element = document.querySelector('.anime-js');
+var effect = [...];
+var options = {...};
+
+var keyframes = new KeyframeEffect(element, effect, options);
+var move = new Animation(keyframes, element.ownerDocument.timeline);
+move.play();
+```
+
+<p>
+<p data-height="360" data-theme-id="dark" data-slug-hash="mPYmQj" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/mPYmQj/">2016-05-21-3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+
+You are probably thinking now "Yeah, cool, by why should I bothered about constructors if I can use `animate()` function". Wait for it!
+
+## GroupEffects & SequenceEffects & Custom Effects
+
+In Level 2 of spec we will be able to use more fancy collections like `GroupEffects` and `SequenceEffects`. If you would like to use all these features of tomorrow today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some of them.
+
+
+
+
+
 
 As I mentioned before, for the time being the only natively implemented property that we can use as an animation effect is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated effect like `GroupEffects` and `SequenceEffects`. It's possible apply group of animations to CSS but chaining animations together always had been pain in the arse.
 
