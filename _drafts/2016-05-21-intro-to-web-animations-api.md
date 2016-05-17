@@ -190,16 +190,77 @@ move.play();
 
 You are probably thinking now "Yeah, cool, by why should I bothered about constructors if I can use `animate()` function". Wait for it!
 
-## GroupEffects & SequenceEffects & Custom Effects
+## GroupEffects & SequenceEffects
 
-In Level 2 of spec we will be able to use more fancy collections like `GroupEffects` and `SequenceEffects`. If you would like to use all these features of tomorrow today, [polyfill](https://github.com/web-animations/web-animations-js) is needed because Firefox nightly build is the only browser that supports some of them.
+As I mentioned before, for the time being the only natively implemented property that we can use as an effect of animation is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated constructors like `GroupEffects` and `SequenceEffects`. It's possible to apply group of animations via CSS but chaining animations together always had been pain in the arse. Good news — polyfill allows us to use it today (although I think the implementation is buggy or I don't know how to correctly use it). Examples!
 
+```js
+var elem1 = document.querySelector('.box1');
+var elem2 = document.querySelector('.box2');
 
+var keyframes = {
+  transform: ['none', 'translate(200px, 0)', 'translate(200px, 200px)', 'translate(0, 200px)', 'none']
+};
 
+var props = {
+  duration: 1000,
+  easing: 'cubic-bezier(1,0,1,1)',
+  iterations: 50,
+  direction: 'normal',
+  delay: 500,
+  fill: 'both'
+};
 
+var group = new GroupEffect(
+  [
+    new KeyframeEffect(elem1, keyframes, props),
+    new KeyframeEffect(elem2, keyframes, props)
+  ]
+);
 
+var move = new Animation(group, document.timeline);
+```
 
-As I mentioned before, for the time being the only natively implemented property that we can use as an animation effect is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have an opportunity to use more sophisticated effect like `GroupEffects` and `SequenceEffects`. It's possible apply group of animations to CSS but chaining animations together always had been pain in the arse.
+<p>
+<p data-height="360" data-theme-id="dark" data-slug-hash="WwBXxb" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/WwBXxb/">2016-05-21-4</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+
+And one more for `SequenceEffects`.
+
+```js
+var elem1 = document.querySelector('.box1');
+var elem2 = document.querySelector('.box2');
+var elem3 = document.querySelector('.box3');
+
+var keyframes = {
+  transform: ['none', 'translate(100px, 0)', 'translate(100px, 200px)', 'translate(0, 200px)', 'none']
+};
+
+var props = {
+  duration: 1000,
+  easing: 'cubic-bezier(1,0,1,1)',
+  iterations: 2,
+  direction: 'normal',
+  delay: 0,
+  fill: 'both'
+};
+
+var group = new SequenceEffect(
+  [
+    new KeyframeEffect(elem1, keyframes, props),
+    new KeyframeEffect(elem2, keyframes, props),
+    new KeyframeEffect(elem3, keyframes, props)
+  ]
+);
+
+var move = new Animation(group, document.timeline);
+```
+
+<p>
+<p data-height="360" data-theme-id="dark" data-slug-hash="wGbpWg" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/wGbpWg/">2016-05-21-5</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
 
 ## The future of Web Animations API
 
