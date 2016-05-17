@@ -114,7 +114,7 @@ As I told you before, think about the first parameter as a CSS `@keyframes` and 
 
 Hopefully this comparison to CSS helped you to understand the syntax. Remember — you are dealing with JS so use camel-case values from `style` object, not the properties name from CSS. For example instead of `margin-bottom` use `marginBottom`. It's just an example, but animation of `margin` probably isn't a best idea from performance reasons. [Paul](https://twitter.com/aerotwist) & [Surma](https://twitter.com/DasSurma) created handy reference of properties and associated triggered events it! Whatever you can animate with CSS you can do via WAAPI too (including fancy [motion-path](https://www.w3.org/TR/motion-1/)).
 
-!!! PHOTO OF A STYLE OBJECT !!!
+![DOM style object](/photos/2016-05-21-3.jpg)
 
 Cool, but does it really generate the same effect? Not really — the behavior of JavaScript `easing` and CSS `animation-timing-function` is different. WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to whole iteration of an animation — as expected. Referred to [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), CSS `animation-timing-function` is applied on each movement between keyframes.
 
@@ -130,7 +130,7 @@ Have a look...
 
 ## Animation methods & properties
 
-For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's reveal the difference between reactive JavaScript over declarative CSS. When `animate()` function is invoked [few things](https://w3c.github.io/web-animations/#dom-animatable-animate) happen and as a result new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned — formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties and methods. Let's do it and print to console brand new toys.
+For now we haven't seen any clear vantage of WAAPI over CSS animations. Let's reveal the difference between reactive JavaScript over declarative CSS. When `animate()` function is invoked [few things](https://w3c.github.io/web-animations/#dom-animatable-animate) happen and as a result new instance of [Animation](https://w3c.github.io/web-animations/#the-animation-interface) interface is returned — formerly known as `AnimationPlayer`. Assigning animation to a variable allows us to use returned properties, methods and promises. Let's do it and print to console brand new toys.
 
 ```js
 var move = document.querySelector('.box').animate(blah, blah);
@@ -138,14 +138,12 @@ console.log(move);
 ```
 ![Web Animations API Animation object returned](/photos/2016-05-21-2.jpg)
 
-This is the main advantage of WAAPI over the CSS animations. Having an access to these bad boys, allows us to create things like this...
+This is the main advantage of WAAPI over the CSS animations. Having an access to these goodness, allows us to create more complex effects. If you didn't dive into world of ES2015 Promises yet, it's worth to have a look at ["Asynchronous programming (background)"](http://exploringjs.com/es6/ch_async.html) by Dr. Axel Rauschmayer or ["ES6 Promises in Depth"](https://ponyfoo.com/articles/es6-promises-in-depth) by Nicolás Bevacqua. Future spec includes more promises than current implementation (`finished` & `ready`). [Dan Wilson](https://twitter.com/dancwilson) wrote a helpful article about working with [Promises in Web Animations](http://danielcwilson.com/blog/2016/03/animations-and-promises/). Time for simple example...
 
 <p>
 <p data-height="616" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
-
-!!! Word about promises !!!
 
 ## Animator constructor
 
