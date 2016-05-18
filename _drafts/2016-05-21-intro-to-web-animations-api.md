@@ -11,10 +11,9 @@ We have plenty ways to animate things in the web. The answer which one to use is
 
 ## Are we ready to use WAAPI?
 
-Web Animations API is relatively new with initial version of spec published in June 2012. At the moment of writing this article the [browser support](http://caniuse.com/#feat=web-animation) isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with bleeding edge parts of this spec,  [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and roadmap priority for [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently met Android devices and we all are looking to have Web Animations API on iOS.
+Web Animations API is relatively new with initial version of spec published in June 2012. At the moment of writing this article the [browser support](http://caniuse.com/#feat=web-animation) isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with bleeding edge parts of this spec,  [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. [Firefox 48 is coming](https://groups.google.com/forum/?utm_content=bufferd0950&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#!topic/mozilla.dev.platform/2INRr96R3IU/discussion) with WAAPI implementation on board. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and road map priority for [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently met Android devices. Safari for iOS — no pressure — but we all are waiting for you.
 
 [![Browser support for Web Animations API](/photos/2016-05-21-1.jpg)](http://caniuse.com/#feat=web-animation)
-
 
 The good news is that there is a very reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides a support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions — [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use new proposed features and [web-animations-next-lite](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is stripped down version of "next" without lesser used properties.
 
@@ -255,31 +254,19 @@ var move = new Animation(group, document.timeline);
 
 The only thing that confuses me on these two examples is that the animation is playing without invoking `play()` method. If you can help me to understand it, I owe you a coffee / beer. I promise!
 
-## The future of Web Animations API
-
-- IMplementation shiped with FF48 - https://groups.google.com/forum/?utm_content=bufferd0950&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#!topic/mozilla.dev.platform/2INRr96R3IU/discussion
-- natively supported groups and sequenced animations
-- possibly new timelines
-- performance optimalisation for other properties
-
 ## People worth to follow and useful resources
 
-- https://twitter.com/brianskold - Working on Web Animations and Firefox at Mozilla Japan
-- https://twitter.com/rachelnabors - spec creator on MDN
-- https://twitter.com/dancwilson -
-- https://twitter.com/vlh
-- https://twitter.com/sarah_edo
-
-- Silky smooth Web Animations - https://youtu.be/ep0_0W0qWsc - Old but very great explenation of WAAPI
-- Platform status - https://platform-status.mozilla.org/#web-animations
-- [“Are we animated yet?”](https://birtles.github.io/areweanimatedyet/) is a dedicated website that tracks implementation progress of all the tomorrow’s features.
-- Codepen to check browser support [http://codepen.io/danwilson/pen/XmWraY](http://codepen.io/danwilson/pen/XmWraY)
-- State of the Animation with Rachel Nabors @ SFHTML5, https://youtu.be/GxOq1bnlZXk
-- Front Porch Austin 2016 - July 19, 2016 at Alamo Drafthouse on Lamar - "Fun with the Web Animations API" by Dan Wilson
+- [Brian Birtles](https://twitter.com/brianskold) - a main contributor to [Web Animations API](https://w3c.github.io/web-animations/) spec. Works for Mozilla in Japan.
+- [Rachel Nabors](https://twitter.com/rachelnabors) - main contributor to [documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API). Sometimes [unicorn](https://twitter.com/rachelnabors/status/731922035190824960).
+- [Dan Wilson](https://twitter.com/dancwilson) - author of a great [series about WAAPI](http://danielcwilson.com/blog/2015/07/animations-intro/) that ranks higher on Google than MDN and W3C spec. I learned from it a lot!
+- [Val Head](https://twitter.com/vlh) - this girl dedicated her life to animations. Author of a cool newsletter ["The UI Animation Newsletter"](http://uianimationnewsletter.com).
+- [Sarah Drasner](https://twitter.com/sarah_edo) - she is amazing in general! React, SVG, CSS and of course animations. Author of fantastic course — ["Advanced SVG Animation"](https://frontendmasters.com/courses/svg-animation/) available for all [Frontend Masters](https://frontendmasters.com) users.
+- ["Silky smooth Web Animations"](https://youtu.be/ep0_0W0qWsc) - some time ago when Chrome browser reached version 36, Google published this great explanation of Web Animations API on their YouTube channel.
+- [Web Animations API on Platform status](https://platform-status.mozilla.org/#web-animations) - track the progress of implementation by yourself.
+- [“Are we animated yet?”](https://birtles.github.io/areweanimatedyet/) - a dedicated website that show implementation progress of all the future parts of a spec in Firefox Nightly.
+- [WAAPI Browser Support Test](http://codepen.io/danwilson/pen/XmWraY) - check your browser compatibility on Codepen. Created by mentioned above Dan Wilson.
+- [State of the Animation with Rachel Nabors](https://youtu.be/GxOq1bnlZXk) - a great talk but Rachel from San Francisco HTML5 Developer Group meetup.
 
 ## Conclusions
 
-- sorry for not so creative examples
-- hopefully it helped
-- i will write more about waapi soon because im excited about this spec
-- keep it fun
+On the beginning I would like apologize for not too crazy and creative examples. The main purpose was to introduction the concept, not to spend time on crafting beautiful things. Hopefully It helped you out. I'm sure that I'm going to writ more about this subject because I'm pretty excited about it. If you have any questions don't be afraid to use a comments section below. Most importantly — keep it fun!
