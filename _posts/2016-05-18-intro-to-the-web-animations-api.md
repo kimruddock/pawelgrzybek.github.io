@@ -1,7 +1,7 @@
 ---
 title: Intro to the Web Animations API
 excerpt: We have many methods available to move things around on the web. Let’s embrace the power of future animations with the Web Animations API.
-photo: 2016-05-21.jpg
+photo: 2016-05-18.jpg
 ---
 
 We have plenty of ways to animate things on the web. The answer of which one to use isn’t always easy. Each method comes with pros and cons. Should we use CSS, `canvas`, Web GL, JavaScript `requestAnimationFrame` or `setInterval`? Maybe SMIL? Oh no — this one is dead now. Maybe some external libraries like jQuery, GreenSock or VelocityJS? These are just a few possible ways to go. If you are keen to know a little bit more about these methods, I encourage you to read a fantastic article [“A Comparison of Animation Technologies”](https://css-tricks.com/comparison-animation-technologies/) by [Sarah Drasner](https://twitter.com/sarah_edo) on CSS-Tricks.
@@ -11,11 +11,11 @@ We have plenty of ways to animate things on the web. The answer of which one to 
 
 ## Are we ready to use WAAPI?
 
-The Web Animations API is relatively new — the initial version of the spec was published in June 2012. At the moment of writing this article the [browser support](http://caniuse.com/#feat=web-animation) isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with the bleeding edge parts of this spec then [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. Chrome and Opera are fine. [Firefox 48 is coming](https://groups.google.com/forum/?utm_content=bufferd0950&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#!topic/mozilla.dev.platform/2INRr96R3IU/discussion) with WAAPI implementation on board. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and the road map priority for the [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently reached Android devices. Safari for iOS — no pressure — but we all are waiting for you.
+The Web Animations API is relatively new — the initial version of the spec was published in June 2012. At the moment of writing this article the [browser support](http://caniuse.com/#feat=web-animation) isn’t great. Even the browsers that support it offer a very inconsistent level of implementation. If you would like to play around with the bleeding edge parts of this spec then [Firefox Nightly build](https://nightly.mozilla.org/) is the best playground. Chrome and Opera are fine. [Firefox 48 is coming](https://groups.google.com/d/msg/mozilla.dev.platform/2INRr96R3IU/do-AigNwAwAJ) with WAAPI implementation on board. The status of [Safari](https://webkit.org/status/#specification-web-animations) is under consideration and the road map priority for the [IE platform](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webanimationsjavascriptapi) is medium. The first mobile implementation very recently reached Android devices. Safari for iOS — no pressure — but we all are waiting for you.
 
-[![Browser support for Web Animations API](/photos/2016-05-21-1.jpg)](http://caniuse.com/#feat=web-animation)
+[![Browser support for Web Animations API](/photos/2016-05-18-1.jpg)](http://caniuse.com/#feat=web-animation)
 
-The good news is that there is a very reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions — [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use newly proposed features and [web-animations-next-lite](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is a stripped down version of "next" without some of the lesser-used properties.
+The good news is that there is a reliable [polyfill](https://github.com/web-animations/web-animations-js) that provides support for Chrome, Firefox 27+, IE10+ (including Edge), Safari (iOS) 7.1+ and Safari (Mac) 9+. Actually it exists in three versions — [web-animations](https://github.com/web-animations/web-animations-js/blob/master/web-animations.min.js) that covers support of basic stable features, [web-animations-next](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next.min.js) that allows us to use newly proposed features and [web-animations-next-lite](https://github.com/web-animations/web-animations-js/blob/master/web-animations-next-lite.min.js) that is a stripped down version of "next" without some of the lesser-used properties.
 
 ## Basic syntax
 
@@ -25,7 +25,7 @@ The heading above is the most misleading part of this article because when it co
 element.animate(effect, options);
 ```
 
-Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with the jQuery [`animate()`](http://api.jquery.com/animate/) function - they are not related whatsoever. The first parameter `effect` describes the movement of an animation. At the moment the only natively implemented option that can be used is an array full of keyframes. In future browsers will allow us to use an object with an array of values (the length of array represents the number of keyframes). You can think about this parameter as an equivalent to `@keyframes` in CSS.
+Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with the jQuery [`animate()`](http://api.jquery.com/animate/) function - they are not related whatsoever. The first parameter `effect` describes the movement of an animation. At the moment the only natively implemented option that can be used is an array full of keyframes. In the future browsers will allow us to use an object with an array of values (the length of array represents the number of keyframes). You can think about this parameter as an equivalent to `@keyframes` in CSS.
 
 The absolute minimum that needs to be passed in the `options` parameter is the duration in milliseconds. Luckily we can pass many more parameters to the [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as your CSS animation properties (animation-duration, animation-timing-function, animation-delay etc.).
 
@@ -65,7 +65,7 @@ document.querySelector('.box').animate(
     iterations: 50,
     duration: 1000,
     direction: 'normal',
-    easing: 'cubic-bezier(1,0,1,1)'
+    easing: 'cubic-bezier(.6, 0, 1, .6)'
   }
 );
 ```
@@ -98,7 +98,7 @@ As mentioned before, think about the first parameter as the CSS `@keyframes` and
 .box {
   animation-name: move;
   animation-duration: 1000ms;
-  animation-timing-function: cubic-bezier(1,0,1,1);
+  animation-timing-function: cubic-bezier(.6, 0, 1, .6);
   animation-delay: 500ms;
   animation-iteration-count: 50;
   animation-direction: normal;
@@ -115,7 +115,7 @@ As mentioned before, think about the first parameter as the CSS `@keyframes` and
 
 Hopefully this comparison to CSS helps make the syntax clearer. Remember — you are dealing with JS so use camel-case values from the `style` object, not the property names from CSS. For instance — `margin-bottom` is `marginBottom`. It's just an example, but the animation of `margin` probably isn't the best idea from a performance perspective. [Paul Lewis](https://twitter.com/aerotwist) and [Surma](https://twitter.com/DasSurma) created  [CSS Triggers](https://csstriggers.com/) - a handy reference of triggered events associated with the animation of particular CSS properties. There is no restriction - whatever you can animate with CSS you can animate via WAAPI (including fancy [motion-path](https://www.w3.org/TR/motion-1/) animations).
 
-![DOM style object](/photos/2016-05-21-3.jpg)
+![DOM style object](/photos/2016-05-18-3.jpg)
 
 Cool, but does it really generate the same effect? Not really — the behavior of JavaScript's `easing` and CSS' `animation-timing-function` is different. The WAAPI [timing function](https://w3c.github.io/web-animations/#time-transformations) is applied to the whole iteration of an animation — as expected. As per [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function), the CSS `animation-timing-function` is applied on each step between keyframes.
 
@@ -124,7 +124,7 @@ Cool, but does it really generate the same effect? Not really — the behavior o
 Have a look...
 
 <p>
-  <p data-height="368" data-theme-id="dark" data-slug-hash="oxOmGG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/oxOmGG/">oxOmGG</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+  <p data-height="384" data-theme-id="dark" data-slug-hash="oxOmGG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/oxOmGG/">oxOmGG</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
   <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
@@ -137,12 +137,12 @@ So far we haven't seen any clear advantage of using WAAPI over CSS animations. L
 var move = document.querySelector('.box').animate([...], {...});
 console.log(move);
 ```
-![Web Animations API Animation object returned](/photos/2016-05-21-2.jpg)
+![Web Animations API Animation object returned](/photos/2016-05-18-2.jpg)
 
 Having access to all this goodness allows us to create more complex effects. If you haven't dived into the world of ES2015 Promises yet, it's worth taking a look at ["Asynchronous programming (background)"](http://exploringjs.com/es6/ch_async.html) by Dr. Axel Rauschmayer or ["ES6 Promises in Depth"](https://ponyfoo.com/articles/es6-promises-in-depth) by Nicolás Bevacqua. [Dan Wilson](https://twitter.com/dancwilson) wrote a helpful article about working with [Promises in Web Animations](http://danielcwilson.com/blog/2016/03/animations-and-promises/). Time for a simple example...
 
 <p>
-<p data-height="616" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-21-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="735" data-theme-id="dark" data-slug-hash="EKJqxG" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/EKJqxG/">2016-05-18-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
@@ -183,7 +183,7 @@ move.play();
 ```
 
 <p>
-<p data-height="360" data-theme-id="dark" data-slug-hash="mPYmQj" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/mPYmQj/">2016-05-21-3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="384" data-theme-id="dark" data-slug-hash="mPYmQj" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/mPYmQj/">2016-05-18-3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
@@ -203,7 +203,7 @@ var keyframes = {
 
 var props = {
   duration: 1000,
-  easing: 'cubic-bezier(1,0,1,1)',
+  easing: 'cubic-bezier(.6, 0, 1, .6)',
   iterations: 50,
   direction: 'normal',
   delay: 500,
@@ -221,7 +221,7 @@ var move = new Animation(group, document.timeline);
 ```
 
 <p>
-<p data-height="360" data-theme-id="dark" data-slug-hash="WwBXxb" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/WwBXxb/">2016-05-21-4</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="384" data-theme-id="dark" data-slug-hash="WwBXxb" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/WwBXxb/">2016-05-18-4</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
@@ -240,6 +240,9 @@ var group = new SequenceEffect(
   [
     new KeyframeEffect(elem1, keyframes, 3000),
     new KeyframeEffect(elem2, keyframes, 2000),
+    new KeyframeEffect(elem3, keyframes, 1000),
+    new KeyframeEffect(elem1, keyframes, 3000),
+    new KeyframeEffect(elem2, keyframes, 2000),
     new KeyframeEffect(elem3, keyframes, 1000)
   ]
 );
@@ -248,7 +251,7 @@ var move = new Animation(group, document.timeline);
 ```
 
 <p>
-<p data-height="360" data-theme-id="dark" data-slug-hash="wGbpWg" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/wGbpWg/">2016-05-21-5</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="384" data-theme-id="dark" data-slug-hash="wGbpWg" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/wGbpWg/">2016-05-18-5</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
