@@ -25,7 +25,7 @@ The heading above is the most misleading part of this article because when it co
 element.animate(effect, options);
 ```
 
-Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with the jQuery [`animate()`](http://api.jquery.com/animate/) function - they are not related whatsoever. The first parameter `effect` describes the movement of an animation. At the moment the only natively implemented option that can be used is an array full of keyframes. In future the spec will allow us to use an object with an array of values (the length of array represents the number of keyframes). You can think about this parameter as an equivalent to `@keyframes` in CSS.
+Please don't confuse this native [`animate()`](https://w3c.github.io/web-animations/#dom-animatable-animate) function with the jQuery [`animate()`](http://api.jquery.com/animate/) function - they are not related whatsoever. The first parameter `effect` describes the movement of an animation. At the moment the only natively implemented option that can be used is an array full of keyframes. In future browsers will allow us to use an object with an array of values (the length of array represents the number of keyframes). You can think about this parameter as an equivalent to `@keyframes` in CSS.
 
 The absolute minimum that needs to be passed in the `options` parameter is the duration in milliseconds. Luckily we can pass many more parameters to the [`AnimationEffectTiming`](https://w3c.github.io/web-animations/#animationeffecttiming) object. Essentially think of this parameter as your CSS animation properties (animation-duration, animation-timing-function, animation-delay etc.).
 
@@ -191,7 +191,7 @@ At this point you are probably thinking "Yeah, cool, but why should I bother abo
 
 ## GroupEffects and SequenceEffects
 
-As I mentioned before, for the time being the only natively implemented property that can be used to determine the effect of an animation is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have the opportunity to use more sophisticated constructors like `GroupEffect` and `SequenceEffect`. It's possible to apply a group of animations via CSS but chaining animations together has always been a pain in the arse. More good news — there's a polyfill that allows us to do this today. Examples!
+As I mentioned before, for the time being the only natively implemented property that can be used to determine the effect of an animation is `KeyframeEffect`. In the future level 2 spec [we will](https://twitter.com/rachelnabors/status/631545063965720576) have the opportunity to use more sophisticated constructors like `GroupEffect` and `SequenceEffect`. It's possible to apply a group of animations via CSS but chaining animations together has always been a pain in the arse. More good news — a polyfill allows us to do this today. Examples!
 
 ```js
 var elem1 = document.querySelector('.box1');
