@@ -2,4 +2,8 @@
 title: Archive
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illum necessitatibus ipsam minus molestias possimus voluptatem facere repellat esse vitae quibusdam, officiis distinctio aliquid optio, architecto fuga alias rem commodi.
+<ul>
+  {%for post in site.posts %}
+  <li><time>{{ post.date | date:"%Y.%m.%d" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

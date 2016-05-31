@@ -1,11 +1,11 @@
-/* Perfect fourth scale (1.333) */
+/* Scale (1.4) */
 
-/* h1 | 1rem * 1.333 * 1.333 * 1.333 = 2.3686rem; */
-/* h2 | 1rem * 1.333 * 1.333 = 1.7769rem; */
-/* h3 | 1rem * 1.333 = 1.333rem; */
+/* h1 | 1rem * 1.4 * 1.4 * 1.4 = 2.744rem; */
+/* h2 | 1rem * 1.4 * 1.4 = 1.96rem; */
+/* h3 | 1rem * 1.4 = 1.4rem; */
 /* h4 | 1rem = 1rem; */
-/* h5 | 1rem / 1.333 = 0.7501rem; */
-/* h6 | 1rem / 1.333 / 1.333 = 0.5626rem; */
+/* h5 | 1rem / 1.4 = 0.7143rem; */
+/* h6 | 1rem / 1.4 / 1.333 = 0.5102rem; */
 
 strong {
   font-weight: 700;
@@ -51,17 +51,17 @@ h6 {
 }
 
 h1 {
-  font-size: 2.3686rem;
-  line-height: calc(1.6rem * 1.5);
+  font-size: 2.744rem;
+  line-height: 3.2rem;
 }
 
 h2 {
-  font-size: 1.7769rem;
-  line-height: calc(1.6rem * 1.5);
+  font-size: 1.96rem;
+  line-height: 2.4rem;
 }
 
 h3 {
-  font-size: 1.333rem;
+  font-size: 1.4rem;
 }
 
 h4 {
@@ -69,11 +69,11 @@ h4 {
 }
 
 h5 {
-  font-size: .7501rem;
+  font-size: .7142rem;
 }
 
 h6 {
-  font-size: .5626rem;
+  font-size: .5102rem;
 }
 
 ul,

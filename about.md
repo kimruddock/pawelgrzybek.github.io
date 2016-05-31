@@ -2,4 +2,6 @@
 title: About
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod illum necessitatibus ipsam minus molestias possimus voluptatem facere repellat esse vitae quibusdam, officiis distinctio aliquid optio, architecto fuga alias rem commodi.
+Hi there, I'm Pawel Grzybek, Front-end Developer from Poland. Nowadays I live in Northampton (UK). When I'm not coding, I'm spinning funky vinyl records.
+
+![Pawel Grzybek](/photos/about.jpg)

@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var cp = require('child_process');
 var bs = require('browser-sync');
 var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
 var cssImport = require('postcss-import');
 var nest = require('postcss-nested');
 var customProps = require('postcss-custom-properties');
@@ -42,9 +41,6 @@ gulp.task('browser-sync', ['styles', 'jekyll'], () => {
 // Process css, autoprefix, minify
 gulp.task('styles', () => {
   var processors = [
-    autoprefixer({
-      browsers: ['last 1 version']
-    }),
     cssImport,
     customProps,
     calc,
@@ -59,7 +55,7 @@ gulp.task('styles', () => {
 // Watch sass and all html posts
 gulp.task('watch', () => {
   gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', 'about.md', 'archive.md'], ['reload']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '*.md'], ['reload']);
 });
 
 // default task

@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: calc(1.6rem * 2.5);
-  box-shadow: inset 0 -1px 0 0 var(--color-border);
+  margin-bottom: 4rem;
+  box-shadow: 0 1px 0 0 var(--color-border);
 }
 
 .header__logo {
@@ -17,7 +17,7 @@
 }
 
 .header__link {
-  padding: calc(1.6rem * .75) 1.6rem;
+  padding: 1.2rem 1.6rem;
   transition: all 100ms;
   color: var(--color-text);
   text-decoration: none;
@@ -54,6 +54,6 @@
   top: 2px;
   width: 18px;
   height: 18px;
-  fill: #777;
+  fill: #888;
   transition: fill 100ms;
 }

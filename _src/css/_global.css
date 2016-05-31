@@ -32,11 +32,10 @@
 :root {
   --color-text: #333;
   --color-border: #ddd;
-  --color1: #c51162;
+  --color1: #ad1457;
 }
 
 html {
-  height: 100%;
   font-size: 109.375%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -62,22 +61,24 @@ html {
 }
 
 body {
-  height: 100%;
   color: var(--color-text);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
 
-  /*background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% 28px;*/
+  /*
+  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
+  background-size: 100% 28px;
+  */
 
 }
-
+/*
 @media screen and (min-width: 734px) {
   body {
     background-size: 100% 34px;
   }
 }
+*/
 
 img {
   display: block;
