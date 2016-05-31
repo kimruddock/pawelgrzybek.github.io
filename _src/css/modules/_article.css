@@ -4,10 +4,10 @@
 
 .article__title {
   margin-bottom: .8rem;
-  font-size: 1.96rem;
+  font-size: 1.7777rem;
 
   &--single {
-    font-size: 2.744rem;
+    font-size: 2.3702rem;
   }
 
   a {
