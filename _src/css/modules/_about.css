@@ -1,7 +1,7 @@
 .about {
   display: none;
-  margin-bottom: calc(var(--lh) * 2);
-  padding: var(--lh);
+  margin-bottom: calc(1.6rem * 2);
+  padding: 1.6rem;
   box-shadow: inset 0 0 0 1px var(--color-border);
 
   &--active {

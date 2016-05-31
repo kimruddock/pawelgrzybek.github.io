@@ -1,1 +1,0 @@
-var more=document.querySelector(".header__more"),about=document.querySelector(".about");more.addEventListener("click",function(){about.classList.toggle("about--active"),more.classList.toggle("header__more--active")},!1);

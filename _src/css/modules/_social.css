@@ -2,29 +2,29 @@
   display: flex;
 
   &--single {
-    margin-bottom: var(--lh);
+    margin-bottom: 1.6rem;
   }
 }
 
   .social__icon {
-    height: calc(var(--lh) * 1.5);
+    height: calc(1.6rem * 1.5);
 
-    margin-right: calc(var(--lh) / 2);
+    margin-right: calc(1.6rem / 2);
     box-shadow: inset 0 0 0 1px var(--color-border);
 
     svg {
-      width: calc(var(--lh) / 2);
-      height: calc(var(--lh) / 2);
-      margin: calc(var(--lh) / 2);
+      width: calc(1.6rem / 2);
+      height: calc(1.6rem / 2);
+      margin: calc(1.6rem / 2);
       float: left;
       fill: #b1b1b1;
     }
 
     span {
-      margin-right: calc(var(--lh) / 2);
+      margin-right: calc(1.6rem / 2);
       color: #b1b1b1;
-      font-size: var(--h5);
-      line-height: calc(var(--lh) * 1.5);
+      font-size: .7501rem;
+      line-height: calc(1.6rem * 1.5);
     }
 
     &:hover {

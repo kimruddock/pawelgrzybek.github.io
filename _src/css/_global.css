@@ -23,11 +23,16 @@
 /* line-height: 21.25 * 1.6; */
 /* line-height: 34px; */
 
-
 ::selection {
   background: var(--color1);
   color: #fff;
   text-shadow: none;
+}
+
+:root {
+  --color-text: #333;
+  --color-border: #ddd;
+  --color1: #c51162;
 }
 
 html {
@@ -61,11 +66,11 @@ body {
   color: var(--color-text);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
-  line-height: var(--lh);
-  /*
-  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% 28px;
-  */
+  line-height: 1.6rem;
+
+  /*background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
+  background-size: 100% 28px;*/
+
 }
 
 @media screen and (min-width: 734px) {

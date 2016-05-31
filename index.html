@@ -15,10 +15,14 @@ layout: default
     <!-- / article -->
   {% endfor %}
 
-    <!-- pag -->
-    <div class="pag">
-      {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="pag__btn pag__btn--prev">Previous</a>{% endif %}
-      {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="pag__btn pag__btn--next">Next</a>{% endif %}
-      <div class="pag__now">Page: {{ paginator.page }} of {{ paginator.total_pages }}</div>
-    </div>
-    <!-- / pag -->
+    <nav class="blocks blocks--space">
+      <div class="blocks__item">
+        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="btn">Previous</a>{% endif %}
+      </div>
+      <div class="blocks__item">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+      </div>
+      <div class="blocks__item">
+        {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="btn">Next</a>{% endif %}
+      </div>
+    </nav>

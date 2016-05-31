@@ -1,3 +1,12 @@
+/* Perfect fourth scale (1.333) */
+
+/* h1 | 1rem * 1.333 * 1.333 * 1.333 = 2.3686rem; */
+/* h2 | 1rem * 1.333 * 1.333 = 1.7769rem; */
+/* h3 | 1rem * 1.333 = 1.333rem; */
+/* h4 | 1rem = 1rem; */
+/* h5 | 1rem / 1.333 = 0.7501rem; */
+/* h6 | 1rem / 1.333 / 1.333 = 0.5626rem; */
+
 strong {
   font-weight: 700;
 }
@@ -28,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: var(--lh);
+  margin-bottom: 1.6rem;
 }
 
 h1,
@@ -42,51 +51,51 @@ h6 {
 }
 
 h1 {
-  font-size: var(--h1);
-  line-height: calc(var(--lh) * 1.5);
+  font-size: 2.3686rem;
+  line-height: calc(1.6rem * 1.5);
 }
 
 h2 {
-  font-size: var(--h2);
-  line-height: calc(var(--lh) * 1.5);
+  font-size: 1.7769rem;
+  line-height: calc(1.6rem * 1.5);
 }
 
 h3 {
-  font-size: var(--h3);
+  font-size: 1.333rem;
 }
 
 h4 {
-  font-size: var(--h4);
+  font-size: 1rem;
 }
 
 h5 {
-  font-size: var(--h5);
+  font-size: .7501rem;
 }
 
 h6 {
-  font-size: var(--h6);
+  font-size: .5626rem;
 }
 
 ul,
 ol {
-  margin: 0 0 var(--lh) var(--lh);
+  margin: 0 0 1.6rem 1.6rem;
 
   ul,
   ol {
-    margin: 0 var(--lh);
+    margin: 0 1.6rem;
   }
 }
 
 hr {
   display: block;
-  height: var(--lh);
+  height: 1.6rem;
   border: 0;
   box-shadow: inset 0 1px 0 var(--color-border);
 }
 
 blockquote {
-  margin-bottom: var(--lh);
-  padding: var(--lh);
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
   border-left: 4px solid #e6e6e6;
   background: #f7f7f7;
 

@@ -1,57 +1,49 @@
-  <!-- header -->
   <header class="header">
-    <div class="col">
-      {% if page.title %}
-        <div class="header__logo">
-          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
-      {% else %}
-        <h1 class="header__logo">
-          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </h1>
-      {% endif %}
-      <div class="header__more">
-        +
+
+    {% if page.title %}
+      <div class="header__logo">
+        <a href="{{ site.baseurl }}/" class="header__link header__link--logo" title="{{ site.title }}">{{ site.title }}</a>
       </div>
-    </div>
+    {% else %}
+      <h1 class="header__logo">
+        <a href="{{ site.baseurl }}/" class="header__link header__link--logo" title="{{ site.title }}">{{ site.title }}</a>
+      </h1>
+    {% endif %}
+
+    <nav class="header__nav" role="navigation">
+      <a href="{{ site.baseurl }}/about/" class="header__link" title="About">About</a>
+      <a href="{{ site.baseurl }}/archive/" class="header__link" title="Archive">Archive</a>
+      <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" title="Paweł Grzybek on Twitter" target="_blank">
+        <svg class="header__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Twitter Icon</title>
+          <path d="M14.4 4.2C14.4 4.4 14.4 4.5 14.4 4.7 14.4 9 11.1 14 5 14 3.2 14 1.5 13.5 0 12.5 0.3 12.6 0.5 12.6 0.8 12.6 2.3 12.6 3.7 12 4.9 11.2 3.4 11.1 2.2 10.2 1.8 8.9 2 8.9 2.2 8.9 2.4 8.9 2.7 8.9 3 8.9 3.3 8.8 1.8 8.5 0.6 7.2 0.6 5.6L0.6 5.6C1.1 5.8 1.6 6 2.1 6 1.2 5.4 0.7 4.4 0.7 3.2 0.7 2.6 0.8 2.1 1.1 1.6 2.7 3.6 5.2 4.9 7.9 5 7.8 4.8 7.8 4.5 7.8 4.3 7.8 2.5 9.3 1 11.1 1 12 1 12.9 1.4 13.5 2 14.2 1.9 14.9 1.6 15.6 1.2 15.3 2 14.8 2.6 14.1 3.1 14.8 3 15.4 2.8 16 2.5 15.6 3.2 15 3.8 14.4 4.2L14.4 4.2Z"/>
+        </svg>
+      </a>
+      <a href="http://github.com/{{ site.github_username }}" class="header__link" title="Paweł Grzybek on Github" target="_blank">
+        <svg class="header__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Github Icon</title>
+          <path d="M10.8 8.9C10.1 8.9 9.6 9.6 9.6 10.5 9.6 11.4 10.1 12.1 10.8 12.1 11.4 12.1 11.9 11.4 11.9 10.5 11.9 9.6 11.4 8.9 10.8 8.9L10.8 8.9ZM14.7 4.9C14.8 4.5 14.8 2.7 14.2 1 14.2 1 12.6 1.2 10.2 2.8 9.7 2.7 8.8 2.6 8 2.6 7.2 2.6 6.3 2.7 5.8 2.8 3.4 1.2 1.9 1 1.9 1 1.2 2.7 1.2 4.5 1.3 4.9 0.5 5.7 0 6.8 0 8.2 0 14.5 5.2 14.6 6.5 14.6 6.8 14.6 7.4 14.6 8 14.6 8.6 14.6 9.2 14.6 9.5 14.6 10.8 14.6 16 14.5 16 8.2 16 6.8 15.5 5.7 14.7 4.9L14.7 4.9ZM8 13.8L8 13.8C4.7 13.8 2.1 13.4 2.1 10.2 2.1 9.5 2.4 8.7 3.1 8.2 4.1 7.2 5.9 7.7 8 7.7L8 7.7 8 7.7C10.1 7.7 11.9 7.2 13 8.2 13.6 8.7 13.9 9.5 13.9 10.2 13.9 13.4 11.3 13.8 8 13.8L8 13.8ZM5.2 8.9C4.6 8.9 4.1 9.6 4.1 10.5 4.1 11.4 4.6 12.1 5.2 12.1 5.9 12.1 6.4 11.4 6.4 10.5 6.4 9.6 5.9 8.9 5.2 8.9L5.2 8.9Z"/>
+        </svg>
+      </a>
+      <a href="http://linkedin.com/in/{{ site.linkedin_username }}" class="header__link" title="Paweł Grzybek on LinkedIn" target="_blank">
+        <svg class="header__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>LinkedIn Icon</title>
+          <path d="M3.6 1.8C3.6 2.7 2.9 3.5 1.8 3.5 0.7 3.5 0 2.8 0 1.8 0 0.9 0.7 0 1.8 0 2.9 0 3.5 0.8 3.6 1.8L3.6 1.8ZM0 16L0 4.4 3.6 4.4 3.6 16 0 16 0 16ZM5.3 8.4C5.3 7 5.3 5.9 5.2 4.9L8.4 4.9 8.6 6.4 8.7 6.4C9.1 5.7 10.2 4.6 12.1 4.6 14.3 4.6 16 6.1 16 9.4L16 16 12.4 16 12.4 9.9C12.4 8.5 11.9 7.4 10.7 7.4 9.7 7.4 9.2 8.2 9 8.8 8.9 9 8.9 9.3 8.9 9.7L8.9 16 5.3 16 5.3 8.4 5.3 8.4Z"/>
+        </svg>
+      </a>
+      <a href="http://facebook.com/{{ site.facebook_username }}" class="header__link" title="Paweł Grzybek on Facebook" target="_blank">
+        <svg class="header__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Facebook Icon</title>
+          <path d="M9.5 3L12 3 12 0 9.5 0C7.6 0 6 1.6 6 3.5L6 5 4 5 4 8 6 8 6 16 9 16 9 8 11.5 8 12 5 9 5 9 3.5C9 3.2 9.2 3 9.5 3L9.5 3Z"/>
+        </svg>
+      </a>
+      <a href="http://instagram.com/{{ site.instagram_username }}" class="header__link" title="Paweł Grzybek on Instagram" target="_blank">
+        <svg class="header__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>Instagram Icon</title>
+          <path d="M14.2 0L1.8 0C0.8 0 0 0.8 0 1.8L0 14.2C0 15.2 0.8 16 1.8 16L14.2 16C15.2 16 16 15.2 16 14.2L16 1.8C16 0.8 15.2 0 14.2 0L14.2 0ZM8 12.9C10.7 12.9 12.9 10.7 12.9 8 12.9 7.7 12.9 7.4 12.8 7.1L14.2 7.1 14.2 13.5C14.2 13.9 13.9 14.1 13.6 14.1L2.4 14.1C2.1 14.1 1.8 13.9 1.8 13.5L1.8 7.1 3.2 7.1C3.1 7.4 3.1 7.7 3.1 8 3.1 10.7 5.3 12.9 8 12.9L8 12.9ZM4.9 8C4.9 6.3 6.3 4.9 8 4.9 9.7 4.9 11.1 6.3 11.1 8 11.1 9.7 9.7 11.1 8 11.1 6.3 11.1 4.9 9.7 4.9 8L4.9 8ZM13.6 4.4L12.2 4.4C11.8 4.4 11.6 4.2 11.6 3.8L11.6 2.4C11.6 2.1 11.8 1.8 12.2 1.8L13.6 1.8C13.9 1.8 14.2 2.1 14.2 2.4L14.2 3.8C14.2 4.2 13.9 4.4 13.6 4.4L13.6 4.4Z"/>
+        </svg>
+      </a>
+    </nav>
   </header>
-  <!-- / header -->
 
-  <!-- col -->
   <main class="col">
-
-    <!-- about -->
-    <div class="about">
-      <p>{{ site.description }}</p>
-      <!-- social -->
-      <div class="social">
-        <a href="http://facebook.com/{{ site.facebook_username }}" class="social__icon" target="_blank">
-          <svg>
-            <use xlink:href="/assets/icons.svg#facebook"></use>
-          </svg>
-          <!-- <span>Facebook</span> -->
-        </a>
-        <a href="http://twitter.com/{{ site.twitter_username }}" class="social__icon" target="_blank">
-          <svg>
-            <use xlink:href="/assets/icons.svg#twitter"></use>
-          </svg>
-        </a>
-        <a href="http://github.com/{{ site.github_username }}" class="social__icon" target="_blank">
-          <svg>
-            <use xlink:href="/assets/icons.svg#github"></use>
-          </svg>
-        </a>
-        <a href="http://linkedin.com/in/{{ site.linkedin_username }}" class="social__icon" target="_blank">
-          <svg>
-            <use xlink:href="/assets/icons.svg#linkedin"></use>
-          </svg>
-        </a>
-        <a href="http://instagram.com/{{ site.instagram_username }}" class="social__icon" target="_blank">
-          <svg>
-            <use xlink:href="/assets/icons.svg#instagram"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- / social -->
-    </div>
-    <!-- / about -->

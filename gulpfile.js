@@ -10,7 +10,6 @@ var nest = require('postcss-nested');
 var customProps = require('postcss-custom-properties');
 var calc = require('postcss-calc');
 var nano = require('gulp-cssnano');
-var uglify = require('gulp-uglify');
 
 
 // Build jekyll project
@@ -24,7 +23,7 @@ gulp.task('reload', ['jekyll'], () => {
 });
 
 // Start BrowserSync server and serve _site directory
-gulp.task('browser-sync', ['styles', 'scripts', 'jekyll'], () => {
+gulp.task('browser-sync', ['styles', 'jekyll'], () => {
   bs({
     ui: false,
     ghostMode: {
@@ -57,18 +56,10 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('_includes'));
 });
 
-// Minify js files
-gulp.task('scripts', () => {
-  return gulp.src('_js/scripts.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('_includes'));
-});
-
 // Watch sass and all html posts
 gulp.task('watch', () => {
   gulp.watch('_src/css/**/*.css', ['styles', 'reload']);
-  gulp.watch('_src/js/*.js', ['scripts', 'reload']);
-  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*'], ['reload']);
+  gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', 'about.md', 'archive.md'], ['reload']);
 });
 
 // default task
