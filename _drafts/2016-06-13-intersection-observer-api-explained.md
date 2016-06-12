@@ -6,7 +6,7 @@ photo: 2016-06-13.jpg
 
 Detecting elements visible in current viewport boundaries has always been tricky and performance expensive task. Lazy loaded images on Medium.com, infinite scrolling pictures of vegan food on Pinterest or animated images on every f*****g Tumblr theme are just few examples where this functionality found an strong adoption. Good news is coming! [`Intersection Observer API`](https://wicg.github.io/IntersectionObserver/) just landed in [Chromium 51](http://blog.chromium.org/2016/05/new-apis-to-help-developers-improve.html) and implementation of these kind of tricks is now much easier than has ever been before.
 
-Bare in mind that we are talking about really fresh piece of API. At the moment of writing this article the browser support  is restricted to Google Chrome 51 and Opera 38. If you want to play around with it in older browsers you better thank to [Surma](https://twitter.com/dassurma) for this great [polyfill](https://github.com/surma-dump/IntersectionObserver/blob/polyfill/polyfill/intersectionobserver-polyfill.js).
+Bare in mind that we are talking about really fresh piece of API. At the moment of writing this article the [browser support](https://www.chromestatus.com/feature/5695342691483648) is restricted to Google Chrome 51 and Opera 38. If you want to play around with it in older browsers you better thank to [Surma](https://twitter.com/dassurma) for this great [polyfill](https://github.com/surma-dump/IntersectionObserver/blob/polyfill/polyfill/intersectionobserver-polyfill.js).
 
 ## How to use Intersection Observer API
 
@@ -30,6 +30,35 @@ Have you ever heard this quote by Stephen R. Covey from "The 7 Habits of Highly 
 > To learn and not to do is really not to learn. To know and not to do is really not to know.
 
 Demo time! I created a list of paragraphs. By default all of them scaled down and see through. When paragraph passes a viewport edge by half of it's height (`threshold: [.5]`) then is animates to regular size and full opacity. Maybe it's not super creative, but it does the job and allows you to copy/paste my code and make some super funky effect :-)
+
+```js
+// callback function that will be fired
+// when element apears in viewport
+function onEntry(entry) {
+  entry.forEach((change) => {
+    change.target.classList.add('visable');
+  });
+}
+
+// list of options
+let options = {
+  threshold: [0.5]
+};
+
+// Instantiate a new Intersection Observer
+let observer = new IntersectionObserver(onEntry, options);
+
+// list of paragraphs
+let elements = document.querySelectorAll('p');
+
+// loop through all elements
+// pass each element to observe method
+// ES2015 for-of look can loop through DOM Elements
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
+```
 
 <p>
 <p data-height="400" data-theme-id="dark" data-slug-hash="YWqWXJ" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/YWqWXJ/">Intersection Observer API explained</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
