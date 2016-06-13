@@ -8,6 +8,8 @@ Detecting elements visible on current viewport boundaries has always been tricky
 
 Bare in mind that we are talking about really new API. At the moment of writing this article the [browser support](https://www.chromestatus.com/feature/5695342691483648) is restricted to Google Chrome 51 and Opera 38. If you want to play around with it in older browsers you better thank to [Surma](https://twitter.com/dassurma) for this great [polyfill](https://github.com/surma-dump/IntersectionObserver/blob/polyfill/polyfill/intersectionobserver-polyfill.js).
 
+![IntersectionObserver in Google Chrome Canary](/photos/2016-06-13-1.jpg)
+
 ## How to use Intersection Observer API
 
 You don't have to declare listener that on every single scroll event triggers crazy `getBoundingClientRect()` calculations anymore. New API is much nicer to use and read. Simply create a new instance of `IntersectionObserver` that takes two arguments — callback function and optional option object. Trigger the `observe` method and pass an element that should be watched. When the element enters or exits the viewport, the callback function will be fired.
