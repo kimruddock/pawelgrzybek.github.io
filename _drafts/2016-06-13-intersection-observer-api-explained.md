@@ -21,17 +21,17 @@ watchMe.observe(elm);
 
 By default, callback function will be fired whenever an element appears and leaves the viewport. Function returns an array of [`IntersectionObserverEntry`](https://wicg.github.io/IntersectionObserver/#intersection-observer-entry) objects and each of them contains properties about each element that has been shown on the viewport (`boundingClientRect`, `intersectionRatio`, `intersectionRect`, `rootBounds`, `target` and `time`).
 
-Second parameter (`options`) let you to specify some settings by passing [`IntersectionObserverInit`](https://wicg.github.io/IntersectionObserver/#intersection-observer-init) object. It allows you to change the observer behavior by changing the context (`root`) that defaults to `null` which is document’s viewport, margin from the context boundaries (`rootMargin`) with default value `0px` and thresholds array of observed element (`threshold`).
+Second parameter (`options`) let you to specify some settings by passing [`IntersectionObserverInit`](https://wicg.github.io/IntersectionObserver/#intersection-observer-init) object. You can change the context (`root`) that defaults to `null` which is document’s viewport, margin from the context boundaries (`rootMargin`) with default value `0px` and thresholds array of observed element (`threshold`).
 
 If you need to observe more than one element, simply call `observe` method multiple times.
 
-## Demo demo demo
+## Demo time
 
 Have you ever heard this quote by Stephen R. Covey from "The 7 Habits of Highly Effective People"?
 
 > To learn and not to do is really not to learn. To know and not to do is really not to know.
 
-Demo time! I created a list of paragraphs. Initially all of them are scaled down and see through. When paragraph passes a viewport edge by half of it's height (`threshold: [.5]`) then is animates to regular size and full opacity. Maybe it's not super creative, but it does the job and allows you to copy/paste my code and make some super funky effect :-)
+Demo time! I created a list of paragraphs. Initially all of them are scaled down and see through. When paragraph passes a viewport edge by half of it's height (`threshold: [0.5]`) then is animates to regular size and full opacity. Maybe it's not super creative, but it does the job and allows you to copy/paste my code and make some super funky stuff :-)
 
 ```js
 // callback function that will be fired
@@ -67,4 +67,4 @@ for (let elm of elements) {
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-Hopefully it helped you out. Don't be shy and show your results of using Intersection Observer API. Question? Use the comment section below. If you liked this article don't hesitate to use share button below please. Thanks!
+Hopefully it helped you out. Don't be shy and show your results of using Intersection Observer API. Question? Use the comment section below. If you liked this article don't hesitate to use share button please. Thanks!
