@@ -14,7 +14,7 @@ Our mission is to add a new one for JavaScript. We are going to use [node.js](ht
 
 ## Create JavaScript build system in Sublime Text
 
-Every built system is described on JSON file with .sublime-build extension. To create new one go to Tools > Build System > New Build System... Copy and paste this bit of code:
+Every built system is described on JSON file with `.sublime-build` extension. To create new one go to Tools > Build System > New Build System... If you are mac OS user, copy and paste this bit of code:
 
 ```json
 {
@@ -23,12 +23,21 @@ Every built system is described on JSON file with .sublime-build extension. To c
 }
 ```
 
-In most cases single 'node' command does the job but passing a full path is more reliable. If you are not sure where node is installed, just type 'which node' in Terminal to get the path.
+Windows users...
+
+```json
+{
+  "cmd": ["C:/Program Files/nodejs/node.exe", "$file"],
+  "selector": "source.js"
+}
+```
+
+In most cases single `node` command does the job instead of passing a full path to node. I found this method more reliable though. If you are not sure where node is installed, just type `which node` in Terminal (mac OS) or `where node` in command prompt (windows users) to get the path.
 
 ![Domain's DNS settings](/photos/2015-06-12-2.jpg)
 
-Save this file as a JavaScript.sublime-build inside User directory (~/Library/Application Support/Sublime Text 3/Packages/User).
+Save this file as a JavaScript.sublime-build in "User" directory inside Sublime Text settings folder.
 
-Time for fun part. Create and save a JavaScript file (to execute a node interpreter, file needs to be saved), code some super amazing script and click Cmd + B (Mac) or F7 (Windows). You can run this function manually from Tools > Build. Sublime Text should automatically run your script through appropriate build system. If something doesn't work correctly go to Tools > Build System and make sure that Automatically or JavaScript is selected. Enjoy!
+Time for fun part. Create and save a JavaScript file (to execute a node interpreter, file needs to be saved), code some super amazing script and click Cmd + B (mac OS) or F7 (Windows). You can run this task manually from Tools > Build. Sublime Text should automatically run your script through appropriate build system. If something doesn't work correctly go to Tools > Build System and make sure that Automatically or JavaScript is selected. Enjoy!
 
 ![Domain's DNS settings](/photos/2015-06-12-3.jpg)
