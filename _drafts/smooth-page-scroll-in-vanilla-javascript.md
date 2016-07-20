@@ -172,3 +172,9 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
 ```js
 scrollIt(sections[1].distance, 200, 'easeInQuad', makeActive(1));
 ```
+
+
+## Performance wise...
+
+jQuery 30fps, raf 60fps, 100 lines of code vs hundreds lines
+Unfortunatelly raf doesnt suppry as huge array of browsers as raf covers
