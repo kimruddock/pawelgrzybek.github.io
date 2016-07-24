@@ -47,7 +47,8 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
 
 The tricky part of these task was to determine which element is a scrollable one. It's impossible to check it when the document is on it's very top so the easies solution was to scroll down a bit, read the results and move it back to the initial position. Looks tricky but does the job really well and allows us to target `document.documentElement` (for Internet Explorer, Microsoft Edge and Firefox) and `document.body` (for Chrome, Opera, Brave and Safari). If you know any cleaner solution I'll be very thankful.
 
-!!! Image of table with three documents scrollTo !!!
+![document.documentElement vs document.body table](/photos/2016-07-25-1.jpg)
+
 
 ```js
 function checkBody() {
