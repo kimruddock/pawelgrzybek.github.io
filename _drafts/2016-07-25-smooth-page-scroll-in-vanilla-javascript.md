@@ -1,7 +1,7 @@
 ---
 title: Page scrolling in vanilla JavaScript
 excerpt: Scrolling to element on a page has always been easy with jQuery. It's getting a bit tricky in vanilla JavaScript — but definitely doable.
-photo:
+photo: 2016-07-25.jpg
 ---
 
 How many times have you seen an effect of page scrolling down after clicking a button? Probably thousands! It's been always extremely easy to do with popular library — [jQuery](https://jquery.com/).
