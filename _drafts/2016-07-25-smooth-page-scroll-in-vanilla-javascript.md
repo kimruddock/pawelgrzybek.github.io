@@ -1,10 +1,10 @@
 ---
 title: Page scrolling in vanilla JavaScript
-excerpt: Scrolling to element on a page has always been easy with jQuery. It's getting a bit tricky in vanilla JavaScript — but definitely doable.
+excerpt: Scrolling to an element on a page has always been easy with jQuery. It's a bit tricky in vanilla JavaScript — but definitely doable.
 photo: 2016-07-25.jpg
 ---
 
-How many times have you seen an effect of a page scrolling down after clicking a button? Probably thousands! It's been always extremely easy to do with a popular library — [jQuery](https://jquery.com/).
+How many times have you seen the effect of a page scrolling down after clicking a button? Probably thousands! It's always been extremely easy to do with the popular [jQuery](https://jquery.com/) library.
 
 ```js
 $('.js-btn').click(() => {
@@ -19,22 +19,22 @@ $('.js-btn').click(() => {
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-It is a decent solution, working great and it's really well supported across the browsers. But there is a recent trend of abandoning jQuery because pure vanilla JavaScript DOM manipulation is a new hipster skill. I'm one of those hipsters by the way. With the ease of a modern APIs and amount of features that the land of JavaScript has to offer nowadays it is not that difficult to drop chunky libraries behind.
+It is a decent solution, works great and it's really well supported across the browsers. But there is a recent trend of abandoning jQuery because pure vanilla JavaScript DOM manipulation is the new hipster skill (I'm one of those hipsters by the way!). With the ease of modern APIs and the amount of features that the JavaScript landscape has to offer nowadays it is not that difficult to leave chunky libraries behind.
 
-On one of my recent projects my client asked me to implement this kind of scrolling on his SPA (single page app). Aha! "Challenge" I said! Today I think that "DOM nightmare inconsistency mission" is a better term to describe this scenario. If you are one of those hipsters let me save you a couple of hours and share a tiny snippet with you.
+On one recent project my client asked me to implement this kind of scrolling on his SPA (single page app). Aha! A "challenge" I said! Today I think "DOM-nightmare-inconsistency-mission" is a better term to describe this scenario. If you are one of those hipsters let me save you a couple of hours and share this tiny snippet with you.
 
 ## Page scrolling without jQuery
 
-Plan! To start a script it's always a good idea to have a plan in place. Basiclly it goes like this:
+Plan! To start a script it's always a good idea to have a plan in place. Basically it goes like this:
 
-1. Determine where to scroll, duration, easing and optional callback.
-2. On click — grab a timestamp and current document position.
-3. Scroll the element as long as you don't reach the destination.
-4. If an element finished scrolling trigger an optional callback function.
+1. Determine where to scroll, the duration, the easing function and an optional callback.
+2. On click — grab a timestamp and the current document position.
+3. Scroll to the element as long as you don't reach the destination.
+4. If the element has finished scrolling trigger an optional callback function.
 
-### Determine where to scroll, duration, easing and optional callback
+### Determine where to scroll, the duration, the easing function and an optional callback
 
-All further steps are always going to be exactly the same. This one may vary dependable of the destination, scrolling duration, timing function and callback that is invoked when the scrolling reaches it's destination. It makes sense to pass all these things as a function arguments, isn't it? Destination is the only required argument. Duration and easing function can take some sensible default values (thanks to ES2015 default argument) and callback function should be optional. Have a look at a wrapper of our function declaration.
+All the other steps are always going to be exactly the same. This one may vary depending on the destination, the scrolling duration, the timing function and any callback that is invoked when the scrolling reaches it's destination. It makes sense to pass all these things as function arguments, right? The destination is the only required argument. The duration and easing function possess some sensible default values (thanks to ES2015 default arguments) and the callback function should be optional. Have a look at the wrapper of our function declaration.
 
 ```js
 function scrollIt(element, duration = 200, easing = 'linear', callback) {
@@ -45,7 +45,7 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
 
 ### On click — grab a timestamp and current document position
 
-The tricky part of these task was to determine which element is a scrollable one. It's impossible to check it when the document is on it's very top so the easies solution was to scroll down a bit, read the scrolled value and move it back to the initial position. Looks tricky but does the job really well and allows us to target `document.documentElement` (for Internet Explorer, Microsoft Edge and Firefox) and `document.body` (for Chrome, Opera, Brave and Safari). If you know any cleaner solution I'll be very thankful.
+The tricky part of this task was to determine which element is the scrollable one. It's impossible to check this when the document is at the very top so the easiest solution was to scroll down a bit, read the scrolled value and move it back to the initial position. It looks tricky but does the job really well and allows us to target `document.documentElement` (for Internet Explorer, Microsoft Edge and Firefox) and `document.body` (for Chrome, Opera, Brave and Safari). If you can tell me of a cleaner solution I'll be very thankful.
 
 ![document.documentElement vs document.body table](/photos/2016-07-25-1.jpg)
 
@@ -67,9 +67,9 @@ const windowHeight = window.innerHeight || document.documentElement.clientHeight
 const destination = documentHeight - element.offsetTop < windowHeight ? documentHeight - windowHeight : element.offsetTop;
 ```
 
-### Scroll the element as long as you don't reach the destination
+### Scroll to the element as long as you don't reach the destination
 
-The popular JavaScript animation solution are mainly based on [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout), [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval), [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay/requestAnimationFrame) and [WEB Animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API). First two — old school. `requestAnimationFrame` looks like a perfect candidate and if you think differently you are living your life wrong. The last one isn't made to deal with these kind of situations — read more about it on one of my previous [articles](https://pawelgrzybek.com/intro-to-the-web-animations-api/).
+The most popular JavaScript animation solutions are mainly based on [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout), [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval), the [WEB Animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) and [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay/requestAnimationFrame). The first two are pretty old school. The Web Animation API isn't made to deal with these kind of situations — read more about it in one of my previous [articles](https://pawelgrzybek.com/intro-to-the-web-animations-api/). So `requestAnimationFrame` looks like a perfect candidate for this scenario.
 
 ```js
 function scroll() {
@@ -86,9 +86,9 @@ function scroll() {
 scroll();
 ```
 
-### If an element finished scrolling trigger an optional callback function.
+### If the element has finished scrolling trigger an optional callback function
 
-The last step is to trigger a callback function whenever the document reached it's destination. This one requires to add one more line to condition that checks the current position and destination inside `scroll` function.
+The last step is to trigger a callback function whenever the document reaches its destination. This requires adding one more line to the condition that checks the current position and destination inside the `scroll` function.
 
 ```js
 if (body.scrollTop === destination) {
@@ -159,9 +159,9 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
   const start = body.scrollTop;
   const startTime = Date.now();
 
-  // Prevent requestAnimationFrame from infinte loop
-  // In situation is too low on the page
-  // And scroll to this position isint possible
+  // Height checks to prevent requestAnimationFrame from infinitely looping
+  // If the function trys to scroll below the document height
+  // it should only scroll to the bottom of the document
   const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
   const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
   const destination = documentHeight - element.offsetTop < windowHeight ? documentHeight - windowHeight : element.offsetTop;
@@ -203,4 +203,4 @@ scrollIt(elm);
 
 ## Wrap it up
 
-Let me know what do you think about my solution. I know that the [browser support](http://caniuse.com/#feat=requestanimationframe) isn't that amazing compared to jQuery solution. The compromise between browser support, bloating code and performance is the question that you need to answer yourself dependable of the project. I had a good fun building this script and even more enjoyable part is sharing it with you.
+Please let me know what you think about my solution to page scrolling in Javascript. I know that the [browser support](http://caniuse.com/#feat=requestanimationframe) isn't that amazing compared to the usual jQuery solution. The compromise between browser support, bloating code and performance is a question that you need to answer yourself depending on your project. I had good fun building this script but it's even more enjoyable for me to share it with you.
