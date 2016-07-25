@@ -19,7 +19,7 @@ $('.js-btn').click(() => {
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-It is a decent solution, works great and it's really well supported across the browsers. But there is a recent trend of abandoning jQuery because pure vanilla JavaScript DOM manipulation is the new hipster skill (I'm one of those hipsters by the way!). With the ease of modern APIs and the amount of features that the JavaScript landscape has to offer nowadays it is not that difficult to leave chunky libraries behind.
+It is a decent solution, works great and it's really well supported across the browsers. But there is a recent trend of abandoning jQuery because pure vanilla JavaScript DOM manipulation is the new hipster skill (I'm one of those hipsters by the way). With the ease of modern APIs and the amount of features that the JavaScript landscape has to offer nowadays it is not that difficult to leave chunky libraries behind.
 
 On one recent project my client asked me to implement this kind of scrolling on his SPA (single page app). Aha! A "challenge" I said! Today I think "DOM-nightmare-inconsistency-mission" is a better term to describe this scenario. If you are one of those hipsters let me save you a couple of hours and share this tiny snippet with you.
 
@@ -43,7 +43,7 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
 }
 ```
 
-### On click — grab a timestamp and current document position
+### On click — grab a timestamp and the current document position
 
 The tricky part of this task was to determine which element is the scrollable one. It's impossible to check this when the document is at the very top so the easiest solution was to scroll down a bit, read the scrolled value and move it back to the initial position. It looks tricky but does the job really well and allows us to target `document.documentElement` (for Internet Explorer, Microsoft Edge and Firefox) and `document.body` (for Chrome, Opera, Brave and Safari). If you can tell me of a cleaner solution I'll be very thankful.
 
@@ -160,7 +160,7 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
   const startTime = Date.now();
 
   // Height checks to prevent requestAnimationFrame from infinitely looping
-  // If the function trys to scroll below the document height
+  // If the function tries to scroll below the visible document area
   // it should only scroll to the bottom of the document
   const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
   const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
@@ -203,4 +203,4 @@ scrollIt(elm);
 
 ## Wrap it up
 
-Please let me know what you think about my solution to page scrolling in Javascript. I know that the [browser support](http://caniuse.com/#feat=requestanimationframe) isn't that amazing compared to the usual jQuery solution. The compromise between browser support, bloating code and performance is a question that you need to answer yourself depending on your project. I had good fun building this script but it's even more enjoyable for me to share it with you.
+Please let me know what you think about my solution. I know that the [browser support](http://caniuse.com/#feat=requestanimationframe) isn't that amazing compared to the usual jQuery solution. The compromise between browser support, bloating code and performance is a question that you need to answer yourself depending on your project. I had good fun building this script but it's even more enjoyable for me to share it with you.
