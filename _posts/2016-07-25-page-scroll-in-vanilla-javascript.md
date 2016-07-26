@@ -201,9 +201,9 @@ scrollIt(elm);
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-## Future solution with scroll-behavior: smooth
+## A future solution using scroll-behavior: smooth
 
-**UPDATE!** Correctly pointed by [Šime Vidas](https://twitter.com/simevidas) there is another solution. One of the [CSSOM View module](https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_View) property is [`scroll-behavior`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior). This is a native solution for a problem that I'm trying to solve by my script. Implementation is extremely easy, but unfortunately this method [isn't supported well enough](http://caniuse.com/#feat=css-scroll-behavior) to call it reliable (yet). It doesn't allow us to control timing function and duration neither. It takes the user-agent values as a defaults.
+**UPDATE!** As correctly pointed out by [Šime Vidas](https://twitter.com/simevidas) there is another solution. There is a property of the [CSSOM View module](https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_View) called [`scroll-behavior`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior). This is a native solution for the problem that I'm trying to solve by my script. The implementation is extremely easy, but unfortunately this method [isn't supported well enough](http://caniuse.com/#feat=css-scroll-behavior) to be used reliably (yet). It doesn't allow us to control timing functions or the duration either. It takes the user-agent values as its defaults.
 
 ```css
 :root {
