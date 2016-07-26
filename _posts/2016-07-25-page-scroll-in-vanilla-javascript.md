@@ -201,6 +201,33 @@ scrollIt(elm);
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
+## Future solution with scroll-behavior: smooth
+
+**UPDATE!** Correctly pointed by [Šime Vidas](https://twitter.com/simevidas) there is another solution. One of the [CSSOM View module](https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_View) property is [`scroll-behavior`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior). This is a native solution for a problem that I'm trying to solve by my script. Implementation is extremely easy, but unfortunately this method [isn't supported well enough](http://caniuse.com/#feat=css-scroll-behavior) to call it reliable (yet). It doesn't allow us to control timing function and duration neither. It takes the user-agent values as a defaults.
+
+```css
+:root {
+  scroll-behavior: smooth;
+}
+```
+
+```js
+function scrollIt(element) {
+  const destination = element.offsetTop;
+  document.documentElement.scrollTo(0, destination);
+}
+```
+
+```js
+const elm = document.querySelector('.js-section');
+scrollIt(elm);
+```
+
+<p>
+  <p data-height="350" data-theme-id="14885" data-slug-hash="kXJKEq" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/kXJKEq/">2016.07.25 - 3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+
 ## Wrap it up
 
 Please let me know what you think about my solution. I know that the [browser support](http://caniuse.com/#feat=requestanimationframe) isn't that amazing compared to the usual jQuery solution. The compromise between browser support, bloating code and performance is a question that you need to answer yourself depending on your project. I had good fun building this script but it's even more enjoyable for me to share it with you.
