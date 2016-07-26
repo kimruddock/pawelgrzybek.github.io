@@ -203,18 +203,15 @@ scrollIt(elm);
 
 ### A future solution using scroll-behavior: smooth
 
-**UPDATE!** As correctly pointed out by [Šime Vidas](https://twitter.com/simevidas) there is another solution. There is a property of the [CSSOM View module](https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_View) called [`scroll-behavior`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior). This is a native solution for the problem that I'm trying to solve by my script. The implementation is extremely easy, but unfortunately this method [isn't supported well enough](http://caniuse.com/#feat=css-scroll-behavior) to be used reliably (yet). It doesn't allow us to control timing functions or the duration either. It takes the user-agent values as its defaults.
-
-```css
-:root {
-  scroll-behavior: smooth;
-}
-```
+**UPDATE!** As correctly pointed out by [Šime Vidas](https://twitter.com/simevidas) there is another solution. There is a property of the [CSSOM View module](https://developer.mozilla.org/en-US/docs/Web/CSS/CSSOM_View) called [`scroll-behavior`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior). This is a native solution for the problem that I'm trying to solve by my script. The implementation is extremely easy, but unfortunately this method [isn't supported well enough](http://caniuse.com/#feat=css-scroll-behavior) to be used reliably (yet). It doesn't allow us to control timing functions or the duration either. It takes the user-agent values as its defaults. If you want to test examples below, use Firefox or Google Chrome with [Experimental Web Platform features](chrome://flags/#enable-experimental-web-platform-features) flag enabled.
 
 ```js
 function scrollIt(element) {
-  const destination = element.offsetTop;
-  document.documentElement.scrollTo(0, destination);
+  window.scrollTo({
+    'behavior': 'smooth',
+    'left': 0,
+    'top': element.offsetTop
+  });
 }
 ```
 
@@ -224,7 +221,25 @@ scrollIt(elm);
 ```
 
 <p>
-  <p data-height="350" data-theme-id="14885" data-slug-hash="kXJKEq" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/kXJKEq/">2016.07.25 - 3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="14885" data-slug-hash="QEAZdP" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/QEAZdP/">2016.07.25 - 3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+
+And one more example using just a CSS (Firefox only)
+
+```css
+body {
+  scroll-behavior: smooth;
+}
+```
+
+```html
+<a href="#one" class="btn">Section 1</a>
+<div id="one" class="section">Section 1</div>
+```
+
+<p>
+<p data-height="350" data-theme-id="14885" data-slug-hash="RRyXxJ" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/RRyXxJ/">2016.07.25 - 4</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
