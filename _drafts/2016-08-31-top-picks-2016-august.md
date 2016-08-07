@@ -9,3 +9,13 @@ photo: top-picks.jpg
 A great talk by [David Wells](https://twitter.com/DavidWells) on ReactJS San Francisco Bay Area meet-up. All that you need to know about styling React components. Pros and cons of each popular method with strong recommendation of [CSS modules](https://github.com/css-modules/css-modules) powered by [PostCSS](http://postcss.org/). I don't entirely agree with some parts of David's approach but it is really interesting to have an overview of other developers strategy.
 
 - - -
+
+## CSS Function Syntaxes (color and otherwise)
+
+[http://www.xanthir.com/b4iW0](http://www.xanthir.com/b4iW0)
+
+Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If it's too long too read the only thing to remember is future in the future `rgba(0, 255, 0, 50%)` notation will be replaced by `rgb(0 255 0 / 50%)`. The reason behind it makes sense.
+
+- - -
+
+##
