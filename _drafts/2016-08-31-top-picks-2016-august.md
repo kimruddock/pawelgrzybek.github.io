@@ -18,4 +18,20 @@ Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If 
 
 - - -
 
+## Staggering Animations
+
+[https://css-tricks.com/staggering-animations/](https://css-tricks.com/staggering-animations/)
+
+David DeSandro — author of Masonry, Isotope, Flickity, Packery and many many more superb plugins drives us through considerations of implementing new type of animation in Isotope version 3. I love this kind of posts that apart from final result reveals a development process in details.
+
+- - -
+
+## Force Selection of Text Block
+
+[https://css-tricks.com/force-selection-text-block/](https://css-tricks.com/force-selection-text-block/)
+
+Next one from CSS Tricks this week. Chris Coyier presents a neat trick to select a whole block of text via single click without heavy JavaScript of Flash based add-ons. Very handy trick especially when we need to make sure that whole bit of code is copies (like a code snippet or telephone number).
+
+- - -
+
 ##
