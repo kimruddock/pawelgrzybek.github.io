@@ -31,8 +31,8 @@
 
 :root {
   --color-text: #333;
-  --color-border: #ddd;
-  --color1: #ad1457;
+  --color-border: #eee;
+  --color1: #327ccb;
 }
 
 html {
@@ -66,19 +66,19 @@ body {
   font-size: 1rem;
   line-height: 1.6rem;
 
-  /*
+/*
   background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
   background-size: 100% 28px;
-  */
+*/
 
 }
-/*
-@media screen and (min-width: 734px) {
+
+/*@media screen and (min-width: 734px) {
   body {
     background-size: 100% 34px;
   }
-}
-*/
+}*/
+
 
 img {
   display: block;
