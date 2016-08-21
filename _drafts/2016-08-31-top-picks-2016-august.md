@@ -34,4 +34,12 @@ Next one from CSS Tricks this week. Chris Coyier presents a neat trick to select
 
 - - -
 
+## Yes, You Should Learn Vanilla JavaScript Before Fancy JS Frameworks
+
+[https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks](https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks)
+
+I can't agree enough with this article. I'm sick of people who call themselves "Angular Developer" or "react Developer". I can't imagine how can you be a good framework developer without knowing core principles of language that has been used to build it. I follow teaching style promoted by great Kyle Simpson who is a strong believer in deep understanding before moving forward. Francois-Xavier P. Darveau shares the same school. Great read!
+
+- - -
+
 ##
