@@ -42,4 +42,12 @@ I can't agree enough with this article. I'm sick of people who call themselves "
 
 - - -
 
+## Front End Center
+
+[https://frontend.center/](https://frontend.center/)
+
+[Glen Maddern](https://twitter.com/glenmaddern) just started a new project called Front End Center. He released just one video so far but this single watch was totally enough to convince me to follow it and recommend it to you. The best explanation of Webpack that you can find. I'm looking forward to following screen casts by Glen.
+
+- - -
+
 ##
