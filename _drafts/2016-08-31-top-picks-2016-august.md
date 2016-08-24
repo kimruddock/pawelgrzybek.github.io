@@ -50,4 +50,12 @@ I can't agree enough with this article. I'm sick of people who call themselves "
 
 - - -
 
+## How To Use WebPageTest and its API
+
+[https://css-tricks.com/use-webpagetest-api/](https://css-tricks.com/use-webpagetest-api/)
+
+Eduardo Bouças published very helpful article on CSS-Tricks. ALl that you need to know to master WebPageTest and it's API. Even if you are not interested in using very advanced features that API comes with, first few chapters  are amazing introduction to graps a concept of this fantastic tool.
+
+- - -
+
 ##
