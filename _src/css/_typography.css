@@ -46,22 +46,32 @@ h3,
 h4,
 h5,
 h6 {
+  color: #000;
   font-weight: 700;
   vertical-align: middle;
+
+  &:not(:first-child) {
+    margin-top: 2.4rem;
+  }
 }
 
+/*
+typo scale
+1:√2 – aug. fourth / dim. fifth
+*/
+
 h1 {
-  font-size: 2.3702rem;
-  line-height: 2.4rem;
+  font-size: 2.827rem;
+  line-height: 3.2rem;
 }
 
 h2 {
-  font-size: 1.7777rem;
+  font-size: 1.999rem;
   line-height: 2.4rem;
 }
 
 h3 {
-  font-size: 1.3333rem;
+  font-size: 1.414rem;
 }
 
 h4 {
@@ -69,11 +79,11 @@ h4 {
 }
 
 h5 {
-  font-size: .75rem;
+  font-size: .707rem;
 }
 
 h6 {
-  font-size: .5625rem;
+  font-size: .5rem;
 }
 
 ul,

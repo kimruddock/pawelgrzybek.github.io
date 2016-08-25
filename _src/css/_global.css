@@ -30,9 +30,9 @@
 }
 
 :root {
-  --color-text: #333;
-  --color-border: #ddd;
-  --color1: #ad1457;
+  --color-text: #444;
+  --color-border: #eee;
+  --color1: #1565C0;
 }
 
 html {
@@ -40,15 +40,19 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  /* https://bocoup.com/weblog/text-rendering/ */
-  text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 700px) {
   html {
-    font-size: 132.8125%;
+    font-size: 125%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 140.625%;
   }
 }
 
@@ -66,19 +70,24 @@ body {
   font-size: 1rem;
   line-height: 1.6rem;
 
-  /*
-  background-image: linear-gradient(rgba(50, 50, 50, .15) 1px, transparent 1px);
-  background-size: 100% 28px;
-  */
+
+/*  background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);
+  background-size: 100% 28px;*/
+
 
 }
-/*
-@media screen and (min-width: 734px) {
+
+/*@media screen and (min-width: 700px) {
   body {
-    background-size: 100% 34px;
+    background-size: 100% 32px;
   }
 }
-*/
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: 100% 36px;
+  }
+}*/
 
 img {
   display: block;

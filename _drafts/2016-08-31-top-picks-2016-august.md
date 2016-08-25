@@ -18,4 +18,44 @@ Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If 
 
 - - -
 
+## Staggering Animations
+
+[https://css-tricks.com/staggering-animations/](https://css-tricks.com/staggering-animations/)
+
+David DeSandro — author of Masonry, Isotope, Flickity, Packery and many many more superb plugins drives us through considerations of implementing new type of animation in Isotope version 3. I love this kind of posts that apart from final result reveals a development process in details.
+
+- - -
+
+## Force Selection of Text Block
+
+[https://css-tricks.com/force-selection-text-block/](https://css-tricks.com/force-selection-text-block/)
+
+Next one from CSS Tricks this week. Chris Coyier presents a neat trick to select a whole block of text via single click without heavy JavaScript of Flash based add-ons. Very handy trick especially when we need to make sure that whole bit of code is copies (like a code snippet or telephone number).
+
+- - -
+
+## Yes, You Should Learn Vanilla JavaScript Before Fancy JS Frameworks
+
+[https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks](https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks)
+
+I can't agree enough with this article. I'm sick of people who call themselves "Angular Developer" or "react Developer". I can't imagine how can you be a good framework developer without knowing core principles of language that has been used to build it. I follow teaching style promoted by great Kyle Simpson who is a strong believer in deep understanding before moving forward. Francois-Xavier P. Darveau shares the same school. Great read!
+
+- - -
+
+## Front End Center
+
+[https://frontend.center/](https://frontend.center/)
+
+[Glen Maddern](https://twitter.com/glenmaddern) just started a new project called Front End Center. He released just one video so far but this single watch was totally enough to convince me to follow it and recommend it to you. The best explanation of Webpack that you can find. I'm looking forward to following screen casts by Glen.
+
+- - -
+
+## How To Use WebPageTest and its API
+
+[https://css-tricks.com/use-webpagetest-api/](https://css-tricks.com/use-webpagetest-api/)
+
+Eduardo Bouças published very helpful article on CSS-Tricks. ALl that you need to know to master WebPageTest and it's API. Even if you are not interested in using very advanced features that API comes with, first few chapters  are amazing introduction to graps a concept of this fantastic tool.
+
+- - -
+
 ##

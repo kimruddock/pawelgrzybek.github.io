@@ -1,18 +1,16 @@
-'use strict';
-
-var gulp = require('gulp');
-var cp = require('child_process');
-var bs = require('browser-sync');
-var postcss = require('gulp-postcss');
-var cssImport = require('postcss-import');
-var nest = require('postcss-nested');
-var customProps = require('postcss-custom-properties');
-var calc = require('postcss-calc');
-var nano = require('gulp-cssnano');
+const gulp = require('gulp');
+const cp = require('child_process');
+const bs = require('browser-sync');
+const postcss = require('gulp-postcss');
+const cssImport = require('postcss-import');
+const nest = require('postcss-nested');
+const customProps = require('postcss-custom-properties');
+const calc = require('postcss-calc');
+const nano = require('gulp-cssnano');
 
 
 // Build jekyll project
-gulp.task('jekyll', (done) => {
+gulp.task('jekyll', done => {
   cp.spawn('jekyll', ['build', '--drafts', '--quiet', '--future'], { stdio: 'inherit' }).on('close', done);
 });
 
@@ -40,7 +38,7 @@ gulp.task('browser-sync', ['styles', 'jekyll'], () => {
 
 // Process css, autoprefix, minify
 gulp.task('styles', () => {
-  var processors = [
+  const processors = [
     cssImport,
     customProps,
     calc,
