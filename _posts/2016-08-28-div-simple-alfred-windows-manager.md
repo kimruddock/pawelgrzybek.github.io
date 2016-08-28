@@ -1,6 +1,6 @@
 ---
 title: Div — simple Alfred windows manager
-excerpt: I'm happy to present you a Div — simple Alfred windows manager. Let me explain the full potential of this easy but powerful tool in this blog post.
+excerpt: I'm happy to present you a Div — simple Alfred windows manager. Let me explain the full potential of this easy and powerful tool in this blog post.
 photo: 2016-08-28.jpg
 ---
 
