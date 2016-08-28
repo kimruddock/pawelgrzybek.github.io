@@ -55,13 +55,13 @@ Sometimes predefined settings are not enough. [Div](http://www.packal.org/workfl
 
 #### Custom bounds
 
-Choose custom bounds by passing 4 space separated values. For example `div .2 .2 .8 .8` will place top left corner of an app 20% from top and 20% from left edge of a screen, and bottom right corner 80% from top and 80% from left edge of a screen.
+Choose custom bounds by passing 4 (space separated) values. For example `div 20 20 80 80` will place top left corner of an app 20% from top and 20% from left edge of a screen, and bottom right corner 80% from top and 80% from left edge of a screen.
 
 ![Custom bounds in Div Alfred workflow](/photos/2016-08-28-5.gif)
 
 #### Custom size
 
-Choose custom size by passing 2 space separated values. For example div 800 600 will resize your window to 800px width and 600px height and place the window on the middle of a screen.
+Choose custom size by passing 2 (space separated) values. For example `div 800 600` will resize your window to 800px width and 600px height and place the window on the middle of a screen.
 
 ![Custom size in Div Alfred workflow](/photos/2016-08-28-6.gif)
 
