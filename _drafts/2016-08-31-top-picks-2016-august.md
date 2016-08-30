@@ -58,4 +58,8 @@ Eduardo Bouças published very helpful article on CSS-Tricks. ALl that you need 
 
 - - -
 
-##
+## Using WebP Images
+
+[https://css-tricks.com/using-webp-images/](https://css-tricks.com/using-webp-images/)
+
+Great primer for using WebP on your projects. All about file saving, conversion, placing WebP graphics in HTML markup and CSS. With support around 70% it is a perfect timing to let it boost the performance of our projects. Thanks Jeremy for write up.
