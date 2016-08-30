@@ -6,7 +6,7 @@ photo: top-picks.jpg
 
 ## David Wells - CSS in React
 
-A great talk by [David Wells](https://twitter.com/DavidWells) on ReactJS San Francisco Bay Area meet-up. All that you need to know about styling React components. Pros and cons of each popular method with strong recommendation of [CSS modules](https://github.com/css-modules/css-modules) powered by [PostCSS](http://postcss.org/). I don't entirely agree with some parts of David's approach but it is really interesting to have an overview of other developers strategy.
+A great talk by [David Wells](https://twitter.com/DavidWells) on ReactJS San Francisco Bay Area meet-up. All that you need to know about styling React components. Pros and cons of each popular method with strong recommendation of [CSS modules](https://github.com/css-modules/css-modules) powered by [PostCSS](http://postcss.org/). I don't entirely agree with some parts of David's approach but it is really interesting overview of available strategies.
 
 - - -
 
@@ -14,7 +14,7 @@ A great talk by [David Wells](https://twitter.com/DavidWells) on ReactJS San Fra
 
 [http://www.xanthir.com/b4iW0](http://www.xanthir.com/b4iW0)
 
-Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If it's too long too read the only thing to remember is future in the future `rgba(0, 255, 0, 50%)` notation will be replaced by `rgb(0 255 0 / 50%)`. The reason behind it makes sense.
+Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If it's too long too read the only thing you need to remember is fact that `rgba(0, 255, 0, 50%)` notation will be replaced with `rgb(0 255 0 / 50%)`. The reason behind makes super sense.
 
 - - -
 
@@ -22,7 +22,7 @@ Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If 
 
 [https://css-tricks.com/staggering-animations/](https://css-tricks.com/staggering-animations/)
 
-David DeSandro — author of Masonry, Isotope, Flickity, Packery and many many more superb plugins drives us through considerations of implementing new type of animation in Isotope version 3. I love this kind of posts that apart from final result reveals a development process in details.
+David DeSandro — author of Masonry, Isotope, Flickity, Packery and many more superb plugins drives us through considerations of implementing new type of animation in third version of Isotope. I love this kind of posts that apart from final result author reveals a development process in details.
 
 - - -
 
@@ -30,7 +30,7 @@ David DeSandro — author of Masonry, Isotope, Flickity, Packery and many many m
 
 [https://css-tricks.com/force-selection-text-block/](https://css-tricks.com/force-selection-text-block/)
 
-Next one from CSS Tricks this week. Chris Coyier presents a neat trick to select a whole block of text via single click without heavy JavaScript of Flash based add-ons. Very handy trick especially when we need to make sure that whole bit of code is copies (like a code snippet or telephone number).
+Next one from CSS Tricks this month. Chris Coyier presents a neat trick to select a whole block on click without heavy JavaScript of Flash based add-ons. Very handy trick especially when we need to make sure that whole bit of code is copied (like a code snippet or telephone number).
 
 - - -
 
@@ -38,7 +38,7 @@ Next one from CSS Tricks this week. Chris Coyier presents a neat trick to select
 
 [https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks](https://snipcart.com/blog/learn-vanilla-javascript-before-using-js-frameworks)
 
-I can't agree enough with this article. I'm sick of people who call themselves "Angular Developer" or "react Developer". I can't imagine how can you be a good framework developer without knowing core principles of language that has been used to build it. I follow teaching style promoted by great Kyle Simpson who is a strong believer in deep understanding before moving forward. Francois-Xavier P. Darveau shares the same school. Great read!
+I can't agree enough with this article. I'm sick of people who call themselves "Angular Developer" or "React Developer". I can't imagine how can you be a good framework developer without knowing core principles of language. I follow teaching style promoted by great Kyle Simpson who is a strong believer in deep understanding before moving forward. Francois-Xavier P. Darveau shares the same school. Great read!
 
 - - -
 
@@ -46,7 +46,7 @@ I can't agree enough with this article. I'm sick of people who call themselves "
 
 [https://frontend.center/](https://frontend.center/)
 
-[Glen Maddern](https://twitter.com/glenmaddern) just started a new project called Front End Center. He released just one video so far but this single watch was totally enough to convince me to follow it and recommend it to you. The best explanation of Webpack that you can find. I'm looking forward to following screen casts by Glen.
+[Glen Maddern](https://twitter.com/glenmaddern) just started a new project called Front End Center. He released just one video so far but this single tutorial was totally enough to convince me to follow it and recommend it to you. The best explanation of Webpack that you can find. I'm looking forward to following screen casts by Glen.
 
 - - -
 
@@ -54,7 +54,7 @@ I can't agree enough with this article. I'm sick of people who call themselves "
 
 [https://css-tricks.com/use-webpagetest-api/](https://css-tricks.com/use-webpagetest-api/)
 
-Eduardo Bouças published very helpful article on CSS-Tricks. ALl that you need to know to master WebPageTest and it's API. Even if you are not interested in using very advanced features that API comes with, first few chapters  are amazing introduction to graps a concept of this fantastic tool.
+Eduardo Bouças published very helpful article on CSS-Tricks. All that you need to know to master WebPageTest and it's API. Even if you are not interested in using very advanced features that API comes with, first few chapters are amazing introduction to grasp a concept of this fantastic tool.
 
 - - -
 
@@ -63,3 +63,11 @@ Eduardo Bouças published very helpful article on CSS-Tricks. ALl that you need 
 [https://css-tricks.com/using-webp-images/](https://css-tricks.com/using-webp-images/)
 
 Great primer for using WebP on your projects. All about file saving, conversion, placing WebP graphics in HTML markup and CSS. With support around 70% it is a perfect timing to let it boost the performance of our projects. Thanks Jeremy for write up.
+
+- - -
+
+## How to design words
+
+[https://medium.com/@jsaito/how-to-design-words-63d6965051e9#.y3zxn18hu](https://medium.com/@jsaito/how-to-design-words-63d6965051e9#.y3zxn18hu)
+
+John Saito from Dropbox explains in few simple steps how to write better messages. Can't agree enough with all of them. Read it, print in and pin above your desk and read it after writing a sentence of body copy for your brand new project.
