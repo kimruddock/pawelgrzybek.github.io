@@ -14,7 +14,7 @@ A great talk by [David Wells](https://twitter.com/DavidWells) on ReactJS San Fra
 
 [http://www.xanthir.com/b4iW0](http://www.xanthir.com/b4iW0)
 
-Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If it's too long too read the only thing you need to remember is fact that `rgba(0, 255, 0, 50%)` notation will be replaced with `rgb(0 255 0 / 50%)`. The reason behind makes super sense.
+Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If it's too long too read the only thing you need to remember is `rgba(0, 255, 0, 50%)` notation will be replaced with `rgb(0 255 0 / 50%)`. The reason behind makes super sense.
 
 - - -
 
@@ -22,7 +22,7 @@ Tab Atkins explains the reason behind new syntax for CSS rgb color notation. If 
 
 [https://css-tricks.com/staggering-animations/](https://css-tricks.com/staggering-animations/)
 
-David DeSandro — author of Masonry, Isotope, Flickity, Packery and many more superb plugins drives us through considerations of implementing new type of animation in third version of Isotope. I love this kind of posts that apart from final result author reveals a development process in details.
+David DeSandro — author of Masonry, Isotope, Flickity, Packery and many more very good plugins drives us through considerations of implementing new type of animation in third version of Isotope. I love this kind of posts that apart from final result author reveals a development process in details.
 
 - - -
 
@@ -46,7 +46,7 @@ I can't agree enough with this article. I'm sick of people who call themselves "
 
 [https://frontend.center/](https://frontend.center/)
 
-[Glen Maddern](https://twitter.com/glenmaddern) just started a new project called Front End Center. He released just one video so far but this single tutorial was totally enough to convince me to follow it and recommend it to you. The best explanation of Webpack that you can find. I'm looking forward to following screen casts by Glen.
+[Glen Maddern](https://twitter.com/glenmaddern) just started a new project called Front End Center. He released just one video so far but this single tutorial was totally enough to convince me to follow and share it. The best explanation of Webpack that you can find. I'm looking forward to following screen casts by Glen.
 
 - - -
 
