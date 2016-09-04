@@ -12,4 +12,12 @@ Great intro followed by [another part](https://medium.com/dev-channel/the-case-f
 
 - - -
 
+## The inaccessible web: how we got into this mess
+
+[https://uxdesign.cc/the-inaccessible-web-how-we-got-into-this-mess-7cd3460b8e32](https://uxdesign.cc/the-inaccessible-web-how-we-got-into-this-mess-7cd3460b8e32)
+
+A mandatory read for teachers, content writers, designers, developers, digital product managers and also clients. Don't be lazy. Read it and make the web a better place. Thanks for write up [Mischa Andrews](https://twitter.com/MischaAndrews).
+
+- - -
+
 ##
