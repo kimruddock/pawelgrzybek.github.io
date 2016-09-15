@@ -1,10 +1,10 @@
 ---
 title: Sync Atom between multiple devices
-excerpt: Syncing the preferences and extensions of my code editor between all of my devices is part of my productive workflow. Here are a few methods to do it with Atom by Github.
+excerpt: Syncing the preferences and extensions of my code editor between all of my devices is part of my productive workflow. Here are a few methods to do it with Atom.
 photo: 2016-09-15.jpg
 ---
 
-Keeping the preferences and installed extensions for my text editor in sync across all of my devices is an important part of my productive workflow. I can't think of a more annoying situation than being disturbed in the middle of writing a script because of a missing snippet or plugin. I'm not sure why the creators of these tools don't explicitly provide a solution to import / export things in an easier way. [iTerm](https://www.iterm2.com/) and [Alfred](https://www.alfredapp.com/) are a great example of how to do it right — simply pick a location where your settings should be exported to and keep this file in sync with other devices (Dropbox, iCloud, git, whatever).
+Keeping the preferences and installed extensions for my text editor in sync across all of my devices is an important part of my productive workflow. I can't think of a more annoying situation than being disturbed because of a missing snippet or plugin. I'm not sure why the creators of these tools don't explicitly provide a solution to import / export things in an easier way. [iTerm](https://www.iterm2.com/) and [Alfred](https://www.alfredapp.com/) are a great example of how to do it right — simply pick a location where your settings should be exported to and keep this file in sync with other devices (Dropbox, iCloud, git, whatever).
 
 Text editors allow us to do the same but a small bit of hacking is required. As a long term [Sublime Text](https://www.sublimetext.com/) user I found keeping [dotfiles on Github](https://dotfiles.github.io/) the best solution. Very recently I jumped over to [Atom](https://atom.io/) and I had to keep it in sync between few computers at home and at work. Let me share with you a few possible options.
 
@@ -14,17 +14,14 @@ Text editors allow us to do the same but a small bit of hacking is required. As 
 
 ## Sync Atom with dotfiles on Github
 
-This option is a bit more manual but gives you full control and the ability to go back in time (thanks to git). Atom stores all settings files inside the `~/.atom/` directory. The trick is to move this folder to your `.dotfiles` directory and create a symlink in this directory to the original location. If you are not familiar with the concept of using `.dotfiles`, have a look at the [unofficial guide](https://dotfiles.github.io/) which is full of great examples.
+This option is a bit more manual but gives you full control and the ability to go back in time (thanks to git). Atom stores all settings files inside the `~/.atom/` directory. The trick is to move this folder to your `.dotfiles` directory and create a symlink from this directory to the original location. If you are not familiar with the concept of using `.dotfiles`, have a look at the [unofficial guide](https://dotfiles.github.io/) which is full of great examples.
 
 ```bash
-# go home
-cd ~
-
 # move .atom to .dotfiles
-mv .atom/ .dotfiles/
+mv ~/.atom/ ~/.dotfiles/
 
 # create a symlink to the directory inside dotfiles
-ln -s .dotfiles/.atom/ .atom
+ln -s ~/.dotfiles/.atom/ ~/.atom
 ```
 
 Time to add the new `.atom` folder to the `.dotfiles` repository. Before doing this we need to add a few folders to our `.gitignore` file.
@@ -45,7 +42,7 @@ Now your `.dotfiles` are fully prepared to sync your Atom settings between all o
 
 ## Sync Atom via Dropbox (or any other cloud service)
 
-The last option is to use a cloud service like Dropbox. I include this method here only because it is possible in theory but in practice it is nowhere near as reliable as the two options mentioned above. Dropbox is not a speed demon. The recent [data leak](https://www.troyhunt.com/the-dropbox-hack-is-real/) and [what it does with our operating systems](http://applehelpwriter.com/2016/08/29/discovering-how-dropbox-hacks-your-mac/) actually drove me to [drop Dropbox](http://www.drop-dropbox.com/). The decision is yours, but the method is provided below.
+The last option is to use a cloud service like Dropbox. I include this method here only because it is possible in theory but in practice it is nowhere near as reliable as the two options mentioned above. Dropbox is not a speed demon. The recent [data leak](https://www.troyhunt.com/the-dropbox-hack-is-real/) and [what it does with our operating systems](http://applehelpwriter.com/2016/08/29/discovering-how-dropbox-hacks-your-mac/) actually drove me to [drop Dropbox](http://www.drop-dropbox.com/). The decision is yours.
 
 ```bash
 # move atom to dropbox
