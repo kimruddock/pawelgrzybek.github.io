@@ -42,7 +42,7 @@ defaults:
 kramdown:
   input: GFM
 
-gems: ['jekyll-paginate', 'github-pages']
+gems: ['jekyll-paginate']
 
 # Pagination
 paginate: 10
