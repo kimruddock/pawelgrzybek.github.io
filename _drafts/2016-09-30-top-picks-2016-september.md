@@ -28,4 +28,20 @@ Levels in CSS explained. Thanks Rachel!
 
 - - -
 
-## 
+## Angular 2
+
+[http://angularjs.blogspot.co.uk/2016/09/angular2-final.html](http://angularjs.blogspot.co.uk/2016/09/angular2-final.html)
+
+After 6 years of releasing initial version of Angular, we finally got a second version of one of the most popular JavaScript framework on the world. Improved performance, modularity and support for desktop and mobile devices are main features. Documentations looks amazing!
+
+- - -
+
+## A whole new GitHub Universe: announcing new tools, forums, and features
+
+[https://github.com/blog/2256-a-whole-new-github-universe-announcing-new-tools-forums-and-features](https://github.com/blog/2256-a-whole-new-github-universe-announcing-new-tools-forums-and-features)
+
+The biggest update to Github platform yet. Projects allows to easily organise issues, pull requests and notes directly from repository. New ways or code reviews finally looks like it should ages ago. New profile view, brand new API to integrate your tool with Github and much more...
+
+- - -
+
+##  
