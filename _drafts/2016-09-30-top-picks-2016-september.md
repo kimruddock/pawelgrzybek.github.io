@@ -44,4 +44,10 @@ The biggest update to Github platform yet. Projects allows to easily organise is
 
 - - -
 
-##  
+## Homebrew 1.0.0
+
+[http://brew.sh/2016/09/21/homebrew-1.0.0/](http://brew.sh/2016/09/21/homebrew-1.0.0/)
+
+Finally, after 7 years of development Homebrew (the missing package manager for mac OS users) hit the stable 1.0.0 version.
+
+- - -
