@@ -51,3 +51,21 @@ The biggest update to Github platform yet. Projects allows to easily organise is
 Finally, after 7 years of development Homebrew (the missing package manager for mac OS users) hit the stable 1.0.0 version.
 
 - - -
+
+## A cartoon guide to Flux
+
+[https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
+
+Have you ever wondering what the whole buzz about Flux is, what it does, how does it work? Thats probably the easier to digest guide around the web. Thanks [Lin Clark](https://twitter.com/linclark) for a great write / draw up.
+
+- - -
+
+## A cartoon guide to Redux
+
+[https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)
+
+Same for Redux...
+
+- - -
+
+## 
