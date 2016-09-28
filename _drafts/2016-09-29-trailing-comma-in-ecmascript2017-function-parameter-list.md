@@ -4,7 +4,7 @@ excerpt: Object and array literals already allow us to leave a trailing comma. E
 photo: 2016-09-29.jpg
 ---
 
-Object and array literals allow us to leave a comma dangling off the final value since the third version of ECMAScript (although the implementation in IE8 and below is a clear exception). Other programming languages (Python, Perl, Ruby, C#, Swift, D, Hack and probably many more) allow it in functions as well. JavaScript will be joining this list very soon people! [Jeff Morrison](https://twitter.com/lbljeffmo) is the author of the [Trailing Commas in Function Param Lists](https://jeffmo.github.io/es-trailing-function-commas/) proposal that is going to be merged with the upcoming ECMAScript 2017 spec. If you don't know what the heck I'm talking about, have a look at this basic example.
+Object and array literals allow us to leave a comma dangling off the final item since the third version of ECMAScript (although the implementation in IE8 and below is a clear exception). Other programming languages (Python, D, Hack and probably many more) allow it in functions as well. JavaScript will be joining this list very soon people! [Jeff Morrison](https://twitter.com/lbljeffmo) is the author of the [Trailing Commas in Function Param Lists](https://jeffmo.github.io/es-trailing-function-commas/) proposal that is going to be merged with the upcoming ECMAScript 2017 spec. If you don't know what the heck I'm talking about, have a look at this basic example.
 
 ```js
 // Array without trailing comma
