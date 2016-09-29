@@ -8,7 +8,7 @@ photo: top-picks.jpg
 
 [https://medium.com/dev-channel/the-case-for-custom-elements-part-1-65d807b4b439](https://medium.com/dev-channel/the-case-for-custom-elements-part-1-65d807b4b439)
 
-Great intro followed by [another part](https://medium.com/dev-channel/the-case-for-custom-elements-part-2-2efe42ce9133) about native Cusom Elements. Rob Dodson did a great jon explaining the concept and practical use case of new API that is coming to out browsers soon.
+Great intro followed by [another part](https://medium.com/dev-channel/the-case-for-custom-elements-part-2-2efe42ce9133) about native Custom Elements. Rob Dodson did a great job explaining the concept and practical use case of new API that is coming to out browsers soon.
 
 - - -
 
@@ -24,7 +24,7 @@ A mandatory read for teachers, content writers, designers, developers, digital p
 
 [https://www.rachelandrew.co.uk/archives/2016/09/13/why-there-is-no-css4-explaining-css-levels/](https://www.rachelandrew.co.uk/archives/2016/09/13/why-there-is-no-css4-explaining-css-levels/)
 
-Levels in CSS explained. Thanks Rachel!
+CSS Module levels explained. Thanks Rachel!
 
 - - -
 
@@ -32,7 +32,7 @@ Levels in CSS explained. Thanks Rachel!
 
 [http://angularjs.blogspot.co.uk/2016/09/angular2-final.html](http://angularjs.blogspot.co.uk/2016/09/angular2-final.html)
 
-After 6 years of releasing initial version of Angular, we finally got a second version of one of the most popular JavaScript framework on the world. Improved performance, modularity and support for desktop and mobile devices are main features. Documentations looks amazing!
+After 6 years of releasing initial version of Angular, we finally got a second version of one of the most popular JavaScript framework. Improved performance, modularity and support for desktop and mobile devices are main features. Documentations looks amazing compared to previous version!
 
 - - -
 
@@ -40,7 +40,7 @@ After 6 years of releasing initial version of Angular, we finally got a second v
 
 [https://github.com/blog/2256-a-whole-new-github-universe-announcing-new-tools-forums-and-features](https://github.com/blog/2256-a-whole-new-github-universe-announcing-new-tools-forums-and-features)
 
-The biggest update to Github platform yet. Projects allows to easily organise issues, pull requests and notes directly from repository. New ways or code reviews finally looks like it should ages ago. New profile view, brand new API to integrate your tool with Github and much more...
+The biggest update to Github platform yet. Projects allows to easily organize issues, pull requests and notes directly from repository. New ways or code reviews finally looks like it should ages ago. New profile view, brand new API to integrate your tool with Github and much more...
 
 - - -
 
@@ -56,7 +56,7 @@ Finally, after 7 years of development Homebrew (the missing package manager for 
 
 [https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
 
-Have you ever wondering what the whole buzz about Flux is, what it does, how does it work? That is probably the easier to digest guide around the web. Thanks [Lin Clark](https://twitter.com/linclark) for a great write / draw up. Next one about [Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6) is equally cool!
+Have you ever wondering what the whole Flux buzz is about, what it does, how does it work? That is probably the easier to digest guide around the web. Thanks [Lin Clark](https://twitter.com/linclark) for a great write / draw up. Next one about [Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6) is equally cool!
 
 - - -
 
@@ -72,4 +72,4 @@ Philip Walton about loading polyfills in the most convenient way for users of th
 
 [https://vimeo.com/181481382](https://vimeo.com/181481382)
 
-I promise, I will never complain for complexity of some JavaScript applications. This talk literally blowed my mind! Proper interactivity in email clients explained by Mark Robbins. Mind blowed!
+I promise, I will never complain for complexity of some JavaScript applications again. This talk literally blown my mind! Proper interactivity in email clients explained by Mark Robbins. Mind blowing!
