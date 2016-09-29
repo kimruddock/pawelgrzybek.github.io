@@ -56,16 +56,14 @@ Finally, after 7 years of development Homebrew (the missing package manager for 
 
 [https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
 
-Have you ever wondering what the whole buzz about Flux is, what it does, how does it work? Thats probably the easier to digest guide around the web. Thanks [Lin Clark](https://twitter.com/linclark) for a great write / draw up.
+Have you ever wondering what the whole buzz about Flux is, what it does, how does it work? That is probably the easier to digest guide around the web. Thanks [Lin Clark](https://twitter.com/linclark) for a great write / draw up. Next one about [Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6) is equally cool!
 
 - - -
 
-## A cartoon guide to Redux
+## Loading Polyfills Only When Needed
 
-[https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)
+[https://philipwalton.com/articles/loading-polyfills-only-when-needed/?utm_source=codropscollective](https://philipwalton.com/articles/loading-polyfills-only-when-needed/?utm_source=codropscollective)
 
-Same for Redux...
+Philip Walton about loading polyfills in the most convenient way for users of the most recent browsers and the most optimal for browsers that partially support required set of features. Great article and great simple to follow solution.
 
 - - -
-
-## 
