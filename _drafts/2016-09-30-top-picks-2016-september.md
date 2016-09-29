@@ -67,3 +67,9 @@ Have you ever wondering what the whole buzz about Flux is, what it does, how doe
 Philip Walton about loading polyfills in the most convenient way for users of the most recent browsers and the most optimal for browsers that partially support required set of features. Great article and great simple to follow solution.
 
 - - -
+
+## Mark Robbins | Modern CSS and interactive email | CSS Day 2016
+
+[https://vimeo.com/181481382](https://vimeo.com/181481382)
+
+I promise, I will never complain for complexity of some JavaScript applications. This talk literally blowed my mind! Proper interactivity in email clients explained by Mark Robbins. Mind blowed!
