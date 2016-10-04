@@ -12,6 +12,14 @@ After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one 
 
 - - -
 
+## How React Do?
+
+[http://blog.jfo.click/how-react-do/](http://blog.jfo.click/how-react-do/)
+
+Jeff Fowler and his deep dive into very basics of react. Great read for curious beginners in this library.
+
+- - -
+
 ## Flex-grow 9999 Hack
 
 [http://joren.co/flex-grow-9999-hack/](http://joren.co/flex-grow-9999-hack/)
@@ -19,5 +27,3 @@ After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one 
 Cleaver flexbox trick. Two by two elements spread in single line only when there is enough room and nicely fill the view with elements under neath of each other. I ❤︎ flexbox.
 
 - - -
-
-##
