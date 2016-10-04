@@ -20,4 +20,10 @@ Jeff Fowler and his deep dive into very basics of react. Great read for curious 
 
 - - -
 
-##
+## Flex-grow 9999 Hack
+
+[http://joren.co/flex-grow-9999-hack/](http://joren.co/flex-grow-9999-hack/)
+
+Cleaver flexbox trick. Two by two elements spread in single line only when there is enough room and nicely fill the view with elements under neath of each other. I ❤︎ flexbox.
+
+- - -
