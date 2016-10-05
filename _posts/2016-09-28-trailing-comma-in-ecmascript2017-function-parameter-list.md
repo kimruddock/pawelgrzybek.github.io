@@ -22,16 +22,16 @@ const someArray = [
 
 ```js
 // Object without trailing comma
-const someObject = [
+const someObject = {
   name: 'pawel',
   age: 29
-];
+};
 
 // Object with trailing comma
-const someObject = [
+const someObject = {
   name: 'pawel',
   age: 29,
-];
+};
 ```
 
 ```js
@@ -76,9 +76,11 @@ The new feature won't supercharge the output of your app whatsoever but can defi
 2. Easier code rearranging
 3. You can programmatically generate code without extra logic for the last item
 
+<!--
 ![Nicer diff of objet with trailing comma in iTerm](/photos/2016-09-28-1.jpg)
 
 ![Nicer diff of objet with trailing comma in Tower 2](/photos/2016-09-28-2.jpg)
+ -->
 
 ## Babel to use, ESLint to check
 
