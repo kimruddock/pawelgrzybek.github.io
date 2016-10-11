@@ -36,4 +36,12 @@ To make the conclusion of a [great article](https://www.christianheilmann.com/20
 
 - - -
 
+## Yarn: A new package manager for JavaScript
+
+[https://code.facebook.com/posts/1840075619545360](https://code.facebook.com/posts/1840075619545360)
+
+JavaScript doesn't slow down. Guys from Facebook, Goodle and Tilde put together a package manager of 2016. The main difference is speed and security. After quick tests it is incredibly fast and works offline like a charm! Looking forward to see the progress of it.
+
+- - -
+
 ##
