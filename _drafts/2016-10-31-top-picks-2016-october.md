@@ -44,4 +44,11 @@ JavaScript doesn't slow down. Guys from Facebook, Goodle and Tilde put together 
 
 - - -
 
-##
+## Lea Verou - CSS Variables: var(--subtitle);
+
+[https://youtu.be/2an6-WVPuJU](https://youtu.be/2an6-WVPuJU)
+
+CSS Custom Properties (called CSS Variables by many people) are going to change the way how we write our styling. On this talk Lea presents few super cool tricks that lean on CSS Variables. Fantastic talk! If you need a very basic primer, these are two articles that I published the other day: ["CSS Custom Properties explained"](https://pawelgrzybek.com/css-custom-properties-explained/) & [CSS mixins with @apply rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/).
+
+- - -
+
