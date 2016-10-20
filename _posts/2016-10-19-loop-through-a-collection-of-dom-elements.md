@@ -13,7 +13,7 @@ Aha! You'll know this method mainly from the [Array's prototype](https://develop
 - Google Chrome - yeep
 - Firefox >= 50
 - IE - hazard a guess!
-- Edge - I don't know, can someone check for me please?
+- Edge - nope
 - Opera - yeep
 - Safari (stable version) - nope
 - Safari (Technology Preview) - yeep
