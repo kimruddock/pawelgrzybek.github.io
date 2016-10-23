@@ -52,3 +52,12 @@ CSS Custom Properties (called CSS Variables by many people) are going to change 
 
 - - -
 
+## How the Web Became Unreadable
+
+[https://backchannel.com/how-the-web-became-unreadable-a781ddc711b6](https://backchannel.com/how-the-web-became-unreadable-a781ddc711b6)
+
+I don't entirely agree with an author of this article but Kevin Marks makes a really good point here. A quick story about design trends that breaks the most important principle of the web - accessible for everybody. Great read.
+
+- - -
+
+##
