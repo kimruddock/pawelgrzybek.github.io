@@ -8,7 +8,7 @@ photo: top-picks.jpg
 
 [https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8](https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8)
 
-After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one of the most popular frameworks is here. Rewritten rendering layer makes it on of the fastest frameworks out there. JSX support, server side rendering and works across Web, iOS and Android!
+After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one of the most popular frameworks is here. Rewritten rendering layer makes it one of the fastest frameworks out there. JSX support, server side rendering and works across Web, iOS and Android! I had a pleasure to built one project with it already and it was probably the easiest journey "from zero to working production built". Great documentation full of examples under every feature, very active community and great CLI makes it really great choice if you need a solid framework to build project on.
 
 - - -
 
@@ -16,7 +16,7 @@ After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one 
 
 [http://blog.jfo.click/how-react-do/](http://blog.jfo.click/how-react-do/)
 
-Jeff Fowler and his deep dive into very basics of react. Great read for curious beginners in this library.
+Jeff Fowler and his deep dive into very basics of react. Great read for curious React beginners.
 
 - - -
 
@@ -40,7 +40,7 @@ To make the conclusion of a [great article](https://www.christianheilmann.com/20
 
 [https://code.facebook.com/posts/1840075619545360](https://code.facebook.com/posts/1840075619545360)
 
-JavaScript doesn't slow down. Guys from Facebook, Goodle and Tilde put together a package manager of 2016. The main difference is speed and security. After quick tests it is incredibly fast and works offline like a charm! Looking forward to see the progress of it.
+JavaScript doesn't slow down. Guys from Facebook, Google and Tilde put together a package manager of 2016. The main difference is speed and security. After quick tests it is incredibly fast and works offline out of the box! Looking forward to see the progress of it.
 
 - - -
 
@@ -57,7 +57,3 @@ CSS Custom Properties (called CSS Variables by many people) are going to change 
 [https://backchannel.com/how-the-web-became-unreadable-a781ddc711b6](https://backchannel.com/how-the-web-became-unreadable-a781ddc711b6)
 
 I don't entirely agree with an author of this article but Kevin Marks makes a really good point here. A quick story about design trends that breaks the most important principle of the web - accessible for everybody. Great read.
-
-- - -
-
-##
