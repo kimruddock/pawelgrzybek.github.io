@@ -8,7 +8,7 @@ photo: top-picks.jpg
 
 [https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8](https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8)
 
-After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one of the most popular frameworks is here. Rewritten rendering layer makes it one of the fastest frameworks out there. JSX support, server side rendering and works across Web, iOS and Android! I had a pleasure to built one project with it already and it was probably the easiest journey "from zero to working production built". Great documentation full of examples under every feature, very active community and great CLI makes it really great choice if you need a solid framework to build project on.
+After few months of working, 8 alphas, 8 betas and 8 rcs the new version of one of the most popular frameworks is here. Rewritten rendering layer makes it one of the fastest frameworks out there. JSX support, server side rendering and works across Web, iOS and Android! I had a pleasure to built one project with it already and it was probably the easiest journey "from zero to hero". Great documentation full of examples under every section, very active community and amazing CLI makes it really solid framework.
 
 - - -
 
@@ -24,7 +24,7 @@ Jeff Fowler and his deep dive into very basics of react. Great read for curious 
 
 [http://joren.co/flex-grow-9999-hack/](http://joren.co/flex-grow-9999-hack/)
 
-Cleaver flexbox trick. Two by two elements spread in single line only when there is enough room and nicely fill the view with elements under neath of each other. I ❤︎ flexbox.
+Cleaver flexbox trick. Two elements spread in single line only when there is enough room and nicely fill the view with elements under neath of each other. I ❤︎ flexbox.
 
 - - -
 
@@ -44,7 +44,7 @@ JavaScript doesn't slow down. Guys from Facebook, Google and Tilde put together 
 
 - - -
 
-## Lea Verou - CSS Variables: var(--subtitle);
+## Lea Verou - CSS Variables
 
 [https://youtu.be/2an6-WVPuJU](https://youtu.be/2an6-WVPuJU)
 
