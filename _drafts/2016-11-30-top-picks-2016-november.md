@@ -12,4 +12,12 @@ Jason Grigsby goes through use cases, methods and possible techniques of respons
 
 - - -
 
+## Getting Started with Webpack 2
+
+[https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783](https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783)
+
+Drew Powers wrote a great tutorial about basic usage of upcoming Webpack 2. He does a great job in explaining Webpack in general. Thanks Drew!
+
+- - -
+
 ##
