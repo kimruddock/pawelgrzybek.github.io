@@ -20,4 +20,12 @@ Drew Powers wrote a great tutorial about basic usage of upcoming Webpack 2. He d
 
 - - -
 
-##
+## Debugging The Web (Chrome Dev Summit 2016)
+
+[https://youtu.be/HF1luRD4Qmk](https://youtu.be/HF1luRD4Qmk)
+
+Paul Irish presented new bunch of dev tools features on this years Chrome Dev Summit. From small things like improvements to multiline scripts in the console to amazing experience about debugging frontend and node backend in the same window. I'm pretty excited about workspaces inteligent mapping instead of manually linking assets from the hard drive.
+
+- - -
+
+##  
