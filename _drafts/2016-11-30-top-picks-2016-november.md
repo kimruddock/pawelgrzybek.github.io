@@ -28,4 +28,20 @@ Paul Irish presented new bunch of dev tools features on this years Chrome Dev Su
 
 - - -
 
-##  
+## Not An Imposter: Fighting Front-End Fatigue
+
+[https://www.smashingmagazine.com/2016/11/not-an-imposter-fighting-front-end-fatigue/](https://www.smashingmagazine.com/2016/11/not-an-imposter-fighting-front-end-fatigue/)
+
+[David Berner](https://twitter.com/DaveOrDead) chose a perfect timing to write this article. I feel a bit burned out and I lost a motivation to publish a great new blog post every week. It's worth to remember that we are not the only people who struggle with this syndrome. It is absolutely fine to don't know a;; these amazing things that twitter told us about. Really great article!
+
+- - -
+
+## Affinity Designer for Windows has launched!
+
+[https://affinity.serif.com/blog/affinity-designer-for-windows-has-launched/](https://affinity.serif.com/blog/affinity-designer-for-windows-has-launched/)
+
+I ditched Adobe products more than a year ago and [I don't miss it at all](https://pawelgrzybek.com/i-wont-miss-you-adobe/). Affinity Photo is a tool that I replaced Photoshop with. It is not that complex, not that advanced, but interface is extremely similar and it does absolutely more than I need. The only downside of this tool was mac OS compatibility only. Today officially windows users can join the club. Happy days!
+
+- - -
+
+##
