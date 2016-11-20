@@ -44,4 +44,13 @@ I ditched Adobe products more than a year ago and [I don't miss it at all](https
 
 - - -
 
+## I totally forgot about print style sheets
+
+[https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6](https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6)
+
+Have you ever heard saying "The Cobbler's Children Have No Shoes" — this is the reason why I neglected me website so much. I promise to update a design and make it more accessibility friendly very soon. Print styles is another thing that I will do — thanks to this great article by [Manuel Matuzovic](https://twitter.com/mmatuzo). Collection of great tips how to improve printed websites.
+
+
+- - -
+
 ##
