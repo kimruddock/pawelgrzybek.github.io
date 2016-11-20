@@ -53,4 +53,12 @@ Have you ever heard saying "The Cobbler's Children Have No Shoes" — this is th
 
 - - -
 
+## Image Effects with CSS
+
+[http://bennettfeely.com/image-effects/](http://bennettfeely.com/image-effects/)
+
+WOW! Such a great resource by [Bennett Feely](https://twitter.com/bennettfeely) to embrace CSS blending mode / filters. Super cool mini project! Thanks for making that Bennett.
+
+- - -
+
 ##
