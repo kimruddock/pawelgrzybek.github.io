@@ -8,7 +8,7 @@ photo: top-picks.jpg
 
 [https://vimeo.com/177732167](https://vimeo.com/177732167)
 
-Jason Grigsby goes through use cases, methods and possible techniques of responsive images. A bit of background of spec design considerations, a bit about the future of working with images in responsive design. Freat talk from An Event Apart Austin.
+Jason Grigsby goes through use cases, methods and possible techniques of responsive images. A bit of background of spec design considerations, a bit about the future of working with images in responsive design. Great talk from An Event Apart Austin.
 
 - - -
 
@@ -24,7 +24,7 @@ Drew Powers wrote a great tutorial about basic usage of upcoming Webpack 2. He d
 
 [https://youtu.be/HF1luRD4Qmk](https://youtu.be/HF1luRD4Qmk)
 
-Paul Irish presented new bunch of dev tools features on this years Chrome Dev Summit. From small things like improvements to multiline scripts in the console to amazing experience about debugging frontend and node backend in the same window. I'm pretty excited about workspaces inteligent mapping instead of manually linking assets from the hard drive.
+Paul Irish presented new bunch of dev tools features on this years Chrome Dev Summit. From small things like improvements to multi line scripts in the console to amazing experience about debugging frontend and node backend in the same window. I'm pretty excited about workspaces intelligent mapping instead of manually linking assets from the hard drive.
 
 - - -
 
