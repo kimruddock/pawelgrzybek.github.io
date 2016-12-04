@@ -11,3 +11,12 @@ photo: top-picks.jpg
 A great exhalation of font-display property by Umar Hansa. As writing thi article browser support isn't amazing but it works great as a progressive enhancement. That is going to part of every font-face declaration it the short future.
 
 - - -
+
+## Lockfiles should be committed on all projects
+
+[https://yarnpkg.com/blog/2016/11/24/lockfiles-for-all](https://yarnpkg.com/blog/2016/11/24/lockfiles-for-all)
+
+James Kyle explains why we should commit yarn.lock files to our repositories. Makes sense. Essential read for all open source contributors.
+
+- - -
+
