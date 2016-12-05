@@ -20,3 +20,10 @@ James Kyle explains why we should commit yarn.lock files to our repositories. Ma
 
 - - -
 
+## The Web Worldwide
+
+[https://www.webworldwide.io/](https://www.webworldwide.io/)
+
+[Tim Kadlec](https://twitter.com/tkadlec) build another amazing tool that is a great source of knowledge for every web developers / designers. I quickly compared two countries — United Kingdom (where I live)and Poland (where I come from) and the data is shocking! I'm going to use it a lot. Thanks Tim for building this!
+
+- - -
