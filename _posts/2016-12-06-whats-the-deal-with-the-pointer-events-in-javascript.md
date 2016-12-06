@@ -1,5 +1,5 @@
 ---
-title: What's the deal with the PointerEvent interface in JavaScript?
+title: What's the deal with the Pointer Events in JavaScript?
 excerpt: How do you handle mouse events but maintain a good experience for users using their finger as the input device? How about pens / styluses? Pointer events to the rescue!
 photo: 2016-12-06.jpg
 ---
