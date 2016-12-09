@@ -27,3 +27,15 @@ James Kyle explains why we should commit yarn.lock files to our repositories. Ma
 [Tim Kadlec](https://twitter.com/tkadlec) build another amazing tool that is a great source of knowledge for every web developers / designers. I quickly compared two countries — United Kingdom (where I live)and Poland (where I come from) and the data is shocking! I'm going to use it a lot. Thanks Tim for building this!
 
 - - -
+
+## CSS Grid!
+
+[http://meyerweb.com/eric/thoughts/2016/12/05/css-grid/](http://meyerweb.com/eric/thoughts/2016/12/05/css-grid/)
+
+Eric Meyer answers popular questions about CSS Gris Module that is coming to our browsers very soon (March 2017). Lots of good insights here. The most controversial question is "Are we ready?" and Erick to that says...
+
+> Rounded corners aren’t universally supported even now, but I bet you’ve used them.
+
+- - -
+
+##
