@@ -46,4 +46,12 @@ The best thing that I have ever read about animations. Sergey Chikuyonok (creato
 
 - - -
 
+## JavaScript30
+
+[https://javascript30.com/](https://javascript30.com/)
+
+You read a book about JavaScript, you went through all available courses online, you mastered your console logs in your browser but you still haven't build a proper JavaScript project yet. Wes Bos is coming with a course that is perfect for you. It takes 30 days and each day Wes builds a new cool js experiment. The best teacher is practice, and this is motto of this course. Highly recommended!
+
+- - -
+
 ##
