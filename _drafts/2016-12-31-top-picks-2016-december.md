@@ -38,4 +38,12 @@ Eric Meyer answers popular questions about CSS Gris Module that is coming to our
 
 - - -
 
+## GPU Animation: Doing It Right
+
+[https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
+
+The best thing that I have ever read about animations. Sergey Chikuyonok (creator of popular tool Emmet) gives us a list of amazing advices about silky smooth animations in CSS, number of great technical explanations and tons of examples. Must read this month!
+
+- - -
+
 ##
