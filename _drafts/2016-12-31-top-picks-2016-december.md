@@ -54,4 +54,12 @@ You read a book about JavaScript, you went through all available courses online,
 
 - - -
 
+## SmashingConf Barcelona 2016 - Marcin Wichary on To Hell For Type
+
+[https://vimeo.com/190403389](https://vimeo.com/190403389)
+
+I'm sure you love typography on [Medium.com](https://medium.com/). Marcin Wichary explain why you love it! Essentially it is piece of art and every single edge case is taken into consideration. Great and funny talk!
+
+- - -
+
 ##
