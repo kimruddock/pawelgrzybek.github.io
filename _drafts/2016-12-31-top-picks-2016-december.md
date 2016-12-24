@@ -62,4 +62,16 @@ I'm sure you love typography on [Medium.com](https://medium.com/). Marcin Wichar
 
 - - -
 
-##
+## The (Not So) Secret Powers Of The Mobile Browser
+
+[https://www.smashingmagazine.com/2016/12/the-not-so-secret-powers-of-the-mobile-browser/](https://www.smashingmagazine.com/2016/12/the-not-so-secret-powers-of-the-mobile-browser/)
+
+Meet the great power of moder web APIs. Great example with imaginary Zoe written by [Stéphanie Walter](https://twitter.com/WalterStephanie). This article made me want to buy a Pixel by Google. Shame on you Apple!
+
+- - -
+
+## Front-End Performance Checklist 2017
+
+[https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/](https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/)
+
+Vitaly Friedman
