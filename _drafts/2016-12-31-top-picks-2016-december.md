@@ -117,3 +117,13 @@ You don't have to open image in the Photoshop to resize it. There is a something
 What Comes Next Is the Future is a documentary film about the web created by Matt Griffin. About the past, present and the future of the most influential medium ever created by people who build it. Dozens of people who made a huge impact on the web like: Jeffrey Zeldman, Tim Berners-Lee, Ethan Marcotte, Eric Meyer, Alex Russell, Jonathan Snook and many more. Must watch!
 
 - - -
+
+## The Dark Side of Polyfilling CSS
+
+[https://philipwalton.com/articles/the-dark-side-of-polyfilling-css/](https://philipwalton.com/articles/the-dark-side-of-polyfilling-css/)
+
+Making a JavaScript polyfill is a piece of cake compared to creating one for CSS. Philip Walton explains this nightmare. Thumbs up for project [Houdini](https://github.com/w3c/css-houdini-drafts/wiki). If you prefer to watch than read, [Philip gave a talk](http://www.thedotpost.com/2016/12/philip-walton-the-dark-side-of-polyfilling-css) based on this article on dotCS 2016 conference.
+
+- - -
+
+##
