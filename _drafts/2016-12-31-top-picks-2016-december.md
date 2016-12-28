@@ -70,8 +70,50 @@ Meet the great power of moder web APIs. Great example with imaginary Zoe written
 
 - - -
 
+## Front-End Developers Are Information Architects Too
+
+[https://24ways.org/2016/front-end-developers-are-information-architects-too/](https://24ways.org/2016/front-end-developers-are-information-architects-too/)
+
+The core of front end development explained in a great write up by Francis Storr. Let's face the reality - nowadays there is much louder buzz around CSS in JavaScript built with Webpack 2 instead of semantic markup or accessible modal. WRONG! Eye opening article that show us how we neglected this industry.
+
+- - -
+
+## An Overview of Client-Side Storage
+
+[https://bitsofco.de/an-overview-of-client-side-storage/](https://bitsofco.de/an-overview-of-client-side-storage/)
+
+It is a great explanation / comparison of all possibble methods of storing a data in the client / browser. A love the examples next to each method.
+
+- - -
+
 ## Front-End Performance Checklist 2017
 
 [https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/](https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/)
 
-Vitaly Friedman
+Comprehensive list of best performance practices created by Vitaly Friedman. New year is a great opportunity to refresh or rebuild your website from scratch, it is worth to have a look here beforehand.
+
+- - -
+
+## Controlling the Specificity
+
+[http://kizu.ru/en/fun/controlling-the-specificity/](http://kizu.ru/en/fun/controlling-the-specificity/)
+
+Unfortunately specificity is not something that everyone who writes CSS cares about - people should. If you don't even know what specificity is I published a [great explanation](https://pawelgrzybek.com/css-specificity-explained/) the other day. Roman Komarov definitely mastered it and took it to the next level by showing us how to control specificity score by using `:not()` selector. Great in depth article for all CSS freaks.
+
+- - -
+
+## Batch resizing images from the command line on a Mac
+
+[http://jameschambers.co/writing/batch-resize-images-mac-command-line/](http://jameschambers.co/writing/batch-resize-images-mac-command-line/)
+
+You don't have to open image in the Photoshop to resize it. There is a something called "scriptable image processing system" that is available in your command line under `sips` keyword - James Chambers explains really well how to utilize it on daily basis.
+
+- - -
+
+## What Comes Next Is the Future
+
+[http://www.futureisnext.com/](http://www.futureisnext.com/)
+
+What Comes Next Is the Future is a documentary film about the web created by Matt Griffin. About the past, present and the future of the most influential medium ever created by people who build it. Dozens of people who made a huge impact on the web like: Jeffrey Zeldman, Tim Berners-Lee, Ethan Marcotte, Eric Meyer, Alex Russell, Jonathan Snook and many more. Must watch!
+
+- - -
