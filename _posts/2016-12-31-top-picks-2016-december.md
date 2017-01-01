@@ -8,7 +8,7 @@ photo: top-picks.jpg
 
 [http://www.creativebloq.com/advice/control-web-typography-with-css-font-display](http://www.creativebloq.com/advice/control-web-typography-with-css-font-display)
 
-A great exhalation of font-display property by Umar Hansa. As writing thi article browser support isn't amazing but it works great as a progressive enhancement. That is going to part of every font-face declaration it the short future.
+A great exhalation of font-display property by Umar Hansa. As writing this article browser support isn't amazing but it works great as a progressive enhancement. This is going to part of every font-face declaration it the short future.
 
 - - -
 
@@ -24,7 +24,7 @@ James Kyle explains why we should commit yarn.lock files to our repositories. Ma
 
 [https://www.webworldwide.io/](https://www.webworldwide.io/)
 
-[Tim Kadlec](https://twitter.com/tkadlec) build another amazing tool that is a great source of knowledge for every web developers / designers. I quickly compared two countries — United Kingdom (where I live)and Poland (where I come from) and the data is shocking! I'm going to use it a lot. Thanks Tim for building this!
+[Tim Kadlec](https://twitter.com/tkadlec) build another amazing tool that is a great source of knowledge for every web developer / designer. I quickly compared two countries — United Kingdom (where I live) and Poland (my homeland) and the data is shocking! I'm going to use it a lot. Thanks Tim for building this!
 
 - - -
 
@@ -32,7 +32,7 @@ James Kyle explains why we should commit yarn.lock files to our repositories. Ma
 
 [http://meyerweb.com/eric/thoughts/2016/12/05/css-grid/](http://meyerweb.com/eric/thoughts/2016/12/05/css-grid/)
 
-Eric Meyer answers popular questions about CSS Gris Module that is coming to our browsers very soon (March 2017). Lots of good insights here. The most controversial question is "Are we ready?" and Erick to that says...
+Eric Meyer answers popular questions about CSS Gris Module that is coming to our browsers very soon (March 2017). Lots of good insights here. The most controversial question is "Are we ready?".
 
 > Rounded corners aren’t universally supported even now, but I bet you’ve used them.
 
@@ -50,7 +50,7 @@ The best thing that I have ever read about animations. Sergey Chikuyonok (creato
 
 [https://javascript30.com/](https://javascript30.com/)
 
-You read a book about JavaScript, you went through all available courses online, you mastered your console logs in your browser but you still haven't build a proper JavaScript project yet. Wes Bos is coming with a course that is perfect for you. It takes 30 days and each day Wes builds a new cool js experiment. The best teacher is practice, and this is motto of this course. Highly recommended!
+You read a book about JavaScript, you went through all available courses online, you mastered your console logs in your browser but you still haven't build a proper JavaScript project yet. Wes Bos is coming with a course that is perfect for you. It takes 30 days and each day Wes builds a new js experiment. The best teacher is practice, and this is motto of this course. Highly recommended!
 
 - - -
 
@@ -74,7 +74,7 @@ Meet the great power of moder web APIs. Great example with imaginary Zoe written
 
 [https://24ways.org/2016/front-end-developers-are-information-architects-too/](https://24ways.org/2016/front-end-developers-are-information-architects-too/)
 
-The core of front end development explained in a great write up by Francis Storr. Let's face the reality - nowadays there is much louder buzz around CSS in JavaScript built with Webpack 2 instead of semantic markup or accessible modal. WRONG! Eye opening article that show us how we neglected this industry.
+The core of front end development explained in a great write up by Francis Storr. Let's face the reality - nowadays there is more buzz around CSS in JavaScript built with Webpack 2 instead of semantic markup or accessible modal. WRONG! Eye opening article that shows us how we neglected this industry.
 
 - - -
 
@@ -82,7 +82,7 @@ The core of front end development explained in a great write up by Francis Storr
 
 [https://bitsofco.de/an-overview-of-client-side-storage/](https://bitsofco.de/an-overview-of-client-side-storage/)
 
-It is a great explanation / comparison of all possibble methods of storing a data in the client / browser. A love the examples next to each method.
+A great explanation / comparison of all possible methods of storing a data in the client / browser. A love the examples next to each method.
 
 - - -
 
@@ -90,7 +90,7 @@ It is a great explanation / comparison of all possibble methods of storing a dat
 
 [https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/](https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/)
 
-Comprehensive list of best performance practices created by Vitaly Friedman. New year is a great opportunity to refresh or rebuild your website from scratch, it is worth to have a look here beforehand.
+Comprehensive list of best performance practices created by Vitaly Friedman. New year is a great opportunity to refresh or rebuild your website from scratch, it is worth to have a look here.
 
 - - -
 
@@ -98,7 +98,7 @@ Comprehensive list of best performance practices created by Vitaly Friedman. New
 
 [http://kizu.ru/en/fun/controlling-the-specificity/](http://kizu.ru/en/fun/controlling-the-specificity/)
 
-Unfortunately specificity is not something that everyone who writes CSS cares about - people should. If you don't even know what specificity is I published a [great explanation](https://pawelgrzybek.com/css-specificity-explained/) the other day. Roman Komarov definitely mastered it and took it to the next level by showing us how to control specificity score by using `:not()` selector. Great in depth article for all CSS freaks.
+Unfortunately specificity is not something that everyone who writes CSS cares about - people should. If you don't even know what specificity is I published a [great explanation](https://pawelgrzybek.com/css-specificity-explained/) the other day. Roman Komarov definitely mastered it and took it to the next level by showing us how to control specificity score by using `:not()` selector. Great in depth article for all CSS maniacs.
 
 - - -
 
@@ -123,7 +123,3 @@ What Comes Next Is the Future is a documentary film about the web created by Mat
 [https://philipwalton.com/articles/the-dark-side-of-polyfilling-css/](https://philipwalton.com/articles/the-dark-side-of-polyfilling-css/)
 
 Making a JavaScript polyfill is a piece of cake compared to creating one for CSS. Philip Walton explains this nightmare. Thumbs up for project [Houdini](https://github.com/w3c/css-houdini-drafts/wiki). If you prefer to watch than read, [Philip gave a talk](http://www.thedotpost.com/2016/12/philip-walton-the-dark-side-of-polyfilling-css) based on this article on dotCS 2016 conference.
-
-- - -
-
-##
