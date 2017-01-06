@@ -4,4 +4,12 @@ excerpt: Staying up to date in web industry is a difficult and time consuming ta
 photo: top-picks.jpg
 ---
 
+## TypeScript: the missing introduction
+
+[https://toddmotto.com/typescript-the-missing-introduction#background](https://toddmotto.com/typescript-the-missing-introduction#background)
+
+One of my colleagues recommended me TypeScript the other day as a thing that I necessarily need to have a look at — future of JS. I was stubborn for quite a while until I came across this great primer to TypeScript by [James Henry](https://twitter.com/MrJamesHenry). It just makes sense! JavaScript is first (and the only one) programming language that I know and I didn't really understand concept of types from other languages. I even learned a lot about coercion and explicitly used in my applications. This article made my life a bit easier and I commit myself to dig deeper into TS.
+
+- - -
+
 ##
