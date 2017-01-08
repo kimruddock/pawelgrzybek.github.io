@@ -20,4 +20,12 @@ One of my colleagues recommended me TypeScript the other day as a thing that I n
 
 - - -
 
+## Sublime Tutor
+
+[https://sublimetutor.com/](https://sublimetutor.com/)
+
+New to Sublime Text? This plugin will make you a ST hero in few hours. Such a great idea! Thanks [Jai Pandya](https://twitter.com/jaipandya).
+
+- - -
+
 ##
