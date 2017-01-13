@@ -1,29 +1,29 @@
 ---
-title: Sync VSCode settings and snippets via .dotfiles on Github
+title: Sync VSCode settings and snippets via dotfiles on Github
 excerpt: Having access to the same settings and snippets across multiple devices is a handy feature of some text editors. This is how to do it in VSCode.
 photo: 2017-01-13.jpg
 ---
 
 My text editor and the browser are probably the most frequently used applications in my daily work routine. As long as you are logged in to Google Chrome (or any other browser) the synchronization of settings and plugins happens in the background. Unfortunately syncing settings between applications like VSCode is not as straight forward. However, just because it doesn't come baked into the software it doesn't mean it is impossible.
 
-As a long term Sublime Text user I managed to use Github to sync its settings across multiple machines via [.dotfiles](https://github.com/pawelgrzybek/dotfiles). I used Atom for a little while and I found a way to mimic this mechanism for it as well. [I published an article](https://pawelgrzybek.com/sync-atom-between-multiple-devices/) about it the other day. Today it is time to show you how to do it with VSCode. By the way - VSCode is awesome!
+As a long term Sublime Text user I managed to use Github to sync its settings across multiple machines via [.dotfiles](https://github.com/pawelgrzybek/dotfiles). I used Atom for a little while and I found a way to mimic this mechanism for it as well. [I published an article](https://pawelgrzybek.com/sync-atom-between-multiple-devices/) about it the other day. Today it is time to show you how to do it with VSCode. By the way - [VSCode](https://code.visualstudio.com/) is awesome!
 
-## Moving VSCode settings and snippets to .dotfiles
+## Moving VSCode settings to .dotfiles
 
 The folder in which your VSCode settings and snippets reside depends on the operating system. [User and Workspace Settings](https://code.visualstudio.com/Docs/customization/userandworkspace) and its locations are described in the official documentation. As a macOS user I will provide some snippets associated with this operating system, but if you are a Windows or Linux user feel free to follow along and replace the paths accordingly. Before pasting anything into your Terminal make sure to shut down VSCode.
 
 OK, let's move the settings file and the directory containing your snippets to your .dotfiles that is located in the root folder.
 
-```bash
+```
 mv ~/Library/Application\ Support/Code/User/settings.json ~/.dotfiles/Code/
 mv ~/Library/Application\ Support/Code/User/snippets/ ~/.dotfiles/Code/
 ```
 
-## Create symbolic links to VSCode settings file and snippets directory
+## Create symbolic links to VSCode settings file directory
 
 All that we need is in the correct location now, time to create symlinks to those files.
 
-```bash
+```
 ln -s ~/.dotfiles/Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.dotfiles/Code/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
