@@ -6,22 +6,22 @@
   box-shadow: 0 1px 0 0 var(--color-border);
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 700px) {
   .header {
-    font-size: .75rem;
+    font-size: .707rem;
   }
 }
 
 .header__logo {
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.6rem;
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 700px) {
   .header__logo {
-    font-size: .75rem;
+    font-size: .707rem;
   }
 }
 
