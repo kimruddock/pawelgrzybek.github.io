@@ -12,9 +12,6 @@ description: >
 # Contact and social media links
 twitter_username: pawelgrzybek
 github_username: pawelgrzybek
-facebook_username: grzybecki
-instagram_username: pawelgrzybek
-linkedin_username: pgrzybek
 
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
 
