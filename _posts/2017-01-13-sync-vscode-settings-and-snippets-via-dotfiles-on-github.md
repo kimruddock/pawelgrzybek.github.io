@@ -12,10 +12,11 @@ As a long term Sublime Text user I managed to use Github to sync its settings ac
 
 The folder in which your VSCode settings and snippets reside depends on the operating system. [User and Workspace Settings](https://code.visualstudio.com/Docs/customization/userandworkspace) and its locations are described in the official documentation. As a macOS user I will provide some snippets associated with this operating system, but if you are a Windows or Linux user feel free to follow along and replace the paths accordingly. Before pasting anything into your Terminal make sure to shut down VSCode.
 
-OK, let's move the settings file and the directory containing your snippets to your .dotfiles that is located in the root folder.
+OK, let's move the settings files and the directory containing your snippets to your .dotfiles that is located in the root folder.
 
 ```
 mv ~/Library/Application\ Support/Code/User/settings.json ~/.dotfiles/Code/
+mv ~/Library/Application\ Support/Code/User/keybindings.json ~/.dotfiles/Code/
 mv ~/Library/Application\ Support/Code/User/snippets/ ~/.dotfiles/Code/
 ```
 
@@ -25,6 +26,7 @@ All that we need is in the correct location now, time to create symlinks to thos
 
 ```
 ln -s ~/.dotfiles/Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/.dotfiles/Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s ~/.dotfiles/Code/snippets/ ~/Library/Application\ Support/Code/User/snippets
 ```
 
