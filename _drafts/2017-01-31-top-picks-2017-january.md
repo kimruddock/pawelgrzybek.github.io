@@ -36,4 +36,12 @@ Finally it is happening — park of ECMAScript 2015 specification is just coming
 
 - - -
 
+## webpack 2.2: The Final Release
+
+[https://medium.com/webpack/webpack-2-2-the-final-release-76c3d43bf144#.i46qs4hfj](https://medium.com/webpack/webpack-2-2-the-final-release-76c3d43bf144#.i46qs4hfj)
+
+We were waiting for it agaes and its finally there. Final release of second version of the best module bundler in JavaScript community is ready! Check the new version and go through migration guide on new official [docs](https://webpack.js.org/) website.
+
+- - -
+
 ##
