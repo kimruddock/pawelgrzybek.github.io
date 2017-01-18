@@ -37,7 +37,7 @@ A VSCode Task is a set of instructions in a JSON file that resides in our projec
 
 OK, so what is going on here? When we run a task called "node" this will run a shell command that takes our currently opened file as an argument preceded by the path to our node executable. To make things even easier the `isBuildCommand` property lets us run this task via `shift + cmd + b` keyboard shortcut.
 
-In most cases the single "node" `command` does the job instead of passing a full path. I found this method more reliable though. The path can vary depending on operating system, version and installation method. Update `command` accordingly to the `which node` output please. On Windows the equivalent command is `where node`.
+In most cases the single "node" `command` does the job instead of passing a full path. I found this method more reliable though. The path can vary depending on operating system, version and installation method. Update `command` according to the output of `which node`. On Windows the equivalent command is `where node`.
 
 ![Find path to node executable in Terminal](/photos/2017-01-18-1.jpg)
 
