@@ -44,4 +44,10 @@ We were waiting for it agaes and its finally there. Final release of second vers
 
 - - -
 
-##
+## What’s the best font size for the web?
+
+[https://blog.prototypr.io/whats-the-best-font-size-for-the-web-97e6d7854ce6](https://blog.prototypr.io/whats-the-best-font-size-for-the-web-97e6d7854ce6)
+
+Very technical, math and medicine heavy aprocha to pick a correct size for your body copy by Francesco Smio. Really love very in depth research and tabular summary with results.
+
+- - -
