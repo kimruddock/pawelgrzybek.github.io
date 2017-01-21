@@ -51,3 +51,13 @@ We were waiting for it agaes and its finally there. Final release of second vers
 Very technical, math and medicine heavy aprocha to pick a correct size for your body copy by Francesco Smio. Really love very in depth research and tabular summary with results.
 
 - - -
+
+## Understanding the Critical Rendering Path
+
+[https://bitsofco.de/understanding-the-critical-rendering-path/](https://bitsofco.de/understanding-the-critical-rendering-path/)
+
+Such a helpful article to understand critical rendering mechanism in our browse by [Ire Aderinokun](https://twitter.com/ireaderinokun). Every single step well explained followed by screenshot ot "Performace" tab from Google Chrome Canary which clarify the whole process even more.
+
+- - -
+
+##
