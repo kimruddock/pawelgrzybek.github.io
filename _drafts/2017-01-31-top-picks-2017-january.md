@@ -68,4 +68,12 @@ Nolan Lawson about web performance bloat that is a mainly fault of JavaScript. N
 
 - - -
 
+## The global object in Javascript: a matter of platforms, unreadable code and not breaking the internet
+
+[https://www.contentful.com/blog/2017/01/17/the-global-object-in-javascript/](https://www.contentful.com/blog/2017/01/17/the-global-object-in-javascript/)
+
+Stefan Judis explains the current (very messy) state of global object in multiple JavaScript enviorements. Really cool article that points out great tip of using function contructor as a argument inside IIFE (Imidiatelly Invoked Function Expresion) to return global object.
+
+- - -
+
 ##
