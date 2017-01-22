@@ -60,4 +60,12 @@ Such a helpful article to understand critical rendering mechanism in our browse 
 
 - - -
 
+## Solving the Web Performance Crisis
+
+[https://channel9.msdn.com/Blogs/msedgedev/nolanlaw-web-perf-crisis](https://channel9.msdn.com/Blogs/msedgedev/nolanlaw-web-perf-crisis)
+
+Nolan Lawson about web performance bloat that is a mainly fault of JavaScript. Number of great tricks and trips and tons of great advices related to curently popular workflows / toolchains.
+
+- - -
+
 ##
