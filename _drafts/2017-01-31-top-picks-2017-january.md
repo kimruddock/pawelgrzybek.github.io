@@ -76,4 +76,12 @@ Stefan Judis explains the current (very messy) state of global object in multipl
 
 - - -
 
+## Announcing Ionic 2.0.0 Final
+
+[http://blog.ionic.io/announcing-ionic-2-0-0-final/](http://blog.ionic.io/announcing-ionic-2-0-0-final/)
+
+Ionic working closely with Angular team just announced a stable version of of of the best mmobile frameworksever made — Ionic 2. It is based on Angular 2, written in ES2015, packed with tons of new components, easier theaming, boosted performance and new shiny docs. Nice!
+
+- - -
+
 ##
