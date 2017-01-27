@@ -92,4 +92,12 @@ Moving out to New York city and facing poor mobile connection can be a great ins
 
 - - -
 
+## The Promise of a Burger Party
+
+[http://kosamari.com/notes/the-promise-of-a-burger-party](http://kosamari.com/notes/the-promise-of-a-burger-party)
+
+Do you like burgers but for some reason still don't understand a concept of Promise in JavaScript? Mariko Kosaka published anothe sketched explanation — Promise is a main subject of this one. Such a great idea, cool ilustration and great sense of humour.
+
+- - -
+
 ##
