@@ -84,4 +84,12 @@ Ionic working closely with Angular team just announced a stable version of of of
 
 - - -
 
+## Implementing "Save For Offline" with Service Workers
+
+[https://una.im/save-offline/](https://una.im/save-offline/)
+
+Moving out to New York city and facing poor mobile connection can be a great insightful experience. Thats why Una Kravets implemented recently an "Save for Offline" feature on her personal website. Really great and well explained tour to basics of Service Worker.
+
+- - -
+
 ##
