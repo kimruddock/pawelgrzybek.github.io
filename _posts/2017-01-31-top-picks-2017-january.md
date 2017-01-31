@@ -44,14 +44,6 @@ We were waiting for it ages and its finally here. Final release of second versio
 
 - - -
 
-## What’s the best font size for the web?
-
-[https://blog.prototypr.io/whats-the-best-font-size-for-the-web-97e6d7854ce6](https://blog.prototypr.io/whats-the-best-font-size-for-the-web-97e6d7854ce6)
-
-Very technical, math and medicine heavy approach to pick a correct size for your body copy by Francesco Smio. Really appreciate solid research and tabular summary with results.
-
-- - -
-
 ## Understanding the Critical Rendering Path
 
 [https://bitsofco.de/understanding-the-critical-rendering-path/](https://bitsofco.de/understanding-the-critical-rendering-path/)
