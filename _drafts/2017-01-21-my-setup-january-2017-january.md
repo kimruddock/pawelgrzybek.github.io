@@ -1,14 +1,10 @@
 ---
 title: My setup — 2017 January
-excerpt: Computers, smartphones, software, and web apps of other professionals is something that I always enjoy to read about. Today about my own equipment in January 2017.
+excerpt: Computers, smartphones, software, and web apps of other professionals is something that I always enjoy to read about. Today about my own equipment in February 2017.
 photo: 2017-01-21.jpg
 ---
 
-- didi ift before
-- things changed
-- always like to read about others
-- thought you may like to read about mine
--
+Programming is not the only thing that I read about although I mainly write about it very rarely scratching other subjects. You definatelly won't find gluten-free vegan cake recepies here, but there is a solid chance that I can share with you few words about some hardware. I [did it before](https://pawelgrzybek.com/my-web-development-setup/) about two years aago and I feel that it's just about right time to make fome following update. Things changed, things has been replaced but things mainly has been simplified and minimize. I always enjoy to read about developers hardware / software setup so I thought you may like to read about mine.
 
 ## Hardware
 
