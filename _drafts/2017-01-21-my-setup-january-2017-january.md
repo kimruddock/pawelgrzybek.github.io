@@ -16,14 +16,11 @@ When I was younger (not much younger, 2 - 3 years ago) I aimed to own things, la
 
 ### Macbook Pro with Retina display (Early 2015)
 
-This is exactlly the same computer that I had two years ago. It is a top spec MacBook Pro with 13 inchs screen from early 2015 (3.1GHz Dual-core Intel Core i7, 16GB 1866MHz LPDDR3 SDRAM, Intel Iris Graphics 6100 and 128GB PCIe-based Flash Storage). Of course when I saw a new MacBooks with Touch Bar my cursor hovered over buy button on Apple's website for a little while but... I really like my phicisacl Esc button, I don't need more powerful components and definatelly don't want to spend £2500 on something that I don't need (yet). I have an Apple care with extended warranty plan till mid 2018 — before that sexy body on new MacBooks won't convince to leave a small fortune on Tim Cook's pocket.
+This is exactlly the same computer that I had two years ago. It is a top spec MacBook Pro with 13 inchs screen from early 2015 (3.1GHz Dual-core Intel Core i7, 16GB 1866MHz LPDDR3 SDRAM, Intel Iris Graphics 6100 and 128GB PCIe-based Flash Storage). Of course when I saw a new MacBooks with Touch Bar cursor or my mouse hovered over the buy button on Apple's website for a little while but... I really like my phicisacl Esc button, I don't need more powerful components and definatelly don't want to spend £2500 on something that I don't need (yet). I have an Apple care with extended warranty plan till mid 2018 — before that time sexy body on new MacBooks won't convince me to throw a small fortune on Tim Cook's pocket.
 
 ### iPhone 7 Plus 16GB
 
-- long term iphone user
-- stable, beutiful, amazing camera, works well with other apple products
-- expensive and restrictive from dev point of view
-- pixel keep to try ome api and vr
+I bought my first iPhone in 2010. Since that I didn't use devices from different manufacture because this one just works. No suppresises here — 16GB version of iPhone 7 Plus resides in my pocket. It is extremally stable, comfortable to use and it has one thing that makes me love this device — camera! Camera is just amazing and in majority of cases it is more powerful than I need on my daily basis. There's no rose without a thorn though. I'm getting jelous about access to realy cool features that users of latest Andoid smartphones have. [The (Not So) Secret Powers Of The Mobile Browser](https://www.smashingmagazine.com/2016/12/the-not-so-secret-powers-of-the-mobile-browser/) by [Stéphanie Walter](https://twitter.com/WalterStephanie/) is a great article on Smashing Magazine that walks us through cool modern features of mobile browsers. Yeah cool, but the fact that I'm uber excited about it doesn't mean that I can try any of them so... Apple, please! Catch up! We (developers) need Service Workers, we want to make progressive web apps, we wish to play around with payment or bluetooth interface as Andoiders do. I won't use Android device from convenience reasons only but I may definatelly but one of thos fancy Pixels XL to mess around with VR and other cool stuff that Stéphanie wrote about.
 
 ### Bose QC35
 
