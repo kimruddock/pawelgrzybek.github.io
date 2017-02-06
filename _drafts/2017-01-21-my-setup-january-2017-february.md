@@ -1,5 +1,5 @@
 ---
-title: My setup — 2017 January
+title: My setup — 2017 February
 excerpt: Computers, smartphones, software, and web apps of other professionals is something that I always enjoy to read about. Today about my own equipment in February 2017.
 photo: 2017-01-21.jpg
 ---
@@ -24,10 +24,7 @@ I bought my first iPhone in 2010. Since that I didn't use devices from different
 
 ### Bose QC35
 
-- importance of isolation
-- best thing that o bought for myself last year
-- ocasional issues with connectivity
-- wont back to cable
+This year another cool gadget joined a list of things that I'm not going out without in my bag. Bose QuietComfort 35 wireless headphones is probably the best spent £329 in my whole life. When I'm coding or writing the importance of isolation from outside world and being alone with my own thoughts is imensily important. Fact of wireless connectivity was difficult to jump through as I doubted quality of non-phisical solutions in quality music territory. Things changed aparently and I won't go back to cable - no chance. This headphones have some accosional bluetoothe connectivity issues and battery doesn't last forever but overall I'm extremally happpy and I can't imagine a single day of productive work without it.
 
 ## Software
 
