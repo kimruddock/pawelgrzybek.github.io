@@ -5,7 +5,7 @@ layout: default
 <article class="post">
   <div class="post__col">
     <time class="post__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-    <h1 class="article__title article__title--single">{{ page.title }}</h1>
+    <h1 class="post__title">{{ page.title }}</h1>
     {{ content }}
 
     <section class="share">

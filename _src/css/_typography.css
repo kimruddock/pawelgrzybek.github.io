@@ -49,10 +49,10 @@ h6 {
   color: #000;
   font-weight: 700;
   vertical-align: middle;
-
-  &:not(:first-child) {
     margin-top: 2.4rem;
-  }
+
+  /*&:not(:first-child) {
+  }*/
 }
 
 /*
