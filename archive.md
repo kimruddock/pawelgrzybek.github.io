@@ -2,8 +2,11 @@
 title: Archive
 ---
 
-<ul>
+<ul class="archive">
   {%for post in site.posts %}
-  <li><time>{{ post.date | date:"%Y.%m.%d" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li class="archive__item">
+    <time class="archive__date">{{ post.date | date:"%Y.%m.%d" }}</time>
+    <a class="archive__link" href="{{ post.url }}">{{ post.title }}</a>
+  </li>
   {% endfor %}
 </ul>

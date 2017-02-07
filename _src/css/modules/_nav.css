@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+}
+
+.nav__logo {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+.nav__link {
+  display: block;
+  padding: .8rem;
+  transition: all 100ms;
+  outline: 0;
+  color: inherit;
+  box-shadow: inset -1px 0 0 0 var(--color-border);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  background-color: var(--color1);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: inset -1px 0 0 0 var(--color1);
+}

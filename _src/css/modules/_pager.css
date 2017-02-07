@@ -1,0 +1,44 @@
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .707rem;
+}
+
+.pager__btn {
+  padding: 1.6rem;
+  transition: all 100ms;
+  outline: 0;
+  color: inherit;
+}
+
+@media screen and (min-width: 700px) {
+  .pager__btn {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+.pager__btn:hover,
+.pager__btn:focus {
+  background-color: var(--color1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pager__btn--prev {
+  box-shadow: 1px 0 0 0 var(--color-border);
+}
+
+.pager__btn--next {
+  box-shadow: -1px 0 0 0 var(--color-border);
+}
+
+.pager__current {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .pager__current {
+    display: block;
+  }
+}

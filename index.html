@@ -4,25 +4,19 @@ layout: default
 
   {% for post in paginator.posts %}
     <!-- article -->
-    <article class="article">
-      <h2 class="article__title">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-      <time class="article__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-      <p class="article__excerpt">{{ post.excerpt }}</p>
-      <a href="{{ post.url | prepend: site.baseurl }}" class="article__more">Read more »</a>
+    <article class="post post--index">
+      <div class="post__col">
+        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read more »</a>
+      </div>
     </article>
     <!-- / article -->
   {% endfor %}
 
-    <nav class="blocks blocks--space">
-      <div class="blocks__item">
-        {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="btn">Previous</a>{% endif %}
-      </div>
-      <div class="blocks__item">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
-      </div>
-      <div class="blocks__item">
-        {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="btn">Next</a>{% endif %}
-      </div>
-    </nav>
+  <section class="pager">
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="pager__btn pager__btn--prev">Previous page</a>{% endif %}
+    <span class="pager__current">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="pager__btn pager__btn--next">Next page</a>{% endif %}
+  </section>

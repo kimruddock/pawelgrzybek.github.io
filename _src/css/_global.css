@@ -23,6 +23,18 @@
 /* line-height: 21.25 * 1.6; */
 /* line-height: 34px; */
 
+/* Min width 1440px */
+
+/* font-size: 140.625%; */
+/* font-size: my value * default browser font size * line height multiplier; */
+/* font-size: 140.625% * 16; */
+/* font-size: 22.5px; */
+
+/* line-height: 1.6rem; */
+/* line-height: font size * line height multiplier; */
+/* line-height: 22.5 * 1.6; */
+/* line-height: 34px; */
+
 ::selection {
   background: var(--color1);
   color: #fff;
@@ -31,8 +43,8 @@
 
 :root {
   --color-text: #444;
-  --color-border: #eee;
-  --color1: #1565C0;
+  --color-border: #f4f4f6;
+  --color1: #d3545b;
 }
 
 html {
@@ -65,15 +77,14 @@ html {
 }
 
 body {
+  background-color: var(--color-border);
   color: var(--color-text);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
 
-
-/*  background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);
+  /*background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);
   background-size: 100% 28px;*/
-
 
 }
 

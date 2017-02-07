@@ -2,44 +2,43 @@
 layout: default
 ---
 
-<article class="article">
-  <h1 class="article__title article__title--single">{{ page.title }}</h1>
-  <time class="article__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-  {{ content }}
-</article>
+<article class="post">
+  <div class="post__col">
+    <time class="post__date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+    <h1 class="article__title article__title--single">{{ page.title }}</h1>
+    {{ content }}
 
-<div class="blocks">
-  <div class="block__item block__item--mr">
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username }}" class="btn">
-      <svg class="btn__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Twitter Icon</title>
-        <path d="M14.4 4.2C14.4 4.4 14.4 4.5 14.4 4.7 14.4 9 11.1 14 5 14 3.2 14 1.5 13.5 0 12.5 0.3 12.6 0.5 12.6 0.8 12.6 2.3 12.6 3.7 12 4.9 11.2 3.4 11.1 2.2 10.2 1.8 8.9 2 8.9 2.2 8.9 2.4 8.9 2.7 8.9 3 8.9 3.3 8.8 1.8 8.5 0.6 7.2 0.6 5.6L0.6 5.6C1.1 5.8 1.6 6 2.1 6 1.2 5.4 0.7 4.4 0.7 3.2 0.7 2.6 0.8 2.1 1.1 1.6 2.7 3.6 5.2 4.9 7.9 5 7.8 4.8 7.8 4.5 7.8 4.3 7.8 2.5 9.3 1 11.1 1 12 1 12.9 1.4 13.5 2 14.2 1.9 14.9 1.6 15.6 1.2 15.3 2 14.8 2.6 14.1 3.1 14.8 3 15.4 2.8 16 2.5 15.6 3.2 15 3.8 14.4 4.2L14.4 4.2Z"/>
-      </svg>
-      Tweet
-    </a>
-  </div>
-  <div class="block__item">
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="btn">
-      <svg class="btn__icon" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Facebook Icon</title>
-        <path d="M9.5 3L12 3 12 0 9.5 0C7.6 0 6 1.6 6 3.5L6 5 4 5 4 8 6 8 6 16 9 16 9 8 11.5 8 12 5 9 5 9 3.5C9 3.2 9.2 3 9.5 3L9.5 3Z"/>
-      </svg>
-      Share
-    </a>
-  </div>
-</div>
+    <section class="share">
+      <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter_username}}" class="share__btn">
+        <svg class="share__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+        </svg>
+        Tweet <span class="share__extra">about it</span>
+      </a>
 
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="share__btn">
+        <svg class="share__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+        </svg>
+        Share <span class="share__extra">on Facebook</span>
+      </a>
+    </section>
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'studiorgb'; // required: replace example with your forum shortname
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'studiorgb'; // required: replace example with your forum shortname
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      })();
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </div>
+</article>
+

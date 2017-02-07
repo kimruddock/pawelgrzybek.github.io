@@ -1,4 +1,4 @@
-.header {
+/*.header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -51,4 +51,12 @@
 
 .header__link--logo {
   display: block;
+}*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+  font-size: .707rem;
+  box-shadow: 0 1px 0 0 var(--color-border);
 }
