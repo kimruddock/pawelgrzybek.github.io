@@ -4,7 +4,7 @@ excerpt: Computers, smartphones, software, and web apps of other professionals i
 photo: 2017-01-21.jpg
 ---
 
-Programming is not the only thing that I read about although I mainly write about it very rarely scratching other subjects. You definatelly won't find gluten-free vegan cake recepies here, but there is a solid chance that I can share with you few words about some hardware. I [did it before](https://pawelgrzybek.com/my-web-development-setup/) about two years aago and I feel that it's just about right time to make fome following update. Things changed, some things has been replaced but things mainly has been simplified and minimize. I always enjoy to read about developers hardware / software setup so I thought you may like to read about mine.
+Programming is not the only thing that I read about although I mainly write about it very rarely scratching other subjects. You definatelly won't find gluten-free vegan cake recepies here, but there is a solid chance that I can share with you few words about some hardware. I [did it before](https://pawelgrzybek.com/my-web-development-setup/) about two years aago and I feel that it's just about right time to make fome following update. Things changed, some things has been replaced but overall everything has been simplified and minimized. I always enjoy to read about developers hardware / software setup so I thought you may like to read about mine.
 
 ## Hardware
 
@@ -12,7 +12,7 @@ Mattias P Johansson, one of my favourite developers that I hightly recommend you
 
 > Everything that you acquire, carries a little bit or tiny work that you have to do with it.
 
-When I was younger (not much younger, 2 - 3 years ago) I aimed to own things, latest devices, top spec computers, expensive cameras etc. It took me a while to relise that I'm much happier without it. Reducing maintanence cost and time that I had to spend with all those things gave me an extra chunk of time everyday that I can use to do other things like riding my bike, listenning good music or chilling out and do absolutelly nothing. Followed this principle my hardware setup didn't grow at all. Esentially I don't have (and don't want to have) things that I don't need. Let's check what's inside my bag.
+When I was younger (not much younger, 2 - 3 years ago) I aimed to own things, latest devices, top spec computers, expensive cameras etc. It took me a while to relise that I'm much happier without it. Reducing maintanence cost and time that I had to spend with all those things gave me an extra chunk of time everyday that I can use to do other things like riding my bike, listenning good music or chilling out. Followed this principle my hardware setup didn't grow at all. Esentially I don't have (and don't want to have) things that I don't need. Let's check what's inside my bag.
 
 ### Macbook Pro with Retina display (Early 2015)
 
