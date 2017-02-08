@@ -1,22 +1,5 @@
 .post {
-  padding: 3.2rem 0;
-}
-
-.post--index {
-  box-shadow: 0 1px 0 0 var(--color-border);
-}
-
-.post__col {
-  width: 100%;
-  max-width: calc(700px + 1.6rem);
-  margin: 0 auto;
-  padding: 0 .8rem;
-}
-
-@media screen and (min-width: 1440px) {
-  .post__col {
-    max-width: calc(800px + 1.6rem);
-  }
+  margin-bottom: 4.8rem;
 }
 
 .post__date {
@@ -30,7 +13,7 @@
 }
 
 .post__link {
-  transition: color 100ms;
+  transition: color var(--ms);;
   color: inherit;
 }
 

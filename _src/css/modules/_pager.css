@@ -1,13 +1,14 @@
 .pager {
   display: flex;
+  position: relative;
   align-items: center;
-  justify-content: space-between;
   font-size: .707rem;
+  box-shadow: inset 0 0 0 1px var(--color-border);
 }
 
 .pager__btn {
   padding: 1.6rem;
-  transition: all 100ms;
+  transition: all var(--ms);;
   outline: 0;
   color: inherit;
 }
@@ -26,10 +27,12 @@
 }
 
 .pager__btn--prev {
+  margin-right: auto;
   box-shadow: 1px 0 0 0 var(--color-border);
 }
 
 .pager__btn--next {
+  margin-left: auto;
   box-shadow: -1px 0 0 0 var(--color-border);
 }
 
@@ -40,5 +43,11 @@
 @media screen and (min-width: 700px) {
   .pager__current {
     display: block;
+    position: absolute;
+    top: 1.6rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
   }
 }

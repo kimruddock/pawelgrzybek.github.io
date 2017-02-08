@@ -1,3 +1,11 @@
 .main {
-  min-height: calc(100vh - 9.6rem);
+  max-width: calc(700px + 1.6rem);
+  margin: 0 auto;
+  padding: 0 .8rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    max-width: calc(800px + 1.6rem);
+  }
 }

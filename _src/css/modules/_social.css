@@ -15,7 +15,7 @@
   justify-content: center;
   width: 3.2rem;
   height: 3.2rem;
-  transition: all 100ms;
+  transition: all var(--ms);
   outline: 0;
   box-shadow: inset 1px 0 0 0 var(--color-border);
   fill: #444;

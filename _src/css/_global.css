@@ -23,6 +23,7 @@
 /* line-height: 21.25 * 1.6; */
 /* line-height: 34px; */
 
+
 /* Min width 1440px */
 
 /* font-size: 140.625%; */
@@ -35,16 +36,18 @@
 /* line-height: 22.5 * 1.6; */
 /* line-height: 34px; */
 
+
+:root {
+  --color-text: #444;
+  --color-border: #eee;
+  --color1: #d3545b;
+  --ms: 100ms;
+}
+
 ::selection {
   background: var(--color1);
   color: #fff;
   text-shadow: none;
-}
-
-:root {
-  --color-text: #444;
-  --color-border: #f7f7f8;
-  --color1: #d3545b;
 }
 
 html {
@@ -77,7 +80,6 @@ html {
 }
 
 body {
-  background-color: var(--color-border);
   color: var(--color-text);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;

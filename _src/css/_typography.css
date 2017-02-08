@@ -46,13 +46,10 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 2.4rem;
   color: #000;
   font-weight: 700;
   vertical-align: middle;
-    margin-top: 2.4rem;
-
-  /*&:not(:first-child) {
-  }*/
 }
 
 /*
@@ -108,8 +105,8 @@ blockquote {
   padding: 1.6rem;
   border-left: 4px solid #e6e6e6;
   background: #f7f7f7;
+}
 
-  p {
-    margin: 0;
-  }
+blockquote p {
+  margin: 0;
 }

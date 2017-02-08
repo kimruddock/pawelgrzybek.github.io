@@ -4,13 +4,11 @@ layout: default
 
   {% for post in paginator.posts %}
     <!-- article -->
-    <article class="post post--index">
-      <div class="post__col">
-        <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-        <h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read more »</a>
-      </div>
+    <article class="post">
+      <time class="post__date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read more »</a>
     </article>
     <!-- / article -->
   {% endfor %}
