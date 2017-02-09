@@ -13,8 +13,8 @@ layout: default
     <!-- / article -->
   {% endfor %}
 
-  <section class="pager">
+  <div class="pager">
     {% if paginator.previous_page %}<a href="{{ paginator.previous_page_path }}" class="pager__btn pager__btn--prev">Previous page</a>{% endif %}
     <span class="pager__current">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}<a href="{{ paginator.next_page_path }}" class="pager__btn pager__btn--next">Next page</a>{% endif %}
-  </section>
+  </div>
