@@ -50,45 +50,31 @@ I'm not a designer and I use one of those apps once in a while. I just need a re
 
 ### Alfred
 
-- replaced so many apps from my list few yers ago
-- productivity booster
-- powerpack is worth it all day long
+As a long term Alfred user I embraced it's power only recently. On a first glance it looks like a default spotlight searchbar but when you dig deeper this can be one of the best utilities in your life. It's power allowed me to delete so many little apps like [CopyLess](https://copyless.net/) and [Divvy](http://mizage.com/divvy/). Apart from features like custom web search, snippets manager and multi clipboard it does one more thing that gives you endless posibilities — [workflows](https://www.alfredapp.com/workflows/). Recently I created a few workflows that got really good adoption in the community: [Div — a simple Alfred window manager](https://pawelgrzybek.com/div-simple-alfred-windows-manager/) and [Github Search](http://www.packal.org/workflow/github-search). If you are one of thos who like to automate repetitive tasks, this is a tool for you. The basic version is free of charge but the real power comes with Powerpack that isn't crazy expensive and pays back in time that you save with it.
 
 ### Tweetbot
 
-- best twitter client and timeline sync
-- iOS and mac
-- integration with Pinboard
-- missing photos in DM
+I'm addicted of Twitter — I literally read every single tweet. Desktop client is getting better every update, but in my opinion it is not the most convenitnt way of usnign Twitter. Tweetbot by [Tapbots](https://tapbots.com/) is an app that I found very useful by giving me features that I dont have from official client. [Desktop version](https://tapbots.com/tweetbot/mac/) and [iOS one](https://tapbots.com/tweetbot/) is a perfect combination because it offers a timeline sync so I never miss a single tweet. Mute filters are great for hiding from my feed football buzz that I dont really care about. Easy shortcut to send particular tweets to "read later" app of choice is something that I use a lot. On top of that this app just looks beautiful — much better than official Twitter clients. not cheap tho — wait for a sale that happens ocasionally and grab a bargain.
 
 ### Reeder
 
-- use it for years and love it
-- iOS and mac
-- integration with other services, fast, robust
+I use this app since it came out. I tested other RSS readers in the meantime but I havent found one that is as good as my favourite [Reeder](http://reederapp.com/) by Silvio Rizzi. It's beautiful, full of useful gestures that makes it feel as one of the core mac OS / iOS apps, fast and reliable. If you are oldschool like myself and still believe in power of RSS give this one a try.
 
 ### 1password
 
-- my life doesnt make any sese without it anymore
-- keep there all access and remoemeber only one password
-- iOS and mac
-- integrated with chrome via plugin
+Probably the first piece of software that I install on my devices. It holds all my passwords and private date under one single password or touch or my thumb. I know that many other passwords managers exists and I havn't tried them because tis one suits my needs perfectly. Google Chrome extension gives me access to all my super complicated passwords straght from window of my browser. It syncs really well between my devices via iCloud. If you are concearned about keeeping encrypted data in the cloud you can always sync it via wi-fi and stay away from remote servers.
 
 ### Things
 
-- controll things to do
-- project
-- iOS and mac
+I'm not a productive ninja but I use some sort of to do methodology because I easily forget about stuff. [Things](https://culturedcode.com/) is really cool with it! If perfectly fits into GTD (get things done) metodology workflow, ofers a dedicated cloud sync, looks beautiful on both iPhone and mac OS.
 
 ### ScreenFlow
 
-- all videos, screencasts and animated gifs
-- pricy but woth it
+Do you record screencasts? DO you need some basic video editing app? Animated gif are cool, aren't they? This is app for you. Every single video that I post of Twitter / Facebook, animated gif, screencast, "how to do" video for client I make via [ScreenFlow](http://www.telestream.net/screenflow/). It is not cheap but wort of this money. Very intuitive interface require almost none learning curve, great integration with all possible media formats, tons of shortcuts, configurations options, amazing library of video tutorials and so many more cool things make it the best screencast app ever.
 
 ### Mail App
 
-- ebay, amazon are only guys who i receivve emails from
-- fastmail
+I do receive emails mainly from Ebay, Amazon, PayPal, Discogs and ocasionally from my mom. Default Mail App is everything that I need.
 
 - - -
 
