@@ -1,6 +1,6 @@
 pre,
 code {
-  background: #f7f7f7;
+  background: var(--color-gray);
   font-family: 'Source Code Pro', monospace;
   font-size: .847rem;
   overflow-x: auto;
@@ -10,7 +10,7 @@ code {
 .highlight {
   margin-bottom: 1.6rem;
   padding: .8rem;
-  background: #f7f7f7;
+  background: var(--color-gray);
   box-shadow: inset 0 0 0 1px var(--color-border);
 
   .c {
