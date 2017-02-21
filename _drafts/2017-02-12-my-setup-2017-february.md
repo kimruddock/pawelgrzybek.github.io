@@ -80,15 +80,11 @@ I do receive emails mainly from Ebay, Amazon, PayPal, Discogs and ocasionally fr
 
 ## Web services
 
-- iCloud drive, dont use any clous like dropbox
-- few that i cannot live without
+Locally installed apps is not the only type of software that I use. Web is powerful enough to work as a great enviorement to handle powerful / usefull web apps. There is plenty of great tools and I use few of them on daily basis. I'm not going to go through onvious things like mail providers or contacts / calendars sync platforms. Just a specifiic tools for specific use cases.
 
 ### Pinboard
 
-- looks like shit
-- costs money
-- works and wont change for anything else, for iOS client Pinswift
-- links, read later, browser tab sets
+Some time ago I published a [whole article](https://pawelgrzybek.com/bookmarking-with-pinboard/) about [Pinboard](https://pinboard.in/) created by Maciej Cegłowski. In my opinion this the best place to bookmark links, opened browser tabs, tweets and article to read later. The design isn't catchy, it costs money and there isn't a first bookmarking service that pops out on google results but it comes with other values — usability and performance. Great taggig system, handy browser extensions, advanced API that allows other apps to conect with it are my reasons to use it, stay with it and not looking for something else. Thanks Maciej.
 
 ### Feedly
 
