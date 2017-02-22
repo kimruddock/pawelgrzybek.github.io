@@ -88,25 +88,22 @@ Some time ago I published a [whole article](https://pawelgrzybek.com/bookmarking
 
 ### Feedly
 
-- rss
+Yeah I know, RSS is dead, blah, blah, blah... Nope! I love RSS and it is still my main source of web info. Since early days of Google Reader I use this technology and it doesn't slow down. Nowadays I use Feedly to fetch feeds from my favourite websites and to consume them I use mentioned above Reeder. The free version is absolutely enough if you need just an agregator. Really ociasionally I use web client to read my news and it is not bad at all.
 
 ### Codepen
 
-- use it everyday
-- quck experiments test
-- pro user
-- private pens
-- free testing on other browsers
+This is one of very few web services that I paid money for and I absolutely dont regret it. I use Codepen every single day to smash some quick front-end experiment, to check posibilities of my stupid ideas and for...
 
 ### CrossBrowserTesting.com
 
-- works with codepen and you dont have to pay for it
-- access to tons of browsers mobile / desktop
+Cross browser testing! It was always a pain. Without paing for an expencive services like BrowserStack of this one you are basicly screwed. Good news is coming! As I'm CodePen Pro user I have access to test all my experiments with CrossBrowserTesting.com totally for free. It comes with CodePen membership. It is amazing, isn't it? It helped me a lot to make a comprehensive tests of one of my recent libraries [Siema](https://pawelgrzybek.com/siema/) and it helps me a lot every single day. Works like a charm, it it quick, gives you an access to hundreds of browsers across many operating syatems. Love it!
 
 ### Apple Music
 
-- apart from collection of hundreds of vinyls got this
-- dont convince me to spotify, apple music works great for me
-- sometimes on mobile connectivity waiting may be annoying
+On the other side of a room I have about half of a thousen vinyl records categorised in few categories: polish jazz, polish rap, jazz, rap, funk, compilations, singles, 45s. I love music and I love it not alny at home, but I love it when I work, when I run or when I cook. Apple Music is my service of choice. I don't want to go in depth why I choose this one not another one. I tried it, it works great, it doesn't cost fortune and doesn't require additinal software apart from this one that I already have.
 
-Thanks see you next time...
+- - -
+
+It turned up to be much longer than I initialy expected. Sorry I you feel bored by now. If you published an article or video about your setup, please send me a link. I'm sure I will do it again at some point.
+
+Until next time, stay safe :-*
