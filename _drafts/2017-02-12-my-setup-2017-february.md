@@ -84,11 +84,11 @@ I do receive emails mainly from Ebay, Amazon, PayPal, Discogs and ocasionally fr
 
 ## Web services
 
-Locally installed apps is not the only type of software that I use. Web is powerful enough to work as a great enviorement to handle powerful / usefull web apps. There is plenty of great tools and I use few of them on daily basis. I'm not going to go through obvious things like mail providers or contacts / calendars sync services. Just a specifiic tools for specific use cases.
+Web is powerful enough to work as a great enviorement to handle powerful and usefull web apps. There is plenty of great tools but I use only few of them. I'm not going to go through obvious things like mail providers or contacts / calendars sync services. Just a specifiic tools for specific tasks.
 
 ### Pinboard
 
-Some time ago I published a [whole article](https://pawelgrzybek.com/bookmarking-with-pinboard/) about [Pinboard](https://pinboard.in/) created by Maciej Cegłowski. In my opinion this the best place to bookmark links, opened browser tabs, tweets and article to read later. The design isn't catchy, it costs money and there isn't a first bookmarking service that pops out on Google results but it comes with other values — usability and performance. Great taggig system, handy browser extensions, advanced API that allows other apps to connect with it are my reasons to use it, stay with it and not looking somewhere else.
+Some time ago I published a [whole article](https://pawelgrzybek.com/bookmarking-with-pinboard/) about [Pinboard](https://pinboard.in/) created by Maciej Cegłowski. In my opinion this is the best place to bookmark links, opened browser tabs, tweets and articles to read later. The design isn't catchy, it costs a bit of money and there isn't a first bookmarking service that pops out on Google results but it comes with other values — usability and performance. Great taggig system, handy browser extensions, advanced API that allows other apps to connect with it are my main reasons to use it and not looking somewhere else.
 
 ### Feedly
 
@@ -96,23 +96,18 @@ Yeah I know, RSS is dead, blah, blah, blah... Nope! I love RSS and it is still m
 
 ### Codepen
 
-This is one of very few web services that I paid money for and I absolutely don't regret it. I use Codepen every single day to smash some quick front-end experiment, to check posibilities of my stupid ideas and for...
+This is one of very few web services that I paid money for and I absolutely don't regret it. I use [Codepen](http://codepen.io/) every single day to smash some quick front-end experiment, to check posibilities of my stupid ideas and for...
 
 ### CrossBrowserTesting.com
 
-Cross browser testing! It was always a pain. Without paing for an expensive services like BrowserStack of you are basicly screwed. Good news is coming! As I'm CodePen Pro user I have access to test all my experiments with CrossBrowserTesting.com totally for free. It is amazing, isn't it? It helped me a lot to make a comprehensive tests of one of my recent libraries [Siema](https://pawelgrzybek.com/siema/) and it serves me well every single day. Works like a charm, it is quick and gives me an access to hundreds of browsers across many operating syatems. Love it!
+Cross browser testing! It was always a pain. Without paing for an expensive services like BrowserStack of you are basicly screwed. Good news is coming! As I'm CodePen Pro user I have access to test all my experiments with [CrossBrowserTesting.com](https://app.crossbrowsertesting.com/) totally for free. It is amazing, isn't it? It helped me a lot to make a comprehensive tests of one of my recent libraries [Siema](https://pawelgrzybek.com/siema/) and it serves me well every single day. Works like a charm, it is quick and gives me an access to hundreds of browsers across many operating syatems. Love it!
 
 ### Apple Music
 
-On the other side of a room I have about half of a thousen vinyl records categorised in few categories: polish jazz, polish rap, jazz, rap, funk, compilations, singles, 45s. I love music and I love it not olny at home, but I love it when I work, when I run or when I cook. Apple Music is my service of choice. I don't want to go in depth why I choose this one not another one. I tried it, it works great, it doesn't cost fortune and doesn't require additinal software apart from this one that already resides on my mac.
+On the other side of a room I have about half of a thousen vinyl records categorised in few categories: polish jazz, polish rap, jazz, rap, funk, compilations, singles, 45s. I love music and I love it not olny at home, but I love it when I work, when I run or when I cook. It would be difficult to grab a [Technics SL-1200](https://en.wikipedia.org/wiki/Technics_SL-1200) for an evening run. Apple Music is my service of choice. I don't want to go in depth why I chose this one over another one. I tried it, it works great, it doesn't cost fortune and doesn't require additinal software apart from this one that already resides on my mac.
 
 - - -
 
-Of course thats not everything that I use...
-
-It turned up to be much longer than I initialy expected. Sorry I you feel bored by now. If you published an article or video about your setup, please send me a link. I'm sure I will do it again at some point.
+Of course thats not everything that I use on daily basis but I didn't want to write a mile long article and didn't want to write about stuff that I'm not particularly excited about. Anyway itt turned up to be much longer than I initialy planned. Sorry I you feel bored. If you published an article or video about your setup, please send me a link. I'm sure I will do it again at some point in the future.
 
 Until next time, stay safe :-*
-
-
-LINKS< GO THROUGH AND ADD LINKS BRO
