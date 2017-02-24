@@ -1,7 +1,7 @@
 ---
 title: My setup — 2017 February
 excerpt: Which hardware, software and web apps other professionals are using is something that I enjoy reading about. Today's post is about my own setup from February 2017.
-photo: 2017-01-21.jpg
+photo: 2017-02-25.jpg
 ---
 
 Programming isn't the only thing that I read about although that's what I mainly write about and very rarely broach other subjects. You definitely won't find any gluten-free vegan cake recipes here, but there is a good chance that I can share with you a few words about some software or hardware. I [did it before](https://pawelgrzybek.com/my-web-development-setup/) about two years ago so I think it's just about the right time to wrtie an update. Some things have changed, some things have been replaced but overall everything has been simplified and minimised. I always enjoy these kind of reads so I thought you may like to find out more about my equipment.
@@ -48,6 +48,10 @@ There must be a reason why this app has kept it's status of [the most popular we
 
 As a huge fan and long term [Sublime Text](https://www.sublimetext.com/) user, creator of a few plugins and active supporter of it's development, switching to a different code editor would be the last thing I would have expected a little while ago. However, in the meantime Microsoft produced two things that front-end developers should know about: [TypeScript](https://www.typescriptlang.org/) and [Visual Studio Code](https://code.visualstudio.com/). Typescript is fantastic, but do you know what I like even more? Yes, Visual Studio Code! Open-source, written entirely with web technologies like HTML, CSS and JavaScript wrapped into a multi-platform desktop app with Electron. It is lightweight, fast, beautiful and extremely powerful. Compared to ST where the learning curve and configuration means it takes some time to fully embrace it's potential, VSCode gives you a top-notch user experience out of the box. The community already loves using and improving it — just have a look at any of the monthly updates and the change log is full of new features. The integrated command line saves me so much time instead of jumping back and forth between editor and iTerm. The integrated git client allows me to commit the progress of my work, fetch changes from my remote branch or push its current state in a fraction of a second. Built in IntelliSense it makes my life a whole lot easier — method definitions, parameter info, auto-completion. When the IDE-ish look of it distracts me I can switch to the minimal Zen mode with a single shortcut. I can really wax lyrical about it but there is no point, just download it, use it and love it as I do. If you are looking for helpful tips for a smooth transition from Sublime Text to Microsoft's product, check a few of my recent articles about [config files](https://pawelgrzybek.com/sync-vscode-settings-and-snippets-via-dotfiles-on-github/) and [custom tasks](https://pawelgrzybek.com/using-the-javascript-console-in-visual-studio-code/). You can be assured that I'm going to be writing more about it here.
 
+![Visual Studio Code](/photos/2017-02-25-3.jpg)
+
+![Visual Studio Code Zen Mode](/photos/2017-02-25-4.jpg)
+
 ### Sketch & Affinity Photo
 
 I'm not a designer and I don't use graphic applications as often as I use my code editor. I just need a reliable tool to make a simple logo for my tiny open source projects, quickly smash together a prototype for a client or crop an image of my cat to upload to Facebook. Sketch is probably the best UI design tool that I have ever worked with — not a surprise as the [2016 Web Design Trend Report](https://avocode.com/design-report-2016/) clearly shows that Sketch is not a niche application anymore. I love the intuitive workflow, the performance, iCloud integration, resizing options that are not available in other tools and of course the plugins API that opens up a wide range of new features.
@@ -57,6 +61,8 @@ I'm not a designer and I don't use graphic applications as often as I use my cod
 ### Alfred
 
 As a long term Alfred user I embraced it's true power only recently. On first glance it looks like the default Spotlight app but when you dig deeper it can be one of the best productivity friends in your life. It's power allowed me to delete so many little apps like [CopyLess](https://copyless.net/) and [Divvy](http://mizage.com/divvy/). Apart from features like custom web search, a snippets manager and the multi clipboard it does one more thing that provides almost endless possibilities — [workflows](https://www.alfredapp.com/workflows/). Recently I created a few workflows that were adopted really well in the community: [Div — a simple Alfred window manager](https://pawelgrzybek.com/div-simple-alfred-windows-manager/), [Github Search](http://www.packal.org/workflow/github-search) and a handy [npm search](http://www.packal.org/workflow/alfred-npm-search). If you are one of those who like to automate repetitive tasks, this is the tool for you. The basic version is free of charge but the real power comes with [Powerpack](https://www.alfredapp.com/powerpack/) that costs the same as about three pints of beer.
+
+![Alfred GitHub and npm search](/photos/2017-02-25-5.gif)
 
 ### Tweetbot
 
