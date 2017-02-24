@@ -1,10 +1,10 @@
 ---
 title: My setup — 2017 February
-excerpt: Which hardware, software and web apps other professionals are using is something that I always enjoy reading about. Today's post is about my own setup from February 2017.
+excerpt: Which hardware, software and web apps other professionals are using is something that I enjoy reading about. Today's post is about my own setup from February 2017.
 photo: 2017-01-21.jpg
 ---
 
-Programming isn't the only thing that I read about although that's what I mainly write about and very rarely broach other subjects. You definitely won't find any gluten-free vegan cake recipes here, but there is a good chance that I can share with you a few words about some software or hardware. I [did before](https://pawelgrzybek.com/my-web-development-setup/) about two years ago so I think it's just about the right time to wrtie an update. Some things have changed, some things have been replaced but overall everything has been simplified and minimised. I always enjoy these kind of reads so I thought you may like to find out more about my equipment.
+Programming isn't the only thing that I read about although that's what I mainly write about and very rarely broach other subjects. You definitely won't find any gluten-free vegan cake recipes here, but there is a good chance that I can share with you a few words about some software or hardware. I [did it before](https://pawelgrzybek.com/my-web-development-setup/) about two years ago so I think it's just about the right time to wrtie an update. Some things have changed, some things have been replaced but overall everything has been simplified and minimised. I always enjoy these kind of reads so I thought you may like to find out more about my equipment.
 
 1. [Hardware](#hardware)
 3. [Software](#software)
@@ -50,7 +50,7 @@ As a huge fan and long term [Sublime Text](https://www.sublimetext.com/) user, c
 
 ### Sketch & Affinity Photo
 
-I'm not a designer and I don't use graphic applications as often as I use my code editor. I just need a reliable tool to make a simple logo for my tiny open source projects, quickly smash together a prototype for a client or crop an image of my cat to upload to Facebook. Sketch is probably the best UI design tool that I have ever worked with — not a surprise as the [2016 Web Design Trend Report](https://avocode.com/design-report-2016/) clearly shows that Sketch is not a niche application anymore. I love the intuitive workflow, the performance, iCloud integration, and resizing options that are not available in other tools and of course the plugins API that opens up a wide range of new features. 
+I'm not a designer and I don't use graphic applications as often as I use my code editor. I just need a reliable tool to make a simple logo for my tiny open source projects, quickly smash together a prototype for a client or crop an image of my cat to upload to Facebook. Sketch is probably the best UI design tool that I have ever worked with — not a surprise as the [2016 Web Design Trend Report](https://avocode.com/design-report-2016/) clearly shows that Sketch is not a niche application anymore. I love the intuitive workflow, the performance, iCloud integration, resizing options that are not available in other tools and of course the plugins API that opens up a wide range of new features.
 
 [Affinity Photo](https://affinity.serif.com/en-gb/photo/) is my Photoshop replacement. Okay so maybe it isn't as powerful, it doesn't have video editing options (why would you need that in PHOTOshop anyway?!) and maybe there aren't as many Youtube tutorials as there are for Photoshop but it still does the job really well. A recent update to [version 1.5](https://affinity.serif.com/en-gb/photo/new-features/) brought the app a decent bunch of features that means this app genuinely competes with Adobe Photoshop. It's no suprise that this app won the [Best Imaging Software Award in 2016](https://affinity.serif.com/blog/affinity-photo-wins-best-imaging-software-award/). I published ["I won't miss you Adobe"](https://pawelgrzybek.com/i-wont-miss-you-adobe/) two years ago and nothing has really changed since.
 
@@ -72,7 +72,7 @@ Probably the first piece of software that I install on my devices whenever I get
 
 ### Things
 
-I'm not a productivity ninja but I use a kind of "to do" methodology because I easily forget about stuff. [Things](https://culturedcode.com/) is really cool for this! If perfectly fits into GTD (get things done) methodology workflow, offers a dedicated cloud sync, and looks beautiful on both iPhone and mac OS. Repetitive tasks, project management and events scheduling is something that sets it apart from default reminder apps.
+I'm not a productivity ninja but I use a kind of "to do" methodology because I easily forget about stuff. [Things](https://culturedcode.com/) is really cool for this! If perfectly fits into GTD (get things done) methodology workflow, offers a dedicated cloud sync and looks beautiful on both iPhone and mac OS. Repetitive tasks, project management and events scheduling is something that sets it apart from default reminder apps.
 
 ### ScreenFlow
 
@@ -110,6 +110,14 @@ On the other side of my room I have around 500 or so vinyl records categorised i
 
 - - -
 
-Of course that's not everything that I use on a daily basis but I didn't want to write a mile-long article and didn't want to write about stuff that I'm not particularly excited about. Anyway, this has turned out to be much longer than I initially planned. Sorry if you got bored! If you have published an article or video about your setup, please send me a link. I'm sure I will revisit this again at some point in the future.
+Of course that's not everything that I use on a daily basis but I didn't want to write a mile-long article. Let me list few cool ones but not worth to spent a paragraph on them:
+
+- [Timex Weekender T2N746](https://www.amazon.co.uk/d/Womens-Watches/Timex-Unisex-T2N746-Quartz-Analogue-Display-Multicolour/B0078QHI86/ref=sr_1_12?ie=UTF8&qid=1487930930&sr=8-12&keywords=timex+weekender)
+- [Subrosa Letum 2011](https://static.evanscycles.com/production/bikes/road-bikes/product-image/969-638/subrosa-letum-fixed-2011-single-speed-bike-EV136031-9999-1.jpg)
+- [Victorinox Spartan Swiss Army Knife](https://www.amazon.co.uk/Victorinox-Spartan-Swiss-Army-Knife-x/dp/B0001P15CG/ref=sr_1_11?ie=UTF8&qid=1487931219&sr=8-11&keywords=Victorinox+pocket+knife)
+- [Terre d'Hermès](http://uk.hermes.com/perfumes/men/terre-d-hermes.html)
+- [North Face Vault Black](https://www.thenorthface.co.uk/shop/en-gb/tnf-gb/women%26-39%3Bs-vault-backpack-CHJ1?variationId=SRS)
+
+ Damn, this has turned out to be much longer than I initially planned. Sorry if you got bored! If you have published an article or video about your setup, please send me a link. I'm sure I will revisit this again at some point in the future.
 
 Until next time, stay safe :-*
