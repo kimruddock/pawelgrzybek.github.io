@@ -18,7 +18,7 @@ Mattias P Johansson, one of my favourite developers that I highly recommend you 
 
 A few years ago I was focused on owning things: the latest devices, top spec computers, expensive cameras etc. It took me a while to realise that I'm much happier without it. Reducing the maintenance cost and time that I had to spend with all those things gave me that extra bit of time that I can use to do other things like riding my bike, listening good music or hanging out with my friends. Following this principle my hardware setup hasn't grow at all — the opposite in fact. Essentially I don't have (and don't want to have) things that I don't need. Let's check what's inside my bag.
 
-!!! SOME PHOTO OF MY HARDWARE HERE !!!
+![Bose QC 35 + Macbook Pro 2015](/photos/2017-02-25-1.jpg)
 
 ### Macbook Pro with Retina display (Early 2015)
 
@@ -38,7 +38,7 @@ This year another cool gadget joined a list of things that I'm not going out wit
 
 Following the same principle as the hardware, I use much less software on my devices. Compared to [the same list](https://pawelgrzybek.com/my-web-development-setup/) that I made few years ago, some of the little toys have been replaced with more holistic productivity solutions, some stayed as they were and lots of stuff just disappeared. Let's check what's on my hard drive.
 
-!!! SOME PHOTO OF MY SOFTWARE HERE !!!
+![My favorite software](/photos/2017-02-25-2.jpg)
 
 ### Google Chrome
 
