@@ -28,3 +28,10 @@ Addy Osmani about performance, who else?! Must read for all js devs. As this art
 
 - - -
 
+## An Animated Intro to RxJS
+
+[https://css-tricks.com/animated-intro-rxjs/](https://css-tricks.com/animated-intro-rxjs/)
+
+Thanks [David Khourshid](https://twitter.com/DavidKPiano), it clicked. Great explanation of RxJS a library to work in reactive style with data. It is worth to know it not only from CSS perspective as it is presented by David in this example. It is a big part of async workflow of big frameworks like Angular and other ones. It is a great paradigm that it is work to have in a skill set.
+
+- - -
