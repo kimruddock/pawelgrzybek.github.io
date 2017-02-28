@@ -33,3 +33,10 @@ Addy Osmani about performance, who else?! Must read for all js devs. As this art
 [https://css-tricks.com/animated-intro-rxjs/](https://css-tricks.com/animated-intro-rxjs/)
 
 Thanks [David Khourshid](https://twitter.com/DavidKPiano), it clicked. Great explanation of RxJS a library to work in reactive style with data. CSS example is only one of the amazing examples how you can use power of RxJs. It is a big part of async workflow of big frameworks like Angular and other ones. It is a great paradigm that it is worth to know.
+
+- - -
+
+## Testing Your Frontend Code : Part I (Introduction)
+[https://hackernoon.com/testing-your-frontend-code-part-i-introduction-7e307eac4446](https://hackernoon.com/testing-your-frontend-code-part-i-introduction-7e307eac4446)
+
+[Gil Tayar](https://twitter.com/giltayar) published an introduction to testing front-end frameworks on hackernoon. It is a initial part from three-parts series but it is already looking promising. Looking forward to following posts.
