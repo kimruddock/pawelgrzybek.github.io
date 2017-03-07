@@ -24,7 +24,7 @@ John A. Calderaio build the same iOS app using Swift and React Native. Great ide
 
 [https://hackernoon.com/testing-your-frontend-code-part-ii-unit-testing-1d05f8d50859](https://hackernoon.com/testing-your-frontend-code-part-ii-unit-testing-1d05f8d50859)
 
-Month ago I linked a first post from the series about testing front-end code by [https://twitter.com/giltayar](Gil Tayar). This month it is time to list remaining parts from this great three-parts tutorial. This time- unit testing with Mocha.
+[Month ago](https://pawelgrzybek.com/top-picks-2017-february/) I linked a first post from the series about testing front-end code by [https://twitter.com/giltayar](Gil Tayar). This month it is time to list remaining parts from this great three-parts tutorial. This time- unit testing with Mocha.
 
 - - -
 
