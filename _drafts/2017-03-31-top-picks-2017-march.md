@@ -28,4 +28,12 @@ John A. Calderaio build the same iOS app using Swift and React Native. Great ide
 
 - - -
 
+## JavaScript Deep Merge
+
+[https://davidwalsh.name/javascript-deep-merge](https://davidwalsh.name/javascript-deep-merge)
+
+ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object in nice elegant way. Even newer feature that is coming to JavaScript spec is object spread operator that allows us to do it in even more redeable way (`{...obj1, ...obj2}`). Both of these methods come with one downside — they generate shallow merge or only top properties. In majority of cases it is all that we need but if we need some more reliable way to construct deeply merged objects from multi-level collections [deepmerge](https://www.npmjs.com/package/deepmerge) is a great utility. Thanks [David Walsh](https://davidwalsh.name/javascript-deep-merge) for a great hint.
+
+- - -
+
 ##
