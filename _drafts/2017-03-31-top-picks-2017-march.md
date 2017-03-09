@@ -36,4 +36,8 @@ ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object i
 
 - - -
 
-##
+## CSS Grid lands in Firefox 52
+
+[https://www.rachelandrew.co.uk/archives/2017/03/07/css-grid-lands-in-firefox-52/](https://www.rachelandrew.co.uk/archives/2017/03/07/css-grid-lands-in-firefox-52/)
+
+Rachel Andrew expresses her happiness about CSS Grid Module landing in stable version of Firefox. No doubt — it is a game changer for all of us who build a web experiences on daily basis. Personally I'm ultra excited about using it on my client's projects. If you are still not aware what I'm talking about check the [basic tutorial](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago or just folow Rachel who does an amazing job on explaining it on her talks and [website dadicated for it](https://thecssworkshop.com/).
