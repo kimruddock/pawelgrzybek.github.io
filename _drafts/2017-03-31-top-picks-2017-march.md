@@ -36,8 +36,28 @@ ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object i
 
 - - -
 
-## CSS Grid lands in Firefox 52
+## Grid
 
-[https://www.rachelandrew.co.uk/archives/2017/03/07/css-grid-lands-in-firefox-52/](https://www.rachelandrew.co.uk/archives/2017/03/07/css-grid-lands-in-firefox-52/)
+[https://tympanus.net/codrops/css_reference/grid/](https://tympanus.net/codrops/css_reference/grid/)
 
-Rachel Andrew expresses her happiness about CSS Grid Module landing in stable version of Firefox. No doubt — it is a game changer for all of us who build a web experiences on daily basis. Personally I'm ultra excited about using it on my client's projects. If you are still not aware what I'm talking about check the [basic tutorial](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago or just folow Rachel who does an amazing job on explaining it on her talks and [website dadicated for it](https://thecssworkshop.com/).
+
+Firefox in version 52 and Google Chrome 57 brought a bunch of great features to stable versions of the most popular browsers. The most important one for me is the CSS Grids Module that I'm very excited about. If you don't have a clue what I am talking about have a look at my [basic introduction](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago. It is definitely going to change the way how create layouts. Internet is full of great resources to learn it and we are going to see more and more of it soon. This one by codrops is a really comprehensive tutorial with illustrated examples. Another one worth to mention is [http://gridbyexample.com/](http://gridbyexample.com/) created by Rachel Andrew — can't think of a better person who could create a tutorial about this subject. You better catch up guys, you are going to see more and more of "gridy" CSS lines soon.
+
+- - -
+
+## The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)
+
+[https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+
+This 14 years old post is such a great introduction to characters encoding. Joel Spolsky, CEO and co-founder of [stackoverflow.com](http://stackoverflow.com/) does a really amazing job in explaining some historicl background, languages differences and proceed actions to find a solutions for encoding "problem". Must read!
+
+> The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)
+
+- - -
+
+## World Wide Web, Not Wealthy Western Web (Part 1)
+[https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)
+
+Probably my favorite article of a month. Bruce Lawson shares tons of insights about difference between internet usage around the glob, born of a world wide web on land of Asia and possible solutions to enter this audience smoothly.
+
+> Horatio, as every schoolchild knows, is a designer from Berlin (or sometimes London or Silicon Valley) who has a top-of-the-line MacBook, the latest iPhone and an unlimited data plan over the fastest, most reliable network. But, as Hamlet points out to him, this is not the experience of most of the world’s web visitors.
