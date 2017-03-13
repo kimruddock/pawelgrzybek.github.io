@@ -55,9 +55,16 @@ This 14 years old post is such a great introduction to characters encoding. Joel
 
 - - -
 
-## World Wide Web, Not Wealthy Western Web (Part 1)
+## World Wide Web, Not Wealthy Western Web
 [https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)
+[https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-2/](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-2/)
 
-Probably my favorite article of a month. Bruce Lawson shares tons of insights about difference between internet usage around the glob, born of a world wide web on land of Asia and possible solutions to enter this audience smoothly.
+Probably my favorite article of a month. Bruce Lawson shares tons of insights about difference between internet usage around the glob, born of a world wide web on land of Asia and possible solutions to reach this audience.
 
 > Horatio, as every schoolchild knows, is a designer from Berlin (or sometimes London or Silicon Valley) who has a top-of-the-line MacBook, the latest iPhone and an unlimited data plan over the fastest, most reliable network. But, as Hamlet points out to him, this is not the experience of most of the world’s web visitors.
+
+> Please, do your part to ensure the health of the web that has provided you with so much, and pay it forward so the next people can benefit.
+
+- - -
+
+##
