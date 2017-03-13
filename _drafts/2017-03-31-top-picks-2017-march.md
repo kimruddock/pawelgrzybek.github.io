@@ -67,4 +67,12 @@ Probably my favorite article of a month. Bruce Lawson shares tons of insights ab
 
 - - -
 
+## Dr. Axel Rauschmayer - ECMAScript 2017 and beyond
+
+[https://youtu.be/5Kw4XVSb4P4](https://youtu.be/5Kw4XVSb4P4)
+
+Can't think of a better person that should introuduce a set of new ECMAScript 2017 features than Dr. Axel Rauschmayer. Very well explained recently added parts of a spec proceeded by brief summary of spec and organizations behind it.
+
+- - -
+
 ##
