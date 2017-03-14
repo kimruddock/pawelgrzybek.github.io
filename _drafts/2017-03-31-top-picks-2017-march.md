@@ -75,4 +75,7 @@ Can't think of a better person that should introduce a set of new ECMAScript 201
 
 - - -
 
-##
+## Introducing Create React Native App
+[https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html](https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html)
+
+ReactConf is a place where a lot happens every year. This year has not been different. I highly suggest to browse all the talks as they are all available on React's youtube channel. If I had to pick one thing that I'm the most excited about I would go with `create-react-native-app`. It allows us to setup React Native project in seconds without complicated Xcode or Android studio setup. Thanks to Expo integration. Definitely read it and give it a try. You will be surprised how easy it is nowadays.
