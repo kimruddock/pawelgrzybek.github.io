@@ -89,3 +89,9 @@ ReactConf is a place where a lot happens every year. This year has not been diff
 As I [recently mentioned](https://pawelgrzybek.com/my-setup-2017-february/) — I love [Codepen](http://codepen.io/). It allows me to test all my ideas instantly without boring setup. Something like that for mobile apps would be amazing, wouldn't be? Good news is coming — Expo (yes, the same on that comes budneld with `create-react-native-app`) just released Sketch. Is is amazing! Can you believe it? Drag and drop code editor to create a multi-platform mobile applications. CRAZY! Thanks Exo team for doing amazing job!
 
 - - -
+
+## React VR
+
+[https://facebookincubator.github.io/react-vr/](https://facebookincubator.github.io/react-vr/)
+
+Yes it os official. It is everywhere now — VR. Facebook just released React version just to build virtual-relity experiences in blink of an eye. It is crazy what happened this month for React community. As a big A-Frame fan I'm tempted to try new product by Mark's Zuckenberg's team now as I'm massive React lover. Can;t wait to see some applications in the wild that are using React VR (I'm sure there will be plenty of them).
