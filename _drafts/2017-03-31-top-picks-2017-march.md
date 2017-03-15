@@ -79,3 +79,13 @@ Can't think of a better person that should introduce a set of new ECMAScript 201
 [https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html](https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html)
 
 ReactConf is a place where a lot happens every year. This year has not been different. I highly suggest to browse all the talks as they are all available on React's youtube channel. If I had to pick one thing that I'm the most excited about I would go with `create-react-native-app`. It allows us to setup React Native project in seconds without complicated Xcode or Android studio setup. Thanks to Expo integration. Definitely read it and give it a try. You will be surprised how easy it is nowadays.
+
+- - -
+
+## Sketch — A Playground for React Native
+
+[https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2](https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2)
+
+As I [recently mentioned](https://pawelgrzybek.com/my-setup-2017-february/) — I love [Codepen](http://codepen.io/). It allows me to test all my ideas instantly without boring setup. Something like that for mobile apps would be amazing, wouldn't be? Good news is coming — Expo (yes, the same on that comes budneld with `create-react-native-app`) just released Sketch. Is is amazing! Can you believe it? Drag and drop code editor to create a multi-platform mobile applications. CRAZY! Thanks Exo team for doing amazing job!
+
+- - -
