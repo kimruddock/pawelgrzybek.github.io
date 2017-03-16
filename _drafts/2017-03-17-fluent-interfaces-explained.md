@@ -58,7 +58,7 @@ const myParagraph = new myElement('p')
   .addToElement(document.body);
 ```
 
-It looks much better, cleaner and we don't repeat ourselves. Unfortunately it is not going to work because the methods don't return any value at the moment. Luckily the solution is very simple — each method execution should not only edit an element but should also return a reference to `myParagraph` instance via `this` keyword. Like so...
+It looks much better, cleaner and we don't repeat ourselves. Unfortunately it is not going to work because the methods don't return any value at the moment. Luckily the solution is very simple — each method execution should not only edit an element but should also return a reference to `myElement` instance via `this` keyword. Like so...
 
 ```js
 class myElement {
