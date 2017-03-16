@@ -1,7 +1,7 @@
 ---
 title: Fluent interface explained
-excerpt: Imagine a program that is written like a sentence instead of series of separated command blocks — technique of method chaining is th answer.
-photo: 2017-02-25.jpg
+excerpt: Imagine a program that is written like a sentence instead of series of separated command blocks — technique of method chaining is the answer.
+photo: 2017-03-16.jpg
 ---
 
 Doesn't meeter whether it is a professional developer writing a complicated Java application, bored secretary playing Candy Crush Saga on Facebook or my father drinking beer and reading football news on Eurosport website — every single activity that has been taken on a computer will end up as number of ones and zeros that tells the processor what to actually do. All programing languages are just a layer of abstraction on top of it. This article isn't about it but there is position that I can highly recommend to curious ones — ["The Definitive Guide to How Computers Do Math" by Clive Maxfield](https://www.amazon.com/Definitive-Guide-How-Computers-Math/dp/0471732788). The crucial insight here is fact that the code should be written in a way that human can read it, not a computer.
@@ -12,9 +12,9 @@ Knowing that, imagine a program that is written like a sentence instead of serie
 
 ## Create an element, add some content and color, append to another node...
 
-One of the best examples out here that uses a method chaining is good old friend of all front-end developers — [jQuery](https://jquery.com/). Similarity of code written wit it to English sentences is surely one of the reasons why it gained as big popularity.
+One of the best examples out here that uses a method chaining is good old friend of all front-end developers — [jQuery](https://jquery.com/). Similarity of code written with it to English sentences is surely one of the reasons why it gained as big popularity.
 
-Going through source code of jQuery would be too complicated so I'm going to write a small example script that creates an DOM element, manipulates its content, color and allows us to append it to other node. It would look something like this...
+Going through source code of jQuery would be too complicated so I'm going to write a small script that creates a DOM element, manipulates its content, changes color and allows us to append it to other node. It would look something like this...
 
 ```js
 class myElement {
@@ -42,7 +42,7 @@ Too use it...
 // create a new empty paragraph
 const myParagraph = new myElement('p');
 // add text to element
-myParagraph.addText('some test here');
+myParagraph.addText('my super paragraph');
 // add color to element
 myParagraph.addColor('blue');
 // add element to body
@@ -82,5 +82,8 @@ class myElement {
   }
 };
 ```
+
+<p><p data-height="584" data-theme-id="dark" data-slug-hash="KWyPQq" data-default-tab="js,result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="1" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/KWyPQq/">1</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
 
 Fluent interface explained. Yo :-*
