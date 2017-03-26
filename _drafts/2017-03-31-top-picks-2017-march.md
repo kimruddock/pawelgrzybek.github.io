@@ -95,3 +95,21 @@ As I [recently mentioned](https://pawelgrzybek.com/my-setup-2017-february/) — 
 [https://facebookincubator.github.io/react-vr/](https://facebookincubator.github.io/react-vr/)
 
 Yes it os official. It is everywhere now — VR. Facebook just released React version just to build virtual-relity experiences in blink of an eye. It is crazy what happened this month for React community. As a big A-Frame fan I'm tempted to try new product by Mark's Zuckenberg's team now as I'm massive React lover. Can;t wait to see some applications in the wild that are using React VR (I'm sure there will be plenty of them).
+
+- - -
+
+## Slow the fuck down
+
+[http://blog.officehours.io/slow-the-fuck-down/](http://blog.officehours.io/slow-the-fuck-down/)
+
+The subject of burnout isn't a rare thing nowadays. We are aiming to get things done and it is very difficult to prioritize things. We are surrounded by many things that drive our attention and taking out attention span away from things that we should actually do at the time. [Eric Karjaluoto](https://twitter.com/karj) published a fantastic article that is full of amazing advices how to deal with this issues.
+
+- - -
+
+## Beyond The Browser: From Web Apps To Desktop Apps
+
+[https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/](https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/)
+
+An amazing introduction to building your first nw.js or Electron desktop app using nothing else than you already know - HTML, CSS and JavaScript. Great explanation of these two popular frameworks and highlighting main differences between them. It is not a 5min read but definitely worth it — I built first working desktop app in less than an hour after reading this article.
+
+- - -
