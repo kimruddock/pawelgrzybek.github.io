@@ -94,7 +94,7 @@ As I [recently mentioned](https://pawelgrzybek.com/my-setup-2017-february/) — 
 
 [https://facebookincubator.github.io/react-vr/](https://facebookincubator.github.io/react-vr/)
 
-Yes it os official. It is everywhere now — VR. Facebook just released React version just to build virtual-relity experiences in blink of an eye. It is crazy what happened this month for React community. As a big A-Frame fan I'm tempted to try new product by Mark's Zuckenberg's team now as I'm massive React lover. Can;t wait to see some applications in the wild that are using React VR (I'm sure there will be plenty of them).
+Yes it os official. It is everywhere now — VR. Facebook just released React version just to build virtual-reality experiences in blink of an eye. It is crazy what happened this month for React community. As a big A-Frame fan I'm tempted to try new product by Mark's Zuckenberg's team now as I'm massive React lover. Can;t wait to see some applications in the wild that are using React VR (I'm sure there will be plenty of them).
 
  - - -
 
@@ -102,6 +102,12 @@ Yes it os official. It is everywhere now — VR. Facebook just released React ve
 
 [https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223](https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223)
 
-Sketch 43 comes with big change — open file format. What does it mean? Essentialy every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps.
+Sketch 43 comes with big change — open file format. What does it mean? Essentially every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps.
 
 - - -
+
+## Angular 4.0.0 Now Available
+
+[http://angularjs.blogspot.co.uk/2017/03/angular-400-now-available.html](http://angularjs.blogspot.co.uk/2017/03/angular-400-now-available.html)
+
+We didn't wait too long for the next big number bump in Angular's version. Version 4.0.0 just landed with massive rendering engine optimisation that can reduce total size of an app by 60%. Animations package has been detached from the core to save even more on total projects size.
