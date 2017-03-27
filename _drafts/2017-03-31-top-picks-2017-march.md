@@ -133,7 +133,7 @@ We didn't wait too long for the next big number bump in Angular's version. Versi
 
 [https://www.smashingmagazine.com/2017/03/resilient-web-design/](https://www.smashingmagazine.com/2017/03/resilient-web-design/)
 
-Jeremy Keith emphasizing the importance of learning from the past. From "Book of Kells" through Gutenberg’s invention, "A Dao of Web Design" by John Allsopp to nowadays where we constantly struggle to reinvite the ideas that past  solved for us ages ago. Amazing read for all web makers!
+Jeremy Keith emphasizing the importance of learning from the past. From "Book of Kells" through Gutenberg’s invention, "A Dao of Web Design" by John Allsopp to nowadays where we constantly struggle to reinvite the ideas that past  solved for us ages ago. It is just an excerpt from Jeremy's web book ["https://resilientwebdesign.com/"](https://resilientwebdesign.com/).
 
 - - -
 
