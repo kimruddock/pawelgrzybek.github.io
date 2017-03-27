@@ -99,10 +99,25 @@ Yes it os official. It is everywhere now — VR. Facebook just released React ve
  - - -
 
 ## Sketch 43 is coming to town with a new game. An open file format!
-
 [https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223](https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223)
 
 Sketch 43 comes with big change — open file format. What does it mean? Essentially every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps.
+
+- - -
+
+## Slow the fuck down
+
+[http://blog.officehours.io/slow-the-fuck-down/](http://blog.officehours.io/slow-the-fuck-down/)
+
+The subject of burnout isn't a rare thing nowadays. We are aiming to get things done and it is very difficult to prioritize things. We are surrounded by many things that drive our attention and taking out attention span away from things that we should actually do at the time. [Eric Karjaluoto](https://twitter.com/karj) published a fantastic article that is full of amazing advices how to deal with this issues.
+
+- - -
+
+## Beyond The Browser: From Web Apps To Desktop Apps
+
+[https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/](https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/)
+
+An amazing introduction to building your first nw.js or Electron desktop app using nothing else than you already know - HTML, CSS and JavaScript. Great explanation of these two popular frameworks and highlighting main differences between them. It is not a 5min read but definitely worth it — I built first working desktop app in less than an hour after reading this article.
 
 - - -
 
@@ -111,3 +126,15 @@ Sketch 43 comes with big change — open file format. What does it mean? Essenti
 [http://angularjs.blogspot.co.uk/2017/03/angular-400-now-available.html](http://angularjs.blogspot.co.uk/2017/03/angular-400-now-available.html)
 
 We didn't wait too long for the next big number bump in Angular's version. Version 4.0.0 just landed with massive rendering engine optimisation that can reduce total size of an app by 60%. Animations package has been detached from the core to save even more on total projects size.
+
+- - -
+
+## The Road To Resilient Web Design
+
+[https://www.smashingmagazine.com/2017/03/resilient-web-design/](https://www.smashingmagazine.com/2017/03/resilient-web-design/)
+
+Jeremy Keith emphasizing the importance of learning from the past. From "Book of Kells" through Gutenberg’s invention, "A Dao of Web Design" by John Allsopp to nowadays where we constantly struggle to reinvite the ideas that past  solved for us ages ago. Amazing read for all web makers!
+
+- - -
+
+##
