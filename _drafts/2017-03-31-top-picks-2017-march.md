@@ -137,5 +137,8 @@ Jeremy Keith emphasizing the importance of learning from the past. From "Book of
 
 - - -
 
-##
+## Functional setState is the future of React
 
+[https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b](https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b)
+
+Really great introduction to state management in React in functional way. As it turns out from few tweets published the other day by Dan Abramov, thi is the future of working with React. It makes testing a whole lot easier. Great explanation by [Justice Mba](https://twitter.com/Daajust).
