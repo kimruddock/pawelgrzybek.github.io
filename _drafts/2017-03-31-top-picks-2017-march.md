@@ -142,3 +142,15 @@ Jeremy Keith emphasizing the importance of learning from the past. From "Book of
 [https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b](https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b)
 
 Really great introduction to state management in React in functional way. As it turns out from few tweets published the other day by Dan Abramov, thi is the future of working with React. It makes testing a whole lot easier. Great explanation by [Justice Mba](https://twitter.com/Daajust).
+
+- - -
+
+## Ken Wheeler - Using React for Anything but Website - React Conf 2017
+
+[https://youtu.be/-VC7o6wZ_a8](https://youtu.be/-VC7o6wZ_a8)
+
+Keen Wheeler proves the point that React is a great helper for building games, command line tools, music player and hardware controllers. Websites only — myth.
+
+- - -
+
+##
