@@ -8,23 +8,16 @@ photo: top-picks.jpg
 
 [https://davidwalsh.name/convert-html-stings-dom-nodes](https://davidwalsh.name/convert-html-stings-dom-nodes)
 
-Dawid Walsh explains how to convert strings to DOM nodes by using `parseFromString()` method from [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) instance. Nice, clean and library free solution.
+David Walsh explains how to convert strings to DOM nodes by using `parseFromString()` method from [DOMParser](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) instance. Nice, clean and library free solution.
 
-- - -
+```js
+const myString = '<p>Hello, I am paragraph</p>';
+const doc = new DOMParser().parseFromString(myString, 'text/html');
+const div = doc.body.firstChild;
 
-## Comparing the Performance between Native iOS (Swift) and React-Native
-
-[https://medium.com/the-react-native-log/comparing-the-performance-between-native-ios-swift-and-react-native-7b5490d363e2](https://medium.com/the-react-native-log/comparing-the-performance-between-native-ios-swift-and-react-native-7b5490d363e2)
-
-John A. Calderaio build the same iOS app using Swift and React Native. Great idea for comparison of two very opinionated ways of building an iPhone applications. Results are kind of shocking for me where Facebooks framework performs better on two of four tested areas. Really nice read and another great reason to see a bright future for frameworks like React Native.
-
-- - -
-
-## Testing Your Frontend Code: Part II (Unit Testing)
-
-[https://hackernoon.com/testing-your-frontend-code-part-ii-unit-testing-1d05f8d50859](https://hackernoon.com/testing-your-frontend-code-part-ii-unit-testing-1d05f8d50859)
-
-[Month ago](https://pawelgrzybek.com/top-picks-2017-february/) I linked a first post from the series about testing front-end code by [https://twitter.com/giltayar](Gil Tayar). This month it is time to list remaining parts from this great three-parts tutorial. This time- unit testing with Mocha.
+console.log(div);
+// prints <p>Hello, I am paragraph</p> as a HTML
+```
 
 - - -
 
@@ -32,7 +25,12 @@ John A. Calderaio build the same iOS app using Swift and React Native. Great ide
 
 [https://davidwalsh.name/javascript-deep-merge](https://davidwalsh.name/javascript-deep-merge)
 
-ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object in nice elegant way. Even newer feature that is coming to JavaScript spec is object spread operator that allows us to do it in even more redeable way (`{...obj1, ...obj2}`). Both of these methods come with one downside — they generate shallow merge or only top properties. In majority of cases it is all that we need but if we need some more reliable way to construct deeply merged objects from multi-level collections [deepmerge](https://www.npmjs.com/package/deepmerge) is a great utility. Thanks [David Walsh](https://davidwalsh.name/javascript-deep-merge) for a great hint.
+David Walsh comaes with another great tip this month. ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object in nice elegant way. Even newer feature that is coming to JavaScript spec is object spread operator that allows us to do it in even more redeable way (`{...obj1, ...obj2}`). Both of these methods come with one downside — they generate shallow merge or only top properties. In majority of cases it is all that we need but if we need some more reliable way to construct deeply merged objects from multi-level collections [deepmerge](https://www.npmjs.com/package/deepmerge) is a great utility.
+
+```js
+const merge = require('deepmerge');
+merge(obj1, obj2);
+```
 
 - - -
 
@@ -41,7 +39,7 @@ ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object i
 [https://tympanus.net/codrops/css_reference/grid/](https://tympanus.net/codrops/css_reference/grid/)
 
 
-Firefox in version 52 and Google Chrome 57 brought a bunch of great features to stable versions of the most popular browsers. The most important one for me is the CSS Grids Module that I'm very excited about. If you don't have a clue what I am talking about have a look at my [basic introduction](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago. It is definitely going to change the way how create layouts. Internet is full of great resources to learn it and we are going to see more and more of it soon. This one by codrops is a really comprehensive tutorial with illustrated examples. Another one worth to mention is [http://gridbyexample.com/](http://gridbyexample.com/) created by Rachel Andrew — can't think of a better person who could create a tutorial about this subject. You better catch up guys, you are going to see more and more of "gridy" CSS lines soon.
+It was a great month for our browsers. Firefox in version 52Google Chrome 57 and Safari 10.1 brought a bunch of great features to stable versions of the most popular browsers. The most important one for me is the CSS Grids Module that I'm very excited about. If you don't have a clue what I am talking about have a look at my [basic introduction](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago. It is definitely going to change the way how we create layouts. Internet is full of great resources to learn it and we are going to see more and more of it soon. This one by codrops is a really comprehensive tutorial with tons of illustrated examples. Another one worth to mention is [http://gridbyexample.com/](http://gridbyexample.com/) created by Rachel Andrew — can't think of a better person who could create a tutorial about this subject. You better catch up guys, you are going to see more and more of "gridy" CSS lines soon.
 
 - - -
 
@@ -49,14 +47,13 @@ Firefox in version 52 and Google Chrome 57 brought a bunch of great features to 
 
 [https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 
-This 14 years old post is such a great introduction to characters encoding. Joel Spolsky, CEO and co-founder of [stackoverflow.com](http://stackoverflow.com/) does a really amazing job in explaining some historicl background, languages differences and proceed actions to find a solutions for encoding "problem". Must read!
-
-> The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)
+This 14 years old post is such a great introduction to characters encoding. Joel Spolsky, CEO and co-founder of [stackoverflow.com](http://stackoverflow.com/) does a really amazing job in explaining some historical background, languages differences and actions taken to find a solutions for encoding "problem". Must read!
 
 - - -
 
 ## World Wide Web, Not Wealthy Western Web
 [https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-1/)
+
 [https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-2/](https://www.smashingmagazine.com/2017/03/world-wide-web-not-wealthy-western-web-part-2/)
 
 Probably my favorite article of a month. Bruce Lawson shares tons of insights about difference between internet usage around the glob, born of a world wide web on land of Asia and possible solutions to reach this audience.
@@ -75,33 +72,17 @@ Can't think of a better person that should introduce a set of new ECMAScript 201
 
 - - -
 
-## Introducing Create React Native App
-[https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html](https://facebook.github.io/react-native/blog/2017/03/13/introducing-create-react-native-app.html)
+## React Conf 2017
+[https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0](https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0)
 
-ReactConf is a place where a lot happens every year. This year has not been different. I highly suggest to browse all the talks as they are all available on React's youtube channel. If I had to pick one thing that I'm the most excited about I would go with `create-react-native-app`. It allows us to setup React Native project in seconds without complicated Xcode or Android studio setup. Thanks to Expo integration. Definitely read it and give it a try. You will be surprised how easy it is nowadays.
-
-- - -
-
-## Sketch — A Playground for React Native
-
-[https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2](https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2)
-
-As I [recently mentioned](https://pawelgrzybek.com/my-setup-2017-february/) — I love [Codepen](http://codepen.io/). It allows me to test all my ideas instantly without boring setup. Something like that for mobile apps would be amazing, wouldn't be? Good news is coming — Expo (yes, the same on that comes budneld with `create-react-native-app`) just released Sketch. Is is amazing! Can you believe it? Drag and drop code editor to create a multi-platform mobile applications. CRAZY! Thanks Exo team for doing amazing job!
-
-- - -
-
-## React VR
-
-[https://facebookincubator.github.io/react-vr/](https://facebookincubator.github.io/react-vr/)
-
-Yes it os official. It is everywhere now — VR. Facebook just released React version just to build virtual-reality experiences in blink of an eye. It is crazy what happened this month for React community. As a big A-Frame fan I'm tempted to try new product by Mark's Zuckenberg's team now as I'm massive React lover. Can;t wait to see some applications in the wild that are using React VR (I'm sure there will be plenty of them).
+This was a big month not only for browser vendors, but for React community as well. Official React conference is an event where a lot happens every year — this year wasn't an exception. I cannot decide what am I the most excited about. Simplifying process of boilerplating a mobil app using [`create-react-native-app`](https://youtu.be/9baaVjGdBqs) is very cool feature. Playing around and testing it with [Sketch](https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2) is even simpler to get started (don't get why they called it Sketch, this name seems to be reserved for product by Bohemian Coding for me). Of course [React VR](https://facebook.github.io/react-vr/) is a game changer in my eyes — this talk by [Michaela Lehr](https://youtu.be/CtVo3z_o9Rw) is a great primer to get started. [A Cartoon Intro to Fiber](https://youtu.be/ZCuYPiUIONs) by Link Clark well explains the functionality of future insides of React. [Using React for Anything but Website](https://youtu.be/-VC7o6wZ_a8) by Ken Wheeler is a funny showcase how can you use React for other things than web apps. A lot... Have a look at the youtube playlist and pick ones out of your interest.
 
  - - -
 
 ## Sketch 43 is coming to town with a new game. An open file format!
 [https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223](https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223)
 
-Sketch 43 comes with big change — open file format. What does it mean? Essentially every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps.
+Sketch 43 is coming with big change — open file format (now I'm talking about this righ Sketch, not the mobile React native parser by Expo). What does it mean? Essentially every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps. It opens a huge opportunities and I can't wait what kind of amazing ideas community will come up with.
 
 - - -
 
@@ -117,7 +98,7 @@ The subject of burnout isn't a rare thing nowadays. We are aiming to get things 
 
 [https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/](https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/)
 
-An amazing introduction to building your first nw.js or Electron desktop app using nothing else than you already know - HTML, CSS and JavaScript. Great explanation of these two popular frameworks and highlighting main differences between them. It is not a 5min read but definitely worth it — I built first working desktop app in less than an hour after reading this article.
+An amazing introduction to building your first [nw.js](https://nwjs.io/) or [Electron](https://electron.atom.io/) desktop app using nothing more than you already know — HTML, CSS and JavaScript. Great explanation of these two popular frameworks and highlighting main differences between them. It is not a 5min read but definitely worth it — I built first working desktop app in less than an hour after reading this article.
 
 - - -
 
@@ -125,7 +106,7 @@ An amazing introduction to building your first nw.js or Electron desktop app usi
 
 [http://angularjs.blogspot.co.uk/2017/03/angular-400-now-available.html](http://angularjs.blogspot.co.uk/2017/03/angular-400-now-available.html)
 
-We didn't wait too long for the next big number bump in Angular's version. Version 4.0.0 just landed with massive rendering engine optimisation that can reduce total size of an app by 60%. Animations package has been detached from the core to save even more on total projects size.
+We didn't wait too long for the next big number bump in Angular's version. Version 4.0.0 just landed with massive rendering engine optimization that can reduce total size of an app even by 60%. Animations package has been detached from the core to save even more on total projects size. I'm confused about versioning of this framework now a bit. Aren't you?
 
 - - -
 
@@ -133,7 +114,7 @@ We didn't wait too long for the next big number bump in Angular's version. Versi
 
 [https://www.smashingmagazine.com/2017/03/resilient-web-design/](https://www.smashingmagazine.com/2017/03/resilient-web-design/)
 
-Jeremy Keith emphasizing the importance of learning from the past. From "Book of Kells" through Gutenberg’s invention, "A Dao of Web Design" by John Allsopp to nowadays where we constantly struggle to reinvite the ideas that past  solved for us ages ago. It is just an excerpt from Jeremy's web book ["https://resilientwebdesign.com/"](https://resilientwebdesign.com/).
+Jeremy Keith emphasizing the importance of learning from the past. From "Book of Kells" through Gutenberg’s invention, "A Dao of Web Design" by John Allsopp to nowadays where we constantly struggle to reinvite the ideas that the past  solved for us ages ago. It is just an excerpt from Jeremy's web book ["Resilient Web Design"](https://resilientwebdesign.com/).
 
 - - -
 
@@ -141,16 +122,4 @@ Jeremy Keith emphasizing the importance of learning from the past. From "Book of
 
 [https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b](https://medium.freecodecamp.com/functional-setstate-is-the-future-of-react-374f30401b6b)
 
-Really great introduction to state management in React in functional way. As it turns out from few tweets published the other day by Dan Abramov, thi is the future of working with React. It makes testing a whole lot easier. Great explanation by [Justice Mba](https://twitter.com/Daajust).
-
-- - -
-
-## Ken Wheeler - Using React for Anything but Website - React Conf 2017
-
-[https://youtu.be/-VC7o6wZ_a8](https://youtu.be/-VC7o6wZ_a8)
-
-Keen Wheeler proves the point that React is a great helper for building games, command line tools, music player and hardware controllers. Websites only — myth.
-
-- - -
-
-##
+Really great introduction to functional state management in React. As it turns out from few tweets published the other day by Dan Abramov, this is the future of working with React. Testing process if much easier with it and it is just one of many adventages a doing that in functional manner. Great explanation by [Justice Mba](https://twitter.com/Daajust).
