@@ -25,9 +25,14 @@ console.log(div);
 
 [https://davidwalsh.name/javascript-deep-merge](https://davidwalsh.name/javascript-deep-merge)
 
-David Walsh comaes with another great tip this month. ECMAScript 2015 brought us `Object.assign()` that allow us to merge two object in nice elegant way. Even newer feature that is coming to JavaScript spec is object spread operator that allows us to do it in even more redeable way (`{...obj1, ...obj2}`). Both of these methods come with one downside — they generate shallow merge or only top properties. In majority of cases it is all that we need but if we need some more reliable way to construct deeply merged objects from multi-level collections [deepmerge](https://www.npmjs.com/package/deepmerge) is a great utility.
+David Walsh comaes with another great tip this month. ECMAScript 2015 brought us `Object.assign()` that allows us to merge two object in elegant way. Newer feature that is coming to JavaScript spec is object spread operator that allows us to do it in even more redeable way (`{...obj1, ...obj2}`). Both of these methods come with one downside — they generate shallow merge of top properties only. In majority of cases it is all that we need but if we need some more reliable way to construct deeply merged objects from multi-level collections [deepmerge](https://www.npmjs.com/package/deepmerge) is a great utility.
 
 ```js
+// Shallow merge
+Object.assign(obj1, obj2);
+{...obj1, ...obj2};
+
+// Deep merge
 const merge = require('deepmerge');
 merge(obj1, obj2);
 ```
@@ -39,7 +44,7 @@ merge(obj1, obj2);
 [https://tympanus.net/codrops/css_reference/grid/](https://tympanus.net/codrops/css_reference/grid/)
 
 
-It was a great month for our browsers. Firefox in version 52Google Chrome 57 and Safari 10.1 brought a bunch of great features to stable versions of the most popular browsers. The most important one for me is the CSS Grids Module that I'm very excited about. If you don't have a clue what I am talking about have a look at my [basic introduction](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago. It is definitely going to change the way how we create layouts. Internet is full of great resources to learn it and we are going to see more and more of it soon. This one by codrops is a really comprehensive tutorial with tons of illustrated examples. Another one worth to mention is [http://gridbyexample.com/](http://gridbyexample.com/) created by Rachel Andrew — can't think of a better person who could create a tutorial about this subject. You better catch up guys, you are going to see more and more of "gridy" CSS lines soon.
+It was a great month for our browsers. Firefox in version 52, Google Chrome 57 and Safari 10.1 brought a bunch of great features. The most important one for me is the CSS Grids Module that I'm very excited about. If you don't have a clue what I am talking about have a look at my [basic introduction](https://pawelgrzybek.com/lets-get-into-the-basics-of-css-grid-layout-model/) that I published some time ago. It is definitely going to change the way how we create layouts. Internet is full of great resources to learn it and we are going to see more and more of it in a near future. This one by codrops is a really comprehensive tutorial with tons of illustrated examples. Another one worth to mention is [http://gridbyexample.com/](http://gridbyexample.com/) created by Rachel Andrew — can't think of a better person who could create a tutorial about this subject. You better catch up guys, you are going to see more and more of "gridy" CSS lines soon.
 
 - - -
 
@@ -75,14 +80,14 @@ Can't think of a better person that should introduce a set of new ECMAScript 201
 ## React Conf 2017
 [https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0](https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0)
 
-This was a big month not only for browser vendors, but for React community as well. Official React conference is an event where a lot happens every year — this year wasn't an exception. I cannot decide what am I the most excited about. Simplifying process of boilerplating a mobil app using [`create-react-native-app`](https://youtu.be/9baaVjGdBqs) is very cool feature. Playing around and testing it with [Sketch](https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2) is even simpler to get started (don't get why they called it Sketch, this name seems to be reserved for product by Bohemian Coding for me). Of course [React VR](https://facebook.github.io/react-vr/) is a game changer in my eyes — this talk by [Michaela Lehr](https://youtu.be/CtVo3z_o9Rw) is a great primer to get started. [A Cartoon Intro to Fiber](https://youtu.be/ZCuYPiUIONs) by Link Clark well explains the functionality of future insides of React. [Using React for Anything but Website](https://youtu.be/-VC7o6wZ_a8) by Ken Wheeler is a funny showcase how can you use React for other things than web apps. A lot... Have a look at the youtube playlist and pick ones out of your interest.
+This was a big month not only for browser vendors, but for React community as well. Official React conference is an event where a lot happens every year — this year wasn't an exception. I cannot decide what I am the most excited about. Simplifying process of boilerplating a mobil app using [create-react-native-app](https://youtu.be/9baaVjGdBqs) is very cool feature. Playing around and testing it with [Sketch](https://blog.expo.io/sketch-a-playground-for-react-native-16b2401f44a2) is even simpler to get started (don't get why they called it Sketch, this name seems to be reserved for product by Bohemian Coding for me). Of course [React VR](https://facebook.github.io/react-vr/) is a game changer in my eyes — this talk by [Michaela Lehr](https://youtu.be/CtVo3z_o9Rw) is a great primer to get started. [A Cartoon Intro to Fiber](https://youtu.be/ZCuYPiUIONs) by Link Clark well explains the functionality of future insides of React. [Using React for Anything but Website](https://youtu.be/-VC7o6wZ_a8) by Ken Wheeler is a funny showcase how can you use React for other things than web apps. A lot... Have a look at the youtube playlist and pick ones out of your interest.
 
  - - -
 
 ## Sketch 43 is coming to town with a new game. An open file format!
 [https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223](https://medium.com/sketch-app-sources/sketch-43-is-coming-to-town-with-a-new-game-an-open-file-format-ae62e7e7c223)
 
-Sketch 43 is coming with big change — open file format (now I'm talking about this righ Sketch, not the mobile React native parser by Expo). What does it mean? Essentially every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps. It opens a huge opportunities and I can't wait what kind of amazing ideas community will come up with.
+Sketch 43 is coming with big change — open file format (now I'm talking about this well-known Sketch, not the mobile React native parser by Expo). What does it mean? Essentially every single file is not a piece of binary data anymore. You can open it in your code editor and it is nothing else than JSON formated collection of data about your project. It is just a matter of time to see Windows / Linux sketch file readers or even some template generators as a web apps. It opens a huge opportunities and I can't wait what kind of amazing ideas community will come up with.
 
 - - -
 
@@ -98,7 +103,7 @@ The subject of burnout isn't a rare thing nowadays. We are aiming to get things 
 
 [https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/](https://www.smashingmagazine.com/2017/03/beyond-browser-web-desktop-apps/)
 
-An amazing introduction to building your first [nw.js](https://nwjs.io/) or [Electron](https://electron.atom.io/) desktop app using nothing more than you already know — HTML, CSS and JavaScript. Great explanation of these two popular frameworks and highlighting main differences between them. It is not a 5min read but definitely worth it — I built first working desktop app in less than an hour after reading this article.
+An amazing introduction to building your first [nw.js](https://nwjs.io/) or [Electron](https://electron.atom.io/) desktop app using nothing more than you already know — HTML, CSS and JavaScript. Great explanation of these two popular frameworks with main differences between them clearly highlighted. It is not a 5 minutes read but definitely worth it — I built first working desktop app in less than an hour after reading this article.
 
 - - -
 
