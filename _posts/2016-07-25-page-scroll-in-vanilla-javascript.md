@@ -34,10 +34,10 @@ Plan! To start a script it's always a good idea to have a plan in place. Basical
 
 ### Determine where to scroll, the duration, the easing function and an optional callback
 
-All the other steps are always going to be exactly the same. This one may vary depending on the destination, the scrolling duration, the timing function and any callback that is invoked when the scrolling reaches it's destination. It makes sense to pass all these things as function arguments, right? The destination is the only required argument. The duration and easing function possess some sensible default values (thanks to ES2015 default arguments) and the callback function should be optional. Have a look at the wrapper of our function declaration.
+All the other steps are always going to be exactly the same. This one may vary depending on the destination, the scrolling duration, the timing function and any callback that is invoked when the scrolling reaches it's destination. It makes sense to pass all these things as function arguments, right? The destination is the only required argument (ideally it should be a number or DOM element, and function should determine how to deal with it). The duration and easing function possess some sensible default values (thanks to ES2015 default arguments) and the callback function should be optional. Have a look at the wrapper of our function declaration.
 
 ```js
-function scrollIt(element, duration = 200, easing = 'linear', callback) {
+function scrollIt(destination, duration = 200, easing = 'linear', callback) {
   // object with some some timing functions
   // function body here
 }
@@ -45,45 +45,39 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
 
 ### On click — grab a timestamp and the current document position
 
-The tricky part of this task was to determine which element is the scrollable one. It's impossible to check this when the document is at the very top so the easiest solution was to scroll down a bit, read the scrolled value and move it back to the initial position. It looks tricky but does the job really well and allows us to target `document.documentElement` (for Internet Explorer, Microsoft Edge and Firefox) and `document.body` (for Chrome, Opera, Brave and Safari). If you can tell me of a cleaner solution I'll be very thankful.
-
-![document.documentElement vs document.body table](/photos/2016-07-25-1.jpg)
-
+To calculate values for function that is responsible for scrolling window position up and down, we need to have a reference to initial window value and timestamp.
 
 ```js
-function checkBody() {
-  document.documentElement.scrollTop += 1;
-  const body = (document.documentElement.scrollTop !== 0) ? document.documentElement : document.body;
-  document.documentElement.scrollTop -= 1;
-  return body;
-}
-
-const body = checkBody();
-const start = body.scrollTop;
-const startTime = Date.now();
-
-const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-const destination = documentHeight - element.offsetTop < windowHeight ? documentHeight - windowHeight : element.offsetTop;
+const start = window.pageYOffset;
+const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 ```
 
 ### Scroll to the element as long as you don't reach the destination
 
-The most popular JavaScript animation solutions are mainly based on [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout), [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval), the [WEB Animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) and [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay/requestAnimationFrame). The first two are pretty old school. The Web Animation API isn't made to deal with these kind of situations — read more about it in one of my previous [articles](https://pawelgrzybek.com/intro-to-the-web-animations-api/). So `requestAnimationFrame` looks like a perfect candidate for this scenario.
+The most popular JavaScript animation solutions are mainly based on [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout), [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval), the [WEB Animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) and [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/VRDisplay/requestAnimationFrame). The first two are pretty old school. The Web Animation API isn't made to deal with these kind of situations — read more about it in one of my previous [articles](https://pawelgrzybek.com/intro-to-the-web-animations-api/). So `requestAnimationFrame` looks like a perfect candidate for this scenario. We have to be careful tho — it is easy to generate infinite loop if we request a frame loop without providing condition to terminate it. One of those situation can be scrolling below available scrollable window space. Luckily it is not difficult to prevent it. In case that `requestAnimationFrame` is not available we can just skip animation and move window to the destination. Have a look…
 
 ```js
+const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+
+if ('requestAnimationFrame' in window === false) {
+  window.scroll(0, destinationOffsetToScroll);
+  if (callback) {
+    callback();
+  }
+  return;
+}
+
 function scroll() {
-  const now = Date.now();
+  const now = 'now' in window.performance ? performance.now() : new Date().getTime();
   const time = Math.min(1, ((now - startTime) / duration));
   const timeFunction = easings[easing](time);
-  body.scrollTop = (timeFunction * (destination - start)) + start;
+  window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
 
-  if (body.scrollTop === destination) {
-    return;
-  }
   requestAnimationFrame(scroll);
 }
-scroll();
 ```
 
 ### If the element has finished scrolling trigger an optional callback function
@@ -91,8 +85,12 @@ scroll();
 The last step is to trigger a callback function whenever the document reaches its destination. This requires adding one more line to the condition that checks the current position and destination inside the `scroll` function.
 
 ```js
-if (body.scrollTop === destination) {
-  callback();
+// Stop requesting animation when window reached its destination
+// And run a callback function
+if (window.pageYOffset === destinationOffsetToScroll) {
+  if (callback) {
+    callback();
+  }
   return;
 }
 ```
@@ -102,8 +100,8 @@ if (body.scrollTop === destination) {
 The whole function looks like this.
 
 ```js
-function scrollIt(element, duration = 200, easing = 'linear', callback) {
-  // define timing functions
+function scrollIt(destination, duration = 200, easing = 'linear', callback) {
+
   const easings = {
     linear(t) {
       return t;
@@ -146,38 +144,38 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
     }
   };
 
-  // Returns document.documentElement for Chrome and Safari
-  // document.body for rest of the world
-  function checkBody() {
-    document.documentElement.scrollTop += 1;
-    const body = (document.documentElement.scrollTop !== 0) ? document.documentElement : document.body;
-    document.documentElement.scrollTop -= 1;
-    return body;
-  }
+  const start = window.pageYOffset;
+  const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
-  const body = checkBody();
-  const start = body.scrollTop;
-  const startTime = Date.now();
-
-  // Height checks to prevent requestAnimationFrame from infinitely looping
-  // If the function tries to scroll below the visible document area
-  // it should only scroll to the bottom of the document
   const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
   const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-  const destination = documentHeight - element.offsetTop < windowHeight ? documentHeight - windowHeight : element.offsetTop;
+  const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+  const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+
+  if ('requestAnimationFrame' in window === false) {
+    window.scroll(0, destinationOffsetToScroll);
+    if (callback) {
+      callback();
+    }
+    return;
+  }
 
   function scroll() {
-    const now = Date.now();
+    const now = 'now' in window.performance ? performance.now() : new Date().getTime();
     const time = Math.min(1, ((now - startTime) / duration));
     const timeFunction = easings[easing](time);
-    body.scrollTop = (timeFunction * (destination - start)) + start;
+    window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
 
-    if (body.scrollTop === destination) {
-      callback();
+    if (window.pageYOffset === destinationOffsetToScroll) {
+      if (callback) {
+        callback();
+      }
       return;
     }
+
     requestAnimationFrame(scroll);
   }
+
   scroll();
 }
 ```
@@ -185,20 +183,25 @@ function scrollIt(element, duration = 200, easing = 'linear', callback) {
 ...and to invoke it
 
 ```js
-const elm = document.querySelector('.js-section');
-scrollIt(elm, 300, 'easeInQuad', done);
+document.querySelector('.js-btn1').addEventListener('click', () => {
+  scrollIt(
+    document.querySelector('.js-section1'),
+    300,
+    'easeOutQuad',
+    () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+  );
+});
 ```
 
 or simply
 
 ```js
-const elm = document.querySelector('.js-section');
-scrollIt(elm);
+document.querySelector('.js-btn50000').addEventListener('click', () => scrollIt(50000));
 ```
 
 <p>
-<p data-height="350" data-theme-id="14885" data-slug-hash="QEQoZL" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/QEQoZL/">Page scrolling in vanilla JavaScript 2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="390" data-theme-id="dark" data-slug-hash="ZeomJB" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="PURE JS scrolling" class="codepen">See the Pen <a href="http://codepen.io/pawelgrzybek/pen/ZeomJB/">PURE JS scrolling</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
 ### A future solution using scroll-behavior: smooth
