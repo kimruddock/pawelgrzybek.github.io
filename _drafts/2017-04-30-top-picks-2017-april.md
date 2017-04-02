@@ -12,4 +12,12 @@ We was waiting for a real layout system since the born of web. Recent version of
 
 - - -
 
+## A Dao of Web Design
+
+[https://alistapart.com/article/dao](https://alistapart.com/article/dao)
+
+Living in 2017 and working as software developer makes me feel that something that I embraced today is going to be outdated tomorrow. This article shows the opposite. Published in 2000 (epic article by John Allsopp precisely points out a key principles of web that many web professionals don't understand even 17 years later. This article is timeless! I cannot event quote here my favorite part — I would must copy the whole article here. It is just a mast read for al web professionals.
+
+- - -
+
 ##
