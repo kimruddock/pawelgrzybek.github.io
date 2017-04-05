@@ -20,4 +20,11 @@ Living in 2017 and working as software developer makes me feel that something th
 
 - - -
 
-##
+## Welcome to Mastodon
+
+[https://medium.com/@Gargron/welcome-to-mastodon-111d9227e56a](https://medium.com/@Gargron/welcome-to-mastodon-111d9227e56a)
+
+I really don't know what is going on but on the beginning of an April so many people across all social media channels started exchanging their links to profile on totally new social media channel — Mastodon. Of course [I have my own account](https://mastodon.social/@pawelgrzybek) by now! Author of Mastodon published a nice primer and pointed out the differences between micro-blogging platforms that we tend to use. The growing pace looks very promissing for this platform. The most important benefits for me are — open source, free and decentralized. I'm very curious what will future bring to the Mastodon!
+
+
+- - -
