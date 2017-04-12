@@ -29,6 +29,14 @@ I really don't know what is going on but on the beginning of an April so many pe
 
 - - -
 
+## Grid garden
+
+[http://cssgridgarden.com/](http://cssgridgarden.com/)
+
+Do you remember [Flexbox Froggy ](http://flexboxfroggy.com/)? It was a big thing when flexbox arrived to browsers. It has been a while since we got a solid layout update spec across all vendors. CSS Grid Module landed just month ago and Thomas Park again made our lfe much easier to grasp the basic concept of it. Grow your carrots and enjoy 24 levels of interactive game that will teach you a basic grid syntax. Such a good fun!
+
+- - -
+
 ## Microsoft Edge Developer - CSS Variables
 
 [https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6261292-css-variables](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6261292-css-variables)
@@ -36,3 +44,4 @@ I really don't know what is going on but on the beginning of an April so many pe
 That is is, we have a CSS custom properties in all major browsers now. The future is now! In my opinion the most powerful feature ever added to Cascade Style Sheets ever. I already saw so many amazing examples that take an advantage of this and I'm looking forward to see more of them.
 
 - - -
+
