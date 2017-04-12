@@ -28,3 +28,11 @@ I really don't know what is going on but on the beginning of an April so many pe
 
 
 - - -
+
+## Microsoft Edge Developer - CSS Variables
+
+[https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6261292-css-variables](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6261292-css-variables)
+
+That is is, we have a CSS custom properties in all major browsers now. The future is now! In my opinion the most powerful feature ever added to Cascade Style Sheets ever. I already saw so many amazing examples that take an advantage of this and I'm looking forward to see more of them.
+
+- - -
