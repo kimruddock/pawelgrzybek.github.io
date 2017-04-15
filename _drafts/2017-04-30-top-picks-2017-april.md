@@ -45,3 +45,12 @@ That is is, we have a CSS custom properties in all major browsers now. The futur
 
 - - -
 
+## The Post JavaScript Apocalypse - Douglas Crockford
+
+[https://youtu.be/NPB34lDZj3E](https://youtu.be/NPB34lDZj3E)
+
+Douglas Crockford is speculating about future language that will come after JavaScript. A nice presentation full of good conclusions about design of current set of languages. Of course you will find here a a little bit of Douglas' crankiness.
+
+- - -
+
+## 
