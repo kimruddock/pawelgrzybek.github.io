@@ -22,4 +22,4 @@ Finalized in June 2015 spec for 6th Edition of JavaScript changed a lot. One of 
 
 ## Working with modules in the browser
 
-If you have ever used `import` and `export` in your project, migrating this concept to a client won't be a challenging task for you. If you have never worked with it, give [this chapter](http://exploringjs.com/es6/ch_modules.html) of Dr. Axel Rauschmayer's book a quick read. MDN explanation or  let's build a very small example.
+If you have ever used `import` and `export` in your project, migrating this concept to a client won't be a challenging task for you. If you have never worked with it, give [this chapter](http://exploringjs.com/es6/ch_modules.html) of Dr. Axel Rauschmayer's book a quick read.
