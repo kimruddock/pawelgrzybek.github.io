@@ -1,6 +1,6 @@
 ---
 title: Native ECMAScript modules in the browser
-excerpt: 
+excerpt:
 photo: 2017-04-20.jpg
 ---
 
@@ -8,13 +8,13 @@ Three things that I wish to ditch from my day to day front-end workflow: CSS pre
 
 I love Sass but wouldn't be cool to have it's power build into the CSS? The good news is native [custom properties](https://pawelgrzybek.com/css-custom-properties-explained/) are much more powerful than statically declared ones from Sass. Mixins are amazing — so [`@apply` rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/) is. [The vendor prefixes imbroglio](https://www.chromium.org/blink#vendor-prefixes) is over and will never get back. With all those goodies I would say that first of my dreams is fulfilled.
 
-When [Babel](https://babeljs.io/) came around it was like living in the future. We were able to use modern features that browser didn't support at the time. Things changed though. Nowadays, browsers have a really [strong support](https://kangax.github.io/compat-table/es6/) for present-day ingredients. Have a look at your gulp build task or webpack config — there is a chance that you don't need to transpile your code anymore. Second item from my wishlist became reality.
+When [Babel](https://babeljs.io/) came around it was like living in the future. We were able to use modern features that browser didn't support at the time. Things changed though. Nowadays, browsers have a really [strong support](https://kangax.github.io/compat-table/es6/) for present-day ingredients. Have a look at your gulp build task or webpack config — there is a chance that you don't need to transpile your code anymore. Second item from my wish list became reality.
 
 Recently released [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brought a hope that one day I will put a checkbox next to the last thing that I would like to remove from my workflow — module bundlers.
 
 ## JavaScript modules
 
-Before 2015 JavaScript never had a native way of working with modular codebases. For years web developers managed to find a number of ways to implement it: spliting codebase into seperated files and scopes, using [AMD (Asynchronous module definition)](https://en.wikipedia.org/wiki/Asynchronous_module_definition) with file loaders like [RequireJS](http://requirejs.org/) or making Node style [CommonJS](https://en.wikipedia.org/wiki/CommonJS) work in the browser via libraries like [Browserify](http://browserify.org/).
+Before 2015 JavaScript never had a native way of working with modular codebases. For years web developers managed to find a number of ways to implement it: splitting codebase into separated files and scopes, using [AMD (Asynchronous module definition)](https://en.wikipedia.org/wiki/Asynchronous_module_definition) with file loaders like [RequireJS](http://requirejs.org/) or making Node style [CommonJS](https://en.wikipedia.org/wiki/CommonJS) work in the browser via libraries like [Browserify](http://browserify.org/).
 
 Finalized in June 2015 spec for [6th Edition](http://www.ecma-international.org/ecma-262/6.0/) of JavaScript changed a lot. One of the many amazing things that it brought was native way of working with modules. Turned out that it was [immensely hard](https://blog.whatwg.org/js-modules) to implement it to the web platform — module bundlers like [Webpack](https://webpack.js.org/) came into the game. They allow us to write code in modern way and spit out a bundled script understandable by the browser.
 
@@ -71,7 +71,7 @@ A quick word about support of native modules across the browsers and some possib
 
 ![Browser support for Native ECMAScript modules](/photos/2017-04-20-2.jpg)
 
-It doesn't look very promissing and the situation is definitely not ready to use it on production. There is a hope though! Lets have look what console of any browser that lacks of modules support show when I open our pretty print example.
+It doesn't look very promising and the situation is definitely not ready to use it on production. There is a hope though! Lets have look what console of any browser that lacks of modules support show when I open our pretty print example.
 
 ![Native ECMAScript modules in Google Chrome](/photos/2017-04-20-3.jpg)
 
@@ -82,7 +82,7 @@ So what happened here? NOTHING! Totally nothing. Because Google Chrome doesn't s
 <script src="bundle.js" nomodule></script>
 ```
 
-Yes! When modules are not supported natively let's use something that worked for us for ages. As a fallback script let's use an output file of our module bundler of choice. It works perfectlly well now in the browser that doesn't have a clue how to handle JavaScript modules. To make sure that we are not duplicating the same functionality for browsers that support it, exactly for this reason [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to a spec. Let's have a look at the results in Safari and Google Chrome now…
+Yes! When modules are not supported natively let's use something that worked for us for ages. As a fallback script let's use an output file of our module bundler of choice. It works perfectly well now in the browser that doesn't have a clue how to handle JavaScript modules. To make sure that we are not duplicating the same functionality for browsers that support it, exactly for this reason [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to a spec. Let's have a look at the results in Safari and Google Chrome now…
 
 ![Native ECMAScript modules in Safari Technology Preview and Google Chrome](/photos/2017-04-20-4.jpg)
 
@@ -92,6 +92,6 @@ At the time of writing this post [Safari Technology Preview](https://developer.a
 
 That is it. I hope that you are equally excited about native modules like myself. I would like to leave you here with two conclusions.
 
-Last few years introduced so many tools and added massive complexity to a front-end development. Rapid change of JavaScript workflow constantly attracts new developers and scares the other ones. Module bundling is one of those things that adds a gigantic confusion — hopefuly by this post I convinced you that it won't last forever. This thing just became much simpler.
+Last few years introduced so many tools and added massive complexity to a front-end development. Rapid change of JavaScript workflow constantly attracts new developers and scares the other ones. Module bundling is one of those things that adds a gigantic confusion — hopefully by this post I convinced you that it won't last forever. This thing just became much simpler.
 
-The thing that I love about web is it's unpredictibilty and active transformation. One day, one thing become much simpler and the new one comes in to confuse our brains even more. Can't wait to see what the future will bring us…
+The thing that I love about web is it's unpredictability and active transformation. One day, one thing become much simpler and the new one comes in to confuse our brains even more. Can't wait to see what the future will bring us…
