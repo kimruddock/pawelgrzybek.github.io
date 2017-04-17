@@ -1,6 +1,6 @@
 ---
 title: Native ECMAScript modules in the browser
-excerpt:
+excerpt: Javascript modules are part of a spec for a little while now. I took us a while to see a first implementation in a web platform. Finally, we got it!
 photo: 2017-04-20.jpg
 ---
 
@@ -10,13 +10,13 @@ I love Sass but wouldn't be cool to have it's power build into the CSS? The good
 
 When [Babel](https://babeljs.io/) came around it was like living in the future. We were able to use modern features that browser didn't support at the time. Things changed though. Nowadays, browsers have a really [strong support](https://kangax.github.io/compat-table/es6/) for present-day ingredients. Have a look at your gulp build task or webpack config — there is a chance that you don't need to transpile your code anymore. Second item from my wish list became reality.
 
-Recently released [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brought a hope that one day I will put a checkbox next to the last thing that I would like to remove from my workflow — module bundlers.
+Recently released [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brought a hope that one day I will put a checkbox next to the last thing that I would like to forget — module bundlers.
 
 ## JavaScript modules
 
-Before 2015 JavaScript never had a native way of working with modular codebases. For years web developers managed to find a number of ways to implement it: splitting codebase into separated files and scopes, using [AMD (Asynchronous module definition)](https://en.wikipedia.org/wiki/Asynchronous_module_definition) with file loaders like [RequireJS](http://requirejs.org/) or making Node style [CommonJS](https://en.wikipedia.org/wiki/CommonJS) work in the browser via libraries like [Browserify](http://browserify.org/).
+Before 2015 JavaScript never had a native way of working with modular codebases. For years web developers managed to find a number of ways to implement it: splitting codebase into separated files and scopes, using [AMD (Asynchronous module definition)](https://en.wikipedia.org/wiki/Asynchronous_module_definition) with file loaders like [RequireJS](http://requirejs.org/) or making a Node style [CommonJS](https://en.wikipedia.org/wiki/CommonJS) work in the browser via libraries like [Browserify](http://browserify.org/).
 
-Finalized in June 2015 spec for [6th Edition](http://www.ecma-international.org/ecma-262/6.0/) of JavaScript changed a lot. One of the many amazing things that it brought was native way of working with modules. Turned out that it was [immensely hard](https://blog.whatwg.org/js-modules) to implement it to the web platform — module bundlers like [Webpack](https://webpack.js.org/) came into the game. They allow us to write code in modern way and spit out a bundled script understandable by the browser.
+Finalized in June 2015 spec for the [6th edition](http://www.ecma-international.org/ecma-262/6.0/) of JavaScript changed a lot. One of the many amazing things that it brought was a native way of working with modules. Turned out that it was [immensely hard](https://blog.whatwg.org/js-modules) to implement it to the web platform — module bundlers like [Webpack](https://webpack.js.org/) came into the game. They allow us to write code in modern way and spit out a bundled script understandable by the browser.
 
 [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) as a first browser got an [100% complete coverage for ECMAScript 2015 features](https://kangax.github.io/compat-table/es6/#safari10_1). Really great work Apple ([Service Workers](https://jakearchibald.github.io/isserviceworkerready/) next please). It means that it is a first browser that let us use native modules. Let's have a look at the nitty-gritty.
 
@@ -48,7 +48,7 @@ export default message => {
 };
 ```
 
-In the world of module bundlers we need to run this set of files through it to get bundled file that contains our script and some boilerplate on top of it. Then we have to smash `script` tag with `src` attribute that points to this file and everything just works. Now lets forget about bundling for a sec and take advantage of a browser that can finally resolve all dependencies for us. This is how to do it baby…
+In the world of module bundlers we need to run this set of files through it to get bundled file that contains our script and some boilerplate on top of it. Then we have to smash a `script` tag with `src` attribute that points to this file and voilà — works. Now lets forget about bundling for a sec and take advantage of a browser that can finally resolve all dependencies for us. This is how to do it baby…
 
 ```html
 <script src="./index.js" type="module"></script>
@@ -79,7 +79,7 @@ So what happened here? NOTHING! Totally nothing. Because Google Chrome doesn't s
 
 ```html
 <script src="./index.js" type="module"></script>
-<script src="bundle.js" nomodule></script>
+<script src="./bundle.js" nomodule></script>
 ```
 
 Yes! When modules are not supported natively let's use something that worked for us for ages. As a fallback script let's use an output file of our module bundler of choice. It works perfectly well now in the browser that doesn't have a clue how to handle JavaScript modules. To make sure that we are not duplicating the same functionality for browsers that support it, exactly for this reason [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to a spec. Let's have a look at the results in Safari and Google Chrome now…
