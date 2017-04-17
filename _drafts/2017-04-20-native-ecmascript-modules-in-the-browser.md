@@ -4,7 +4,7 @@ excerpt: Javascript modules are part of a spec for a little while now. I took us
 photo: 2017-04-20.jpg
 ---
 
-Three things that I wish to ditch from my day to day front-end workflow: CSS preprocessors, JavaScript transpilers and module bundlers. Let me elaborate…
+Three things that I wish to ditch from my everyday front-end workflow: CSS preprocessors, JavaScript transpilers and module bundlers. Let me elaborate…
 
 I love Sass but wouldn't be cool to have it's power build into the CSS? The good news is native [custom properties](https://pawelgrzybek.com/css-custom-properties-explained/) are much more powerful than statically declared ones from Sass. Mixins are amazing — so [`@apply` rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/) is. [The vendor prefixes imbroglio](https://www.chromium.org/blink#vendor-prefixes) is over and will never get back. With all those goodies I would say that first of my dreams is fulfilled.
 
@@ -12,7 +12,7 @@ When [Babel](https://babeljs.io/) came around it was like living in the future. 
 
 Recently released [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brought a hope that one day I will put a checkbox next to the last thing that I would like to forget — module bundlers.
 
-## JavaScript modules
+## JavaScript modules recap
 
 Before 2015 JavaScript never had a native way of working with modular codebases. For years web developers managed to find a number of ways to implement it: splitting codebase into separated files and scopes, using [AMD (Asynchronous module definition)](https://en.wikipedia.org/wiki/Asynchronous_module_definition) with file loaders like [RequireJS](http://requirejs.org/) or making a Node style [CommonJS](https://en.wikipedia.org/wiki/CommonJS) work in the browser via libraries like [Browserify](http://browserify.org/).
 
@@ -24,7 +24,7 @@ Finalized in June 2015 spec for the [6th edition](http://www.ecma-international.
 
 If you have ever used `import` and `export` in your project, migrating this concept to a client won't be a challenging task. If you have never worked with it, give [this chapter](http://exploringjs.com/es6/ch_modules.html) of Dr. Axel Rauschmayer's book a quick read.
 
-Nothing works better than a practical example. Let's create a script that prints a stylish log message into the console. Let's split it out into two files — `index.js` containing the "logic" and `print.js` with reusable print function. It goes something like this (sorry for the broken ES2015 syntax highlighting).
+Nothing works better than a practical example. Let's create a script that prints a stylish log message into the console. Let's split it out into two files — `index.js` as an entry point and `print.js` that holds reusable print function (module). It goes something like this (sorry for the [issue](https://github.com/jneen/rouge/issues/432) with ES2015 syntax highlighting).
 
 ```js
 // index.js
@@ -82,11 +82,11 @@ So what happened here? NOTHING! Totally nothing. Because Google Chrome doesn't s
 <script src="./bundle.js" nomodule></script>
 ```
 
-Yes! When modules are not supported natively let's use something that worked for us for ages. As a fallback script let's use an output file of our module bundler of choice. It works perfectly well now in the browser that doesn't have a clue how to handle JavaScript modules. To make sure that we are not duplicating the same functionality for browsers that support it, exactly for this reason [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to a spec. Let's have a look at the results in Safari and Google Chrome now…
+Yes! When modules are not supported natively let's use something that definitely works. As a fallback script let's use an output file of our module bundler of choice. It works perfectly well now in the browser that doesn't have a clue how to handle JavaScript modules. Make sure that you are not duplicating the same functionality for browsers that support it — exactly for this reason [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to the spec. Let's have a look at the results in Safari and Google Chrome (or any other browser that doesn't support modules) now…
 
 ![Native ECMAScript modules in Safari Technology Preview and Google Chrome](/photos/2017-04-20-4.jpg)
 
-At the time of writing this post [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) is the only browser that supports `nomodule` attribute. One day I will come back to this article and get rid of this paragraph — crafty plan.
+At the time of writing this post [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) is the only browser that supports `nomodule` attribute. One day I will come back to this article and get rid of this paragraph — sneaky plan.
 
 ## Last word about JavaScript modules
 
@@ -94,4 +94,4 @@ That is it. I hope that you are equally excited about native modules like myself
 
 Last few years introduced so many tools and added massive complexity to a front-end development. Rapid change of JavaScript workflow constantly attracts new developers and scares the other ones. Module bundling is one of those things that adds a gigantic confusion — hopefully by this post I convinced you that it won't last forever. This thing just became much simpler.
 
-The thing that I love about web is it's unpredictability and active transformation. One day, one thing become much simpler and the new one comes in to confuse our brains even more. Can't wait to see what the future will bring us…
+The thing that I love about web is it's unpredictability and active transformation. One day, one thing become much simpler and next day the new one comes in to confuse our brain even more. Can't wait to see what the future has to offer…
