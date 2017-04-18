@@ -33,12 +33,14 @@ There isn't any math algorithm applied. If you are wondering why "Dissolve" belo
 
 #### Darken 
 
+...expect darken result.
 ...anything that is darker than pure white is going to darken the image below
 ...it is using white as a base color so it won't affect anything on pure white background
 
 
 #### Lighten 
 
+...expect lighten result.
 ...anything that is brighter than pure black is going to lighten the image below
 ...it is using black as a base color so it won't affect anything on pure black background
 mirror t o darken, gived inverted effect
