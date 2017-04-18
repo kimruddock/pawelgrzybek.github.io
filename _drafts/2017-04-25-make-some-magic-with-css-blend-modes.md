@@ -4,9 +4,9 @@ excerpt: Bloody wars between web designers and front-end developers about blendi
 photo: 2017-04-25.jpg
 ---
 
-It was an ordinary Wednesday morning, enjoying my morning espresso shot at [Engine Creative](https://twitter.com/enginecreative), when suddenly my lovely colleague Chloe put on my desk the latest issue of [net magazine](https://twitter.com/netmag) that post man just delivered. I had a quick glance at the cover art that says "Make magic with CSS". Of course — I totally ignored it — I know everything about CSS, don't I? It was a really nice espresso.
+It was an ordinary Wednesday morning, enjoying my morning espresso shot at [Engine Creative](https://twitter.com/enginecreative), when suddenly my lovely colleague Chloe put on my desk the latest issue of [net magazine](https://twitter.com/netmag) that post man just delivered. I had a quick glance at the cover art that says "Make magic with CSS". Pfff — I totally ignored it — I know everything about CSS, don't I? It was a really nice espresso.
 
-It is an ordinary Sunday morning, enjoying my morning espresso shot on my sofa —  time for some press. After reading first three paragraphs of "Make magic with CSS" by [Aga Naplocha](https://twitter.com/aganaplocha) I relized that I really felt behind with my CSS. It is a really nice espresso but I'm going to brew more because today is a time to catch up some CSS magic — blending modes.
+It is an ordinary Sunday morning, enjoying my morning espresso shot on my sofa —  time for some press. After reading first three paragraphs of "Make magic with CSS" by [Aga Naplocha](https://twitter.com/aganaplocha) I realized that I really felt behind with my CSS. It is a really nice espresso but I'm going to brew some more because today is a day to catch up with some CSS magic — blend modes modes.
 
 ## Blend modes essentials
 
