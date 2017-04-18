@@ -6,13 +6,19 @@ photo: 2017-04-25.jpg
 
 It was an ordinary Wednesday morning, enjoying my morning espresso shot at [Engine Creative](https://twitter.com/enginecreative), when suddenly my lovely colleague Chloe put on my desk the latest issue of [net magazine](https://twitter.com/netmag) that post man just delivered. I had a quick glance at the cover art that says "Make magic with CSS". Of course — I totally ignored it — I know everything about CSS, don't I? It was a really nice espresso.
 
-It is an ordinary Sunday morning, enjoying my morning espresso shot on my sofa —  time for some press. After reading first three paragraphs of "Make magic with CSS" by [Aga Naplocha](https://twitter.com/aganaplocha) I relized that I really felt behind with my CSS. It is a really nice espresso but I'm going to brew more because today is a time to catch up some CSS magic — blending modes.
+It is an ordinary Sunday morning, enjoying my morning espresso shot on my sofa —  time for some press. After reading first three paragraphs of "Make magic with CSS" by [Aga Naplocha](https://twitter.com/aganaplocha) I relized that I really felt behind with my CSS. It is a really nice espresso but I'm going to brew more because today is a time to catch up with some CSS magic — blend modes.
 
 ## Blend modes essentials
 
-If you have ever used any image editing software like Adobe Photoshop, Affinity Photo or Sketch App you probably have some experience with blending modes. Yes — it is one of those features that designers love because it is the way for beautifulness but front-end developers hate as it is pain to implement on web. A-ha! Not anymore! I will show you how in a second but first let's put here some theory from [Wikipedia](https://en.wikipedia.org/wiki/Blend_modes), as quotes on articles always look good.
+If you have ever used any image editing software like Adobe Photoshop, Affinity Photo or Sketch App you probably have some experience with blending modes. Yes — it is one of those features that designers love because it is the shortcut for beautifulness but front-end developers hate as it is pain to implement on web. A-ha! Not anymore! I will show you how in a second but first let's put here some theory from [Wikipedia](https://en.wikipedia.org/wiki/Blend_modes), as quotes on articles always look good.
 
 > Blend modes in digital image editing are used to determine how two layers are blended into each other. However, as each pixel has a numerical representation, a large number of ways to blend two layers is possible.
+
+For lots of designers and developers working with blend modes is a very experimental process. It is worth to understand what is going on instead of randomly changing this settings, stairing at the image and expecting a masterpiece. It doesn't take much time to juggle with some options in Photoshop but it can be much more time consuming when the same needs to be done in CSS or JavaScript. A little bit of consciousness helps and I will do my best to give you some.
+
+### Blend mode by group
+
+### Blend modes on web vs. graphic software
 
 - spac https://drafts.fxtf.org/compositing-1/
 - background-blend-mode
