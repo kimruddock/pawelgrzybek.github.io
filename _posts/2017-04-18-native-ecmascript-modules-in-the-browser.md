@@ -1,14 +1,14 @@
 ---
 title: Native ECMAScript modules in the browser
 excerpt: Javascript modules have been a part of the spec for a little while now but it's taken some time to see the first implementation in a web browser. Finally, we have it!
-photo: 2017-04-20.jpg
+photo: 2017-04-18.jpg
 ---
 
 Three things that I wish I could ditch from my everyday front-end workflow: CSS preprocessors, JavaScript transpilers and module bundlers. Let me elaborate…
 
-I love Sass but wouldn't it be cool to have its power built into CSS? The good news is native [custom properties](https://pawelgrzybek.com/css-custom-properties-explained/) are much more powerful than statically declared ones from Sass. Mixins are amazing — so the [`@apply` rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/) takes care of this. [The vendor prefixes imbroglio](https://www.chromium.org/blink#vendor-prefixes) is over and will never come back. With all those goodies I would say that the first of my dreams is fulfilled.
+I love Sass but wouldn't it be cool to have its power built into CSS? The good news is native [custom properties](https://pawelgrzybek.com/css-custom-properties-explained/) are much more powerful than statically declared ones from Sass. Mixins are amazing — the [`@apply` rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/) takes care of this. [The vendor prefixes imbroglio](https://www.chromium.org/blink#vendor-prefixes) is over and will never come back. With all those goodies I would say that the first of my dreams is fulfilled.
 
-When [Babel](https://babeljs.io/) came around it was like living in the future. We were able to use modern features that browsers didn't support at the time. Things have changed though. Nowadays, browsers have really [strong support](https://kangax.github.io/compat-table/es6/) for present-day ingredients. Have a look at your Gulp build task or Webpack config — there's a good chance that you don't need to transpile your code anymore. So the second item in my wish list has become a reality.
+When [Babel](https://babeljs.io/) came around it was like living in the future. We were able to use modern features that browsers didn't support at the time. Things have changed though. Nowadays, browsers have really [strong support](https://kangax.github.io/compat-table/es6/) for present-day ingredients. Have a look at your Gulp build task or Webpack config — there's a good chance that you don't need to transpile your code anymore. The second item in my wish list has become a reality.
 
 The recently released [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brings me hope that one day I will check the box next to the last item that I would like to forget — module bundlers.
 
@@ -56,7 +56,7 @@ In the world of module bundlers we need to run this set of files through it to g
 
 Yes the essence lies here — `type="module"`. According [to the spec](https://html.spec.whatwg.org/multipage/scripting.html#script-type-module-example-1) these few characters tell the browser that it can be used to include external module scripts. This is exactly what we need! Pay attention to the `import` path inside the `index.js` file — it needs to be a concrete path to an imported file (including the extension). Let's open it in the browser (more about the support later on).
 
-![Native ECMAScript modules in Safari](/photos/2017-04-20-1.jpg)
+![Native ECMAScript modules in Safari](/photos/2017-04-18-1.jpg)
 
 The browser managed to resolve the dependency of the `print.js` file. No Webpack magic here! Beautiful, isn't it?
 
@@ -66,14 +66,14 @@ A quick word about support of native modules across the browsers and some possib
 
 - Chrome is [working on it](https://www.chromestatus.com/feature/5365692190687232)
 - [Firefox Nightly](https://www.mozilla.org/en-GB/firefox/channel/desktop/) it works under the `dom.moduleScripts.enabled` flag
-- Microsoft EDGE it works under the ["Enable experimental JavaScript features"](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/moduleses6/?q=module) flag
+- EDGE it works under the ["Enable experimental JavaScript features"](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/moduleses6/?q=module) flag
 - Safari — hell yeah!
 
-![Browser support for Native ECMAScript modules](/photos/2017-04-20-2.jpg)
+![Browser support for Native ECMAScript modules](/photos/2017-04-18-2.jpg)
 
 It doesn't look very promising and is definitely not ready to use in production. There is a hope though! Let's have a look at what the console of any browser that lacks native module support shows when I open our pretty print example.
 
-![Native ECMAScript modules in Google Chrome](/photos/2017-04-20-3.jpg)
+![Native ECMAScript modules in Google Chrome](/photos/2017-04-18-3.jpg)
 
 So what happened here? NOTHING! Absolutely nothing. Because Google Chrome doesn't support JavaScript modules it totally ignores it. You probably know where I'm going with this.
 
@@ -84,7 +84,7 @@ So what happened here? NOTHING! Absolutely nothing. Because Google Chrome doesn'
 
 Yes! When modules are not supported natively let's use something that definitely works. As a fallback script let's use an output file from our module bundler of choice. It works perfectly well now in any browser that doesn't have a clue how to handle JavaScript modules. Make sure that you are not duplicating the same functionality for browsers that do support it — it is exactly for this reason the [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to the spec. Let's have a look at the results in Safari and Google Chrome (or any other browser that doesn't support modules) now…
 
-![Native ECMAScript modules in Safari Technology Preview and Google Chrome](/photos/2017-04-20-4.jpg)
+![Native ECMAScript modules in Safari Technology Preview and Google Chrome](/photos/2017-04-18-4.jpg)
 
 At the time of writing this post the [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) is the only browser that supports the `nomodule` attribute. One day I will come back to this article and get rid of this paragraph — my sneaky plan!
 
