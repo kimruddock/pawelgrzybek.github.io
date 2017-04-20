@@ -21,8 +21,6 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@pawelgrzybek" />
   <meta name="twitter:creator" content="@pawelgrzybek" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines }}{% endif %}" />
 
   <!-- Standard Stuff -->
   <link rel="canonical" href="{% if page.title %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
