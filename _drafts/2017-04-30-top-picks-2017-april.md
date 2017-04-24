@@ -53,4 +53,11 @@ Douglas Crockford is speculating about future language that will come after Java
 
 - - -
 
+## An Overview of JavaScript Testing in 2017
+[https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a](https://medium.com/powtoon-engineering/a-complete-guide-to-testing-javascript-in-2017-a217b4cd5a2a)
+
+[Vitalik Zaidman](https://twitter.com/vzaidman) wrote a very helpful article to understand testing in JavaScript world. It is a really comprehensive article that covers basics like test types and presents a number of helpful frameworks that we may use with brief summary of each of them. I'm not very experience "tester" and this post definitely helped me a lot to understand something that previously was a black magic for me.
+
+- - -
+
 ## 
