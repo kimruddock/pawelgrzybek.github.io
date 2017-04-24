@@ -20,7 +20,7 @@ For lots of designers and developers working with blend modes is a very experime
 
 ### Blend mode by group
 
-Photoshop offers 27 blending mode, Sketch 16 (screenshot below) and both of these apps separate them into few groups. Affinity Photo gives us access to 30 options but they are ungrouped (worth to add in future version). I'm not going to describe algorythm behind each of them as there is plenty of [detailed explanations](https://photoshoptrainingchannel.com/blending-modes-explained/) out there — brief group summary is enough to grasp the concept.
+Photoshop and Sketch separate blending options into few meaningful groups. Unfortunately Affinity Photo presents it's options in non-grouped manner (worth to add in future version). I'm not going to describe algorithm behind each of them as there is plenty of [detailed explanations](https://photoshoptrainingchannel.com/blending-modes-explained/) out there — brief group summary is enough to grasp the concept.
 
 !!! LIS OF BLENDING MODE OPTION ON SKETCH APP !!!
 
@@ -28,53 +28,60 @@ Photoshop offers 27 blending mode, Sketch 16 (screenshot below) and both of thes
 
 There isn't any math algorithm applied. If you are wondering why "Dissolve" belongs to this group in some apps as it generates quire random results. Exactlly — [random results](https://en.wikipedia.org/wiki/Blend_modes#Dissolve).
 
-#### Darken 
+#### Darken
 
-...expect darken result.
-...anything that is darker than pure white is going to darken the image below
-...it is using white as a base color so it won't affect anything on pure white background
+As the name suggests — the result will be darker than blended layer. The base color is a pure white. Every pixel darker than a white, result in a darker output of blended pixels. Using this mode with pure white layers won't generate any effect. Generates inverted effects to modes that belong to "Lighten" category.
 
+#### Lighten
 
-#### Lighten 
-
-...expect lighten result.
-...anything that is brighter than pure black is going to lighten the image below
-...it is using black as a base color so it won't affect anything on pure black background
-mirror t o darken, gived inverted effect
+As the name suggests — the result will be lighter than blended layer. The base color is a pure black. Every pixel brighter than a black, result in a lighten output of blended pixels. Using this mode with pure black layers won't generate any effect. Generates inverted effects to modes that belong to "Darken" category.
 
 #### Contrast
 
-...in the Darken Blend Modes, White was the neutral point.
-...in the Lighten Blend Modes, Black was the neutral point.
-...in the Contrast Blend Modes the 50% Grey is the neutral point
-...anything that isn’t 50% gray will be adding contrast and changing brightnes  of  layers below
-... loved by photographers to add cool effects
+Darken Blend Modes use pure white as a neutral point. Lighten ones use pure black. Contrast group takes 50% gray as a base color to recalculate the blended result. The purpose of this category is to manipulate contrast of an image. Set of modes beloved by photographers.
 
 #### Inversion blend modes
 
-...depending on the underlying layer, it’s either going to invert or cancel out the colors
-... rarely used by photographers, used wisely can achieve nice effects, for example 3D
+This set of blend modes calculate the difference or color inversion between two layers. In a results colors are canceled or inverted in a color wheel.
 
 #### Component blend modes
 
-...the component blending modes use different combinations of the primary color components (hue, saturation, and brightness) to create the blend.
+Component group allow us to blend primary color components: hue, saturation and brightness.
 
-### Working with CSS blend modes
+### Software vs. CSS reality
 
+Web design software is much more generous than the web platform is in terms of the available options. Adobe Photoshop gives us an access to 27 blend modes, Sketch gives us 16 options and Affinity Photo offers crazy 30 variations.
 
+Accordingly to recent [Compositing and Blending Level Spec](https://drafts.fxtf.org/compositing-1/), CSS comes with 16 values that we can use in our projects. These are exactly the same values as we see in Sketch — thats one of the reasons why I really love Sketch so much.
 
-- spac https://drafts.fxtf.org/compositing-1/
-- background-blend-mode
-- mix-blend-mode
-- cmyk example http://codepen.io/bennettfeely/pen/qBJyj
-- opacity fallback
-- canvas fallback
+!!! PHOTO OS BLENDING MODES FROM ALL APPS CROSSED UNAVAILABLE OPTIONS !!!
+
+## Working with CSS blend modes
+
+Enough of theory — time for some practice.
+
+### background-blend-mode
+
+### mix-blend-mode
+
+### But IE... 3 lines of JS — well supported in IE
+
 - js detection:
 
 ```js
 const supportsMixBlendMode = window.getComputedStyle(document.body).mixBlendMode;
 const supportsBackgroundBlendMode = window.getComputedStyle(document.body).backgroundBlendMode;
 ```
+
+## I missed you CSS
+
+- thanks aga for inspiration
+- codepen full of super creative examples
+- its a day when i start using it in production
+- una kravets and her projects and talk
+
+
+!!! HELP !!!
 
 - https://photoshoptrainingchannel.com/blending-modes-explained/
 - https://www.smashingmagazine.com/2016/05/web-image-effects-performance-showdown/
