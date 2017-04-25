@@ -138,26 +138,47 @@ Friendly reminder! There is a bug in Chrome. Blending with `body` element is bro
 
 ### But Internet Explorer, Edge and Safari...
 
+Let's be honest — the browser support isn't fantastic. Internet Explorer and Edge don't support it at all. Desktop and mobile Safari has a real issue with all non-separable blend modes: `hue`, `saturation`, `color`, `luminosity`.
+
 ![Blend modes support in the browsers](/photos/2017-04-25-10.jpg)
 
-- js detection:
+Let me introduce a new term now — "no blend modes first". The project on old-school browser shouldn't be any less functional as the one on the latest Google Chrome. Take the support for wonky feature as an opportunity, not as a something that should dictate your design decisions. But if you really, really must to…
 
 ```js
-const supportsMixBlendMode = window.getComputedStyle(document.body).mixBlendMode;
-const supportsBackgroundBlendMode = window.getComputedStyle(document.body).backgroundBlendMode;
+if(!window.getComputedStyle(document.body).mixBlendMode) {
+  document.body.classList.add('no-mix-blend-mode');
+}
+
+if(!window.getComputedStyle(document.body).backgroundBlendMode) {
+  document.body.classList.add('no-background-blend-mode');
+}
 ```
+
+```css
+.box {
+  background-color: #D3545B;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/6171/2017-04-25.jpg');
+  background-blend-mode: hard-light;
+}
+
+.no-background-blend-mode .box {
+  background-image: url('some-fallback-image.jpg');
+}
+```
+
+And here is a result on latest Google Chrome and Internet Explorer 9.
+
+![Cross browser Internet Explorer 9 CSS blend mode](/photos/2017-04-25-11.jpg)
+
+<p>
+<p data-height="472" data-theme-id="14885" data-slug-hash="GmNmJK" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-25-3" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/GmNmJK/">2017-04-25-3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</p>
 
 ## I missed you CSS
 
-- thanks aga for inspiration
-- codepen full of super creative examples
-- its a day when i start using it in production
-- una kravets and her projects and talk
+[Aga](https://twitter.com/aganaplocha), thanks for inspiration to write this post. I promise to catch up some latest CSS stuff — actually I really miss it.
 
+Hopefully this article helped you out guys. For me, writing it was a really enjoyable path to learn it. Have a look at CodePen that is full of amazing examples. I officially announce that I'm staring blend modes on production today.
 
-!!! HELP !!!
-
-- https://photoshoptrainingchannel.com/blending-modes-explained/
-- https://www.smashingmagazine.com/2016/05/web-image-effects-performance-showdown/
-- https://vimeo.com/181110918
-- http://arttheweb.com/ by Una Kravets
+If you enjoyed this article — spread the word by clicking Twitter of Facebook button below. Until next time CSS magicians!
