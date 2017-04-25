@@ -138,7 +138,7 @@ Friendly reminder! There is a bug in Chrome. Blending with `body` element is bro
 
 ### But Internet Explorer, Edge and Safari...
 
-It's 
+![Blend modes support in the browsers](/photos/2017-04-25-10.jpg)
 
 - js detection:
 
