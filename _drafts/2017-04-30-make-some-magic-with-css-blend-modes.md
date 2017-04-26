@@ -1,7 +1,7 @@
 ---
 title: Make some magic with CSS blend modes
 excerpt: Bloody wars between web designers and front-end developers about blending modes. These times are over — thanks to the power of CSS!
-photo: 2017-04-25.jpg
+photo: 2017-04-30.jpg
 ---
 
 It was an ordinary Wednesday morning, enjoying my morning espresso shot at [Engine Creative](https://twitter.com/enginecreative), when suddenly my lovely colleague Chloe put on my desk the latest issue of the [net magazine](https://twitter.com/netmag) that a post man just delivered. I had a quick glance at the cover art that says "Make magic with CSS". Pfff — I totally ignored it — I know everything about CSS, don't I? It was a really nice espresso.
@@ -14,7 +14,7 @@ If you have ever used any image editing software like an Adobe Photoshop, Affini
 
 > Blend modes in digital image editing are used to determine how two layers are blended into each other. However, as each pixel has a numerical representation, a large number of ways to blend two layers is possible.
 
-![Blend modes in Adobe Photoshop, Sketch App and Affinity Photo](/photos/2017-04-25-1.jpg)
+![Blend modes in Adobe Photoshop, Sketch App and Affinity Photo](/photos/2017-04-30-1.jpg)
 
 For lots of designers and developers working with blend modes is a very experimental process. Memorizing all mathematical calculations isn't required to use them effectively. It doesn't take much time to juggle with some options in Photoshop but it can be very time consuming when the same needs to be done in CSS or JavaScript. A little bit of understanding helps and I will do my best to help you with that.
 
@@ -22,43 +22,43 @@ For lots of designers and developers working with blend modes is a very experime
 
 Photoshop and Sketch separate blending options into few meaningful groups. Unfortunately Affinity Photo presents it's options in non-grouped manner (worth to add in future version). I'm not going to describe the algorithm behind each of them as there is plenty of [detailed explanations](https://photoshoptrainingchannel.com/blending-modes-explained/) out there — brief group summary is enough to grasp the concept.
 
-![Grouped blend modes in Sketch App](/photos/2017-04-25-2.jpg)
+![Grouped blend modes in Sketch App](/photos/2017-04-30-2.jpg)
 
 #### Normal
 
 There isn't any mathematical algorithm applied. If you are wondering why this very random looking "Dissolve" mode belongs to this group, you just answeared your question — [random](https://en.wikipedia.org/wiki/Blend_modes#Dissolve). Examples below presents "Normal" blend mode.
 
-![Blend mode - Normal group](/photos/2017-04-25-3.jpg)
+![Blend mode - Normal group](/photos/2017-04-30-3.jpg)
 
 #### Darken
 
 As the name suggests — the result will be darker than initial look of the blended layer. The base color is a pure white. Every pixel darker than a white, result in a darken output of blended pixels. Using this mode with the pure white layers won't generate any effect. Generates inverted effects to modes from "Lighten" category. Examples below presents "Darken" blend mode.
 
-![Blend mode - Darken group](/photos/2017-04-25-4.jpg)
+![Blend mode - Darken group](/photos/2017-04-30-4.jpg)
 
 #### Lighten
 
 As the name suggests — the result will be lighter than initial look of the blended layer. The base color is a pure black. Every pixel brighter than a black, result in a lighten output of blended pixels. Using this mode with the pure black layers won't generate any effect. Generates inverted effects to modes from "Darken" category. Examples below presents "Lighten" blend mode.
 
-![Blend mode - Lighten group](/photos/2017-04-25-5.jpg)
+![Blend mode - Lighten group](/photos/2017-04-30-5.jpg)
 
 #### Contrast
 
 Darken blend modes use pure white as a neutral point. Lighten ones use pure black. Contrast group takes 50% gray as a base color to recalculate the blended result. The purpose of this category is to manipulate the contrast of an image. Examples below presents "Hard Light" blend mode.
 
-![Blend mode - Contrast group](/photos/2017-04-25-6.jpg)
+![Blend mode - Contrast group](/photos/2017-04-30-6.jpg)
 
 #### Inversion
 
 This set of blend modes calculate the difference or color inversion between two layers. In a results colors are canceled or inverted in a color wheel. Examples below presents "Difference" blend mode.
 
-![Blend mode - Inversion group](/photos/2017-04-25-7.jpg)
+![Blend mode - Inversion group](/photos/2017-04-30-7.jpg)
 
 #### Component
 
 Component group allow to blend primary color components: hue, saturation and brightness. Examples below presents "Hue" blend mode.
 
-![Blend mode - Component group](/photos/2017-04-25-8.jpg)
+![Blend mode - Component group](/photos/2017-04-30-8.jpg)
 
 ### Software vs. web reality
 
@@ -102,7 +102,7 @@ As it say on the tin `background-blend-mode` applies blend mode to `background-c
 ```
 
 <p>
-<p data-height="572" data-theme-id="14885" data-slug-hash="oWYgwd" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-25-1" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/oWYgwd/">2017-04-25-1</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="572" data-theme-id="14885" data-slug-hash="oWYgwd" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-30-1" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/oWYgwd/">2017-04-30-1</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
@@ -128,7 +128,7 @@ It would be a bit restricted to use blending modes with backgrounds only. That i
 ```
 
 <p>
-<p data-height="572" data-theme-id="14885" data-slug-hash="bWBNzV" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-25-2" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/bWBNzV/">2017-04-25-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="572" data-theme-id="14885" data-slug-hash="bWBNzV" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-30-2" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/bWBNzV/">2017-04-30-2</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
@@ -138,7 +138,7 @@ Friendly reminder! There is a bug in Chrome. Blending with `body` element is bro
 
 Let's be honest — the browser support isn't fantastic. Internet Explorer and Edge don't support it at all. Desktop and mobile Safari has a real issue with all non-separable blend modes: `hue`, `saturation`, `color`, `luminosity`.
 
-![Blend modes support in the browsers](/photos/2017-04-25-9.jpg)
+![Blend modes support in the browsers](/photos/2017-04-30-9.jpg)
 
 Let me introduce a new term now — "no blend modes first". The project on old-school browser shouldn't be any less functional as the one on the latest Google Chrome. Take the support for wonky feature as an opportunity, not as a something that should dictate your design decisions. But if you really, really must to…
 
@@ -166,10 +166,10 @@ if(!window.getComputedStyle(document.body).backgroundBlendMode) {
 
 And here is a result on latest Google Chrome and Internet Explorer 9.
 
-![Cross browser Internet Explorer 9 CSS blend mode](/photos/2017-04-25-10.jpg)
+![Cross browser Internet Explorer 9 CSS blend mode](/photos/2017-04-30-10.jpg)
 
 <p>
-<p data-height="472" data-theme-id="14885" data-slug-hash="GmNmJK" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-25-3" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/GmNmJK/">2017-04-25-3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="472" data-theme-id="14885" data-slug-hash="GmNmJK" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-04-30-3" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/GmNmJK/">2017-04-30-3</a> by Pawel Grzybek (<a href="http://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
