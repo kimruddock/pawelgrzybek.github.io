@@ -1,74 +1,74 @@
 ---
 title: Make some magic with CSS blend modes
-excerpt: Bloody wars between web designers and front-end developers about blending modes. These times are over — thanks to the power of CSS!
+excerpt: Remember the bloody wars between web designers and front-end developers about blending modes? Those times are over — thanks to the power of CSS!
 photo: 2017-04-30.jpg
 ---
 
-It was an ordinary Wednesday morning, enjoying my morning espresso shot at [Engine Creative](https://twitter.com/enginecreative), when suddenly my lovely colleague Chloe put on my desk the latest issue of the [net magazine](https://twitter.com/netmag) that a post man just delivered. I had a quick glance at the cover art that says "Make magic with CSS". Pfff — I totally ignored it — I know everything about CSS, don't I? It was a really nice espresso.
+It was an ordinary Wednesday morning, I was enjoying my morning espresso shot at [Engine Creative](https://twitter.com/enginecreative), when suddenly my lovely colleague Chloe put on my desk the latest issue of [net magazine](https://twitter.com/netmag) freshly delivered by the postman. I had a quick glance at the cover art that boldly stated "Make magic with CSS". Pfff — I totally ignored it — I know everything about CSS, don't I? It was a really nice espresso.
 
-It is an ordinary Sunday morning, enjoying my morning espresso shot on my sofa —  time for some press. After reading first three paragraphs of "Make magic with CSS" by [Aga Naplocha](https://twitter.com/aganaplocha) I realized that I really felt behind with my CSS skills. It is a really nice espresso but I'm going to brew more because today is a day to catch up with some CSS magic — blend modes.
+It is an ordinary Sunday morning, I'm enjoying my morning espresso shot on my sofa — time for some press. After reading the first three paragraphs of "Make magic with CSS" by [Aga Naplocha](https://twitter.com/aganaplocha) I've realised that I had really fallen behind on my CSS skills. It is a really nice espresso but I'm going to brew more because today is the day to catch up on some CSS magic — blend modes.
 
 ## Blend modes essentials
 
-If you have ever used any image editing software like an Adobe Photoshop, Affinity Photo or Sketch App you probably have some experience with blending modes. Yes — it is one of those features that designers love as it is the shortcut for beautifulness but front-end developers hate as it is laborious to implement. A-ha! Not anymore! I will show you how in a second but first let's put some [Wikipedia](https://en.wikipedia.org/wiki/Blend_modes) theory here.
+If you have ever used any image editing software like Adobe Photoshop, Affinity Photo or Sketch App you probably have some experience with blending modes. Yes — it is one of those features that designers love as it's essentially a shortcut method for doing beautiful things but front-end developers hate them because they are laborious to implement. A-ha! Not anymore! I will show you how in a second but first let's brush up on some theory courtesy of [Wikipedia](https://en.wikipedia.org/wiki/Blend_modes).
 
 > Blend modes in digital image editing are used to determine how two layers are blended into each other. However, as each pixel has a numerical representation, a large number of ways to blend two layers is possible.
 
 ![Blend modes in Adobe Photoshop, Sketch App and Affinity Photo](/photos/2017-04-30-1.jpg)
 
-For lots of designers and developers working with blend modes is a very experimental process. Memorizing all mathematical calculations isn't required to use them effectively. It doesn't take much time to juggle with some options in Photoshop but it can be very time consuming when the same needs to be done in CSS or JavaScript. A little bit of understanding helps and I will do my best to help you with that.
+For lots of designers and developers working with blend modes is a very experimental process. Memorising all the mathematical calculations isn't required to use them effectively. It doesn't take much time to juggle with some options in Photoshop but it can be very time consuming when the same needs to be done in CSS or JavaScript. A little bit of understanding helps and I will do my best to help you with that.
 
 ### Blend modes by group
 
-Photoshop and Sketch separate blending options into few meaningful groups. Unfortunately Affinity Photo presents it's options in non-grouped manner (worth to add in future version). I'm not going to describe the algorithm behind each of them as there is plenty of [detailed explanations](https://photoshoptrainingchannel.com/blending-modes-explained/) out there — brief group summary is enough to grasp the concept.
+Photoshop and Sketch separate blending options into a few meaningful groups. Unfortunately Affinity Photo presents its options in a non-grouped manner (this would be worth adding in a future version). I'm not going to describe the algorithm behind each of them as there are plenty of [detailed explanations](https://photoshoptrainingchannel.com/blending-modes-explained/) out there — a brief summary of each group is enough to grasp the concept.
 
 ![Grouped blend modes in Sketch App](/photos/2017-04-30-2.jpg)
 
 #### Normal
 
-There isn't any mathematical algorithm applied. If you are wondering why this very random looking "Dissolve" mode belongs to this group, you just answeared your question — [random](https://en.wikipedia.org/wiki/Blend_modes#Dissolve). Examples below presents "Normal" blend mode.
+No mathematical algorithm is applied. If you are wondering why the very random looking "Dissolve" mode belongs to this group, you've just answered your own question — [random](https://en.wikipedia.org/wiki/Blend_modes#Dissolve). The example below shows the "Normal" blend mode.
 
 ![Blend mode - Normal group](/photos/2017-04-30-3.jpg)
 
 #### Darken
 
-As the name suggests — the result will be darker than initial look of the blended layer. The base color is a pure white. Every pixel darker than a white, result in a darken output of blended pixels. Using this mode with the pure white layers won't generate any effect. Generates inverted effects to modes from "Lighten" category. Examples below presents "Darken" blend mode.
+As the name suggests — the result will be darker than the initial look of the blended layer. The base colour is pure white. Every pixel darker than white results in a darkened output of blended pixels. Using this mode with pure white layers won't generate any effect. Darken generates inverted effects to modes from the "Lighten" category. The example below shows the "Darken" blend mode.
 
 ![Blend mode - Darken group](/photos/2017-04-30-4.jpg)
 
 #### Lighten
 
-As the name suggests — the result will be lighter than initial look of the blended layer. The base color is a pure black. Every pixel brighter than a black, result in a lighten output of blended pixels. Using this mode with the pure black layers won't generate any effect. Generates inverted effects to modes from "Darken" category. Examples below presents "Lighten" blend mode.
+As the name suggests — the result will be lighter than the initial look of the blended layer. The base colour is a pure black. Every pixel brighter than black results in a lightened output of blended pixels. Using this mode with pure black layers won't generate any effect. Lighten generates inverted effects to modes from the "Darken" category. The example below shows the "Lighten" blend mode.
 
 ![Blend mode - Lighten group](/photos/2017-04-30-5.jpg)
 
 #### Contrast
 
-Darken blend modes use pure white as a neutral point. Lighten ones use pure black. Contrast group takes 50% gray as a base color to recalculate the blended result. The purpose of this category is to manipulate the contrast of an image. Examples below presents "Hard Light" blend mode.
+Darken blend modes use pure white as the neutral point. Lighten ones use pure black. The Contrast group uses 50% gray as the base colour to recalculate the blended result. The purpose of this category is to manipulate the contrast of an image. The example below shows the "Hard Light" blend mode.
 
 ![Blend mode - Contrast group](/photos/2017-04-30-6.jpg)
 
 #### Inversion
 
-This set of blend modes calculate the difference or color inversion between two layers. In a results colors are canceled or inverted in a color wheel. Examples below presents "Difference" blend mode.
+This set of blend modes calculate the difference or colour inversion between two layers. This produces results where colours are cancelled or inverted in the colour wheel. The example below shows the "Difference" blend mode.
 
 ![Blend mode - Inversion group](/photos/2017-04-30-7.jpg)
 
 #### Component
 
-Component group allow to blend primary color components: hue, saturation and brightness. Examples below presents "Hue" blend mode.
+The Component group allows us to blend primary colour components: hue, saturation and brightness. The example below shows the "Hue" blend mode.
 
 ![Blend mode - Component group](/photos/2017-04-30-8.jpg)
 
 ### Software vs. web reality
 
-Web design software is much more generous in available options than the web platform is. Adobe Photoshop gives us an access to 27 blend modes, Sketch gives us 16 options and Affinity Photo offers crazy 30 variations.
+Web design software is much more generous with the available options than the web platform is. Adobe Photoshop gives us access to 27 blend modes, Sketch gives us 16 options and Affinity Photo offers a crazy 30 variations.
 
-Accordingly to recent [Compositing and Blending Level Spec](https://drafts.fxtf.org/compositing-1/), CSS comes with 16 values that we can use in our projects. These are exactly the same values as these available in Sketch — thats one of the reasons why I really love Sketch so much.
+According to the recent [Compositing and Blending Level Spec](https://drafts.fxtf.org/compositing-1/), CSS comes with 16 values that we can use in our projects. These are exactly the same values as are available in Sketch — that's one of the reasons why I really love Sketch so much.
 
 ## Working with CSS blend modes
 
-Enough of theory — time for some practice. As mentioned second ago, CSS allows us to use the follwing values:
+Enough theory — time for some practice. As mentioned a second ago, CSS allows us to use the following values:
 
 - [`normal`](https://www.w3.org/TR/compositing-1/#valdef-blend-mode-normal) (initial value)
 - [`multiply`](https://www.w3.org/TR/compositing-1/#valdef-blend-mode-multiply)
@@ -87,11 +87,11 @@ Enough of theory — time for some practice. As mentioned second ago, CSS allows
 - [`color`](https://www.w3.org/TR/compositing-1/#valdef-blend-mode-color)
 - [`luminosity`](https://www.w3.org/TR/compositing-1/#valdef-blend-mode-luminosity)
 
-There are two CSS properties out there that allow us to work with blend modes: [`background-blend-mode`](https://www.w3.org/TR/compositing-1/#propdef-background-blend-mode) and [`mix-blend-mode`](https://www.w3.org/TR/compositing-1/#mix-blend-mode). The effect that those values produce is exactlly identical but the use case of them if different. Let's have a quick look at both of them.
+There are two CSS properties out there that allow us to work with blend modes: [`background-blend-mode`](https://www.w3.org/TR/compositing-1/#propdef-background-blend-mode) and [`mix-blend-mode`](https://www.w3.org/TR/compositing-1/#mix-blend-mode). The effect that those properties produce is identical but the use case for them is different. Let's have a quick look at both of them.
 
 ### background-blend-mode
 
-As it say on the tin `background-blend-mode` applies blend mode to `background-color` or `background-image`. It can take multiple values when we use more than one background. Using it with gradients can produce really impresive results — but I will leave creativity to you. Let's have a look at some simple example.
+As it says on the tin `background-blend-mode` applies a blend mode to `background-color` or `background-image`. It can take multiple values when we use more than one background. Using it with gradients can produce really impressive results — but I will leave the creativity to you. Let's have a look at a simple example.
 
 ```css
 .box {
@@ -108,7 +108,7 @@ As it say on the tin `background-blend-mode` applies blend mode to `background-c
 
 ### mix-blend-mode
 
-It would be a bit restricted to use blending modes with backgrounds only. That is the reason why `mix-blend-mode` exists. It allows us to blend any elements with it's backgrop.
+It would be a bit restrictive to use blending modes with backgrounds only. That's the reason why `mix-blend-mode` exists. It allows us to blend any element with its background.
 
 ```css
 .page {
@@ -132,7 +132,7 @@ It would be a bit restricted to use blending modes with backgrounds only. That i
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-Friendly reminder! There is a bug in Chrome. Blending with `body` element is broken in Google's browser — works like a charm in other ones though.
+A word of advice! There is a bug in Chrome. Blending with the `body` element is broken in Google's browser — it works like a charm in other ones though.
 
 ### But Internet Explorer, Edge and Safari...
 
@@ -140,7 +140,7 @@ Let's be honest — the browser support isn't fantastic. Internet Explorer and E
 
 ![Blend modes support in the browsers](/photos/2017-04-30-9.jpg)
 
-Let me introduce a new term now — "no blend modes first". The project on old-school browser shouldn't be any less functional as the one on the latest Google Chrome. Take the support for wonky feature as an opportunity, not as a something that should dictate your design decisions. But if you really, really must to…
+Let me introduce a new term now — "no blend modes first". Your project on an old-school browser shouldn't be any less functional as the one on the latest version of Google Chrome. Take the support for a crazy feature as an opportunity, not as something that should dictate your design decisions. But if you really, really must…
 
 ```js
 if(!window.getComputedStyle(document.body).mixBlendMode) {
@@ -164,7 +164,7 @@ if(!window.getComputedStyle(document.body).backgroundBlendMode) {
 }
 ```
 
-And here is a result on latest Google Chrome and Internet Explorer 9.
+And here is the result on the latest version of Google Chrome and Internet Explorer 9.
 
 ![Cross browser Internet Explorer 9 CSS blend mode](/photos/2017-04-30-10.jpg)
 
@@ -175,6 +175,6 @@ And here is a result on latest Google Chrome and Internet Explorer 9.
 
 ## I missed you CSS
 
-[Aga](https://twitter.com/aganaplocha), thanks for your inspiration to write this article. I promise to catch up some latest CSS magic — actually I really miss it.
+[Aga](https://twitter.com/aganaplocha), thanks for giving me the inspiration to write this article. I promise to catch up on some of the latest CSS magic — actually I really miss it.
 
-Hopefully this article helped you out guys. For me, writing it was a really enjoyable path to learn it. I officially announce that I'm staring using CSS blend modes on production today. Until next time CSS magicians!
+Hopefully this article helped you out guys. For me, writing it was a really enjoyable path to learning it. I officially announce that I'm starting to use CSS blend modes in production today. Until next time CSS magicians!
