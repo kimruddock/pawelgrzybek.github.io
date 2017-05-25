@@ -77,3 +77,9 @@ As a web developers we want to use the benefits of future improvements right now
 The feature detection for `@apply` isn't [that straight forward](https://pawelgrzybek.com/css-custom-properties-explained/#detect-the-browser-support-for-css-custom-properties) as with CSS Custom Properties. I'm sure this is just a matter of time to standardize the way to use it with `@support` rule. If you really need to detect a support for `@apply` rule, look at the [script](https://gist.github.com/malyw/477cd45bd0ed501a1c3ce0870ae16dd1) created by [Serg Gospodarets](https://twitter.com/malyw). Serg also published [list of great use cases](https://blog.gospodarets.com/css_apply_rule) for CSS Mixins on his blog.
 
 I hope you found this overview useful. See you next time :-*
+
+**UPDATE!**
+
+ [Tab Atkins Jr](https://github.com/tabatkins) officially anounced that the proposal for `@apply` has been abandoned from various reasons. Learn more details behind this decision [here](http://www.xanthir.com/b4o00).
+
+ > There's plenty more space to experiment here, and while it does suck to lose a tool that you might have gotten excited about, `@apply` really is just quite a bad idea technically. Let's solve these problems correctly. 
