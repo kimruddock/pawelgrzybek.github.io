@@ -39,7 +39,7 @@ defaults:
 kramdown:
   input: GFM
 
-gems: ['jekyll-paginate']
+gems: [jekyll-paginate, jekyll-sitemap]
 
 # Pagination
 paginate: 10
