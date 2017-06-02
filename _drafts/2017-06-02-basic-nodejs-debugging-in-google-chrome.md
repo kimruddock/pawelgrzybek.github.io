@@ -1,6 +1,6 @@
 ---
 title: Basic Node.js debugging in Google Chrome
-excerpt: We have been testing front end in Google Chrome Dev Tools for quite a while. How about testing some Node.js in exactlly the same way?
+excerpt: We have been testing front end code in Google Chrome Dev Tools for quite a while. How about testing some Node.js in exactlly the same way?
 photo: 2017-06-02.jpg
 ---
 
@@ -55,15 +55,17 @@ Google Chrome allows us to debugg Node.js application in exactly the same manner
 node --inspect-brk beer.js prawns
 ```
 
-```bash
-Debugger listening on ws://127.0.0.1:9229/4782ff82-d043-422d-96b1-64611883eddc
-For help see https://nodejs.org/en/docs/inspector
-Debugger attached.
-```
+![node --inspect](/photos/2017-06-02-2.jpg)
 
 At this moment debugger is running and stopped before user's code parsing began. To access debugger we have few options.
 
-1. Go to `chrome://inspect` and click 'inspect' under your process.
-2. Click the dedicated icon (this option is available on Google Chrome Canary at the time of writing this article).
+1. Go to `chrome://inspect` and click "inspect" under the process.
+2. Click the small Node.js dedicated icon (this option is available on Google Chrome Canary at the time of writing this article).
+
+![Debugg Node.js in Google Chrome - chrome://inspect](/photos/2017-06-02-3.jpg)
+
+![Debugg Node.js in Google Chrome - dedicated icon](/photos/2017-06-02-4.jpg)
+
+![Node js — Developer Tools](/photos/2017-06-02-5.jpg)
 
 That is it for today. Quick tip. I really fancy prawns now.
