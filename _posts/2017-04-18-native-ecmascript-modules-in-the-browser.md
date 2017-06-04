@@ -6,11 +6,11 @@ photo: 2017-04-18.jpg
 
 Three things that I wish I could ditch from my everyday front-end workflow: CSS preprocessors, JavaScript transpilers and module bundlers. Let me elaborate…
 
-I love Sass but wouldn't it be cool to have its power built into CSS? The good news is native [custom properties](https://pawelgrzybek.com/css-custom-properties-explained/) are much more powerful than statically declared ones from Sass. Mixins are amazing — the [`@apply` rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/) takes care of this. [The vendor prefixes imbroglio](https://www.chromium.org/blink#vendor-prefixes) is over and will never come back. With all those goodies I would say that the first of my dreams is fulfilled.
+I love Sass but wouldn't it be cool to have its power built into CSS? The good news is native [custom properties](https://pawelgrzybek.com/css-custom-properties-explained/) are much more powerful than statically declared ones from Sass. Mixins are amazing — unfortunately the [`@apply` rule](https://pawelgrzybek.com/css-mixins-with-apply-rule/) has been [abandoned by the spec creator](http://www.xanthir.com/b4o00) but I'm sure we will get some decent replacement at some point. [The vendor prefixes imbroglio](https://www.chromium.org/blink#vendor-prefixes) is over and will never come back. With all those goodies I would say that the first of my dreams is fulfilled.
 
 When [Babel](https://babeljs.io/) came around it was like living in the future. We were able to use modern features that browsers didn't support at the time. Things have changed though. Nowadays, browsers have really [strong support](https://kangax.github.io/compat-table/es6/) for present-day ingredients. Have a look at your Gulp build task or Webpack config — there's a good chance that you don't need to transpile your code anymore. The second item in my wish list has become a reality.
 
-The recently released [Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brings me hope that one day I will check the box next to the last item that I would like to forget — module bundlers.
+[Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) brings me hope that one day I will check the box next to the last item that I would like to forget — module bundlers.
 
 ## JavaScript modules recap
 
@@ -18,7 +18,7 @@ Before 2015 JavaScript didn't have a native way of working with modular codebase
 
 Finalised in June 2015 the spec for the [6th edition](http://www.ecma-international.org/ecma-262/6.0/) of JavaScript changed things a lot. One of the many amazing things that it brought was a native way of working with modules. It turned out that it was [immensely hard](https://blog.whatwg.org/js-modules) to implement on the web platform — so module bundlers like [Webpack](https://webpack.js.org/) came into the game. They allowed us to write code in a modern way and spit out a bundled script understandable by the browser.
 
-[Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) is the first browser that has received [100% complete coverage for ECMAScript 2015 features](https://kangax.github.io/compat-table/es6/#safari10_1). Really great work Apple ([Service Workers](https://jakearchibald.github.io/isserviceworkerready/) next please). It means that it is the first browser that allows us to use native modules. Let's have a look at the nitty-gritty.
+[Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) is the first browser that has received [100% complete coverage for ECMAScript 2015 features](https://kangax.github.io/compat-table/es6/#safari10_1). Really great work Apple ([Service Workers](https://jakearchibald.github.io/isserviceworkerready/) next please). It means that it is the first browser that allows us to use native modules. Another implementation landed on Google Chrome 60 behind the "Experimental Web Platform" flag, Firefox 54 – behind the `dom.moduleScripts.enabled` setting in `about:config` and Edge 15 behind the "Experimental JavaScript Features" setting in `about:flags`. Let's have a look at the nitty-gritty.
 
 ## Working with modules in the browser
 
@@ -64,9 +64,9 @@ The browser managed to resolve the dependency of the `print.js` file. No Webpack
 
 A quick word about support of native modules across the browsers and some possible solutions. At the time of writing this article it's looking like this:
 
-- Chrome is [working on it](https://www.chromestatus.com/feature/5365692190687232)
-- [Firefox Nightly](https://www.mozilla.org/en-GB/firefox/channel/desktop/) it works under the `dom.moduleScripts.enabled` flag
-- EDGE it works under the ["Enable experimental JavaScript features"](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/moduleses6/?q=module) flag
+- Chrome Canary 60 – behind the "Experimental Web Platform" flag in `chrome:flags`
+- Firefox 54 – behind the `dom.moduleScripts.enabled` setting in `about:config`
+- Edge 15 – behind the "Experimental JavaScript Features" setting in `about:flags`
 - Safari — hell yeah!
 
 ![Browser support for Native ECMAScript modules](/photos/2017-04-18-2.jpg)
