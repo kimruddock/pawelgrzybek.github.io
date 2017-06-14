@@ -3,6 +3,7 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
+  font-display: fallback;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
     url('../assets/sspr.woff2') format('woff2'),
     url('../assets/sspr.woff') format('woff');
@@ -13,6 +14,7 @@
   font-family: 'Source Sans Pro';
   font-style: italic;
   font-weight: 400;
+  font-display: fallback;
   src: local('Source Sans Pro Italic'), local('SourceSansPro-It'),
     url('../assets/sspi.woff2') format('woff2'),
     url('../assets/sspi.woff') format('woff');
@@ -23,6 +25,7 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
+  font-display: fallback;
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
     url('../assets/sspb.woff2') format('woff2'),
     url('../assets/sspb.woff') format('woff');
@@ -33,6 +36,7 @@
   font-family: 'Source Code Pro';
   font-style: normal;
   font-weight: 400;
+  font-display: fallback;
   src: local('Source Code Pro'), local('SourceCodePro-Regular'),
     url('../assets/scr.woff2') format('woff2'),
     url('../assets/scr.woff') format('woff');
