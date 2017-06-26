@@ -1,14 +1,14 @@
 ---
 title: Cloning DOM nodes and handling attached events
-excerpt: As a creator and maintainer of a popular DOM library, I found myself in a situation when I had to clone an element. Sounds trivially? This is what I learned.
+excerpt: As a creator and maintainer of a popular DOM library, I found myself in a situation where I had to clone an element. Sounds trivial? This is what I learnt.
 photo: 2017-06-27.jpg
 ---
 
-I'm a creator and the only maintainer of [Siema](https://pawelgrzybek.com/siema/) — a simple carousel library that gained quite unexpected popularity on [Github](https://github.com/pawelgrzybek/siema). Thanks! I constantly improve and work hard to drop some new features every once in a while. I recently came across a tiny challenge — I had to clone some DOM elements. Let me share with you what I learned. Short and easy.
+I'm the creator and sole maintainer of [Siema](https://pawelgrzybek.com/siema/) — a simple carousel library that gained quite unexpected popularity on [Github](https://github.com/pawelgrzybek/siema) (thanks by the way!). I constantly look to improve it and work hard to drop some new features in every once in a while. I recently came across a very minor challenge — I had to clone some DOM elements. Let me share with you some short and easy tips through what I learned.
 
 ## Cloning DOM elements
 
-To clone a DOM element we have two options: [`cloneNode()`](https://developer.mozilla.org/en/docs/Web/API/Node/cloneNode) and [`importNode()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode). The differences between these two methods are very minor and it shouldn't really matter which one you use to perform cloning within a single document. If you are a performance freak — [jsPerf](https://jsperf.com/innerhtml-vs-importnode/6) shows a tiny faster computation for `importNode()`. I doubt that you will ever need to duplicate thousands of elements on the page so don't care about these numbers too much.
+To clone a DOM element we have two options: [`cloneNode()`](https://developer.mozilla.org/en/docs/Web/API/Node/cloneNode) and [`importNode()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode). The differences between these two methods are very minor and it shouldn't really matter which one you use to perform cloning within a single document. If you are a performance freak — [jsPerf](https://jsperf.com/innerhtml-vs-importnode/6) shows a slightly faster computation for `importNode()`. I doubt that you will ever need to duplicate thousands of elements on the page so I wouldn't worry yourself about these numbers too much.
 
 ```js
 // using cloneNode()
@@ -28,19 +28,19 @@ const copy = document.importNode(sourceElement, true);
 destination.appendChild(copy);
 ```
 
-## Reattach an event listener of cloned element
+## Reattach an event listener to a cloned element
 
-After cloning, an element is loosing a reference to all events attached via JavaScript. It creates something commonly known as a shallow copy. We can manually reattach all event listeners to cloned node but it sounds like a tedious task. Back in the days we could find something like [`EventListenerList()`](https://www.w3.org/TR/2001/WD-DOM-Level-3-Events-20010823/events.html#Events-EventListenerList) in the DOM spec. It would be very helpful to solve our issue but unfortunately it has been removed from the specification and the implementation isn't available on any browser. The reason of ditching this part of a spec can be found on multiple [W3C mailing conversation](https://stackoverflow.com/a/7814692/2290040).
+After cloning, the element loses reference to all events attached to it via JavaScript. It creates something commonly known as a shallow copy. We can manually reattach all event listeners to the cloned node but that sounds like a tedious task. Back in the day we could find something like [`EventListenerList()`](https://www.w3.org/TR/2001/WD-DOM-Level-3-Events-20010823/events.html#Events-EventListenerList) in the DOM spec. That would be very helpful in solving our issue but unfortunately it has been removed from the specification and the implementation isn't available on any browser. The reason for ditching this part of the spec can be found on multiple [W3C mailing conversations](https://stackoverflow.com/a/7814692/2290040).
 
 > [...] what is the motivation for adding this functionality at all? Previously, the working group resolved to remove the related but less powerful hasEventListenerNS method for lack of a use case, and because there are potential security issues.
 
-Don't be tricked by [`getEventListeners()`](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference#geteventlistenersobject) neither as this is just a part of Chrome Command Line API and is available only from the Google browser's console. You cannot use it in your scripts.
+Don't be tricked by [`getEventListeners()`](https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference#geteventlistenersobject) either as this is only a part of the Chrome Command Line API and is available only from the Google browser's console. You cannot use it in your scripts.
 
-Because the native method for checking the events attached to an element doesn't exists we need to find a different solutions. Let's have a look at available options.
+Because the native method for checking the events attached to an element doesn't exist we need to find a different solution. Let's have a look at the available options.
 
 ### Inline events
 
-A little bit old-school but it will do in some circumstances. HTML elements allow us to add an [event attribute](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers) with tiny bit of JavaScript functionality inside it. Like so:
+A little bit old-school but it will do in some circumstances. HTML elements allow us to add an [event attribute](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers) with a tiny bit of JavaScript functionality inside it. Like so:
 
 ```html
 <div onclick="alert('Hello')">some element</div>
@@ -50,11 +50,11 @@ A little bit old-school but it will do in some circumstances. HTML elements allo
 <div onclick="clickHandler()">some element</div>
 ```
 
-Although is not very elegant, not pleasant to maintain and can cause some accessibility difficulties sometimes it can be the best way to go. As always — it depends…
+Although it is not very elegant, not pleasant to maintain and can cause some accessibility difficulties sometimes it can be the best way to go. As always — it depends on the situation…
 
 ### Event delegation
 
-Instead of adding an event listener to every element, let's just add it onece to a parent element and take an advantage of events bubbling. Sounds complicated but it is easier that you think and can save you from potential memory leaks and performance degradation. Example:
+Instead of adding an event listener to every element, let's just add it once to a parent element and take advantage of event bubbling. Event bubbling sounds complicated but it is easier than you think and can save you from potential memory leaks and performance degradation. Here's an example:
 
 ```html
 <ul class="list">
@@ -64,7 +64,7 @@ Instead of adding an event listener to every element, let's just add it onece to
 </ul>
 ```
 
-Adding listener to every list item…
+Adding a listener to every list item…
 
 ```js
 // declare handler
@@ -81,7 +81,7 @@ for (const item of items) {
 }
 ```
 
-Instead, better do this...
+Instead, it's better to do this...
 
 ```js
 // declare handler
@@ -98,11 +98,11 @@ const list = document.querySelector('.list');
 list.addEventListener('click', clickHandler);
 ```
 
-Do you already know where I'm going with it in context to cloned elements? Instead of fighting with attaching handlers to cloned nodes, attach a single event on the closest common parent element. Makes sense?
+Do you already know where I'm going with this in the context of cloned elements? Instead of fighting with attaching handlers to cloned nodes, attach a single event on the closest common parent element. Makes sense?
 
 ## jQuery clone() method
 
-Popular DOM libraries like jQuery, YUI and Moo have their own methods for events delegation and I highly recommend using them if you can. The most popular one — jQuery —  uses a wrapper methods to deal with events. It internally tracks all the handlers attached to the node so whenever we use [`clone()` method](https://api.jquery.com/clone/) it creates a deep copy (optional argument) that contains source element's events.
+Popular DOM libraries like jQuery, YUI and Moo have their own methods for event delegation and I highly recommend using them if you can. The most popular one — jQuery — uses wrapper methods to deal with events. It internally tracks all the handlers attached to the node so whenever we use the [`clone()` method](https://api.jquery.com/clone/) it creates a deep copy (optional argument) that contains the source element's events.
 
 ```js
 $('.js-source div').clone(true).appendTo('.js-destination')
@@ -110,7 +110,7 @@ $('.js-source div').clone(true).appendTo('.js-destination')
 
 ## Example
 
-Hopefully it makes sense and this article helped you out. Thanks for reading and don't forget about sharing buttons below this article — I'm sure that your friends don't know much about cloning yet. I put together a two examples for you to play with. First one uses events delegation and `cloneNode()`, the second one jQuery `clone()` method. Peace!
+Hopefully that made sense and this article helped you out. Thanks for reading and don't forget about the share buttons below this article — I'm sure that your friends don't know much about cloning yet. I put together two examples for you to play with. The first one uses event delegation and `cloneNode()`, and the second one uses the jQuery `clone()` method. Peace!
 
 <p>
 <p data-height="320" data-theme-id="14885" data-slug-hash="eRWbJZ" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017.06.27 - clone elements (vanilla js)" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/eRWbJZ/">2017.06.27 - clone elements (vanilla js)</a> by Pawel Grzybek (<a href="https://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
