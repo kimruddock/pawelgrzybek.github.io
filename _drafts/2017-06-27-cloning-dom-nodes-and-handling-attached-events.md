@@ -102,7 +102,7 @@ Do you already know where I'm going with this in the context of cloned elements?
 
 ## jQuery clone() method
 
-Popular DOM libraries like jQuery, YUI and Moo have their own methods for event delegation and I highly recommend using them if you can. The most popular one — jQuery — uses wrapper methods to deal with events. It internally tracks all the handlers attached to the node so whenever we use the [`clone()` method](https://api.jquery.com/clone/) it creates a deep copy (optional argument) that contains the source element's events.
+Popular DOM libraries like jQuery, YUI and Moo have their own methods for event delegation and I highly recommend using them if you can. The most popular one — jQuery — uses wrapper methods to deal with events. It internally tracks all the handlers attached to the node so whenever we use the [`clone()`](https://api.jquery.com/clone/) method it creates a deep copy (optional argument) that contains the source element's events.
 
 ```js
 $('.js-source div').clone(true).appendTo('.js-destination')
