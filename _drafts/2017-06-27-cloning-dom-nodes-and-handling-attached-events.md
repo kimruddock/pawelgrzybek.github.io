@@ -4,7 +4,7 @@ excerpt: As a creator and maintainer of a popular DOM library, I found myself in
 photo: 2017-06-27.jpg
 ---
 
-I'm the creator and sole maintainer of [Siema](https://pawelgrzybek.com/siema/) — a simple carousel library that gained quite unexpected popularity on [Github](https://github.com/pawelgrzybek/siema) (thanks by the way!). I constantly look to improve it and work hard to drop some new features in every once in a while. I recently came across a very minor challenge — I had to clone some DOM elements. Let me share with you some short and easy tips through what I learned.
+I'm the creator and sole maintainer of [Siema](https://pawelgrzybek.com/siema/) — a simple carousel library that gained quite unexpected popularity on [Github](https://github.com/pawelgrzybek/siema) (thanks by the way). I constantly look to improve it and work hard to drop some new features in every once in a while. I recently came across a very minor challenge — I had to clone some DOM elements. Let me share with you some short and easy tips through what I learned.
 
 ## Cloning DOM elements
 
@@ -54,7 +54,7 @@ Although it is not very elegant, not pleasant to maintain and can cause some acc
 
 ### Event delegation
 
-Instead of adding an event listener to every element, let's just add it once to a parent element and take advantage of event bubbling. Event bubbling sounds complicated but it is easier than you think and can save you from potential memory leaks and performance degradation. Here's an example:
+Instead of adding an event listener to every element, let's just add it once to a parent element and take advantage of event bubbling. Sounds complicated but it is easier than you think and can save you from potential memory leaks and performance degradation. Here's an example:
 
 ```html
 <ul class="list">
