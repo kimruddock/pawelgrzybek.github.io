@@ -1,2 +1,3 @@
-# pawelgrzybek.github.io
-My Jekyll based website pawelgrzybek.com
+# https://pawelgrzybek.com/
+
+My Jekyll based website [https://pawelgrzybek.com/](https://pawelgrzybek.com/)
