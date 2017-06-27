@@ -1,16 +1,16 @@
 ---
 title: Using webpack with gulp.js
-excerpt: Webpack is a module bundler for modern JavaScript apps. Gulp describes itselt as a platform-agnostic task runner. Can they work together? Easily! Have a look.
+excerpt: Webpack is a module bundler for modern JavaScript apps. Gulp describes itself as a platform-agnostic task runner. Can they work together? Easily! Take a look.
 photo: 2017-06-28.jpg
 ---
 
-[Webpack](https://webpack.js.org/) is a popular module bundler for modern JavaScript applications. It's biggest advantage is it's flexibility — it can be as simple or as complicated as you need it to be. It doesn't matter if you live on the edge and your app is full of modern ES2015 modules or still depends on some legacy code written in AMD style — this tool gets you covered.
+[Webpack](https://webpack.js.org/) is a popular module bundler for modern JavaScript applications. Its biggest advantage is its flexibility — it can be as simple or as complicated as you need it to be. It doesn't matter if you live on the edge and your app is full of modern ES2015 modules or still depends on some legacy code written in AMD style — this tool has you covered.
 
-If I'm not working on `jsFuckingEverythingInMyWholeLife.js` project I like to use [gulp.js](http://gulpjs.com/). It is a user friendly task runner that handles common tasks like: Sass compilation, media assets compression etc. There is a chance that you may need to add a tiny bit of JavaScript functionality to a project? Any solution for this one?
+If I'm not working on a `jsFuckingEverythingInMyWholeLife.js` project I like to use [gulp.js](http://gulpjs.com/). It is a user friendly task runner that handles common tasks like: Sass compilation, media asset compression etc. However there is a chance that you may need to add a tiny bit of JavaScript functionality to a project. What's the solution for this scenario?
 
 ## webpack + gulp.js = <3
 
-Let's combine a simplicity of gulp API and webpack to take advantage of a modern JavaScript workflow. Less talking, more coding…
+Let's combine the simplicity of Gulp's API with Webpack to take advantage of a modern JavaScript workflow. Less talking, more coding…
 
 ```
 npm i -D gulp webpack webpack-stream
@@ -31,7 +31,7 @@ gulp.task('js', () => {
 });
 ```
 
-Task is ready. Lets tell webpack what to do now.
+That's the Gulp task ready. Let's tell Webpack what to do now.
 
 ```
 npm i -D babel-core babel-loader babel-preset-latest
@@ -61,7 +61,7 @@ module.exports = {
 };
 ```
 
-It is just an example of basic configuration file. From this point you can go crazy with your [settings](https://webpack.js.org/configuration/). To use the task now just run in terminal:
+This is just an example of a basic configuration file. From this point you can go crazy with your [settings](https://webpack.js.org/configuration/). To use the task now just run in terminal:
 
 ```
  _________
