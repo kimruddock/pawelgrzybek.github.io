@@ -10,7 +10,7 @@ If I'm not working on a `jsFuckingEverythingInMyWholeLife.js` project I like to 
 
 ## webpack + gulp.js = <3
 
-Let's combine the simplicity of Gulp's API with Webpack to take advantage of a modern JavaScript workflow. Less talking, more coding…
+Let's combine the simplicity of Gulp's API with webpack to take advantage of a modern JavaScript workflow. Less talking, more coding…
 
 ```
 npm i -D gulp webpack webpack-stream
@@ -31,7 +31,7 @@ gulp.task('js', () => {
 });
 ```
 
-That's the Gulp task ready. Let's tell Webpack what to do now.
+That's the Gulp task ready. Let's tell webpack what to do now.
 
 ```
 npm i -D babel-core babel-loader babel-preset-latest
