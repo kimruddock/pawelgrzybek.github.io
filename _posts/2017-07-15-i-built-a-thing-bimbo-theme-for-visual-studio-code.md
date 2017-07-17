@@ -28,3 +28,5 @@ You can [download it today from the official Microsoft Marketplace](https://mark
 O wow! I really considered great contrast building this theme but I didn't realize that I built something that can be actually really helpful. Accessibility [win](https://www.reddit.com/r/webdev/comments/6nb6ne/i_built_a_thing_bimbo_theme_for_visual_studio_code/dk88pw0/)!
 
 > I have terrible vision and high contrast themes make my life so much easier. Problem is, many of the high contrast themes are blindingly bright. Your theme is muted just enough to not be hard on the eyes, but bright enough to not have to strain.
+
+> Awesome theme and being red/green colour blind and have warnings with yellow squiggles is sooooo much better. Thanks for making my life easier!
