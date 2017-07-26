@@ -30,3 +30,9 @@ O wow! I really considered great contrast building this theme but I didn't reali
 > I have terrible vision and high contrast themes make my life so much easier. Problem is, many of the high contrast themes are blindingly bright. Your theme is muted just enough to not be hard on the eyes, but bright enough to not have to strain.
 
 > Awesome theme and being red/green colour blind and have warnings with yellow squiggles is sooooo much better. Thanks for making my life easier!
+
+**UPDATE!**
+
+[Adrian Pacała](https://twitter.com/adrianpacala) ported a Bimbo Theme from Visual Studio Code to [hyper](https://hyper.is/). Download it today from [here](https://www.npmjs.com/package/hyper-bimbo). Thanks a lot!
+
+![Bimbo Theme - layout variations](/photos/2017-07-15-5.jpg)
