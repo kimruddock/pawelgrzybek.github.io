@@ -16,6 +16,9 @@
     "type": "git",
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
+  "scripts": {
+    "dev": "jekyll serve --drafts --future --watch"
+  },
   "homepage": "https://pawelgrzybek.com",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
