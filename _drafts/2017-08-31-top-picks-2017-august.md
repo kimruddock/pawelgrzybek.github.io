@@ -9,7 +9,7 @@ photo: top-picks.jpg
 
 Do you hate Comic Sans? Of course you do. Do you have a strong opinion about it or just follow the crowd? Thomas Payne shares his perspective and gives a tons of interesting insights and facts about the most disliked typeface ever designed. I found extremely interesting the words of Comic Sans author…
 
-> Vincent Connare, designer of Comic Sans, said, “if you love Comic Sans, you don’t know anything about typography. But if you hate Comic Sans, then you don’t know anything about typography either…and you should get another hobby”.
+> Vincent Connare, designer of Comic Sans, said, “if you love Comic Sans, you don’t know anything about typography. But if you hate Comic Sans, then you don’t know anything about typography either… and you should get another hobby”.
 
 - - -
 
