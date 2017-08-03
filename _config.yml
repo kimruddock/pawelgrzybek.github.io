@@ -1,6 +1,8 @@
-# Site configuration
+# Serving
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pawelgrzybek.com" # the base hostname & protocol for your site
+
+# Outputting
 permalink: /:title/
 
 # Theme specific configuration
@@ -9,13 +11,15 @@ description: >
   Hi there, I'm Pawel Grzybek, Front-end Developer from Poland.
   Nowadays I live in Northampton (UK). When I'm not coding,
   I'm spinning funky vinyl records.
+
 # Contact and social media links
 twitter_username: pawelgrzybek
 github_username: pawelgrzybek
 
+# Handling Reading
 exclude: ['node_modules', 'gulpfile.js', 'package.json']
 
-# defaults
+# Outputting
 defaults:
   -
     scope:
@@ -36,11 +40,7 @@ defaults:
     values:
       layout: "page"
 
-kramdown:
-  input: GFM
-
 gems: [jekyll-paginate, jekyll-sitemap]
 
 # Pagination
 paginate: 10
-paginate_path: /page:num
