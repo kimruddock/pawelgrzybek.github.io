@@ -20,3 +20,13 @@ Do you hate Comic Sans? Of course you do. Do you have a strong opinion about it 
 Glen Maddern — the guy who stands behind [Front End Center](https://frontend.center/) — recorded another video that is the best explainer of a subject ever made. This episode is all about fallback fonts when we use custom web font in out eb projects. Very detailed introduction and emphasizing the potential issue, list of potential solutions and practical implementation using [Font Face Observer](https://fontfaceobserver.com/). All the videos by this dude that I saw so far are top noche. I have to consider his support and apply for premium plan of Front End Center.
 
 - - -
+
+## Compression Decompressed or, Making Things Smaller: A Visual Introduction
+
+[https://unwttng.com/compression-decompressed](https://unwttng.com/compression-decompressed)
+
+A great visual guide to compression, compression ratio and Kolmogorov complexity by [Jack Preston](Jack Preston). Very well presented and explained in a very funny way.
+
+- - -
+
+## 
