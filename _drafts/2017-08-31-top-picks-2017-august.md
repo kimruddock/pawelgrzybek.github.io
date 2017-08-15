@@ -37,4 +37,12 @@ The time is now! Unity decided to ditch JavaScript-like syntax (to be totally co
 
 - - -
 
+## Using ES2017 Async Functions
 
+[https://css-tricks.com/using-es2017-async-functions/](https://css-tricks.com/using-es2017-async-functions/)
+
+This is the best comparison of callbacks, promises and async / await functions in JavaScript. Worth to have a quick read for all of you who struggle with asynchronous code.
+
+- - -
+
+##
