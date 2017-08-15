@@ -29,4 +29,12 @@ A great visual guide to compression, compression ratio and Kolmogorov complexity
 
 - - -
 
-## 
+## UnityScript’s long ride off into the sunset
+
+[https://blogs.unity3d.com/2017/08/11/unityscripts-long-ride-off-into-the-sunset/](https://blogs.unity3d.com/2017/08/11/unityscripts-long-ride-off-into-the-sunset/)
+
+The time is now! Unity decided to ditch JavaScript-like syntax (to be totally correct — UnityScript). There is just 0.8% of developers who rely on this restricting syntax. There is no better time to learn C# fellaz :) As a developer very new to Unity ecosystem I started my journey with C# few weeks back and actually it is very enjoyable language to work with! Good luck guys!
+
+- - -
+
+
