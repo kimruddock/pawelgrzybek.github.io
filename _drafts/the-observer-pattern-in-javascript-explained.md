@@ -80,3 +80,60 @@ example
 - commonly used in js apps
 - the use case is wide and sometimes it may save you from injecting a costy frameworks like Vue or React
 - 
+
+
+
+```js
+class Observer {
+  constructor() {
+    this.observers = [];
+  }
+
+  subscribe(f) {
+    this.observers.push(f);
+  }
+
+  unsubscribe(f) {
+    this.observers = this.observers.filter(subscriber => subscriber !== f);
+  }
+
+  notify(data) {
+    this.observers.forEach(subscriber => subscriber(data));
+  }
+}
+
+const input = document.querySelector('.js-input');
+
+const h1 = document.querySelector('.js-h1');
+const h2 = document.querySelector('.js-h2');
+const h3 = document.querySelector('.js-h3');
+
+const subscribeH1 = document.querySelector('.js-subscribe-h1');
+const subscribeH2 = document.querySelector('.js-subscribe-h2');
+const subscribeH3 = document.querySelector('.js-subscribe-h3');
+
+const unsubscribeH1 = document.querySelector('.js-unsubscribe-h1');
+const unsubscribeH2 = document.querySelector('.js-unsubscribe-h2');
+const unsubscribeH3 = document.querySelector('.js-unsubscribe-h3');
+
+const updateH1 = text => h1.textContent = text;
+const updateH2 = text => h2.textContent = text;
+const updateH3 = text => h3.textContent = text;
+
+const headingsObserver = new Observer();
+headingsObserver.subscribe(updateH1);
+headingsObserver.subscribe(updateH2);
+headingsObserver.subscribe(updateH3);
+
+subscribeH1.addEventListener('click', () => headingsObserver.subscribe(updateH1));
+unsubscribeH1.addEventListener('click', () => headingsObserver.unsubscribe(updateH1));
+subscribeH2.addEventListener('click', () => headingsObserver.subscribe(updateH2));
+unsubscribeH2.addEventListener('click', () => headingsObserver.unsubscribe(updateH2));
+subscribeH3.addEventListener('click', () => headingsObserver.subscribe(updateH3));
+unsubscribeH3.addEventListener('click', () => headingsObserver.unsubscribe(updateH3));
+
+input.addEventListener('keyup', e => {
+  headingsObserver.notify(e.target.value);
+});
+
+```
