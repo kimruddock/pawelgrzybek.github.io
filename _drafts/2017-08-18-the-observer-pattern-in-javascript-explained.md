@@ -4,27 +4,27 @@ excerpt: This popular pattern used by tons of JavaScript applications may save y
 photo: 2015-08-18.jpg
 ---
 
-The Observer Pattern is a popular pattern used across all sort of JavaScript applications. The instance (subject) maintains collection of objects (observers) and notifies them all when change to the state occurs. Does it sound difficult to you? Yes, it was upsetting to me when I came across this pattern for a first time too. Tiny practical example may help you to grasp it.
+The Observer Pattern is a popular pattern used across all sort of JavaScript applications. The instance (subject) maintains a collection of objects (observers) and notifies them all when change to the state occurs. Does it sound difficult to you? Yes, it was upsetting to me as well when I came across this pattern for a first time. A tiny practical example may help you to grasp it.
 
-Imagine that you would like to update multiple elements (`h1`, `h2` and `h3`) simultaneously when some event occurs (typing inside the `input` field perhaps). You need to be able to add more (subscribe) elements that react (observe) to a value of a input. Removing subscription (unsubscribe) can be handy if you no longer need to reflect state changes in particular object. Do you get the idea now? Let's code it!
+Imagine that you have to update multiple elements simultaneously when some event occurs (typing inside the `input` field perhaps). You need to be able to add more (subscribe) elements that react (observe) to a change of an input value. Removing subscription (unsubscribe) can be handy if you no longer need to brodcast state changes to a particular object. Do you get the idea now? Let's code it!
 
 ```js
 // define a class
 class Observer {
-  // each instance of Observer class
-  // starts with empty array of things (observers)
+  // each instance of the Observer class
+  // starts with an empty array of things (observers)
   // that react for a state change
   constructor() {
     this.observers = [];
   }
 
-  // add ability to subscribe to new objects / DOM elements
+  // add ability to subscribe to a new object / DOM element
   // esentially, add soemthing to observers array
   subscribe(f) {
     this.observers.push(f);
   }
 
-  // add ability to unsubscribe to a particular object
+  // add ability to unsubscribe from particular object
   // esentially, remove soemthing from observers array
   unsubscribe(f) {
     this.observers = this.observers.filter(subscriber => subscriber !== f);
@@ -38,43 +38,34 @@ class Observer {
 }
 ```
 
-Hopefully the comments above help you to understand this pattern. This is an usecase example…
+The usecase example goes like this…
 
 ```js
 // some DOM references
 const input = document.querySelector('.js-input');
-const h1 = document.querySelector('.js-h1');
-const h2 = document.querySelector('.js-h2');
-const h3 = document.querySelector('.js-h3');
+const p1 = document.querySelector('.js-p1');
+const p2 = document.querySelector('.js-p2');
+const p3 = document.querySelector('.js-p3');
 
 // some actions to add to observers array
-const updateH1 = text => h1.textContent = text;
-const updateH2 = text => h2.textContent = text;
-const updateH3 = text => h3.textContent = text;
+const updateP1 = text => p1.textContent = text;
+const updateP2 = text => p2.textContent = text;
+const updateP3 = text => p3.textContent = text;
 
 // instantiate new Observer class
 const headingsObserver = new Observer();
 
 // subscribe to some observers
-headingsObserver.subscribe(updateH1);
-headingsObserver.subscribe(updateH2);
-headingsObserver.subscribe(updateH3);
+headingsObserver.subscribe(updateP1);
+headingsObserver.subscribe(updateP2);
+headingsObserver.subscribe(updateP3);
 ```
 
-With tiny little help of few control buttons, it gives you the power to do this kind of cool things with just a few lines of code. Isn't it nice?
+With tiny little help of few control buttons (added to make the demo more interactive), it gives you the power to do this kind of cool things with just a few lines of code. Isn't it nice?
 
-!!!! CODEPEN HERE !!!!
+<p>
+<p data-height="431" data-theme-id="14885" data-slug-hash="XaVRyY" data-default-tab="result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="XaVRyY" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/XaVRyY/">XaVRyY</a> by Pawel Grzybek (<a href="https://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</p>
 
-
-- [the best explanation of this pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript) can be found in "Learning JavaScript Design Patterns" by Addy Osmani — classic that every JavaScript developer should know
-- Pub / Sub which is a short for Publication / Subscription sometimes is used interchangeably to descibe this pattern, although [there are some minor differences](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript) between them and Add Osmanni descibes them all in his book.
-
-example 
-
-- instantiate an observer (the subject)
-- subscribe to methods that should be triggered when an event occurs
-- notify all observers with new data that is coming from the event
-- codepen
-
-- commonly used in js apps
-- the use case is wide and sometimes it may save you from injecting a costy frameworks like Vue or React
+This very simplified version of the observer pattern can save you from downloading some costy frameworks like Vue of React. If you are looking for detailed explanation of it, I can't recommend enough a ["Learning JavaScript Design Patterns"](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript) by Addy Osmani. Classic! Sometimes "Publication / Subscription" is used interchangeably to describe this pattern, although [there are some minor differences](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript) between them and Addy points them all in his book. Hopefully I this article helped you out. Until next time curious people :-)
