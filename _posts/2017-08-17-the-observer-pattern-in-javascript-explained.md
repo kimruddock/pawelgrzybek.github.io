@@ -59,6 +59,12 @@ const headingsObserver = new Observable();
 headingsObserver.subscribe(updateP1);
 headingsObserver.subscribe(updateP2);
 headingsObserver.subscribe(updateP3);
+
+// notify all observer about new data on event
+input.addEventListener('keyup', e => {
+  headingsObserver.notify(e.target.value);
+});
+
 ```
 
 With a little help of a few control buttons (added to make the demo more interactive), it gives you the power to do cool things like this with just a few lines of code. Isn't it nice?
