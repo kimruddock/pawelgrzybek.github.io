@@ -10,7 +10,7 @@ Imagine that you have to update multiple elements simultaneously when some event
 
 ```js
 // define a class
-class Observer {
+class Observable {
   // each instance of the Observer class
   // starts with an empty array of things (observers)
   // that react to a state change
@@ -33,7 +33,7 @@ class Observer {
   // update all subscribed objects / DOM elements
   // and pass some data to each of them
   notify(data) {
-    this.observers.forEach(subscriber => subscriber(data));
+    this.observers.forEach(observer => observer(data));
   }
 }
 ```
@@ -53,7 +53,7 @@ const updateP2 = text => p2.textContent = text;
 const updateP3 = text => p3.textContent = text;
 
 // instantiate new Observer class
-const headingsObserver = new Observer();
+const headingsObserver = new Observable();
 
 // subscribe to some observers
 headingsObserver.subscribe(updateP1);
