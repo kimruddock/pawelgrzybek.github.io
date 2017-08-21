@@ -60,7 +60,7 @@ headingsObserver.subscribe(updateP1);
 headingsObserver.subscribe(updateP2);
 headingsObserver.subscribe(updateP3);
 
-// notify all observer about new data on event
+// notify all observers about new data on event
 input.addEventListener('keyup', e => {
   headingsObserver.notify(e.target.value);
 });
