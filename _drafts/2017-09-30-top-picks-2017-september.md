@@ -22,4 +22,8 @@ I learned tons about authentication, authorization, and user management from [Ra
 
 - - -
 
-## 
+## Sketch — Libraries (Beta)
+
+[https://sketchapp.com/learn/documentation/libraries/](https://sketchapp.com/learn/documentation/libraries/)
+
+Sketch 47 comes with another revolutionary feature called Libraries. If you are a Sketch user, it won't take long to master new version. The concept is essentially the same as using symbols — the only difference is the fact that symbols are no longer attached to a single document but becomes global. If the file is marked as a library you can drop it to your server or local network and use it across all team members. It will make projects well synced and consistent. I'm sure the players of big design teams will benefit from tis feature.
