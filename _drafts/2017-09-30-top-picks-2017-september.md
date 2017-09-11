@@ -27,3 +27,15 @@ I learned tons about authentication, authorization, and user management from [Ra
 [https://sketchapp.com/learn/documentation/libraries/](https://sketchapp.com/learn/documentation/libraries/)
 
 Sketch 47 comes with another revolutionary feature called Libraries. If you are a Sketch user, it won't take long to master new version. The concept is essentially the same as using symbols — the only difference is the fact that symbols are no longer attached to a single document but becomes global. If the file is marked as a library you can drop it to your server or local network and use it across all team members. It will make projects well synced and consistent. I'm sure the players of big design teams will benefit from tis feature. [This Medium article](https://medium.com/ux-power-tools/sketch-libraries-how-they-work-and-the-crazy-stuff-you-can-do-with-them-fc10f142ac80) by [Jon Moore](https://twitter.com/uxpowertools) is a great primer to use brand new Libraries.
+
+- - -
+
+## Lazy async SVG rasterisation
+
+[https://jakearchibald.com/2017/lazy-async-svg/](https://jakearchibald.com/2017/lazy-async-svg/)
+
+Jake Archibald wrote a nice primer to bleeding edge `createImageBitmap` API that now allows to asynchronously render expensive SVG images off the main thread. Short and nice intro (requires Chrome Canary and `chrome://flags/#enable-experimental-canvas-features` flag enabled).
+
+- - -
+
+##
