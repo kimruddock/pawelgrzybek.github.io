@@ -46,4 +46,12 @@ Native support for ECMAScript modules in Node just should be dropped with versio
 
 - - -
 
-## 
+## Sublime Text 3.0
+
+[https://www.sublimetext.com/blog/articles/sublime-text-3-point-0](https://www.sublimetext.com/blog/articles/sublime-text-3-point-0)
+
+Finally! After years of waiting and lots of people migrating to other tools line Atom or Visual Studio Code — my favourite Sublime Text just officially hit verion 3. The upgrade consts next to noting (in majority of cases is totally for free) and the brand new licence costs just 80$. Made from grounds up, redesigned with brand new website and documentation! Worth droping money for!
+
+- - -
+
+##  
