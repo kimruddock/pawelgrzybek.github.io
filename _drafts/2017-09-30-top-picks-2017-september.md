@@ -54,4 +54,9 @@ Finally! After years of waiting and lots of people migrating to other tools line
 
 - - -
 
-##  
+## What's Coming in EdgeHTML 16
+[https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/whats-new/edgehtml-16](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/whats-new/edgehtml-16)
+
+New Microsoft EDGE is coming with quite big and important changes. CSS Grid Layout, CSS object-fit and object-position, improved Developer Tools, Payment Request API, Service Workers, WebVR and tons of minor improvements. Sounds trivial but I'm the most excited about CSS `object-fit` in Microsforst product. Finally!
+
+- - -
