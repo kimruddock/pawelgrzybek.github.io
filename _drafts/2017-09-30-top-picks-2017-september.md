@@ -60,3 +60,11 @@ Finally! After years of waiting and lots of people migrating to other tools line
 New Microsoft EDGE is coming with quite big and important changes. CSS Grid Layout, CSS object-fit and object-position, improved Developer Tools, Payment Request API, Service Workers, WebVR and tons of minor improvements. Sounds trivial but I'm the most excited about CSS `object-fit` in Microsforst product. Finally!
 
 - - -
+
+## Finally the Promise.prototype.finally() is available
+
+[https://hospodarets.com/promise.prototype.finally](https://hospodarets.com/promise.prototype.finally)
+
+Serg Hospodarets explains an always missing bit of Promise API that is going to be merged with the ECMAScript 2017 spec (hopefully) — the `finally()` method. This article includes a practical explanation and great example. Thanks for writing it Serg — very helpful!
+
+- - -
