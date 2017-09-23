@@ -8,4 +8,4 @@ Have you ever built a JavaScript library that works great across multiple browse
 
 ![BrowserStack for Open Source account](/photos/2017-09-23-1.jpg)
 
-At this point I would love to thank [BrowserStack](https://www.browserstack.com) team for giving me a free access to Automate Pro account to support my open source contribution! It allows me to seamlessly test my local project on hundreds of real devices with ease! Thanks again for your amazing support and for your love to open source! You rock!
+At this point I would love to thank [BrowserStack](https://www.browserstack.com) team for giving me a free access to Automate Pro account to support my open source contribution! It allows me to seamlessly test my local project on hundreds of real devices with ease! Thanks again for your amazing support and for your love to open source! You rock!!!
