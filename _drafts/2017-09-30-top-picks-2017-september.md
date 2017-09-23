@@ -68,3 +68,13 @@ New Microsoft EDGE is coming with quite big and important changes. CSS Grid Layo
 Serg Hospodarets explains an always missing bit of Promise API that is going to be merged with the ECMAScript 2017 spec (hopefully) — the `finally()` method. This article includes a practical explanation and great example. Thanks for writing it Serg — very helpful!
 
 - - -
+
+## Relicensing React, Jest, Flow, and Immutable.js
+
+[https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/](https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/)
+
+This one doesn't need a comment. Read a title one more time.
+
+- - -
+
+## 
