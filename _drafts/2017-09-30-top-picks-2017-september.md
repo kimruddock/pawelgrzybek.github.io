@@ -77,4 +77,12 @@ This one doesn't need a comment. Read a title one more time.
 
 - - -
 
+## Web truths: CSS is not real programming
+
+[https://christianheilmann.com/2017/09/19/web-truths-css-is-not-real-programming/](https://christianheilmann.com/2017/09/19/web-truths-css-is-not-real-programming/)
+
+A CSS language through the prism of programming language — very subjective opinion and full of good points article by Christian Heilmann. I really like the way how the author highlights the core principle of CSS language and what was the aim of creating it in the first place.
+
+- - -
+
 ## 
