@@ -85,4 +85,12 @@ A CSS language through the prism of programming language — very subjective opi
 
 - - -
 
-## 
+## Designing Websites for iPhone X
+
+[https://webkit.org/blog/7929/designing-websites-for-iphone-x/](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
+
+Very specific bump on new iPhoneX makes designers life a little bit more difficult. There needs to be some extra padding accommodated around a sensor housing. Webkit (Safarif engine) creators come with some helpful explanation and introduce new `constant()` CSS function. Dig deeper into the technical aspects and practical use case in this article.
+
+- - -
+
+##
