@@ -77,6 +77,13 @@ This one doesn't need a comment. Read a title one more time.
 
 - - -
 
+## Relicensing the GraphQL specification
+[https://code.facebook.com/posts/121714468491809/relicensing-the-graphql-specification/](https://code.facebook.com/posts/121714468491809/relicensing-the-graphql-specification/)
+
+And there you go! GraphQL is joining the bag of MIT frameworks! Another biggie!
+
+- - -
+
 ## Web truths: CSS is not real programming
 
 [https://christianheilmann.com/2017/09/19/web-truths-css-is-not-real-programming/](https://christianheilmann.com/2017/09/19/web-truths-css-is-not-real-programming/)
