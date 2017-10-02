@@ -4,7 +4,7 @@ excerpt: One of the most requested features in React framework has always been r
 photo: 2017-10-02.jpg
 ---
 
-[React 16 is here](https://reactjs.org/blog/2017/09/26/react-v16.0.html) and it brings lots of exciting changes. One of the most requesting features around React community has been [returning multiple elements](https://github.com/facebook/react/issues/2127) from a components render method. Skipping wrapper tag is definitely something that developers are happy about — popularity of [my tweet](https://twitter.com/pawelgrzybek/status/913697990849826816) proves this point.
+[React 16 is here](https://reactjs.org/blog/2017/09/26/react-v16.0.html) and it brings lots of exciting changes. One of the most requesting features around React community has been [returning multiple elements](https://github.com/facebook/react/issues/2127) from a component's render method. Skipping wrapper tag is definitely something that developers are happy about — popularity of [my tweet](https://twitter.com/pawelgrzybek/status/913697990849826816) proves this point.
 
 <p>
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Return multiple elements in <a href="https://twitter.com/reactjs?ref_src=twsrc%5Etfw">@reactjs</a> 16 ❤️<a href="https://twitter.com/hashtag/js?src=hash&amp;ref_src=twsrc%5Etfw">#js</a> <a href="https://twitter.com/hashtag/javascript?src=hash&amp;ref_src=twsrc%5Etfw">#javascript</a> <a href="https://twitter.com/hashtag/react?src=hash&amp;ref_src=twsrc%5Etfw">#react</a> <a href="https://twitter.com/hashtag/reactjs?src=hash&amp;ref_src=twsrc%5Etfw">#reactjs</a> <a href="https://t.co/uPGyxUGtWn">pic.twitter.com/uPGyxUGtWn</a></p>&mdash; Paweł Grzybek (@pawelgrzybek) <a href="https://twitter.com/pawelgrzybek/status/913697990849826816?ref_src=twsrc%5Etfw">September 29, 2017</a></blockquote>
@@ -44,6 +44,6 @@ const App = () =>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-Nice! Isn't it?! Find out more really cool features added in new version of React in this [great Egghead course](https://egghead.io/courses/leverage-new-features-of-react-16) by [Nik Graf](https://twitter.com/nikgraf).
+Nice! Isn't it?! Find out about more really cool features added in the new version of React in this [great Egghead course](https://egghead.io/courses/leverage-new-features-of-react-16) by [Nik Graf](https://twitter.com/nikgraf).
 
-Did you find it helpful? Consider to hit this share button to make me more popular than I am! Have a great day you all 🥑
+Did you find it helpful? Consider to hit the share button below to make me more popular than I am! Have a great day you all 🥑
