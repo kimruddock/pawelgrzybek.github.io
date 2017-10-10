@@ -12,4 +12,12 @@ And it is confirmed — Microsofts browser is coming to Android and iOS devices.
 
 - - -
 
+## Front End Center — Caching & CDNs
+
+[https://youtu.be/_QeNLrkPvdI](https://youtu.be/_QeNLrkPvdI)
+
+Glen Maddern again published another free episode of Front End Center. As always it is a top explanation — Cache and CDNs networks are todays subject. Thanks a to for making this content!
+
+- - -
+
 ## 
