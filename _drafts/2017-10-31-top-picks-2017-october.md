@@ -28,4 +28,12 @@ Chris Coyier collected a great list of tips to build JS free cliders in pure HTM
 
 - - -
 
-## 
+## Firefox Quantum
+
+[https://www.mozilla.org/en-US/firefox/quantum/](https://www.mozilla.org/en-US/firefox/quantum/)
+
+New generation of one of the most popular browsers is coming. Firefox Quantum apparently is twice faster and require 30% energy than by far the most popular Google Chrome. Apart from internal changer it is redesigned from ground up and screen shots available on demo website actually look really stunning. Will new Mozilla product shake the world of browsers again — I hope so! November 14th is the day when we all are going to find out, but for now enjoy a beautiful presentation page.
+
+- - -
+
+##
