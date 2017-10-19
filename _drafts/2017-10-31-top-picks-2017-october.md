@@ -54,4 +54,10 @@ Boom! Just wrote about InVision Studio just to read another big announcement. Ad
 
 - - -
 
-## 
+## Documenting the Web together
+
+[https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/)
+
+WOW! Microsoft, Mozilla, Google, the W3C and Samsung team up to make MDN Web Docs the best place for web developers to learn and share information about building for the open web. Isn't that fascinating? Finally something in web dev gets easier.
+
+- - -
