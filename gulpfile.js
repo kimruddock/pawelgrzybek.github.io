@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const cp = require('child_process');
+const { exec } = require('child_process');
 const bs = require('browser-sync');
 const postcss = require('gulp-postcss');
 const cssImport = require('postcss-import');
@@ -11,7 +11,7 @@ const nano = require('gulp-cssnano');
 
 // Build jekyll project
 gulp.task('jekyll', done => {
-  cp.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts', '--quiet', '--future'], { stdio: 'inherit' }).on('close', done);
+  exec('bundle exec jekyll build --drafts --quiet --future', () => done());
 });
 
 // Rebuild and refresh project
