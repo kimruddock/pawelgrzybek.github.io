@@ -11,7 +11,7 @@ const nano = require('gulp-cssnano');
 
 // Build jekyll project
 gulp.task('jekyll', done => {
-  cp.spawn('jekyll', ['build', '--drafts', '--quiet', '--future'], { stdio: 'inherit' }).on('close', done);
+  cp.spawn('bundle', ['exec', 'jekyll', 'build', '--drafts', '--quiet', '--future'], { stdio: 'inherit' }).on('close', done);
 });
 
 // Rebuild and refresh project
