@@ -46,4 +46,12 @@ Few years ago Sketch was born. Successful app that entirely changed the UI desig
 
 - - -
 
+## Welcome Adobe XD CC
+
+[https://blogs.adobe.com/creativecloud/welcome-adobe-xd-cc/](https://blogs.adobe.com/creativecloud/welcome-adobe-xd-cc/)
+
+Boom! Just wrote about InVision Studio just to read another big announcement. Adobe XD is officially out od beta and you can have it for £9.98/month in new Single App plan.
+
+- - -
+
 ## 
