@@ -7,7 +7,7 @@ code {
   vertical-align: top;
 }
 
-.highlight {
+pre.highlight {
   margin-bottom: 1.6rem;
   padding: .8rem 1.2rem;
   background: var(--color-gray);
