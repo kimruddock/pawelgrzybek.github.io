@@ -1,16 +1,16 @@
 ---
-title: From a callback hell, through promises to async functions
-excerpt: Last few years brought us lots of revolutionary features to work with asynchronous JavaScript operations. Let's review the most popular ones together.
+title: From callback hell, through promises to async functions
+excerpt: The last few years have brought us lots of revolutionary features for working with asynchronous JavaScript operations. Let's review the most popular ones together.
 photo: 2017-10-25.jpg
 ---
 
-Working with an asynchronous JavaScript changed a lot in last few years. When a `Promise` has been introduced to ECMAScript few years ago life became a dream. Two years later an `async` function has been added to the specification — I still can't believe how nice and easy to read this is! What's next? Time will show us but now let's review what we went through to get where we are. You must agree — a random Chuck Norris joke generator seems to be a perfect demo program!
+Working with asynchronous JavaScript has changed a lot in the last few years. When `Promises` were introduced to ECMAScript a few years ago life became a dream. Two years later, the `async` function was added to the specification — I still can't believe how nice and easy to read it is! What's next? Time will tell, but now let's review what we went through to get where we are. You have to agree — a random Chuck Norris joke generator is the perfect demo program!
 
 <!-- image here -->
 
 ## Callbacks
 
-If you joined a JS stage few years ago or earlier you must remember the [doom](https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)) that you could easily end up in by nesting callbacks. Luckily these days are over. This simple `XMLHttpRequest` request fetches a piece of a JSON from API and it isn't hard to read (yet). Imagine a case when you have to call another request based on the result of a first one — I don't miss that. 
+If you joined the JS stage a few years ago or earlier you'll remember the [doom](https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)) that you could easily end up in by nesting callbacks. Luckily those days are over. A simple `XMLHttpRequest` request fetches a piece of JSON from an API and it isn't hard to read (yet). Imagine a situation where you have to call another request based on the result of the first one — I don't miss that. 
 
 ```js
 function getRandomJoke() {
@@ -49,7 +49,7 @@ function getRandomJoke() {
 
 ## The promise of a better future
 
-An asynchronous operation takes some time and the only thing that we can be assured ahead of time is a fact that it is going to be resolved or rejected. This could easily be a definition of a [JavaScript `Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). It landed in a ECMAScript spec in 2015 and totally revolutionized the way how developers handle asynchronous programs. Promised-based methods (the ones that return promise) are slowly replacing callback-based equivalents and `fetch()` used in example below is one of them.
+An asynchronous operation takes some time and the only thing that we can be assured of ahead of time is the fact that it is going to be resolved or rejected. This could easily be the definition of a [JavaScript `Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). It landed in the ECMAScript spec in 2015 and totally revolutionised the way developers handle asynchronous programs. Promised-based methods (the ones that return the promise) are slowly replacing callback-based equivalents and `fetch()`, used in example below, is one of them.
 
 ```js
 function getRandomJoke() {
@@ -81,7 +81,7 @@ function getRandomJoke() {
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-Living on a bleeding edge? Safari  11, Google Chrome 63, EDGE and Node under the `-​-harmony-promise-finally` flag comes with additional handler `finally()`. Keep it DRY!
+Living on the bleeding edge? Safari 11, Google Chrome 63, EDGE and Node under the `-​-harmony-promise-finally` flag comes with the additional handler `finally()`. Keep it DRY!
 
 ```js
 function getRandomJoke() {
@@ -113,7 +113,7 @@ function getRandomJoke() {
 
 ## Async code, sync look
 
-In 2017 ECMAScript introduced another game changer — [Async Function](https://tc39.github.io/ecma262/2017/#sec-async-function-definitions). It makes working with asynchronous operations very intuitive because it is written in the same way as a synchronous code with two tiny nuances — an [`async`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) keyword in front of a function declaration and an [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator as a promise prefix. Apart from much nicer to read syntax it comes with [optimizations in JavaScript engines](https://mathiasbynens.be/notes/async-stack-traces) as well. Looking at the current [browser support](http://caniuse.com/#feat=async-functions) and the help that [babel-preset-env](https://github.com/babel/babel-preset-env) can offer this is my preferred way of working with asynchronous JavaScript.
+In 2017 ECMAScript introduced another game changer — the [Async Function](https://tc39.github.io/ecma262/2017/#sec-async-function-definitions). It makes working with asynchronous operations very intuitive because it is written in the same way as synchronous code with two tiny nuances — an [`async`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) keyword in front of a function declaration and an [`await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator as a promise prefix. Apart from it just being syntactically much nicer to read, it comes with [optimisations in JavaScript engines](https://mathiasbynens.be/notes/async-stack-traces) as well. Based on the current [browser support](http://caniuse.com/#feat=async-functions) and the help that [babel-preset-env](https://github.com/babel/babel-preset-env) can offer this is my preferred way of working with asynchronous JavaScript.
 
 ```js
 const getRandomJoke = async() => {
@@ -144,4 +144,4 @@ const getRandomJoke = async() => {
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
-Hopefully you like this quick time travel through asynchronous programming in JavaScript. The changes introduced in latest versions of a language are really exciting and I am really looking forward to see what's next! Until next time pals!
+Hopefully you liked this quick time travel through asynchronous programming in JavaScript. The changes introduced in latest versions of the language are really exciting and I am really looking forward to see what's next! Until next time pals!
