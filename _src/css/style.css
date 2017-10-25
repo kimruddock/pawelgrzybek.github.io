@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 111.111111%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -23,7 +23,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 128.571428571%;
+    font-size: 125%;
   }
 }
 
@@ -36,11 +36,10 @@ html {
 }
 
 body {
-  background-color: var(--color-gray);
   color: var(--color-text-body);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.8rem;
 }
 
 img {
@@ -71,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.8rem;
 }
 
 h1,
@@ -80,20 +79,20 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 2.625rem;
+  margin-top: 2.7rem;
   color: var(--color-text-headings);
   font-weight: 700;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 h1 {
   font-size: 2.369rem;
-  line-height: 3.5rem;
+  line-height: 3.6rem;
 }
 
 h2 {
   font-size: 1.7777rem;
-  line-height: 2.625rem;
+  line-height: 2.7rem;
 }
 
 h3 {
@@ -114,19 +113,19 @@ h6 {
 
 ul,
 ol {
-  margin: 0 0 1.75rem 1.75rem;
+  margin: 0 0 1.8rem 1.8rem;
 }
 
 hr {
   display: block;
-  height: 1.75rem;
+  height: 1.8rem;
   border: 0;
   box-shadow: inset 0 1px 0 var(--color-gray);
 }
 
 blockquote {
-  margin-bottom: 1.75rem;
-  padding: 1.75rem;
+  margin-bottom: 1.8rem;
+  padding: 1.8rem;
   border-left: 4px solid #e6e6e6;
   background: var(--color-gray);
 }
@@ -136,36 +135,27 @@ blockquote p {
   font-style: italic;
 }
 
-.page {
-  padding: 0 1.75rem;
-  background: #fff;
-}
-
-@media screen and (min-width: 960px) {
-  .page {
-    margin: .875rem;
-  }
-}
-
 .wrap {
   width: 100%;
-  max-width: 700px;
+  max-width: calc(700px + 3.6rem);
+  padding: 0 1.8rem;
   margin: 0 auto;
 
-  /* background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px); */
-  background-size: 100% 28px;
+  background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);
+  background-size: 100% 32px;
 }
 
 @media screen and (min-width: 1440px) {
   .wrap {
-    max-width: 800px;
+    max-width: calc(800px + 3.6rem);
+    padding: 0 1.8rem;
     background-size: 100% 36px;
   }
 }
 
 .header {
-  padding: 5.25rem 0;
-  margin-bottom: 3.5rem;
+  padding: 5.4rem 0;
+  margin-bottom: 3.6rem;
   position: relative;
 }
 
@@ -179,28 +169,62 @@ blockquote p {
   background: var(--color-gray);
 }
 
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__title {
+  flex-basis: 100%;
+  margin: 0 .9rem 1.8rem 0;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+@media screen and (min-width: 700px) {
+  .header__title {
+    flex-basis: auto;
+    margin-right: auto;
+  }
+}
+
+.header__titleurl {
+  font-weight: 700;
+  color: var(--color-text-headings);
+}
+
+.header__link {
+  margin-right: .9rem;
+  color: var(--color-text-light);
+}
+
+/* .header {
+}
+
+
+
 .header__title {
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.8rem;
   margin-top: 0;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.8rem;
 }
 
 .header__titleurl {
   color: var(--color-text-headings);
-}
+} */
 
-.nav {
+/* .nav {
   display: flex;
 }
 
 .nav__link {
-  margin-right: .875rem;
-}
+  margin-right: .9rem;
+} */
 
 .post {
-  margin-bottom: 5.25rem;
+  margin-bottom: 5.4rem;
 }
 
 .post__date {
@@ -219,9 +243,9 @@ blockquote p {
 
 .footer {
   color: var(--color-text-light);
-  padding: 3.5rem 0;
+  padding: 3.6rem 0;
   font-size: .75rem;
-  /* margin-bottom: 3.5rem; */
+  /* margin-bottom: 3.6rem; */
   position: relative;
 }
 
@@ -238,7 +262,7 @@ blockquote p {
 
 .pager {
   display: flex;
-  margin-bottom: 5.25rem;
+  margin-bottom: 5.4rem;
 }
 
 .pager__btn {
@@ -259,8 +283,8 @@ blockquote p {
 }
 
 .share__btn {
-  margin-right: .875rem;
-  padding: .875rem;
+  margin-right: .9rem;
+  padding: .9rem;
   transition: all var(--ms);;
   outline: 0;
   font-size: .75rem;
@@ -271,7 +295,7 @@ blockquote p {
 
 @media screen and (min-width: 700px) {
   .share__btn {
-    padding: .875rem 1.75rem .875rem .875rem;
+    padding: .9rem 1.8rem .9rem .9rem;
   }
 }
 
@@ -286,8 +310,8 @@ blockquote p {
 .share__icon {
   display: none;
   width: 24px;
-  height: 1.75rem;
-  margin-right: .875rem;
+  height: 1.8rem;
+  margin-right: .9rem;
   float: left;
 }
 
@@ -303,7 +327,7 @@ blockquote p {
 }
 
 .archive__item {
-  padding: .875rem 0;
+  padding: .9rem 0;
   box-shadow: 0 1px 0 0 var(--color-gray);
 }
 
@@ -339,8 +363,8 @@ code {
 
 
 .highlight {
-  margin-bottom: 1.75rem;
-  padding: .875rem 1.3125rem;
+  margin-bottom: 1.8rem;
+  padding: .9rem 1.3125rem;
   background: var(--color-gray);
   /* box-shadow: 0 0 0 1px var(--color-border); */
 }

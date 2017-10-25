@@ -1,20 +1,22 @@
   <header class="header">
 
-    {% if page.title %}
-    <div class="header__title">
-      <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
-    </div>
-    {% else %}
-    <h1 class="header__title">
-      <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
-    </h1>
-    <p class="header__description">{{ site.description }}</p>
-    {% endif %}
+    <nav class="header__nav">
+      {% if page.title %}
+      <div class="header__title">
+        <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
+      </div>
+      {% else %}
+      <h1 class="header__title">
+        <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
+      </h1>
+      {% endif %}
 
-    <nav class="nav">
-      <a href="{{ site.baseurl }}/archive/" class="nav__link" title="Archive">Archive</a>
-      <a href="http://twitter.com/{{ site.twitter_username }}" class="nav__link" title="Paweł Grzybek on Twitter">Twitter</a>
-      <a href="http://github.com/{{ site.github_username }}" class="nav__link" title="Paweł Grzybek on Github">Github</a>
+      <a href="{{ site.baseurl }}/archive/" class="header__link" title="Archive">Archive</a>
+      <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" title="Paweł Grzybek on Twitter">Twitter</a>
+      <a href="http://github.com/{{ site.github_username }}" class="header__link" title="Paweł Grzybek on Github">Github</a>
+
     </nav>
+
+    <p class="header__description">{{ site.description }}</p>
 
   </header>
