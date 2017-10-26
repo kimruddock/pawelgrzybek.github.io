@@ -61,3 +61,13 @@ Boom! Just wrote about InVision Studio just to read another big announcement. Ad
 WOW! Microsoft, Mozilla, Google, the W3C and Samsung team up to make MDN Web Docs the best place for web developers to learn and share information about building for the open web. Isn't that fascinating? Finally something in web dev gets easier.
 
 - - -
+
+## Chrome Dev Summit 2017
+
+[https://www.youtube.com/playlist?list=PLNYkxOF6rcICUD5nBfRdAR6Fveosnqa5m](https://www.youtube.com/playlist?list=PLNYkxOF6rcICUD5nBfRdAR6Fveosnqa5m)
+
+If not the most important, probably one of the most important dev oriented events for web developers just happened in San Francisco this month. This youtube playlist contains all the talks from this two days event and some of them are mind blowing. I'm really excited about the future of WebVR, features and adoption of brand new templating library called lit-HTML and the strong global focus on accessibility and performance.
+
+- - -
+
+## 
