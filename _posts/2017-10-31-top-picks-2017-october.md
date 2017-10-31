@@ -16,7 +16,7 @@ And it is confirmed — Microsofts browser is coming to Android and iOS devices.
 
 [https://youtu.be/_QeNLrkPvdI](https://youtu.be/_QeNLrkPvdI)
 
-Another free episode of Front End Center by Glen Maddern — next top explainer. Cache and CDNs networks is a todays subject. Can't thank to this dude enough for making this fantastic content!
+Another free episode of Front End Center by Glen Maddern — next top explainer. Cache and CDNs networks is a todays subject. I can't thank this dude enough for making this fantastic content!
 
 - - -
 
@@ -32,7 +32,7 @@ Chris Coyier collected a great list of tips to build a slider in pure HTML and C
 
 [https://www.mozilla.org/en-US/firefox/quantum/](https://www.mozilla.org/en-US/firefox/quantum/)
 
-New generation of one of the most popular browsers is coming. Firefox Quantum apparently is twice faster and require 30% less energy than the most popular Google Chrome. Apart from internal changes it is entirely redesigned — screen shots available on demo website look really stunning. Will new Mozilla product shake the world of browsers again — I hope so! November 14th is the day — for now enjoy a beautiful presentation page.
+New generation of one of the most popular browsers is coming. Firefox Quantum apparently is twice as fast and requires 30% less energy than the most popular Google Chrome. Apart from internal changes it is entirely redesigned — screen shots available on demo website look really stunning. Will new Mozilla product shake the world of browsers again — I hope so! November 14th is the day — for now enjoy a beautiful presentation page.
 
 - - -
 
@@ -40,7 +40,7 @@ New generation of one of the most popular browsers is coming. Firefox Quantum ap
 
 [https://www.invisionapp.com/studio](https://www.invisionapp.com/studio)
 
-Few years ago Sketch was born. Successful app that entirely changed the UI design game. Adobe XD joined the game. Competition didn't slow down — fantastic Figma came out with tons of revolutionary features. These are design tools — not a great ones to create interactive prototypes tho. The market of prototyping tools is much more chock-full — Framer, Principle, Marvel, ProtoIO, Flinto, Origami, Napkin and many more. One of the first ones is InVision! Today this one is changing the game (hopefully). Studio — design tool with the whole power of prototyping functionality baked in. Personally I was waiting for a tool that allow me to do these two things in a single app (no, Adobe XD can't do it well). And this promo video! WOW!
+Few years ago Sketch was born. Successful app that entirely changed the UI design game. Adobe XD joined the game. Competition didn't slow down — fantastic Figma came out with tons of revolutionary features. These are design tools — not a great ones to create interactive prototypes tho. The market of prototyping tools is much more chock-full — Framer, Principle, Marvel, ProtoIO, Flinto, Origami, Napkin and many more. One of the first ones is InVision! Today this one is changing the game (hopefully). Studio — design tool with the whole power of prototyping functionality baked in. Personally I was waiting for a tool that allows me to do these two things in a single app (no, Adobe XD can't do it well). And this promo video! WOW!
 
 - - -
 
