@@ -1,6 +1,6 @@
 ---
 title: Top picks — 2017 October
-excerpt: 
+excerpt: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit sed dolorem culpa veritatis quas. Quam quod vel pariatur voluptate veritatis?
 photo: top-picks.jpg
 ---
 
