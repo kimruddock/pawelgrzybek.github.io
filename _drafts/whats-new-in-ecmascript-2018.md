@@ -5,6 +5,8 @@ photo: 2017-01-30.jpg
 ---
 
 TRACK IT USING THIS LINK:
+https://tc39.github.io/process-document/
+http://exploringjs.com/es2016-es2017/ch_tc39-process.html
 https://github.com/tc39/proposals/blob/master/finished-proposals.md
 
 ## Template Literal Revision
