@@ -3,7 +3,7 @@
   --color-text-light: #888;
   --color-text-headings: #111;
   --color-text-links: #d3545b;
-  --color-gray: #eee;
+  --color-gray: #f7f7f7;
 }
 
 ::selection {
@@ -142,7 +142,7 @@ blockquote p {
   margin: 0 auto;
 
   /* background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px); */
-  background-size: 100% 32px;
+  /* background-size: 100% 32px; */
 }
 
 @media screen and (min-width: 1440px) {
@@ -357,7 +357,7 @@ pre,
 code {
   background: var(--color-gray);
   /* font-family: 'Source Code Pro', monospace; */
-  /* font-size: .847rem; */
+  font-size: .847rem;
   overflow-x: auto;
   vertical-align: top;
 }
@@ -365,12 +365,12 @@ code {
 
 .highlight {
   margin-bottom: 1.8rem;
-  padding: .9rem 1.3125rem;
+  padding: .9rem 1.5rem;
   background: var(--color-gray);
   /* box-shadow: 0 0 0 1px var(--color-border); */
 }
 
-/*
+
 .c {
   color: #998;
 }
@@ -613,4 +613,3 @@ code {
 .il {
   color: #099;
 }
-*/
