@@ -6,11 +6,11 @@ photo: 2017-11-10.jpg
 
 First things first — I'm not an experienced game developer. I just started my journey with Unity not long time ago and this article is a result of my early explorations that can be useful for newcomers.
 
-As a day to day front end developer I spent majority of the time in HTML, CSS and JavaScript. Jumping from one world to a completely new environment is a fantastic experience but comes with lots of difficulties. My biggest issue on early Unity expedition wasn't a C#, it wasn't a convoluted interface, nor a crazy amount of 3D vector math. It was a MonoDevelop — the default IDE that Unity comes with and works smoothly out of the box. Lack of my favorite shortcuts, snippets system and absence of core functionalities that I use hundreds times a day. Visual Studio Code served me well for last few months and I couldn't stand writing a single line of code without it. After a while it turned up that VSCode can be linked with my brand new platform to take advantage of all the things that it is best at. Let's go through the whole process step by step.
+As a day to day front end developer I spent majority of the time in HTML, CSS and JavaScript. Jumping from one world to a completely new environment is a fantastic experience but comes with lots of difficulties. My biggest issue on early Unity expedition wasn't a C#, it wasn't a convoluted interface, nor a crazy amount of 3D vector math. It was a MonoDevelop — the default IDE that Unity comes with and works smoothly out of the box. Lack of my favorite shortcuts, snippets system and absence of core functionalities that I use hundreds times a day. Visual Studio Code served me well for last few months and I couldn't stand writing a single line of code without it. After a while it turned up that VSCode can be linked with Unity to take advantage of all the things that it is best at. Let's go through the whole process step by step.
 
 ## Visual Studio Code and C# extension
 
-You can download VSCode from Microsoft website for free. Installation process is very straight forward. Out of the box it doesn't support a language used by Unity — it can be easily solved by installing C# extension from official marketplace.
+You can download [VSCode from Microsoft website](https://code.visualstudio.com/) for free. Installation process is very straight forward. Out of the box it doesn't support a language used by Unity — it can be easily solved by installing C# extension from official marketplace.
 
 !!! IMAGE OF A VSCODe and C# extension on the screen !!!
 
@@ -18,7 +18,7 @@ In theory Unity support three scripting languages — C#, JavaScript and Python-
 
 ## Unity and it's external script editor
 
-Despite the time that it takes to download, Unity set up isn't something scary. I just would like to point your attention to the step where you can choose addition components that are going to be added during the installation. As we are aiming to use it with Visual Studio Code, you can un-check MonoDevelop from add-ons list.
+Despite the time that it takes to download, Unity set up isn't scary. I just would like to point your attention to the step where you can choose addition components that are going to be added during the installation. As we are aiming to use it with Visual Studio Code, you can un-check MonoDevelop from add-ons list.
 
 !!! IMAGE OF A SCREEN WITH UNCHECKED MONODEVELOP !!!
 
@@ -42,6 +42,6 @@ brew install mono
 
 ## VSCode + Unity = <3
 
-It seems to be a lot of steps but actuall the whole setup takes few minutes and now you can enjoy smooth integration of Unity and you favourite code editor full.
+It seems to be a lot of steps but actuall the whole setup takes just a few minutes. You can now enjoy smooth integration of Unity and you favourite code editor.
 
 !!! GIF OF VSCODE AND UNITY !!!
