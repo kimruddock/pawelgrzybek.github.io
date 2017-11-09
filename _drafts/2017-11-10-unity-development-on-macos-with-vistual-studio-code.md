@@ -12,7 +12,7 @@ As a day to day front end developer I spent majority of the time in HTML, CSS an
 
 You can download [VSCode from Microsoft website](https://code.visualstudio.com/) for free. Installation process is very straight forward. Out of the box it doesn't support a language used by Unity — it can be easily solved by installing C# extension from official marketplace.
 
-!!! IMAGE OF A VSCODe and C# extension on the screen !!!
+![Visual Studio Code and C# extension](/photos/2017-11-10-1.jpg)
 
 In theory Unity support three scripting languages — C#, JavaScript and Python-like Boo. [Ditching Boo](https://blogs.unity3d.com/2014/09/03/documentation-unity-scripting-languages-and-you/) has been announced long time ago and the same thing has been recently revealed about [the future of Javascript-like UnityScript](https://blogs.unity3d.com/2017/08/11/unityscripts-long-ride-off-into-the-sunset/). C# is the future of this platform — much nicer ecosystem, tooling support and the bright future full of powerful features that wouldn't be possible in other language. If you have never worked with C# you don't have to worry — [official documentation](https://unity3d.com/learn/tutorials/s/scripting) is a fantastic place to get you running.
 
@@ -20,17 +20,17 @@ In theory Unity support three scripting languages — C#, JavaScript and Python-
 
 Despite the time that it takes to download, Unity set up isn't scary. I just would like to point your attention to the step where you can choose addition components that are going to be added during the installation. As we are aiming to use it with Visual Studio Code, you can un-check MonoDevelop from add-ons list.
 
-!!! IMAGE OF A SCREEN WITH UNCHECKED MONODEVELOP !!!
+![Unity comes with MonoDevelop](/photos/2017-11-10-2.jpg)
 
 Now you can go to Unity settings and change your "External Script Editor" to Visual Studio Code.
 
-!!! IMAGE OF A UNITY SETTINGS SCREEN !!!
+![Visual Studio code as a external script editor for Unity](/photos/2017-11-10-3.jpg)
 
 ## Install .NET SKD
 
 Command Line Interface for .NET Software Development Kit is something that we need. Download the [latest version of a installer](https://www.microsoft.com/net/learn/get-started/macos) from Microsoft website and follow the installation guide.
 
-!!! IMAGE OF A SCREEN WITH .NET installation process !!!
+![.NET SDK installation screen](/photos/2017-11-10-4.jpg)
 
 ## Brew and Mono
 
@@ -44,4 +44,4 @@ brew install mono
 
 It seems to be a lot of steps but actuall the whole setup takes just a few minutes. You can now enjoy smooth integration of Unity and you favourite code editor.
 
-!!! GIF OF VSCODE AND UNITY !!!
+![Unity integration into Visual Studio Code](/photos/2017-11-10-5.gif)
