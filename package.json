@@ -17,7 +17,8 @@
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
   "scripts": {
-    "dev": "php -S localhost:8000 -t _site/",
+    "dev": "php -S 0.0.0.0:8000 -t _site/",
+    "build": "npm run build-css && npm run build-jekyll",
     "build-jekyll": "bundle exec jekyll build --drafts --quiet --future",
     "build-css": "cp _src/css/style.css dist/css/style.css"
   },

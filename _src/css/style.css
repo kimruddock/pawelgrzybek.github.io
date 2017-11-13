@@ -3,7 +3,7 @@
   --color-text-light: #888;
   --color-text-headings: #111;
   --color-text-links: #d3545b;
-  --color-gray: #f7f7f7;
+  --color-gray: #ccc;
 }
 
 ::selection {
@@ -86,17 +86,17 @@ h6 {
 }
 
 h1 {
-  font-size: 2.369rem;
+  font-size: 1.953rem;
   line-height: 2.7rem;
 }
 
 h2 {
-  font-size: 1.7777rem;
-  line-height: 2.7rem;
+  font-size: 1.563rem;
+  /* line-height: 2.7rem; */
 }
 
 h3 {
-  font-size: 1.3333rem;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -104,11 +104,11 @@ h4 {
 }
 
 h5 {
-  font-size: .75rem;
+  font-size: .8rem;
 }
 
 h6 {
-  font-size: .563rem;
+  font-size: .64rem;
 }
 
 ul,
@@ -177,7 +177,7 @@ blockquote p {
 
 .header__title {
   flex-basis: 100%;
-  margin: 0 1.8rem 0 0;
+  margin: 0 .9rem 0 0;
   font-size: 1rem;
   line-height: 1.8rem;
 }
@@ -196,7 +196,7 @@ blockquote p {
 .header__link {
   margin-right: .9rem;
   /* color: var(--color-text-light); */
-  font-size: .75rem;
+  font-size: .8rem;
 }
 
 /* .header {
@@ -245,7 +245,7 @@ blockquote p {
 .footer {
   color: var(--color-text-light);
   padding: 3.6rem 0;
-  font-size: .75rem;
+  font-size: .8rem;
   /* margin-bottom: 3.6rem; */
   position: relative;
 }
@@ -338,7 +338,7 @@ blockquote p {
 
 .archive__date {
   display: block;
-  font-size: .75rem;
+  font-size: .8rem;
   opacity: var(--color-text-light);
 }
 
@@ -378,7 +378,7 @@ code {
 .err {
   background-color: #e3d2d2;
   color: #a61717;
-} /
+}
 
 .k {
   font-weight: 400;
