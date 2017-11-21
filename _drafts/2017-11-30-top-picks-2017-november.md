@@ -30,4 +30,12 @@ O wow! Ana Travas created this amazing collection full of smooth CSS animations 
 
 - - -
 
+## Dynamic import()
+
+[https://developers.google.com/web/updates/2017/11/dynamic-import](https://developers.google.com/web/updates/2017/11/dynamic-import)
+
+Mathias Bynens from V8 team explains a syntax of dynamic `import()` in JavaScript and provides a great practical example. Clear comparison between well-known static `import` helped me a lot to embrace the new concept.
+
+- - -
+
 ## 
