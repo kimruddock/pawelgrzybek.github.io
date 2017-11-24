@@ -17,13 +17,16 @@
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
   "scripts": {
-    "dev": "php -S 0.0.0.0:8000 -t _site/",
-    "build": "npm run build-css && npm run build-jekyll",
-    "build-jekyll": "bundle exec jekyll build --drafts --quiet --future",
-    "build-css": "cp _src/css/style.css dist/css/style.css"
+    "dev": "live-server _site/",
+    "build": "npm run build:css && npm run build:jekyll",
+    "build:jekyll": "bundle exec jekyll build --drafts --quiet --future",
+    "build:css": "cp _src/css/style.css dist/css/style.css",
+    "build:watch": "watch 'npm run build' _src"
   },
   "homepage": "https://pawelgrzybek.com",
   "devDependencies": {
-    "browser-sync": "2.18.13"
+    "browser-sync": "2.18.13",
+    "live-server": "1.2.0",
+    "watch": "1.0.2"
   }
 }

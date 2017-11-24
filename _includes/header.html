@@ -1,23 +1,28 @@
   <header class="header">
+      <div class="wrap">
+        {% if page.title %}
+        <div class="header__title">
+          <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
+        </div>
+        {% else %}
+        <h1 class="header__title">
+          <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
+        </h1>
+        {% endif %}
 
-    <nav class="header__nav">
-      {% if page.title %}
-      <div class="header__title">
-        <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
-      </div>
-      {% else %}
-      <h1 class="header__title">
-        <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
-      </h1>
-      {% endif %}
+        {% if page.layout != 'post' %}
+        <p>{{ site.description }}</p>
+        {% endif %}
 
-      <a href="{{ site.baseurl }}/about/" class="header__link" title="Archive">About</a>
-      <a href="{{ site.baseurl }}/archive/" class="header__link" title="Archive">Archive</a>
-      <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" title="Paweł Grzybek on Twitter">Twitter</a>
-      <a href="http://github.com/{{ site.github_username }}" class="header__link" title="Paweł Grzybek on Github">Github</a>
+        <!-- <p>Hi there, I’m Pawel Grzybek, Front-end Developer from Poland. Nowadays I live in Northampton (UK). When I’m not coding, I’m spinning funky vinyl records.</p> -->
 
-    </nav>
+        <nav class="header__nav">
+          <a href="{{ site.baseurl }}/archive/" class="header__link" title="Archive">Archive</a>
+          <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" title="Paweł Grzybek on Twitter">Twitter</a>
+          <a href="http://github.com/{{ site.github_username }}" class="header__link" title="Paweł Grzybek on Github">Github</a>
+        </nav>
 
-    <!-- <p class="header__description">{{ site.description }}</p> -->
+      <!-- <p class="header__description">{{ site.description }}</p> -->
 
+    </div>
   </header>
