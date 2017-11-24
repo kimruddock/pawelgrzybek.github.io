@@ -18,15 +18,16 @@
   },
   "scripts": {
     "dev": "live-server _site/",
-    "build": "npm run build:css && npm run build:jekyll",
+    "build": "npm run build:scss && npm run build:jekyll",
     "build:jekyll": "bundle exec jekyll build --drafts --quiet --future",
-    "build:css": "cp _src/css/style.css dist/css/style.css",
+    "build:scss": "node-sass _src/css/style.scss dist/css/style.css --output-style=compressed",
     "build:watch": "watch 'npm run build' _src"
   },
   "homepage": "https://pawelgrzybek.com",
   "devDependencies": {
     "browser-sync": "2.18.13",
     "live-server": "1.2.0",
+    "node-sass": "4.7.2",
     "watch": "1.0.2"
   }
 }

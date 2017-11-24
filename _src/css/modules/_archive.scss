@@ -1,0 +1,30 @@
+.archive {
+  margin-left: 0;
+  list-style: none;
+}
+
+.archive__item {
+  padding: .9rem 0;
+  box-shadow: 0 1px 0 0 var(--color-gray);
+}
+
+.archive__item:last-of-type {
+  box-shadow: none;
+}
+
+.archive__date {
+  display: block;
+  font-size: .8rem;
+  opacity: var(--color-text-light);
+}
+
+.archive__link {
+  display: block;
+  color: inherit;
+  font-weight: 700;
+}
+
+.archive__link:hover,
+.archive__link:focus {
+  color: var(--color-text-links);
+}
