@@ -48,4 +48,12 @@ The sad truth about publishing nowadays.
 
 - - -
 
+## CSS element() function
 
+[https://iamvdo.me/en/blog/css-element-function](https://iamvdo.me/en/blog/css-element-function)
+
+This article literally blown my mind! CSS element can draw an image based on reference to id of a HTML element. Again! Image from HTML element! Played around with it a little while and I'm shocked! Article is about 2 years old but it is still supported only on Firefox. Shame a little bit because after reading this post about thousands ideas came to my brain.
+
+- - -
+
+##
