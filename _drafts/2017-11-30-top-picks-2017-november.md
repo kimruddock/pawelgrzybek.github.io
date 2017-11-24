@@ -38,4 +38,14 @@ Mathias Bynens from V8 team explains a syntax of dynamic `import()` in JavaScrip
 
 - - -
 
-## 
+## The Intimidating Zero
+
+[https://m.signalvnoise.com/the-intimidating-zero-4d90fcdcc3b2](https://m.signalvnoise.com/the-intimidating-zero-4d90fcdcc3b2)
+
+The sad truth about publishing nowadays.
+
+> comparison is the thief of joy
+
+- - -
+
+
