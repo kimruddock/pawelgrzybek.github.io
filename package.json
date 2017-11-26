@@ -17,15 +17,15 @@
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
   "scripts": {
-    "dev": "live-server _site/",
     "build": "npm run build:scss && npm run build:jekyll",
-    "build:jekyll": "bundle exec jekyll build --drafts --quiet --future",
+    "build:jekyll": "bundle exec jekyll build --drafts --quiet --future --incremental",
     "build:scss": "node-sass _src/css/style.scss dist/css/style.css --output-style=compressed",
-    "build:watch": "watch 'npm run build' _src"
+    "build:watch": "watch 'npm run build' _src _posts",
+    "serve": "live-server _site/",
+    "dev": "npm run build:watch | npm run serve"
   },
   "homepage": "https://pawelgrzybek.com",
   "devDependencies": {
-    "browser-sync": "2.18.13",
     "live-server": "1.2.0",
     "node-sass": "4.7.2",
     "watch": "1.0.2"
