@@ -17,11 +17,11 @@
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
   "scripts": {
-    "build:css": "node-sass _src/css/style.scss | postcss --use cssnano --no-map -o dist/css/style.css",
+    "build:css": "node-sass _src/css/style.scss | postcss --use cssnano --no-map -o _includes/style.css",
     "build:jekyll": "bundle exec jekyll build --drafts --future --quiet",
     "build": "npm run build:css && npm run build:jekyll",
     "watch:css": "onchange '_src/**/*.scss' -- npm run build:css",
-    "watch:jekyll": "onchange '_drafts/**/*.md' '_posts/*.md' 'dist/**/*' 'photos/**/*' -- npm run build:jekyll",
+    "watch:jekyll": "onchange '_drafts/**/*' '_includes/**/*' '_layouts/**/*' '_posts/**/*' 'photos/**/*' -- npm run build:jekyll",
     "watch": "npm run watch:jekyll & npm run watch:css",
     "serve": "php -S 0.0.0.0:8000 -t _site/ & open http://0.0.0.0:8000",
     "dev": "npm run serve & npm run watch"
