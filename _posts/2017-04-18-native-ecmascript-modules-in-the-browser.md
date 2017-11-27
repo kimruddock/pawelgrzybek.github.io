@@ -18,7 +18,7 @@ Before 2015 JavaScript didn't have a native way of working with modular codebase
 
 Finalised in June 2015 the spec for the [6th edition](http://www.ecma-international.org/ecma-262/6.0/) of JavaScript changed things a lot. One of the many amazing things that it brought was a native way of working with modules. It turned out that it was [immensely hard](https://blog.whatwg.org/js-modules) to implement on the web platform — so module bundlers like [Webpack](https://webpack.js.org/) came into the game. They allowed us to write code in a modern way and spit out a bundled script understandable by the browser.
 
-[Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) is the first browser that has received [100% complete coverage for ECMAScript 2015 features](https://kangax.github.io/compat-table/es6/#safari10_1). Really great work Apple ([Service Workers](https://jakearchibald.github.io/isserviceworkerready/) next please). It means that it is the first browser that allows us to use native modules. Another implementation landed on Google Chrome 60 behind the "Experimental Web Platform" flag, Firefox 54 – behind the `dom.moduleScripts.enabled` setting in `about:config` and Edge 15 behind the "Experimental JavaScript Features" setting in `about:flags`. Let's have a look at the nitty-gritty.
+[Safari 10.1](https://developer.apple.com/library/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_10_1.html) is the first browser that has received [100% complete coverage for ECMAScript 2015 features](https://kangax.github.io/compat-table/es6/#safari10_1). Really great work Apple ([Service Workers](https://jakearchibald.github.io/isserviceworkerready/) next please). It means that it is the first browser that allows us to use native modules. Another implementation landed on Google Chrome 61, Firefox 54 – behind the `dom.moduleScripts.enabled` setting in `about:config` and Edge 16. Let's have a look at the nitty-gritty.
 
 ## Working with modules in the browser
 
@@ -64,9 +64,9 @@ The browser managed to resolve the dependency of the `print.js` file. No Webpack
 
 A quick word about support of native modules across the browsers and some possible solutions. At the time of writing this article it's looking like this:
 
-- Chrome Canary 60 – behind the "Experimental Web Platform" flag in `chrome:flags`
+- Chrome Canary 61
 - Firefox 54 – behind the `dom.moduleScripts.enabled` setting in `about:config`
-- Edge 15 – behind the "Experimental JavaScript Features" setting in `about:flags`
+- Edge 16
 - Safari — hell yeah!
 
 ![Browser support for Native ECMAScript modules](/photos/2017-04-18-2.jpg)
@@ -85,8 +85,6 @@ So what happened here? NOTHING! Absolutely nothing. Because Google Chrome doesn'
 Yes! When modules are not supported natively let's use something that definitely works. As a fallback script let's use an output file from our module bundler of choice. It works perfectly well now in any browser that doesn't have a clue how to handle JavaScript modules. Make sure that you are not duplicating the same functionality for browsers that do support it — it is exactly for this reason the [`nomodule`](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule) attribute has been recently added to the spec. Let's have a look at the results in Safari and Google Chrome (or any other browser that doesn't support modules) now…
 
 ![Native ECMAScript modules in Safari Technology Preview and Google Chrome](/photos/2017-04-18-4.jpg)
-
-At the time of writing this post the [Safari Technology Preview](https://developer.apple.com/safari/technology-preview/) is the only browser that supports the `nomodule` attribute. One day I will come back to this article and get rid of this paragraph — my sneaky plan!
 
 ## Last word about JavaScript modules
 
