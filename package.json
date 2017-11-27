@@ -18,11 +18,11 @@
   },
   "scripts": {
     "build": "npm run build:css && npm run build:jekyll",
-    "build:css": "node-sass _src/css/style.scss dist/css/style.css && postcss --use cssnano --no-map -r dist/css/style.css",
-    "build:jekyll": "bundle exec jekyll build --drafts --future",
-    "watch:css": "onchange '_src/**/*.scss' -- npm run build:css && npm run build:jekyll",
+    "build:css": "node-sass _src/css/style.scss | postcss --use cssnano --no-map -o dist/css/style.css",
+    "build:jekyll": "bundle exec jekyll build --drafts --future --quiet",
+    "watch:css": "onchange '_src/**/*.scss' -- npm run build:css",
     "watch:jekyll": "onchange '_drafts/**/*.md' '_posts/*.md' 'dist/**/*' 'photos/**/*' -- npm run build:jekyll",
-    "serve": "php -S 0.0.0.0:8000 -t _site/",
+    "serve": "php -S 0.0.0.0:8000 -t _site/ & open http://0.0.0.0:8000",
     "dev": "npm run watch:jekyll & npm run watch:css & npm run serve"
   },
   "homepage": "https://pawelgrzybek.com",
