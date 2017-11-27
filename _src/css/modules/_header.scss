@@ -1,5 +1,9 @@
 .header {
   padding: 3.6rem 0;
+  animation-name: fade;
+  animation-duration: 280ms;
+  animation-delay: 280ms;
+  animation-fill-mode: both;
 }
 
 .header__title {

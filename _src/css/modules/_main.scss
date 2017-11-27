@@ -1,6 +1,10 @@
 .main {
   background-color: #fff;
   padding: 3.6rem 0;
+  animation-name: fade;
+  animation-duration: 420ms;
+  animation-delay: 420ms;
+  animation-fill-mode: both;
 }
 
 @media screen and (min-width: 700px) {
