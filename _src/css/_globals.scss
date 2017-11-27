@@ -1,3 +1,15 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(.45rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 ::selection {
   background: var(--color-text-links);
   color: #fff;
@@ -15,7 +27,7 @@ html {
 
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 125%;
+    font-size: 138.888888889%;
   }
 }
 
