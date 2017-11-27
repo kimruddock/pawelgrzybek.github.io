@@ -17,19 +17,20 @@
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
   "scripts": {
-    "dev": "jekyll serve --drafts --future --watch"
+    "build:css": "node-sass _src/css/style.scss | postcss --use cssnano --no-map -o dist/css/style.css",
+    "build:jekyll": "bundle exec jekyll build --drafts --future --quiet",
+    "build": "npm run build:css && npm run build:jekyll",
+    "watch:css": "onchange '_src/**/*.scss' -- npm run build:css",
+    "watch:jekyll": "onchange '_drafts/**/*.md' '_posts/*.md' 'dist/**/*' 'photos/**/*' -- npm run build:jekyll",
+    "watch": "npm run watch:jekyll & npm run watch:css",
+    "serve": "php -S 0.0.0.0:8000 -t _site/ & open http://0.0.0.0:8000",
+    "dev": "npm run serve & npm run watch"
   },
   "homepage": "https://pawelgrzybek.com",
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "browser-sync": "2.12.12",
-    "gulp": "~3.9.1",
-    "gulp-cssnano": "^2.1.1",
-    "gulp-postcss": "^6.1.0",
-    "gulp-uglify": "1.5.4",
-    "postcss-calc": "^5.2.1",
-    "postcss-custom-properties": "^5.0.0",
-    "postcss-import": "^8.1.0",
-    "postcss-nested": "^1.0.0"
+    "cssnano": "3.10.0",
+    "node-sass": "4.7.2",
+    "onchange": "3.2.1",
+    "postcss-cli": "4.1.1"
   }
 }

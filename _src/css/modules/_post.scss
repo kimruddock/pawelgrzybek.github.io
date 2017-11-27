@@ -1,0 +1,17 @@
+.post {
+  margin-bottom: 3.6rem;
+}
+
+.post__date {
+  display: block;
+  font-size: .75rem;
+  color: var(--color-text-light);
+}
+
+.post__title {
+  margin-top: 0;
+}
+
+.post__link {
+  color: var(--color-text-headings);
+}

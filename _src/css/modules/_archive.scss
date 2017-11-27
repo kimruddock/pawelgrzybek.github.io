@@ -4,8 +4,8 @@
 }
 
 .archive__item {
-  padding: .8rem 0;
-  box-shadow: 0 1px 0 0 var(--color-border);
+  padding: .9rem 0;
+  box-shadow: 0 1px 0 0 var(--color-gray);
 }
 
 .archive__item:last-of-type {
@@ -14,19 +14,17 @@
 
 .archive__date {
   display: block;
-  font-size: .707rem;
-  opacity: .5;
+  font-size: .8rem;
+  opacity: var(--color-text-light);
 }
 
 .archive__link {
   display: block;
-  transition: color var(--ms);
   color: inherit;
   font-weight: 700;
 }
 
 .archive__link:hover,
 .archive__link:focus {
-  color: var(--color1);
-  text-decoration: none;
+  color: var(--color-text-links);
 }
