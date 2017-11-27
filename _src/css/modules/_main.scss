@@ -5,6 +5,7 @@
   animation-duration: 420ms;
   animation-delay: 420ms;
   animation-fill-mode: both;
+  box-shadow: inset 0 0 0 1px var(--color-border);
 }
 
 @media screen and (min-width: 700px) {
