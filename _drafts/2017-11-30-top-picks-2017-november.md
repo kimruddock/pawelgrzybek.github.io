@@ -56,4 +56,10 @@ This article literally blown my mind! CSS element can draw an image based on ref
 
 - - -
 
-##
+## Take control of your scroll: customizing pull-to-refresh and overflow effects
+
+[https://developers.google.com/web/updates/2017/11/overscroll-behavior](https://developers.google.com/web/updates/2017/11/overscroll-behavior)
+
+You know this situation when you have a multiple scrollable elements on a page — lets say a main content and chatbox in the corner of your Facebook window. How many times you left a cursor of a conversation window because you overscrolled it? CSS comes with some solution — `overscroll-behavior`. Thanks guys, never again JavaScript tweaks on fixed navigations.
+
+- - -
