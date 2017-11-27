@@ -17,17 +17,19 @@
     "url": "https://github.com/pawelgrzybek/pawelgrzybek.github.io"
   },
   "scripts": {
-    "build": "npm run build:scss && npm run build:jekyll",
-    "build:jekyll": "bundle exec jekyll build --drafts --quiet --future --incremental",
-    "build:scss": "node-sass _src/css/style.scss dist/css/style.css --output-style=compressed",
-    "build:watch": "watch 'npm run build' _src _posts",
-    "serve": "live-server _site/",
-    "dev": "npm run build:watch | npm run serve"
+    "build": "npm run build:css && npm run build:jekyll",
+    "build:css": "node-sass _src/css/style.scss dist/css/style.css && postcss --use cssnano --no-map -r dist/css/style.css",
+    "build:jekyll": "bundle exec jekyll build --drafts --future",
+    "watch:css": "onchange '_src/**/*.scss' -- npm run build:css && npm run build:jekyll",
+    "watch:jekyll": "onchange '_drafts/**/*.md' '_posts/*.md' 'dist/**/*' 'photos/**/*' -- npm run build:jekyll",
+    "serve": "php -S 0.0.0.0:8000 -t _site/",
+    "dev": "npm run watch:jekyll & npm run watch:css & npm run serve"
   },
   "homepage": "https://pawelgrzybek.com",
   "devDependencies": {
-    "live-server": "1.2.0",
+    "cssnano": "3.10.0",
     "node-sass": "4.7.2",
-    "watch": "1.0.2"
+    "onchange": "3.2.1",
+    "postcss-cli": "4.1.1"
   }
 }
