@@ -13,7 +13,7 @@ photo: 2017-10-02.jpg
 
 The basic way is to return an array of elements. To avoid warnings you have to add a key to each element, although it may not be needed in the future.
 
-```js
+```jsx
 const App = () => [
   <p key="1">React 16 can return multiple elements ❤️</p>,
   <p key="2">React 16 can return multiple elements ❤️</p>,
@@ -28,7 +28,7 @@ const App = () => [
 
 To avoid array notation and manually added keys to each of the element, you can use an `Aux` helper function that simply returns all its children. Like so…
 
-```js
+```jsx
 const Aux = props => props.children;
 
 const App = () =>
@@ -41,6 +41,35 @@ const App = () =>
 
 <p>
 <p data-height="320" data-theme-id="14885" data-slug-hash="XeaPKo" data-default-tab="js,result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-10-02-2" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/XeaPKo/">2017-10-02-2</a> by Pawel Grzybek (<a href="https://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+
+**UPDATE!**
+
+[React v16.2](https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html) introduced another way of returning multiple elements. `React.Fragment` abstracted in JSX way via just an empty tag. Bare in mind that JSX syntax doesn't support attributes — use a verbose way if you need so. No extra components needed, no array notation, no keys. Nice!
+
+```jsx
+const App = () => (
+  <>
+    <p key="1">React 16 can return multiple elements ❤️</p>
+    <p key="2">React 16 can return multiple elements ❤️</p>
+    <p key="3">React 16 can return multiple elements ❤️</p>
+  </>
+);
+
+// if your build tool goes crazy, do this…
+
+const App = () => (
+  <React.Fragment>
+    <p key="1">React 16 can return multiple elements ❤️</p>
+    <p key="2">React 16 can return multiple elements ❤️</p>
+    <p key="3">React 16 can return multiple elements ❤️</p>
+  </React.Fragment>
+);
+```
+
+<p>
+<p data-height="320" data-theme-id="14885" data-slug-hash="qVJwaN" data-default-tab="js,result" data-user="pawelgrzybek" data-embed-version="2" data-pen-title="2017-10-02-3" class="codepen">See the Pen <a href="https://codepen.io/pawelgrzybek/pen/qVJwaN/">2017-10-02-3</a> by Pawel Grzybek (<a href="https://codepen.io/pawelgrzybek">@pawelgrzybek</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </p>
 
