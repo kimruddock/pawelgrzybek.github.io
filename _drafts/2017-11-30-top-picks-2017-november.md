@@ -71,3 +71,9 @@ You know this situation when you have a multiple scrollable elements on a page �
 [Dennis Gaebel](https://twitter.com/DroidPinkman) published a great intro to the magic what will become a CSS reality very soon — CSS Math Functions Level 4. It allows us to clamp values in very intuitive way — no more messy CSS locks. Can't wait to see this working in our browsers.
 
 - - -
+
+## Memory don't forget to take out the garbage
+
+[http://www.katiefenn.co.uk/memory-dont-forget-to-take-out-the-garbage/](http://www.katiefenn.co.uk/memory-dont-forget-to-take-out-the-garbage/)
+
+The best explanation of garbage collector, memory bloat and memory leaks ever. Genesis of a problem and potential solutions presented in easy to digest JavaScript examples.
