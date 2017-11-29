@@ -51,9 +51,9 @@ const App = () =>
 ```jsx
 const App = () => (
   <>
-    <p key="1">React 16 can return multiple elements ❤️</p>
-    <p key="2">React 16 can return multiple elements ❤️</p>
-    <p key="3">React 16 can return multiple elements ❤️</p>
+    <p>React 16 can return multiple elements ❤️</p>
+    <p>React 16 can return multiple elements ❤️</p>
+    <p>React 16 can return multiple elements ❤️</p>
   </>
 );
 
@@ -61,9 +61,9 @@ const App = () => (
 
 const App = () => (
   <React.Fragment>
-    <p key="1">React 16 can return multiple elements ❤️</p>
-    <p key="2">React 16 can return multiple elements ❤️</p>
-    <p key="3">React 16 can return multiple elements ❤️</p>
+    <p>React 16 can return multiple elements ❤️</p>
+    <p>React 16 can return multiple elements ❤️</p>
+    <p>React 16 can return multiple elements ❤️</p>
   </React.Fragment>
 );
 ```
