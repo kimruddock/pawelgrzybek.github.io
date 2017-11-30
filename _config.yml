@@ -42,5 +42,9 @@ defaults:
 
 plugins: [jekyll-paginate, jekyll-sitemap]
 
+# Sass
+sass:
+  style: compressed
+
 # Pagination
 paginate: 10
