@@ -5,13 +5,13 @@
 
   font-size: .8rem;
   line-height: 3.6rem;
-  box-shadow: inset 0 0 0 1px var(--color-text-links);
+  box-shadow: inset 0 0 0 1px $color-text-links;
   vertical-align: middle;
 }
 
 .share:hover,
 .share:focus {
-  background-color: var(--color-text-links);
+  background-color: $color-text-links;
   color: #fff;
   fill: #fff;
 }

@@ -11,7 +11,7 @@
 }
 
 ::selection {
-  background: var(--color-text-links);
+  background: $color-text-links;
   color: #fff;
   text-shadow: none;
 }
@@ -40,8 +40,8 @@ html {
 }
 
 body {
-  background-color: var(--color-gray);
-  color: var(--color-text-body);
+  background-color: $color-gray;
+  color: $color-text-body;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   line-height: 1.8rem;
@@ -56,7 +56,7 @@ img {
 
 a {
   background: transparent;
-  color: var(--color-text-links);
+  color: $color-text-links;
   text-decoration: none;
   word-wrap: break-word;
 }
@@ -84,7 +84,7 @@ h4,
 h5,
 h6 {
   margin-top: 2.7rem;
-  color: var(--color-text-headings);
+  color: $color-text-headings;
   font-weight: 700;
 }
 
@@ -122,13 +122,13 @@ hr {
   display: block;
   height: 1.8rem;
   border: 0;
-  box-shadow: inset 0 1px 0 var(--color-gray);
+  box-shadow: inset 0 1px 0 $color-gray;
 }
 
 blockquote {
   margin-bottom: 1.8rem;
   padding: 1.8rem;
-  background: var(--color-gray);
+  background: $color-gray;
 }
 
 blockquote p {

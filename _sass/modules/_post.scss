@@ -5,7 +5,7 @@
 .post__date {
   display: block;
   font-size: .75rem;
-  color: var(--color-text-light);
+  color: $color-text-light;
 }
 
 .post__title {
@@ -13,5 +13,5 @@
 }
 
 .post__link {
-  color: var(--color-text-headings);
+  color: $color-text-headings;
 }

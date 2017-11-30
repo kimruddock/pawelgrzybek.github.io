@@ -5,7 +5,7 @@
 
 .archive__item {
   padding: .9rem 0;
-  box-shadow: 0 1px 0 0 var(--color-gray);
+  box-shadow: 0 1px 0 0 $color-gray;
 }
 
 .archive__item:last-of-type {
@@ -15,7 +15,7 @@
 .archive__date {
   display: block;
   font-size: .8rem;
-  opacity: var(--color-text-light);
+  opacity: $color-text-light;
 }
 
 .archive__link {
@@ -26,5 +26,5 @@
 
 .archive__link:hover,
 .archive__link:focus {
-  color: var(--color-text-links);
+  color: $color-text-links;
 }
