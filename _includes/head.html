@@ -44,9 +44,13 @@
   <meta name="msapplication-config" content="/assets/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
+  {% capture styles %}
+    {% include styles.scss %}
+  {% endcapture %}
+
   <!-- Styles -->
   <style type="text/css">
-    {% include style.css %}
+    {{ styles | scssify }}
   </style>
 
 </head>
