@@ -1,16 +1,19 @@
 .share {
+  margin-top: 5.4rem;
+}
+
+.share__btn {
   display: inline-block;
   margin: 0 .9rem .9rem 0;
   padding: 0 1.8rem;
-
   font-size: .8rem;
   line-height: 3.6rem;
   box-shadow: inset 0 0 0 1px $color-text-links;
   vertical-align: middle;
 }
 
-.share:hover,
-.share:focus {
+.share__btn:hover,
+.share__btn:focus {
   background-color: $color-text-links;
   color: #fff;
   fill: #fff;
