@@ -13,6 +13,22 @@ https://github.com/tc39/proposals/blob/master/finished-proposals.md
 
 https://tc39.github.io/proposal-template-literal-revision/
 
+## s (dotAll) flag for regular expressions
+
+https://github.com/tc39/proposal-regexp-dotall-flag
+
+In regular expression patterns, the dot `.` matches any character but it is getting a little bit problematic with astral and line terminator characters. For example:
+
+```js
+/foo.bar/.test('foo\nbar');
+// → false
+```
+
+The need of matching any character without resorting to cryptic workarounds is very common. Other languages like Java, C#, Pearl or PHP has got an implementation of this functionality. Not is coming to JavaScript under the `s` flag.
+
+```js
+/foo.bar/s.test('foo\nbar');
+// → true
+```
+
 ## 
-
-
