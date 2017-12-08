@@ -1,9 +1,24 @@
 .header {
+  position: relative;
   padding: 3.6rem 0;
   animation-name: fade;
   animation-duration: 280ms;
   animation-delay: 280ms;
   animation-fill-mode: both;
+}
+
+.header__skip {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 0 .45rem;
+  font-size: .8em;
+
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .header__title {
