@@ -30,4 +30,4 @@ The [`defaults`](https://developer.apple.com/legacy/library/documentation/Darwin
 - `delete` - deletes key or a full domain
 - `domains` - prints full list of domains
 - `find` - searches all domain and keys for given name
-- `help` - 
+- `help` - I bet you know what it does
