@@ -1,7 +1,7 @@
 ---
 title: Change macOS user preferences via command line
-excerpt: The system preferences window is not the only way to change user preferences in macOS. The 'defaults' command gives you more power to configure your machine than you would have thought.
-photo: 2017-12-20.jpg
+excerpt: The system preferences window is not the only way to change user preferences in macOS. The "defaults" command gives you more power to configure your machine than you would have thought.
+photo: 2017-12-18.jpg
 ---
 
 The System Preferences window is not the only way to adjust user settings. Macs come with a [`defaults`](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/defaults.1.html) command line interface that lets you read, write, and delete macOS user defaults. You may have even used it before — revealing hidden files in Finder is a popular snippet (hot tip: `⌘` + `⇧` + `.` is quicker).
@@ -19,7 +19,7 @@ Let's take it apart to get familiar with the terminology used throughout this ar
 - `-string` - type descriptor
 - `YES` - new value
 
-You may be scratching your head asking yourself — why the hell would I prefer to do it through the command line instead of using a nice looking GUI (graphical user interface) to change things? Two reasons! A command line way gives you access to things that you cannot change via graphical panels (toggling hidden files is a perfect example). The next one is even better; do you remember last time when you had to set up a new computer from scratch? Change the settings, add a desktop background, disable the screen saver, download your favourite software etc. How long do you spend on these tasks? Two hours? Four? Ten? I spent about five minutes. Boom!
+You may be scratching your head asking yourself — why the hell would I prefer to do it through the command line instead of using a nice looking GUI (graphical user interface) to change things? Two reasons! A command line way gives you access to things that you cannot change via graphical panels (toggling hidden files is a perfect example). The next one is even better — do you remember last time when you had to set up a new computer from scratch? Change the settings, add a desktop background, disable the screen saver, download your favourite software etc. How long do you spend on these tasks? Two hours? Four? Ten? I spent about five minutes. Boom!
 
 ## Write, read and delete defaults settings
 
@@ -116,7 +116,7 @@ Reading output of the default `diff` command isn't exactly enjoyable so feel fre
 code --diff before after
 ```
 
-![Visual Studio Code as a diff tool](/photos/2017-12-20-1.jpg)
+![Visual Studio Code as a diff tool](/photos/2017-12-18-1.jpg)
 
 ## My defaults tweaks
 
