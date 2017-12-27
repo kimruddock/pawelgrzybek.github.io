@@ -38,3 +38,14 @@ Google changes indexing mechanism fro desktop-first to mobile-first. We should e
 [https://developers.google.com/web/updates/2017/12/better-ads](https://developers.google.com/web/updates/2017/12/better-ads)
 
 This is a good news for all publishers and everyday Google Chrome users. [Coalition for Better Ads](https://www.betterads.org/) is an organization that gather list of advices of non-destructive and more user friendly adds on web. Google Chrome will implement a native add-blocker based on these rules since the January 15th.
+
+- - -
+
+## commandlinefu.com
+
+[http://www.commandlinefu.com/](http://www.commandlinefu.com/)
+
+Tons of great comman line tricks and tips!
+
+- - -
+
