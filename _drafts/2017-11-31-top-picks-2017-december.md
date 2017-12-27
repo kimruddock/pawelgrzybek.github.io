@@ -26,4 +26,12 @@ NPM client five time faster than it's origin, smaller node_modules size and most
 
 - - -
 
+## An update on Better Ads
+
+[https://developers.google.com/web/updates/2017/12/better-ads](https://developers.google.com/web/updates/2017/12/better-ads)
+
+This is a good news for all publishers and everyday Google Chrome users. [Coalition for Better Ads](https://www.betterads.org/) is an organization that gather list of advices of non-destructive and more user friendly adds on web. Google Chrome will implement a native add-blocker based on these rules since the January 15th.
+
+- - -
+
 ## 
