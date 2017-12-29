@@ -49,3 +49,13 @@ Tons of great comman line tricks and tips!
 
 - - -
 
+## NectarJS : compiling JavaScript into Native Binaries for Every Platform
+[https://codeburst.io/nectarjs-compiling-javascript-into-native-binaries-for-every-platform-2efb2083a4a](https://codeburst.io/nectarjs-compiling-javascript-into-native-binaries-for-every-platform-2efb2083a4a)
+
+Worth to keep an eye on future of this one.
+
+> We want to make JS a universal language for coding everything, everywhere. JS is present in every web browser; it’s more and more present in server side with NodeJS, and it is also used for IOT with Espruino. However, each platform has its own specifications. With NectarJS, we want to unify all of these in one solution.
+
+- - -
+
+## 
