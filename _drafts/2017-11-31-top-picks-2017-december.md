@@ -58,4 +58,10 @@ Worth to keep an eye on future of this one.
 
 - - -
 
-## 
+## A Message to Our Customers about iPhone Batteries and Performance
+
+[https://www.apple.com/iphone-battery-and-performance/](https://www.apple.com/iphone-battery-and-performance/)
+
+Apple published a response to customers with a clear explainer of the whole situation about deliberately slowing down a device when the older battery. Fair message Apple.
+
+- - -
