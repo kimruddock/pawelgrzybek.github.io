@@ -1,13 +1,13 @@
 ---
 title: Top picks — 2017 December
-excerpt: December description here…
+excerpt: React explained one more time, non-config bundler called Parcel, Turbo as a new npm alternative, mobile first indexing enable by default, better adds, JavaScript compiled to binaries and more on the last top picks of a 2017.
 photo: top-picks.jpg
 ---
 
 ## Learn React Fundamentals and Advanced Patterns
 [https://blog.kentcdodds.com/learn-react-fundamentals-and-advanced-patterns-eac90341c9db](https://blog.kentcdodds.com/learn-react-fundamentals-and-advanced-patterns-eac90341c9db)
 
-Kent C. Dodds just revealed a brand new series of courses about React. It is totally up to date and cover all that you need to know about Facebook's framework. From component creation to advanced workflow using Redux. Well recommended resources.
+Kent C. Dodds just revealed a brand new series of courses about React. It is up to date and cover all that you need to know about Facebook's framework. From component creation to advanced workflow using Redux. Well recommended resources.
 
 - - -
 
@@ -15,21 +15,21 @@ Kent C. Dodds just revealed a brand new series of courses about React. It is tot
 
 [https://parceljs.org/](https://parceljs.org/)
 
-Webpack is amazing but the only downside of it may be a configuration that can be overwhelming. Parcel comes handy then. This is a new kid on the block — no configuration is required and somehow it resolves all dependencies for you. Fingers crossed for future of this project.
+Webpack is amazing but the only downside of it is overwhelming configuration. Parcel comes handy then. This is a new kid on the block — no configuration is required and somehow it resolves all dependencies for you in no time. Fingers crossed for future of this project.
 
 - - -
 
 ## Turbo
 [https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403](https://medium.com/@ericsimons/introducing-turbo-5x-faster-than-yarn-npm-and-runs-natively-in-browser-cc2c39715403)
 
-NPM client five time faster than it's origin, smaller node_modules size and most interestingly works in the browser — Turbo. Another bran new tool that the Twitter went crazy about. Instant dependency resolution, robust caching mechanisms and works great with tiny and massive apps. Sounds nice, time will show us if it is going to take over the popularity of good old npm and yarn.
+NPM client five time faster than it's origin, smaller node_modules size and most interestingly works in the browser — Turbo. Another brand new tool that the dev community on Twitter went crazy about. Instant dependency resolution, robust caching mechanisms and works great with tiny and massive apps. Sounds nice. Time will show us if it is going to take over the popularity of good old npm and yarn.
 
 - - -
 
 ## Getting your site ready for mobile-first indexing
 [https://webmasters.googleblog.com/2017/12/getting-your-site-ready-for-mobile.html](https://webmasters.googleblog.com/2017/12/getting-your-site-ready-for-mobile.html)
 
-Google changes indexing mechanism fro desktop-first to mobile-first. We should expect a strong indexing bump for all websites that are mobile optimized and probably a significant drop for old-school, not maintained projects.
+Google changes indexing mechanism from desktop-first to mobile-first. We should expect a strong indexing bump for all websites that are mobile optimized and probably a significant drop for old-school, not maintained projects.
 
 - - -
 
@@ -37,7 +37,7 @@ Google changes indexing mechanism fro desktop-first to mobile-first. We should e
 
 [https://developers.google.com/web/updates/2017/12/better-ads](https://developers.google.com/web/updates/2017/12/better-ads)
 
-This is a good news for all publishers and everyday Google Chrome users. [Coalition for Better Ads](https://www.betterads.org/) is an organization that gather list of advices of non-destructive and more user friendly adds on web. Google Chrome will implement a native add-blocker based on these rules since the January 15th.
+This is a good news for all publishers and everyday Google Chrome users. [Coalition for Better Ads](https://www.betterads.org/) is an organization that gather list of advices of non-destructive and more user friendly adds on the web. Google Chrome will implement a native add-blocker based on these rules since the January 15th.
 
 - - -
 
@@ -45,7 +45,7 @@ This is a good news for all publishers and everyday Google Chrome users. [Coalit
 
 [http://www.commandlinefu.com/](http://www.commandlinefu.com/)
 
-Tons of great comman line tricks and tips!
+Tons of great command line tricks and tips!
 
 - - -
 
@@ -63,5 +63,3 @@ Worth to keep an eye on future of this one.
 [https://www.apple.com/iphone-battery-and-performance/](https://www.apple.com/iphone-battery-and-performance/)
 
 Apple published a response to customers with a clear explainer of the whole situation about deliberately slowing down a device when the older battery. Fair message Apple.
-
-- - -
