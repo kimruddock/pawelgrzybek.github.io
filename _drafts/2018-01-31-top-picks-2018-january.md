@@ -28,4 +28,20 @@ The new property added to Web Animation API configuration object — `composite`
 
 - - -
 
+## Apple Developer Program Membership Fee Waivers Now Available
+
+[https://developer.apple.com/news/?id=01032018a](https://developer.apple.com/news/?id=01032018a)
+
+Apple now offers a free of charge dev accounts for nonprofit organizations, accredited educational institutions, and government entities. 
+
+- - -
+
+## HDR Photography in Microsoft Excel by Kevin Chen
+
+[https://youtu.be/bkQJdaGGVM8](https://youtu.be/bkQJdaGGVM8)
+
+This is probably the most hilarious talk that I have ever watched. Funny but very informative! You can learn a lot about photography, dynamic range, lightning reciprocity and Microsoft products performance.
+
+- - -
+
 ##
