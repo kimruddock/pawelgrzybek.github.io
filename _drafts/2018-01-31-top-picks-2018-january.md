@@ -20,4 +20,12 @@ The new property added to Web Animation API configuration object — `composite`
 
 - - -
 
-## 
+## Array / Object Explorer
+
+[https://sdras.github.io/object-explorer/](https://sdras.github.io/object-explorer/), [https://sdras.github.io/array-explorer/](https://sdras.github.io/array-explorer/)
+
+[Sarah Drasner](https://twitter.com/sarah_edo) built these incredibly udeful resources to help you find an Array / Object method in no time! Such a useful thingers!
+
+- - -
+
+##
