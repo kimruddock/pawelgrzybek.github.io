@@ -1,26 +1,29 @@
   <header class="header">
-      <div class="wrap">
 
         <a class="header__skip" href="#main">Skip to content</a>
 
-        {% if page.title %}
-        <div class="header__title">
-          <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
-        </div>
-        {% else %}
-        <h1 class="header__title">
-          <a href="{{ site.baseurl }}/" class="header__titleurl" title="{{ site.title }}">{{ site.title }}</a>
-        </h1>
-        {% endif %}
-
-        {% if page.layout != 'post' %}
-        <p>{{ site.description }}</p>
-        {% endif %}
-
-        <nav>
-          <a href="{{ site.baseurl }}/archive/" class="header__link" title="Archive">Archive</a>
-          <a href="http://twitter.com/{{ site.twitter_username }}" class="header__link" title="Paweł Grzybek on Twitter">Twitter</a>
-          <a href="http://github.com/{{ site.github_username }}" class="header__link" title="Paweł Grzybek on Github">Github</a>
+        <nav class="nav">
+          <ul class="nav__l">
+            <li class="nav__i">
+              {% if page.title %}
+              <div class="nav__logo">
+                <a href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
+              </div>
+              {% else %}
+              <h1 class="nav__logo">
+                <a href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
+              </h1>
+              {% endif %}
+            </li>
+            <li class="nav__i">
+              <a href="{{ site.baseurl }}/archive/" title="Archive">Archive</a>
+            </li>
+            <li class="nav__i">
+              <a href="http://twitter.com/{{ site.twitter_username }}" title="Paweł Grzybek on Twitter">Twitter</a>
+            </li>
+            <li class="nav__i">
+              <a href="http://github.com/{{ site.github_username }}" title="Paweł Grzybek on Github">Github</a>
+            </li>
+          </ul>
         </nav>
-    </div>
   </header>

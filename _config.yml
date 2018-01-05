@@ -16,9 +16,6 @@ description: >
 twitter_username: pawelgrzybek
 github_username: pawelgrzybek
 
-# Handling Reading
-exclude: ['node_modules', 'gulpfile.js', 'package.json']
-
 # Outputting
 defaults:
   -

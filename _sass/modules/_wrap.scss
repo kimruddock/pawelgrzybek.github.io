@@ -1,17 +1,6 @@
 .wrap {
   width: 100%;
-  max-width: calc(700px + 3.6rem);
+  max-width: calc(700px + (2 * #{$lh}));
   margin: 0 auto;
-  padding: 0 1.8rem;
-
-  // background-image: linear-gradient(rgba(50, 50, 50, .1) 1px, transparent 1px);
-  // background-size: 100% 32px;
-}
-
-@media screen and (min-width: 1440px) {
-  .wrap {
-    max-width: calc(800px + 3.6rem);
-
-    // background-size: 100% 40px;
-  }
+  padding: 0 32px;
 }

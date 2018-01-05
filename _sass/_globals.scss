@@ -1,22 +1,147 @@
+// ::selection {
+//   background: $color-text-links;
+//   color: #fff;
+//   text-shadow: none;
+// }
+
+// html {
+//   font-size: 111.111111%;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   font-smoothing: antialiased;
+//   text-size-adjust: 100%;
+//   box-sizing: border-box;
+// }
+
+// @media screen and (min-width: 1440px) {
+//   html {
+//     font-size: 138.888888889%;
+//   }
+// }
+
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: inherit;
+// }
+
+// body {
+//   background-color: $color-gray;
+//   color: $color-text-body;
+//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//   font-size: 1rem;
+//   line-height: 1.8rem;
+// }
+
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+//   border: 0;
+// }
+
+// a {
+//   background: transparent;
+//   color: $color-text-links;
+//   text-decoration: none;
+//   word-wrap: break-word;
+// }
+
+// a:hover,
+// a:focus,
+// a:active {
+//   text-decoration: underline;
+// }
+
+// p,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-bottom: 1.8rem;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-top: 2.7rem;
+//   color: $color-text-headings;
+//   font-weight: 700;
+// }
+
+// h1 {
+//   font-size: 1.953rem;
+//   line-height: 2.7rem;
+// }
+
+// h2 {
+//   font-size: 1.563rem;
+// }
+
+// h3 {
+//   font-size: 1.25rem;
+// }
+
+// h4 {
+//   font-size: 1rem;
+// }
+
+// h5 {
+//   font-size: .8rem;
+// }
+
+// h6 {
+//   font-size: .64rem;
+// }
+
+// ul,
+// ol {
+//   margin: 0 0 1.8rem 1.8rem;
+// }
+
+// hr {
+//   display: block;
+//   height: 1.8rem;
+//   border: 0;
+//   box-shadow: inset 0 1px 0 $color-gray;
+// }
+
+// blockquote {
+//   margin-bottom: 1.8rem;
+//   padding: 1.8rem;
+//   background: $color-gray;
+// }
+
+// blockquote p {
+//   margin: 0;
+//   font-style: italic;
+// }
+
 ::selection {
-  background: $color-text-links;
-  color: #fff;
+  background: $color-link;
+  color: $color-background;
   text-shadow: none;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html {
-  font-size: 111.111111%;
+  font-size: 112.5%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-size-adjust: 100%;
   box-sizing: border-box;
-}
-
-@media screen and (min-width: 1440px) {
-  html {
-    font-size: 138.888888889%;
-  }
 }
 
 *,
@@ -28,11 +153,14 @@ html {
 }
 
 body {
-  background-color: $color-gray;
-  color: $color-text-body;
+  background-color: $color-background;
+  color: $color-text;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
-  line-height: 1.8rem;
+  font-size: $fz;
+  line-height: $lh;
+
+  // background-image: linear-gradient(rgba(50, 50, 50, .2) 1px, transparent 1px);
+  background-size: 100% 32px;
 }
 
 img {
@@ -44,15 +172,15 @@ img {
 
 a {
   background: transparent;
-  color: $color-text-links;
-  text-decoration: none;
+  color: $color-link;
   word-wrap: break-word;
-}
 
-a:hover,
-a:focus,
-a:active {
-  text-decoration: underline;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #333;
+  }
 }
 
 p,
@@ -62,7 +190,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1.8rem;
+  margin-bottom: $lh;
 }
 
 h1,
@@ -71,22 +199,22 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 2.7rem;
-  color: $color-text-headings;
-  font-weight: 700;
+  margin-top: $lh * 1.5;
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 1.953rem;
-  line-height: 2.7rem;
+  font-size: $fz * $type-scale * $type-scale * $type-scale;
+  line-height: $lh * 1.5;
 }
 
 h2 {
-  font-size: 1.563rem;
+  font-size: $fz * $type-scale * $type-scale;
+  line-height: $lh * 1.5;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: $fz * $type-scale;
 }
 
 h4 {
@@ -94,11 +222,11 @@ h4 {
 }
 
 h5 {
-  font-size: .8rem;
+  font-size: $fz / $type-scale;
 }
 
 h6 {
-  font-size: .64rem;
+  font-size: $fz / $type-scale / $type-scale;
 }
 
 ul,
@@ -110,13 +238,13 @@ hr {
   display: block;
   height: 1.8rem;
   border: 0;
-  box-shadow: inset 0 1px 0 $color-gray;
+  box-shadow: inset 0 1px 0 $color-border;
 }
 
 blockquote {
   margin-bottom: 1.8rem;
   padding: 1.8rem;
-  background: $color-gray;
+  background: $color-border;
 }
 
 blockquote p {
