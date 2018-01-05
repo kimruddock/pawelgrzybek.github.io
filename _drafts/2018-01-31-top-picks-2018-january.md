@@ -44,4 +44,14 @@ This is probably the most hilarious talk that I have ever watched. Funny but ver
 
 - - -
 
-##
+## The Rise Of The State Machines
+
+[https://www.smashingmagazine.com/2018/01/rise-state-machines/](https://www.smashingmagazine.com/2018/01/rise-state-machines/)
+
+Krasimir Tsonev explains the concept of popular in computer science State Machines. Clear explanation and very well introduced concept on minimal JavaScript example. 
+
+> State machines are good firewalls. They protect us from reaching unknown states because we set boundaries for what can happen and when, without explicitly saying how.
+
+- - -
+
+## 
