@@ -5,25 +5,21 @@
 
 .archive__item {
   padding: .9rem 0;
-  box-shadow: 0 1px 0 0 currentColor;
-}
-
-.archive__item:last-of-type {
-  box-shadow: none;
+  box-shadow: 0 1px 0 0 #eee;
 }
 
 .archive__date {
-  display: block;
-  font-size: .8rem;
+  font-size: $fz / $type-scale;
+  margin: 0;
 }
 
-.archive__link {
-  display: block;
-  color: inherit;
-  font-weight: 700;
-}
+// .archive__link {
+//   display: block;
+//   color: inherit;
+//   font-weight: 700;
+// }
 
-.archive__link:hover,
-.archive__link:focus {
-  color: $color-link;
-}
+// .archive__link:hover,
+// .archive__link:focus {
+//   color: $color-link;
+// }
