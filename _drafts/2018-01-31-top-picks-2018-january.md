@@ -54,4 +54,12 @@ Krasimir Tsonev explains the concept of popular in computer science State Machin
 
 - - -
 
+## What’s New in HTML 5.2?
+
+[https://bitsofco.de/whats-new-in-html-5-2/](https://bitsofco.de/whats-new-in-html-5-2/)
+
+HTML 5.2 just hit a status of W3C Recommendation — perfect time to review whats new in its spec. Ire Aderinokun reviews it all in this short article.
+
+- - -
+
 ## 
