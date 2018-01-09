@@ -62,4 +62,12 @@ HTML 5.2 just hit a status of W3C Recommendation — perfect time to review what
 
 - - -
 
+## Careful Now
+
+[https://css-tricks.com/careful-now/](https://css-tricks.com/careful-now/)
+
+Chris Coyier shares his thoughts about websites build specifically for Google Chrome. It a a natural continuation of ["Chrome is turning into the new Internet Explorer 6" by Tom Warren](https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards) from the prism of web developer.
+
+- - -
+
 ## 
