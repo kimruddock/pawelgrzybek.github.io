@@ -70,4 +70,12 @@ Chris Coyier shares his thoughts about websites build specifically for Google Ch
 
 - - -
 
+## A letter about Google AMP
+
+[http://ampletter.org/](http://ampletter.org/)
+
+Amen!
+
+- - -
+
 ## 
