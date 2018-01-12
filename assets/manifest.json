@@ -1,6 +1,8 @@
 {
 	"name": "pawelgrzybek.com",
 	"short_name": "pawelgrzybek",
+	"author": "Pawel Grzybek",
+	"description": "Hi there, I'm Pawel Grzybek, Front-end Developer from Poland. Nowadays I live in Northampton (UK). When I'm not coding, I'm spinning funky vinyl records.",
 	"icons": [
 		{
 			"src": "\/assets\/android-chrome-36x36.png",
