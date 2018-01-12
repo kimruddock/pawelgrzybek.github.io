@@ -4,22 +4,11 @@
 }
 
 .archive__item {
-  padding: .9rem 0;
+  padding: ($lh / 2) 0;
   box-shadow: 0 1px 0 0 #eee;
 }
 
 .archive__date {
-  font-size: $fz / $type-scale;
   margin: 0;
+  font-size: $fz / $type-scale;
 }
-
-// .archive__link {
-//   display: block;
-//   color: inherit;
-//   font-weight: 700;
-// }
-
-// .archive__link:hover,
-// .archive__link:focus {
-//   color: $color-link;
-// }
