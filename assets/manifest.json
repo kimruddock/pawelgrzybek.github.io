@@ -1,5 +1,6 @@
 {
 	"name": "pawelgrzybek.com",
+	"short_name": "pawelgrzybek",
 	"icons": [
 		{
 			"src": "\/assets\/android-chrome-36x36.png",
