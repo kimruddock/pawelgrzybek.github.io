@@ -78,4 +78,12 @@ Amen!
 
 - - -
 
+## The Ultimate Guide to JavaScript Frameworks
+
+[https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/](https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/)
+
+it is not another comparison of React, Vue and Angular — it is much more comprehensive. John Hannah did a really great job for people who are joining the JS frameworks game.
+
+- - -
+
 ## 
