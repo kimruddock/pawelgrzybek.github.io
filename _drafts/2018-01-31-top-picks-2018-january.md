@@ -86,4 +86,12 @@ it is not another comparison of React, Vue and Angular — it is much more compr
 
 - - -
 
+## CSS Print API
+
+[https://developers.google.com/web/updates/2018/01/paintapi](https://developers.google.com/web/updates/2018/01/paintapi)
+
+Surma from Google explains something that Im well excited about — canvas from CSS stylesheets (kind of). I can think of number great use cases of this one and can;t wait to play around with this api a bit.
+
+- - -
+
 ## 
