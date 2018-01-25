@@ -4,94 +4,88 @@ excerpt: ...
 photo: top-picks.jpg
 ---
 
-## Introducing Web Payments: Easier Online Purchases With The Payment Request API
+## [Introducing Web Payments: Easier Online Purchases With The Payment Request API](https://www.smashingmagazine.com/2018/01/online-purchase-payment-request-api/)
 
-[https://www.smashingmagazine.com/2018/01/online-purchase-payment-request-api/](https://www.smashingmagazine.com/2018/01/online-purchase-payment-request-api/)
+Peter O'Shaughnessy as a developer advocate in Samsung’s web browser team published a great explanation post for Payment Request API. Few companies use it by now and observe a significantly improved user experience. API is promise-based and easy to understand.
 
-Peter O'Shaughnessy as a developer advocate in Samsung’s web browser team published a great explanation post for Payment Request API. Few companies use it now and observe a significantly improved user experience. API is promised based, easy to understand and can be as complex or simple as you want.
 
-- - -
+## [Additive Animation with the Web Animations API](https://css-tricks.com/additive-animation-web-animations-api/)
 
-## Additive Animation with the Web Animations API
+The new property added to Web Animation API configuration object — `composite` — allows us to do something that previously was almost impossible to do (technically it was possible but the amount of multidimensional matrix math needed was crazy). Dan Wilson explains the magic behind it, how it is calculated and presents all the possible values. Really informative article.
 
-[https://css-tricks.com/additive-animation-web-animations-api/](https://css-tricks.com/additive-animation-web-animations-api/)
 
-The new property added to Web Animation API configuration object — `composite` — allows us to do something that previously was almost impossible to do (technically it was possible but the amount of multidimensional matrix math needed was crazy). Dan Wilson explains the magic behind it, how it calculated and presents all the possible values. Really informative article for animation freaks.
+## [Array Explorer](https://sdras.github.io/array-explorer/)
 
-- - -
+[Sarah Drasner](https://twitter.com/sarah_edo) built an incredibly useful resource to help you find a method from `Array`s prototype. Just few days latter the same helper tool for `Object`s prototype came out — [Object explorer by Sarah too](https://sdras.github.io/object-explorer/). It is way quicker to digest than traversing through all props / methods on mdn! Thanks Sarah!
 
-## Array / Object Explorer
 
-[https://sdras.github.io/object-explorer/](https://sdras.github.io/object-explorer/), [https://sdras.github.io/array-explorer/](https://sdras.github.io/array-explorer/)
+## [Apple Developer Program Membership Fee Waivers Now Available](https://developer.apple.com/news/?id=01032018a)
 
-[Sarah Drasner](https://twitter.com/sarah_edo) built these incredibly udeful resources to help you find an Array / Object method in no time! Such a useful thingers!
+Apple now offers a free of charge dev accounts for nonprofit organizations, accredited educational institutions, and government entities. For the time being new rules are only valid for US residents, but I'm sure it will be extended to rest of the world in next few months.
 
-- - -
 
-## Apple Developer Program Membership Fee Waivers Now Available
-
-[https://developer.apple.com/news/?id=01032018a](https://developer.apple.com/news/?id=01032018a)
-
-Apple now offers a free of charge dev accounts for nonprofit organizations, accredited educational institutions, and government entities. 
-
-- - -
-
-## HDR Photography in Microsoft Excel by Kevin Chen
-
-[https://youtu.be/bkQJdaGGVM8](https://youtu.be/bkQJdaGGVM8)
+## [HDR Photography in Microsoft Excel by Kevin Chen](https://youtu.be/bkQJdaGGVM8)
 
 This is probably the most hilarious talk that I have ever watched. Funny but very informative! You can learn a lot about photography, dynamic range, lightning reciprocity and Microsoft products performance.
 
-- - -
 
-## The Rise Of The State Machines
-
-[https://www.smashingmagazine.com/2018/01/rise-state-machines/](https://www.smashingmagazine.com/2018/01/rise-state-machines/)
+## [The Rise Of The State Machines](https://www.smashingmagazine.com/2018/01/rise-state-machines/)
 
 Krasimir Tsonev explains the concept of popular in computer science State Machines. Clear explanation and very well introduced concept on minimal JavaScript example. 
 
 > State machines are good firewalls. They protect us from reaching unknown states because we set boundaries for what can happen and when, without explicitly saying how.
 
-- - -
 
-## What’s New in HTML 5.2?
+## [What’s New in HTML 5.2?](https://bitsofco.de/whats-new-in-html-5-2/)
 
-[https://bitsofco.de/whats-new-in-html-5-2/](https://bitsofco.de/whats-new-in-html-5-2/)
+HTML 5.2 just hit a status of W3C Recommendation — perfect time to review whats new in its spec. Ire Aderinokun reviews it all in this short article. The native `dialog` element excites me the most for sure.
 
-HTML 5.2 just hit a status of W3C Recommendation — perfect time to review whats new in its spec. Ire Aderinokun reviews it all in this short article.
 
-- - -
+## [Careful Now](https://css-tricks.com/careful-now/)
 
-## Careful Now
+Chris Coyier shares his thoughts about websites build specifically for Google Chrome. It is a natural continuation of ["Chrome is turning into the new Internet Explorer 6" by Tom Warren](https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards) from the prism of a web developer.
 
-[https://css-tricks.com/careful-now/](https://css-tricks.com/careful-now/)
 
-Chris Coyier shares his thoughts about websites build specifically for Google Chrome. It a a natural continuation of ["Chrome is turning into the new Internet Explorer 6" by Tom Warren](https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards) from the prism of web developer.
+## [A letter about Google AMP](http://ampletter.org/)
 
-- - -
+AMEN!
 
-## A letter about Google AMP
 
-[http://ampletter.org/](http://ampletter.org/)
+## [The Ultimate Guide to JavaScript Frameworks](https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/)
 
-Amen!
+It is not another comparison of React, Vue and Angular — it is much more comprehensive than that. John Hannah did a really great job for people who are joining the JS frameworks game. Interestingly there is a lot about fresh technologies / languages like Elm and Reason that take a big part of this complex post.
 
-- - -
 
-## The Ultimate Guide to JavaScript Frameworks
+##  [CSS Print API](https://developers.google.com/web/updates/2018/01/paintapi)
 
-[https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/](https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/)
+Surma from Google explains something that I am well excited about — canvas for CSS stylesheets (kind of). I can think of number great use cases of this one and can't wait to play around with this API a bit. Expect an article dedicated to this one very soon.
 
-it is not another comparison of React, Vue and Angular — it is much more comprehensive. John Hannah did a really great job for people who are joining the JS frameworks game.
 
-- - -
+## [Bootstrap 4](http://blog.getbootstrap.com/2018/01/18/bootstrap-4/)
 
-## CSS Print API
+Personally I don't use any frameworks, but working as a front end developer it is hard to not to do something related with Bootstrap. Version 3 came out in 2015 and about 3 years and 6000 commits later, there it is — Bootstrap 4.0. Nice [Mark Otto](Mark Otto) and team!
 
-[https://developers.google.com/web/updates/2018/01/paintapi](https://developers.google.com/web/updates/2018/01/paintapi)
 
-Surma from Google explains something that Im well excited about — canvas from CSS stylesheets (kind of). I can think of number great use cases of this one and can;t wait to play around with this api a bit.
+## [Vanishing boxes with display contents](https://rachelandrew.co.uk/archives/2016/01/29/vanishing-boxes-with-display-contents/)
 
-- - -
+The CSS `display: contents` is on its way — Firefox comes with it since version 37, Chrome 65 and Safari 11.1 are joining very soon. You can [leave your vote](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/10938981-implement-the-box-generation-keywords-from-css-dis) to speed things up for Microsfot Edge. Very useful value when we work with `flexbox` or `grid` type of a layout — allows us to follow the best practices for a markup, keeping the layout in place. [Rego Casasnovas explains the details behind `display: contents`](https://blogs.igalia.com/mrego/2018/01/11/display-contents-is-coming/) really well too. For a first glance it is looking like a right solution for a sub-grid problem — Rachel Andrew explains why it is not in a [separated article](https://rachelandrew.co.uk/archives/2017/07/20/why-display-contents-is-not-css-grid-layout-subgrid/).
 
-## 
+
+## [CSS Grid](https://cssgrid.io/)
+
+Wes Bos added another free course to his collection — it is about CSS Grid layout this time. I haven't finished it yet but as I know previous content recorded by this dude it must be second to none! Highly recommended to all CSSers!
+
+
+## [Puppeteer 1.0](https://developers.google.com/web/tools/puppeteer/)
+
+Puppeteer — node library which provides a high-level API to control headless Chromium — version 1.0 is ready now! If you want to programmatically generate screens hots of your web projects, crawl a single page app, scrape a content or automate form submission for testing — Puppeteer is a right tool for your usecase. Easy to read and write moder API is waiting for you to play around with on [try-puppeteer.appspot.com](https://try-puppeteer.appspot.com/).
+
+## [Laws of UX](https://lawsofux.com/)
+
+Well done! This website is just beautiful and contains so much useful knowledge for all UX designers! Pleasant animations and transitions, great typography, and tons of valuable content! Simply beautiful!
+
+> Laws of UX is a collection of the maxims and principles that designers can consider when building user interfaces.
+
+## [Mental Illness in the Web Industry](http://alistapart.com/article/mental-illness-in-the-web-industry)
+
+[Brandon Gregory](https://twitter.com/authorbrandong) on A List Apart meets few contributors who would like to share their stories about mental illness that they went through. This is global and this is a problem — equally big that the one that we don;t talk about it enough. Thanks Brandon fro this fantastic collection of stories. Hopefully this article will reach masses of people in an industry.
