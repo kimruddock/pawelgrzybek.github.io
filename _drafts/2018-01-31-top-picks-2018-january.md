@@ -80,12 +80,25 @@ Wes Bos added another free course to his collection — it is about CSS Grid lay
 
 Puppeteer — node library which provides a high-level API to control headless Chromium — version 1.0 is ready now! If you want to programmatically generate screens hots of your web projects, crawl a single page app, scrape a content or automate form submission for testing — Puppeteer is a right tool for your usecase. Easy to read and write moder API is waiting for you to play around with on [try-puppeteer.appspot.com](https://try-puppeteer.appspot.com/).
 
+
 ## [Laws of UX](https://lawsofux.com/)
 
 Well done! This website is just beautiful and contains so much useful knowledge for all UX designers! Pleasant animations and transitions, great typography, and tons of valuable content! Simply beautiful!
 
 > Laws of UX is a collection of the maxims and principles that designers can consider when building user interfaces.
 
+
 ## [Mental Illness in the Web Industry](http://alistapart.com/article/mental-illness-in-the-web-industry)
 
-[Brandon Gregory](https://twitter.com/authorbrandong) on A List Apart meets few contributors who would like to share their stories about mental illness that they went through. This is global and this is a problem — equally big that the one that we don;t talk about it enough. Thanks Brandon fro this fantastic collection of stories. Hopefully this article will reach masses of people in an industry.
+[Brandon Gregory](https://twitter.com/authorbrandong) on A List Apart meets few contributors who would like to share their stories about mental illness that they went through. This is global problem and we don't talk about it enough. Thanks Brandon for this fantastic collection of stories. Hopefully this article will reach masses of people in our industry.
+
+
+## [Using page speed in mobile search ranking](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html)
+
+Something that Google calls the "Speed Update" is staring in July 2018. Essentially a mobile searches speed ranking is going to be a big factor for the google results. It will harm owners of slow websites with poor performance on mobile devices. 
+
+> "We encourage developers to think broadly about how performance affects a user’s experience of their page and to consider a variety of user experience metrics."
+
+## [Secure Contexts Everywhere](https://blog.mozilla.org/security/2018/01/15/secure-contexts-everywhere/)
+
+HTTPS everywhere — and this is going to be required even to test a new browser feature. Firefox is bravely starting to introduce this reasonable requirement to a market and hopefully the other vendors come out with the same conclusion sooner or later. 
