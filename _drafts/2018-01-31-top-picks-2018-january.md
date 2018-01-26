@@ -99,6 +99,12 @@ Something that Google calls the "Speed Update" is staring in July 2018. Essentia
 
 > "We encourage developers to think broadly about how performance affects a user’s experience of their page and to consider a variety of user experience metrics."
 
+
 ## [Secure Contexts Everywhere](https://blog.mozilla.org/security/2018/01/15/secure-contexts-everywhere/)
 
 HTTPS everywhere — and this is going to be required even to test a new browser feature. Firefox is bravely starting to introduce this reasonable requirement to a market and hopefully the other vendors come out with the same conclusion sooner or later. 
+
+
+## [iOS 11.3 and macOS 10.13.4 include Service Workers](https://twitter.com/rmondello/status/956256845311590400)
+
+This is one of the most exciting news this month for me. Mac OS and iOS version of Safari gets a full support for Service Workers in a next big release. It means that all the core browsers have an implementation of it and we have no excuses anymore to use it this proxy on our front end builds. Really can wait for mac OS 10.13.4 and iOS 11.3 to come out. By the way — I'm working on offline support for this website and it is going to be enabled very soon.
