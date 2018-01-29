@@ -1,14 +1,14 @@
 ---
 title: What's new in ECMAScript 2018
-excerpt: The last TC39 meeting resulted in a finalised featurs set for ECMAScript 2018. This article presents all the new goodies — let's get on it.
+excerpt: The last TC39 meeting resulted in finalised features set for ECMAScript 2018. This article presents all the new goodies — let's get on it.
 photo: 2018-01-29.jpg
 ---
 
-It is this time of a year — we are after TC39 meeting that finalised the list of new features that we will get in the ECMAScript 2018. I published the the list of new goodies for [2017 version](https://pawelgrzybek.com/whats-new-in-ecmascript-2017/), so I did it in [2016](https://pawelgrzybek.com/whats-new-in-ecmascript-2016-es7/). It is a time to familiarise ourseves with the stuff that is coming to our disposal this year.
+It is that time of a year again after the TC39 meeting, which finalises a list of new features that we will get in the latest ECMAScript 2018 update. I published a list of new goodies for [2017 version](https://pawelgrzybek.com/whats-new-in-ecmascript-2017/), just as I did in [2016](https://pawelgrzybek.com/whats-new-in-ecmascript-2016-es7/). It is a good time to familiarise ourseves with the new features soon to be at to our disposal this year.
 
 ## Rest/Spread Properties by Sebastian Markbåge
 
-ECMASCript 2015 introuduced a rest / spred for `Array`s. This year the same feature welcomes `Object`s. Let's have a look at two examples.
+ECMASCript 2015 introuduced rest / spread operators for `Array`s. This year the same feature welcomes `Object`s. Let's have a look at two examples.
 
 ```js
 const dude = {
@@ -52,7 +52,7 @@ console.log(dude);
 
 ## Asynchronous Iteration by Domenic Denicola
 
-Introduced in ECMAScript 2015 iterator interface returns an object with `{ value, done }` keys via `next()` interface. It is possible to use it with iterables that are known ahead of time. The `asyncIterator` allows to replicate the same functionality for asynchronous operations and returns a promise for a `{ value, done }` pair.
+Introduced in ECMAScript 2015, iterator interface returns an object with `{ value, done }` keys via `next()` interface. It is possible to use it with iterables that are known ahead of time. The `asyncIterator` allows us to replicate the same functionality for asynchronous operations and returns a promise for a `{ value, done }` pair.
 
 ```js
 async function* createAsyncIterable(iterable) {
@@ -95,7 +95,7 @@ asyncIterator.next()
 
 ## Promise.prototype.finally
 
-Number of promise libraries has an implementation of useful `finally()` method. [Bluebird](http://bluebirdjs.com/docs/api/finally.html), [Q](https://github.com/kriskowal/q/wiki/API-Reference#promisefinallycallback), and [when](https://github.com/cujojs/when/blob/master/docs/api.md#promisefinally) just to name few. Time for a native implementation — `Promise.prototype.finally` finally here.
+A number of promise libraries have an implementation of the useful `finally()` method. [Bluebird](http://bluebirdjs.com/docs/api/finally.html), [Q](https://github.com/kriskowal/q/wiki/API-Reference#promisefinallycallback), and [when](https://github.com/cujojs/when/blob/master/docs/api.md#promisefinally) just to name few. It is now time for a native implementation — `Promise.prototype.finally` is finally here.
 
 ```js
 fetch('https://api.github.com/users/pawelgrzybek')
@@ -109,7 +109,7 @@ fetch('https://api.github.com/users/pawelgrzybek')
 
 ## Template Literal Revision by Tim Disney
 
-Introduced in ECMAScript 2015 template literals come with some restrictions on escape sequences. This years version of language solves all these blockers. Currently valid escape sequences are replaced with Unicode code point — invalid ones throws an early error. This proposal changes this behaviour by returning an `undefined` for invalid strings and keeping the original one accessible via `.raw`.
+Introduced in ECMAScript 2015, template literals come with some restrictions on escape sequences. This years version of the language solves all of these blockers. Currently valid escape sequences are replaced with a Unicode code point — invalid ones throw an early error. This proposal changes this behaviour by returning `undefined` for invalid strings and keeping the original one accessible via `.raw`.
 
 ```js
 function tag(strs) {
@@ -126,7 +126,7 @@ tag`\Some string with invalid excape sequence \u{55}`
 
 ## s (dotAll) flag for regular expressions by Mathias Bynens
 
-In regular expression patterns, the dot `.` matches any character but it is getting a little bit problematic with astral and line terminator characters. The need of matching any character without resorting to cryptic workarounds is very common. Other languages like Java, C#, Pearl or PHP has got an implementation of this functionality. Now it is coming to JavaScript under the `s` flag.
+In regular expression patterns, the dot `.` matches any character but it is getting a little bit problematic with astral and line terminator characters. The need for matching any character without resorting to cryptic workarounds is very common. Other languages like Java, C#, Pearl or PHP have got an implementation of this functionality. Now it is coming to JavaScript under the `s` flag.
 
 ```js
 /foo.bar/.test('foo\nbar');
@@ -140,7 +140,7 @@ In regular expression patterns, the dot `.` matches any character but it is gett
 
 ## Unicode property escapes in regular expressions by Mathias Bynens
 
-Currently there is no way to access Unicode character properties natively in JavaScript regular expressions. This proposal adds Unicode property escapes of via `\p{…}` and `\P{…}`.
+Currently there is no way to access Unicode character properties natively in JavaScript regular expressions. This proposal adds Unicode property escapes via `\p{…}` and `\P{…}`.
 
 ```js
 const regexGreekSymbol = /\p{Script=Greek}/u;
@@ -152,7 +152,7 @@ regexGreekSymbol.test('π');
 
 ## RegExp Named Capture Groups by Gorkem Yakin and Daniel Ehrenberg
 
-Numbered capture groups refer to a part of a string matched by regular expression — it works but can get a little bit hard to read and refactor. Named capture groups for the rescue.
+Numbered capture groups refer to a part of a string matched by regular expression — it works but it can get a little bit difficult to read and refactor. Named capture groups to the rescue.
 
 ```js
 const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u;
@@ -171,7 +171,7 @@ const result = re.exec('2019-01-29');
 
 ## RegExp Lookbehind Assertions by Gorkem Yakin, Nozomu Katō and Daniel Ehrenberg
 
-Currently ECMAScript RegExp has lookahead assertions that checks string in a forward direction — it is missing a backward check though. This proposal adds this feature to the language via `(?<=…)` and returns result without capturing a checked string.
+Currently ECMAScript RegExp has lookahead assertions that check a string in a forward direction — it is missing a backward check though. This proposal adds this feature to the language via `(?<=…)` and returns a result without capturing a checked string.
 
 ```js
 '£10.53'.match(/(?<=\$)\d+(\.\d*)?/)
