@@ -4,11 +4,11 @@ excerpt: The last TC39 meeting resulted in a finalised featurs set for ECMAScrip
 photo: 2018-01-29.jpg
 ---
 
-It is this time of a year — we are after TC39 meeting that finalised the list of new features that we will get in the ECMAScript 2018. I published the the list of new goodies for [2017 version](https://pawelgrzybek.com/whats-new-in-ecmascript-2017/), so I did in [2016](https://pawelgrzybek.com/whats-new-in-ecmascript-2016-es7/). It is time to familiarise ourseves with the stuff that is coming to our disposal this year.
+It is this time of a year — we are after TC39 meeting that finalised the list of new features that we will get in the ECMAScript 2018. I published the the list of new goodies for [2017 version](https://pawelgrzybek.com/whats-new-in-ecmascript-2017/), so I did it in [2016](https://pawelgrzybek.com/whats-new-in-ecmascript-2016-es7/). It is a time to familiarise ourseves with the stuff that is coming to our disposal this year.
 
 ## Rest/Spread Properties by Sebastian Markbåge
 
-ECMASCript 2015 introuduced a rest / spred for `Array`s. This year the same feature welcome `Object`s. Let's have a look at two examples.
+ECMASCript 2015 introuduced a rest / spred for `Array`s. This year the same feature welcomes `Object`s. Let's have a look at two examples.
 
 ```js
 const dude = {
@@ -52,7 +52,7 @@ console.log(dude);
 
 ## Asynchronous Iteration by Domenic Denicola
 
-Introduced in ECMAScript 2015 iterator interface returns an object with `{ value, done }` keys via `next()` interface. It is possible to use it with iterables that are known ahead of time. The `asyncIterator` allows to replicated the same functionality for asynchronous operations and returns a promise for a `{ value, done }` pair. Example:
+Introduced in ECMAScript 2015 iterator interface returns an object with `{ value, done }` keys via `next()` interface. It is possible to use it with iterables that are known ahead of time. The `asyncIterator` allows to replicate the same functionality for asynchronous operations and returns a promise for a `{ value, done }` pair.
 
 ```js
 async function* createAsyncIterable(iterable) {
@@ -95,7 +95,7 @@ asyncIterator.next()
 
 ## Promise.prototype.finally
 
-Number of promise libraries has an implementation of useful `finally()` method. [Bluebird](http://bluebirdjs.com/docs/api/finally.html), [Q](https://github.com/kriskowal/q/wiki/API-Reference#promisefinallycallback), and [when](https://github.com/cujojs/when/blob/master/docs/api.md#promisefinally) just to name a few. Time for a native implementation — `Promise.prototype.finally` finally there.
+Number of promise libraries has an implementation of useful `finally()` method. [Bluebird](http://bluebirdjs.com/docs/api/finally.html), [Q](https://github.com/kriskowal/q/wiki/API-Reference#promisefinallycallback), and [when](https://github.com/cujojs/when/blob/master/docs/api.md#promisefinally) just to name few. Time for a native implementation — `Promise.prototype.finally` finally here.
 
 ```js
 fetch('https://api.github.com/users/pawelgrzybek')
@@ -109,9 +109,76 @@ fetch('https://api.github.com/users/pawelgrzybek')
 
 ## Template Literal Revision by Tim Disney
 
-Introduced in ECMAScript 2015 template literals come with some restrictions on escape sequences. This year version of language solves all these blockers.
+Introduced in ECMAScript 2015 template literals come with some restrictions on escape sequences. This years version of language solves all these blockers. Currently valid escape sequences are replaced with Unicode code point — invalid ones throws an early error. This proposal changes this behaviour by returning an `undefined` for invalid strings and keeping the original one accessible via `.raw`.
 
 ```js
+function tag(strs) {
+  console.log(strs[0]);
+  // undefined
+
+  console.log(strs.raw[0]);
+  // "\\Some string with invalid excape sequence \\u{55}"
+}
+tag`\Some string with invalid excape sequence \u{55}`
 ```
 
 - [Template Literal Revision proposal](https://tc39.github.io/proposal-template-literal-revision/)
+
+## s (dotAll) flag for regular expressions by Mathias Bynens
+
+In regular expression patterns, the dot `.` matches any character but it is getting a little bit problematic with astral and line terminator characters. The need of matching any character without resorting to cryptic workarounds is very common. Other languages like Java, C#, Pearl or PHP has got an implementation of this functionality. Now it is coming to JavaScript under the `s` flag.
+
+```js
+/foo.bar/.test('foo\nbar');
+// false
+
+/foo.bar/s.test('foo\nbar');
+// true
+```
+
+- [s (dotAll) flag for regular expressions proposal](https://github.com/tc39/proposal-regexp-dotall-flag)
+
+## Unicode property escapes in regular expressions by Mathias Bynens
+
+Currently there is no way to access Unicode character properties natively in JavaScript regular expressions. This proposal adds Unicode property escapes of via `\p{…}` and `\P{…}`.
+
+```js
+const regexGreekSymbol = /\p{Script=Greek}/u;
+regexGreekSymbol.test('π');
+// → true
+```
+
+- [Unicode property escapes in regular expressions proposal](https://github.com/tc39/proposal-regexp-unicode-property-escapes)
+
+## RegExp Named Capture Groups by Gorkem Yakin and Daniel Ehrenberg
+
+Numbered capture groups refer to a part of a string matched by regular expression — it works but can get a little bit hard to read and refactor. Named capture groups for the rescue.
+
+```js
+const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u;
+const result = re.exec('2019-01-29');
+// result.groups.year === '2019';
+// result.groups.month === '01';
+// result.groups.day === '29';
+
+// result[0] === '2019-01-29';
+// result[1] === '2019';
+// result[2] === '01';
+// result[3] === '29';
+```
+
+- [RegExp Named Capture Groups proposal](https://github.com/tc39/proposal-regexp-named-groups)
+
+## RegExp Lookbehind Assertions by Gorkem Yakin, Nozomu Katō and Daniel Ehrenberg
+
+Currently ECMAScript RegExp has lookahead assertions that checks string in a forward direction — it is missing a backward check though. This proposal adds this feature to the language via `(?<=…)` and returns result without capturing a checked string.
+
+```js
+'£10.53'.match(/(?<=\$)\d+(\.\d*)?/)
+// null
+
+'$10.53'.match(/(?<=\$)\d+(\.\d*)?/)
+// ["10.53", ".53", index: 1, input: "$10.53"]
+```
+
+- [RegExp Lookbehind Assertions proposal](https://github.com/tc39/proposal-regexp-lookbehind)
