@@ -14,7 +14,7 @@ Look at [this CodePen](https://codepen.io/pawelgrzybek/pen/qxERYa) to understand
 ```js
 // define a callback
 function callback() {
-  // something here
+  // something cool here
 }
 
 // add resize listener to window object
@@ -37,7 +37,7 @@ Similarly to [previously explained Intersection Observer](https://pawelgrzybek.c
 ```js
 // define a callback
 function callback() {
-  // something here
+  // something cool here
 }
 
 // instantiate new observer
