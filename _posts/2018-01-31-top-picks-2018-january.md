@@ -78,7 +78,7 @@ Wes Bos added another free course to his collection — it is about CSS Grid lay
 
 ## [Puppeteer 1.0](https://developers.google.com/web/tools/puppeteer/)
 
-Puppeteer — node library which provides a high-level API to control headless Chromium — version 1.0 is ready now! If you want to programmatically generate screens hots of your web projects, crawl a single page app, scrape a content or automate form submission for testing — Puppeteer is a right tool for your usecase. Easy to read and write moder API is waiting for you to play around with on [try-puppeteer.appspot.com](https://try-puppeteer.appspot.com/).
+Puppeteer — node library which provides a high-level API to control headless Chromium — version 1.0 is ready now! If you want to programmatically generate screen shots of your web projects, crawl a single page app, scrape a content or automate form submission for testing — Puppeteer is a right tool for your usecase. Easy to read and write moder API is waiting for you to play around with on [try-puppeteer.appspot.com](https://try-puppeteer.appspot.com/).
 
 
 ## [Laws of UX](https://lawsofux.com/)
