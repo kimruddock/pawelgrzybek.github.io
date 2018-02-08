@@ -15,9 +15,9 @@ The folder in which your VSCode settings and snippets reside depends on the oper
 OK, let's move the settings files and the directory containing your snippets to your .dotfiles that is located in the root folder.
 
 ```
-mv ~/Library/Application\ Support/Code/User/settings.json ~/.dotfiles/Code/
-mv ~/Library/Application\ Support/Code/User/keybindings.json ~/.dotfiles/Code/
-mv ~/Library/Application\ Support/Code/User/snippets/ ~/.dotfiles/Code/
+mv ~/Library/Application\ Support/Code/User/settings.json ~/.dotfiles/VSCode/
+mv ~/Library/Application\ Support/Code/User/keybindings.json ~/.dotfiles/VSCode/
+mv ~/Library/Application\ Support/Code/User/snippets/ ~/.dotfiles/VSCode/
 ```
 
 ## Create symbolic links to VSCode settings file directory
@@ -25,9 +25,9 @@ mv ~/Library/Application\ Support/Code/User/snippets/ ~/.dotfiles/Code/
 All that we need is in the correct location now, time to create symlinks to those files.
 
 ```
-ln -s ~/.dotfiles/Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.dotfiles/Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s ~/.dotfiles/Code/snippets/ ~/Library/Application\ Support/Code/User/snippets
+ln -s /Users/pawelgrzybek/.dotfiles/VSCode/settings.json /Users/pawelgrzybek/Library/Application\ Support/Code/User/settings.json
+ln -s /Users/pawelgrzybek/.dotfiles/VSCode/keybindings.json /Users/pawelgrzybek/Library/Application\ Support/Code/User/keybindings.json
+ln -s /Users/pawelgrzybek/.dotfiles/VSCode/snippets/ /Users/pawelgrzybek/Library/Application\ Support/Code/User/snippets
 ```
 
 Boom! And it's done! Easy eh? Now you can commit the new "Code" directory to your .dotfiles repo, create symbolic links across all your machines and enjoy version controlled settings and snippets.
