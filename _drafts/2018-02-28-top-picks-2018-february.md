@@ -16,4 +16,7 @@ I still love you Sketch but… Tons of competitive tools are coming out and some
 
 This is a must-watch! Jake Archibald from Google and absolutely the best explanation of event loop in JavaScript! Essential talk for all JavaScript developers!
 
-##
+## [Getting started with Node.js debugging in VS Code](https://youtu.be/2oFKNL7vYV8)
+
+This eight minutes video explained everything that you have to know to get stared with debugging JavaScript & Node programs in Visual Studio Code. I spent bit amount of time to understand it by reading docs and watching some unofficial YouTube tutorials — this one would be a relief for me back then.
+
