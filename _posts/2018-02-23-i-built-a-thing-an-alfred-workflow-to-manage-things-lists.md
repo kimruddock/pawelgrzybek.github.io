@@ -10,6 +10,8 @@ photo: 2018-02-23.jpg
 
 ## Alfred workflow to manage a Things list with ease
 
-Simply type the keyword `things` and pick from the dropdown a list that you would like to open. Additionally you can navigate to the list of interest and hold a modifier key (Command `⌘`, Option `⌥`, Control `⌃`, `Fn` or Shift `⇧`) to reveal an addition option to add an item to a particular list. Hit return `↩` and you're done. Enjoy!
+Simply type the keyword `things` and pick from the dropdown a list that you would like to open. Additionally you can navigate to the list of interest and hold a modifier key (Command `⌘`, Option `⌥`, Control `⌃`, `Fn` or Shift `⇧`) to reveal an addition option to add an item to a particular list. Hit return `↩` and you're done.
 
 ![Alfred workflow to manage Things lists](/photos/2018-02-23-1.gif)
+
+Download [Things workflow for free from Packal](http://www.packal.org/workflow/things-1) and grab a source code from [Github repository](https://github.com/pawelgrzybek/alfred-things). Improvements suggestions and feature requests are more than welcome. Enjoy!
