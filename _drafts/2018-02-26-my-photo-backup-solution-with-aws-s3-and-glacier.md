@@ -1,5 +1,5 @@
 ---
-title: My photo backup workflow with AWS
+title: My photo backup solution with AWS S3 and Glacier
 excerpt: Description…
 photo: 2018-02-26.jpg
 ---
@@ -30,10 +30,19 @@ photo: 2018-02-26.jpg
 - the more you use the more it costs
 - 9
 
-## How to do backups with AWS Simple Storage Service & Glacier
+## How to do backups with AWS Simple Storage Service (S3) & Glacier
 
 - it is part of amazon web services
 - you may have heard of it that it is hard to manage and extremally complicated to manage
-- this is sort of true, sort of not
+- aws is complicated but i have two need
+- the only thing that you have to know is how it works and how to set it up
+- i will explain you how it works and i will show you how to set it up
 - s3 is one of the most straight forward services out there to set up and use
-- you may have 
+
+### How it works and what s3 and glacier is
+
+### How to set it up
+
+- Create an AWS account. Credit card and automatic phone call authozrization is a crucial step
+- i would suggest going 
+
