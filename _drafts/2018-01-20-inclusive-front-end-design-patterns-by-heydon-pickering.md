@@ -4,7 +4,7 @@ excerpt: Description…
 photo: 2018-01-20.jpg
 ---
 
-![Inclusive Front-End Design Patterns by Heydon Pickering](/photos/20180-01-20-1.jpg)
+![Inclusive Front-End Design Patterns by Heydon Pickering](/photos/2018-01-20-1.jpg)
 
 - not a series of instruction of doing XYZ
 - teaching you building awareness what you should care
@@ -29,4 +29,4 @@ photo: 2018-01-20.jpg
 
 - tim kadlac: https://timkadlec.com/read/2018/inclusive-design-patterns/
 
-![Chapters of Inclusive Front-End Design Patterns by Heydon Pickering](/photos/20180-01-20-2.jpg)
+![Chapters of Inclusive Front-End Design Patterns by Heydon Pickering](/photos/2018-01-20-2.jpg)
