@@ -20,3 +20,6 @@ This is a must-watch! Jake Archibald from Google and absolutely the best explana
 
 This eight minutes video explained everything that you have to know to get stared with debugging JavaScript & Node programs in Visual Studio Code. I spent bit amount of time to understand it by reading docs and watching some unofficial YouTube tutorials — this one would be a relief for me back then.
 
+## [Diya](http://diyahq.com/)
+
+This is what I was waiting for. Extremely useful plugin for Sketch app that bring your ideas to live via few clicks. Animate between artboards, control timeline of animation per object level, interpolate colour values, morph SVG shapes, import plain HTML to a client and as a guide for a developer. Currently it is a beta version but the first stable release should and in few weeks. Keep your eyes peeled for this one.
