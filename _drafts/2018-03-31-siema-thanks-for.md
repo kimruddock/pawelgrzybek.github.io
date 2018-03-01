@@ -14,6 +14,7 @@ photo: 2018-03-31.jpg
 - thousands downloads every week (from npm only)
 - around 280 commits
 - around 180 forks
+- hundreds projects on githusb rely on it
 - featured on smasing magazine, wdrl, net magazine, codrops and many more reutable services
 
 - future of siema
