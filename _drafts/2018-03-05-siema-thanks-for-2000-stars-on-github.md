@@ -1,8 +1,10 @@
 ---
-title: Siema! Thanks for 2000 stars
+title: Siema! Thanks for 2000 stars on Github!
 excerpt: 🐘💨
-photo: 2018-03-31.jpg
+photo: 2018-03-05.jpg
 ---
+
+It was November 2016, I was looking for a carousel for one of my projects. I found about hundreds of them but none of them fulfilled my requirements: simple API, lightweight and optimized for performance. I spent enough of time on my research just to decide to build my own solution on the end. It worked surprisingly well for me so I decided to smash it on the [Github repository](https://github.com/pawelgrzybek/siema), build a simple [docs page](https://pawelgrzybek.com/siema/) and ask my talented friend [Jarkko Sibenberg](http://www.sibenberg.com/) to create a logo for the project. 
 
 - november 2016
 - came out of personal need of easy lightweight carousel without mess
